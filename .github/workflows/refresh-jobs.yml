@@ -1,0 +1,41 @@
+name: Refresh jobs hourly
+
+on:
+  schedule:
+    - cron: "0 * * * *"        # top of every hour (UTC). GitHub may delay a few min on free runners.
+  workflow_dispatch: {}         # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write               # needed to commit the updated jobs.json
+
+concurrency:
+  group: refresh-jobs
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install --quiet requests
+
+      - name: Fetch latest jobs
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: python fetch_jobs.py
+
+      - name: Commit jobs.json if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add jobs.json
+          git diff --quiet --cached || git commit -m "chore: hourly jobs refresh [skip ci]"
+          git push

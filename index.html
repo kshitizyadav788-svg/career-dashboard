@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Intelligence Dashboard — Kshitiz Yadav</title>
+<style>
+  :root{
+    --bg:#0b0f1a; --panel:#131a2b; --panel2:#1a2236; --line:#26304a;
+    --txt:#e7ecf5; --muted:#9aa6c0; --accent:#5b8cff; --accent2:#39d4a8;
+    --warn:#ffb84d; --bad:#ff6b6b; --good:#39d4a8; --chip:#222c44;
+    --shadow:0 6px 24px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);font-size:14px;line-height:1.5}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{padding:20px 28px;border-bottom:1px solid var(--line);background:linear-gradient(120deg,#101730,#0b0f1a);position:sticky;top:0;z-index:50}
+  .h-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  h1{font-size:20px;margin:0;font-weight:700;letter-spacing:.3px}
+  .sub{color:var(--muted);font-size:13px;margin-top:3px}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap;margin-top:16px}
+  .tab{padding:8px 14px;border-radius:8px 8px 0 0;background:transparent;color:var(--muted);border:none;cursor:pointer;font-size:13px;font-weight:600}
+  .tab:hover{color:var(--txt)}
+  .tab.active{background:var(--panel);color:var(--txt);box-shadow:inset 0 -2px 0 var(--accent)}
+  main{padding:24px 28px;max-width:1280px;margin:0 auto}
+  .view{display:none;animation:fade .25s ease}
+  .view.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:900px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .stat{font-size:30px;font-weight:800;letter-spacing:.5px}
+  .stat small{font-size:13px;font-weight:600;color:var(--muted)}
+  .pill{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:600;background:var(--chip);color:var(--muted)}
+  .pill.good{background:rgba(57,212,168,.15);color:var(--good)}
+  .pill.warn{background:rgba(255,184,77,.15);color:var(--warn)}
+  .pill.bad{background:rgba(255,107,107,.15);color:var(--bad)}
+  .pill.acc{background:rgba(91,140,255,.15);color:var(--accent)}
+  ul.clean{margin:0;padding-left:18px}
+  ul.clean li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none}
+  tr:hover td{background:var(--panel2)}
+  .gauge{position:relative;width:150px;height:150px;margin:0 auto}
+  .bar{height:9px;border-radius:6px;background:var(--panel2);overflow:hidden;margin-top:6px}
+  .bar>span{display:block;height:100%;border-radius:6px}
+  .row-flex{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  select,input,textarea,button.btn{background:var(--panel2);color:var(--txt);border:1px solid var(--line);border-radius:7px;padding:7px 9px;font-size:13px;font-family:inherit}
+  textarea{width:100%;resize:vertical}
+  button.btn{cursor:pointer;font-weight:600}
+  button.btn:hover{border-color:var(--accent)}
+  button.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  button.btn.danger{color:var(--bad);border-color:transparent;background:transparent;padding:4px 6px}
+  .scorebadge{font-weight:800;padding:3px 8px;border-radius:6px}
+  .legend{font-size:12px;color:var(--muted);margin-top:8px}
+  .kanban{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+  @media(max-width:900px){.kanban{grid-template-columns:1fr 1fr}}
+  .kcol{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;min-height:120px}
+  .kcol h4{margin:0 0 8px;font-size:12px;text-transform:uppercase;color:var(--muted);letter-spacing:.5px}
+  .kcard{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px;margin-bottom:8px;font-size:12px}
+  .kcard b{font-size:13px}
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+  .muted{color:var(--muted)}
+  .tag{font-size:11px;padding:2px 7px;border-radius:5px;background:var(--chip);margin:2px 3px 0 0;display:inline-block}
+  .flex{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .spread{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+  .note{font-size:12px;color:var(--muted);background:var(--panel2);border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:10px}
+  .ring{stroke-dasharray:1;transition:stroke-dashoffset .8s ease}
+  .mini{font-size:12px;color:var(--muted)}
+  .right{text-align:right}
+  .nowrap{white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+  <div class="h-row">
+    <div>
+      <h1>Career Intelligence Dashboard</h1>
+      <div class="sub">Kshitiz Yadav · Product Manager · B2C Growth &amp; AI-Enabled · Gurgaon, India · <a href="https://linkedin.com/in/kshitizyadav" target="_blank">LinkedIn</a> · kshitizyadav788@gmail.com</div>
+    </div>
+    <div class="flex">
+      <span class="pill acc" id="lastUpdated"></span>
+      <button class="btn" onclick="exportData()">⭳ Export data</button>
+      <button class="btn" onclick="resetData()">↺ Reset</button>
+    </div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+</header>
+<main>
+  <div class="view active" id="v-overview"></div>
+  <div class="view" id="v-resumedoc"></div>
+  <div class="view" id="v-resume"></div>
+  <div class="view" id="v-skills"></div>
+  <div class="view" id="v-jobs"></div>
+  <div class="view" id="v-apps"></div>
+  <div class="view" id="v-interviews"></div>
+  <div class="view" id="v-network"></div>
+  <div class="view" id="v-companies"></div>
+  <div class="view" id="v-recruiters"></div>
+  <div class="view" id="v-growth"></div>
+</main>
+
+<script>
+/* ============================================================
+   CAREER INTELLIGENCE DASHBOARD
+   Single-file app. Seed analysis + live job matches baked in.
+   User-entered tracking data persists in localStorage.
+   ============================================================ */
+
+const SEED = {
+  profile:{
+    name:"Kshitiz Yadav", title:"Product Manager (B2C Growth · AI-Enabled)", location:"Gurgaon, India",
+    experience:"5+ yrs", currentRole:"Manager – Product & Operations, PlanetSpark"
+  },
+
+  /* ---------- RESUME ANALYSIS ---------- */
+  resume:{
+    atsScore:91,
+    atsNote:"Reflects the rewritten ATS-clean version (Resume - Kshitiz Yadav (ATS).docx). Original table-based resume scored ~73.",
+    atsBreakdown:[
+      {k:"Keyword relevance (general PM + AI)", v:93, note:"PRD, GTM, OKRs, roadmap, experimentation, analytics, SQL all present"},
+      {k:"Quantified impact", v:92, note:"Every major bullet carries a metric (ARPU, revenue, %, ₹)"},
+      {k:"Format parse-ability", v:95, note:"Single-column, no tables/graphics — parses cleanly in any ATS"},
+      {k:"Contact & links", v:90, note:"Email, phone, LinkedIn, location all in a clean header"},
+      {k:"Section completeness", v:88, note:"Summary, Skills, Experience, Education, Certs — standard, complete"},
+      {k:"Skills coverage", v:90, note:"Analytics + GTM + experimentation keywords now included"}
+    ],
+    strengths:[
+      "Rare, in-demand combo: product management + hands-on applied AI (LLM integration, prompt engineering, in-house AI VC, chatbot).",
+      "Every major achievement is quantified — ARPU +25% (35k→45k), 20% revenue growth, ₹70L renewals, ₹1.6L/mo saved, 2000+ organic leads/mo.",
+      "End-to-end ownership: shipped an app MVP in 2 months, built CRM + LMS + LPP module from scratch.",
+      "Both growth levers (revenue/ARPU/renewals) AND efficiency levers (automation/cost) — full-stack PM impact.",
+      "Cross-functional leadership: mentored 8 engineers, worked across sales, ops, marketing, design."
+    ],
+    weaknesses:[
+      "Single employer for the entire 5-yr career — no breadth of domains/brands; reads as risk to some recruiters.",
+      "No tier-1 brand or premier institute signal (BBA, Chandigarh Univ., GPA 7/10, Udemy certs are low-signal).",
+      "\"Basic Python\" and \"SQL\" listed without depth — undersells the technical credibility an AI PM needs.",
+      "No explicit PRD / GTM / experimentation-platform language; A/B testing mentioned but not depth of analytics.",
+      "All impact is internal-tooling/edtech-B2C; no evidence of working at scale (M+ users) or in regulated/enterprise contexts."
+    ],
+    keywordGaps:[
+      "Amplitude / Mixpanel (named tools)","RAG / LLMOps / vector DB","SQL depth (beyond 'basic')",
+      "Enterprise / B2B SaaS exposure","Scaled metrics (M+ users / DAU)","Mobile A/B platforms (Optimizely)"
+    ],
+    keywordGapsNote:"Core PM keywords (PRD, GTM, OKRs, RICE, cohort/retention, experimentation, user research) are now IN your rewritten resume. The items below are the ones still genuinely thin — close them through projects/learning, then add truthfully.",
+    missingSkills:[
+      {s:"Product analytics tooling (Amplitude/Mixpanel)", why:"Most PM JDs assume it; you show GA4 only", pri:"High"},
+      {s:"Modern GenAI engineering (RAG, vector DBs, evals/LLMOps)", why:"Differentiates an 'AI PM' from a PM who used ChatGPT", pri:"High"},
+      {s:"Structured experimentation / growth", why:"You did A/B + growth; frame it with a rigorous framework", pri:"Medium"},
+      {s:"Stronger SQL / data fluency", why:"'Basic Python'/'SQL' undersell; aim for confident, demonstrable", pri:"Medium"},
+      {s:"Enterprise / B2B SaaS exposure", why:"Opens higher-comp roles beyond B2C edtech", pri:"Medium"},
+      {s:"Brand / credential signal (top PM cert, scaled metrics)", why:"Offsets single-employer + non-tier-1 background", pri:"Low-Med"}
+    ],
+    positioning:"Mid-level Product Manager (~5 yrs) with a strong B2C growth & monetization record — and an AI/automation skill set that's a genuine differentiator on top, not your whole identity. You sit between PM and Senior PM. Your core story is owning the product lifecycle end-to-end and moving real numbers (ARPU +25%, revenue +20%, ₹70L renewals); AI is the tool that let you ship faster and cheaper. Your ceiling today is set by (a) single-employer background and (b) non-premier brand/credential signal. Lead with general product impact, keep AI as a force-multiplier, and you compete for solid mid-to-senior PM roles across B2C, SaaS, and platform teams.",
+    salary:{
+      note:"Indicative annual ranges for a PM with ~5 yrs, India market (₹ LPA) + remote-intl signal. Verify per offer.",
+      bands:[
+        {seg:"Indian startups / mid-size (current tier)", low:18, high:30, unit:"LPA"},
+        {seg:"AI-first / well-funded product startups", low:25, high:45, unit:"LPA"},
+        {seg:"Top product cos / GCC / FAANG-adjacent", low:35, high:60, unit:"LPA"},
+        {seg:"Remote roles for US/EU companies (USD)", low:35, high:90, unit:"K USD"}
+      ]
+    },
+    careerPaths:[
+      {path:"Growth / Monetization Product Manager", fit:90, note:"ARPU +25%, ₹70L renewals, organic-lead loop = a textbook growth-PM story."},
+      {path:"B2C Consumer Product Manager", fit:88, note:"Your edtech B2C lifecycle work transfers across consumer apps & marketplaces."},
+      {path:"Senior PM — SaaS / Platform", fit:84, note:"CRM/LMS/workflow build-out + automation suits SaaS & internal-platform teams."},
+      {path:"AI-Enabled / GenAI Product Manager", fit:85, note:"A strong bonus track — you've shipped LLM features with revenue attached."},
+      {path:"Edtech Senior PM (Vedantu/PW/upGrad)", fit:83, note:"Domain continuity for a seniority bump."},
+      {path:"Founding / 0→1 PM at an early startup", fit:78, note:"0→1 muscle + breadth fit early-stage; higher risk/upside."}
+    ]
+  },
+
+  /* ---------- RESUME (one-page, ATS) AS STRUCTURED DATA ---------- */
+  resumeDoc:{
+    file:"Kshitiz Yadav - Product Manager Resume.docx",
+    pdf:"Kshitiz Yadav - Product Manager Resume.pdf",
+    pages:1,
+    headline:"Product Manager · B2C Consumer Apps · Growth & Monetization · Two-Sided Platforms · AI-Enabled",
+    contact:"Gurugram, India · +91 8756972501 · kshitizyadav788@gmail.com · linkedin.com/in/kshitizyadav",
+    summary:"Product Manager with 5+ years owning the full B2C product lifecycle across a consumer app, a two-sided student/teacher LMS, a sales CRM, and a product-led growth & renewal engine at a high-growth EdTech startup. Consistent record of moving core metrics — 20% revenue growth, 25% ARPU expansion, ₹70L in product-led renewals, and 2,000+ organic leads/month at 7% conversion. Pairs monetization and unit-economics thinking with hands-on data analysis (SQL, GA4), A/B testing, and shipping production GenAI features.",
+    competencies:"Product Strategy & Roadmapping · Monetization & Unit Economics · Retention & Lifecycle · Funnel & Conversion Optimization · Product Design & Prototyping · A/B Testing & Experimentation · GTM & North-Star Metrics · B2C & Two-Sided Platforms · GenAI Product Development · Stakeholder Management · User Research · Agile/Scrum",
+    skills:[
+      ["Data & Analytics","SQL, GA4, MS Excel (Advanced), Python (basic)"],
+      ["Design & Prototyping","Figma, Adobe Express, Canva AI, wireframing, clickable prototypes"],
+      ["Product & Delivery","JIRA, Confluence, Agile/Scrum, RICE prioritization"],
+      ["AI & Integration","OpenAI / Gemini / Claude APIs, Prompt Engineering, REST APIs, NLP use-cases"]
+    ],
+    experience:[
+      {role:"PlanetSpark — Product Manager", co:"Gurugram · B2C EdTech startup (consumer app, student & teacher LMS, sales CRM, growth & renewal engine, in-house AI layer)", dates:"Mar 2021 – Present", groups:[
+        {h:"Growth & Monetization", items:[
+          "Built the LPP (Learn, Practice, Perform) module — 1:1 sessions, group activities, performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
+          "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that lowered sales cost and generated ₹70L in renewals in a single month (Jan 2025).",
+          "Launched organic acquisition loops surfacing student progress (Sparkline, Word Wisdom, practice classes, workshops), bringing 2,000+ organic leads/month at a 7% conversion rate."
+        ]},
+        {h:"Funnel & Platform (0→1)", items:[
+          "Re-architected the sign-up → demo → enrolment funnel: single-step OTP sign-in, a preference-capture ranking model that surfaces best-fit courses in the counselor VC, 6 API-integrated payment gateways with pre-filled links, and auto-cleared parent-approval on payment — reducing drop-off across sign-up, payment, and enrolment.",
+          "Led the 0→1 launch of the consumer app MVP in 2 months (Feb–Mar 2024: ~1% organic revenue, +10% engagement); built the Student LMS (live classes, feedback reports, PTMs, in-house meeting room), raising course completion 15% and improving NPS."
+        ]},
+        {h:"AI, Design & Automation", items:[
+          "Designed prototypes/MVPs for the app, LMS, and CRM in Figma, Adobe Express, and Canva AI — using Gemini, Claude, ChatGPT, and Codex to accelerate iteration into clickable flows that aligned engineering and stakeholders.",
+          "Shipped a production GenAI layer (speech/text learning, contextual age-appropriate responses) and a support chatbot that cut escalations; revamped the Sales CRM (lead navigation, integrated calling, revenue tracking, target-vs-achievement, incentive management), cutting sales-ops workload 80%.",
+          "Automated incentive flows and enrolment verification (100% coverage), saving ₹1.6L/month and eliminating fake-revenue reporting."
+        ]}
+      ]}
+    ],
+    education:[
+      ["BBA — Chandigarh University, Chandigarh","2019 – 2021"],
+      ["Class XII (ISC), St. Thomas High School, Kanpur","2018"]
+    ],
+    certifications:["Product Management Certification — Udemy (2024)","JIRA Certification — Udemy (2024)"]
+  },
+
+  /* ---------- SKILL GAPS ---------- */
+  skills:{
+    have:[
+      {s:"Prompt Engineering / LLM integration",lvl:85},{s:"AI product lifecycle",lvl:80},
+      {s:"Revenue & monetization (ARPU)",lvl:85},{s:"CRM/LMS product dev",lvl:82},
+      {s:"Stakeholder management",lvl:80},{s:"Roadmapping",lvl:75},
+      {s:"A/B testing",lvl:65},{s:"JIRA / Agile",lvl:80},
+      {s:"Figma / wireframing",lvl:65},{s:"GA4 analytics",lvl:62},
+      {s:"SQL",lvl:50},{s:"Python",lvl:40}
+    ],
+    target:[
+      {s:"Product analytics (Amplitude/Mixpanel)",lvl:75,gap:"new"},
+      {s:"RAG / vector DB / LLMOps",lvl:70,gap:"new"},
+      {s:"Experimentation frameworks",lvl:75,gap:"+10"},
+      {s:"SQL (advanced)",lvl:75,gap:"+25"},
+      {s:"GTM strategy",lvl:70,gap:"new"},
+      {s:"PRD craft & writing",lvl:80,gap:"+15"}
+    ]
+  },
+
+  /* ---------- LIVE JOB MATCHES (pulled from Indeed, Jun 2026) ----------
+     Scored with a GENERAL-PM lens: product lifecycle / growth / B2C fit is
+     the core driver; AI is treated as a bonus skill, not a requirement.     */
+  jobs:[
+    {id:"J5",title:"Product Manager – Consumer Product",co:"Yields and Yards",loc:"Gurugram",url:"https://to.indeed.com/aaqbfklf6rhm",posted:"2026-06-09",fit:86,comp:64,growth:74,prob:80,why:"B2C consumer PM, local — a bull's-eye for your growth/monetization background."},
+    {id:"J9",title:"AI Product Enablement Manager (Oliver Wyman)",co:"Marsh McLennan",loc:"Gurugram",url:"https://to.indeed.com/aap4jm4nfjxg",posted:"2026-06-15",fit:84,comp:80,growth:86,prob:70,why:"Product + ops at a top brand, local; your AI skills are a plus here, not a prerequisite."},
+    {id:"J30",title:"Product Manager",co:"Droom Technology",loc:"Gurugram",url:"https://to.indeed.com/aappyh8stl7t",posted:"2026-02-19",fit:82,comp:70,growth:72,prob:74,why:"Auto-commerce B2C marketplace, local; revenue/funnel work transfers directly."},
+    {id:"J36",title:"Product Manager",co:"Jupiter",loc:"Bangalore",url:"https://to.indeed.com/aazxcj2sc8gj",posted:"2026-06-16",fit:82,comp:74,growth:84,prob:68,why:"Consumer fintech app; your B2C growth + monetization story fits well (relocate/hybrid)."},
+    {id:"J29",title:"Senior Product Manager 1",co:"Nielsen",loc:"Gurugram",url:"https://to.indeed.com/aabgcmhl8w2c",posted:"2026-05-07",fit:82,comp:78,growth:80,prob:66,why:"Data/measurement product, global brand, local; senior bar is a slight stretch."},
+    {id:"J49",title:"Senior Product Manager – Workflow Core",co:"HighLevel",loc:"Remote",url:"https://to.indeed.com/aamztndwtd2t",posted:"2026-05-14",fit:82,comp:80,growth:82,prob:64,why:"Workflow/automation SaaS — mirrors your CRM + automation strength; remote."},
+    {id:"J17",title:"Product Manager I",co:"AlphaSense India",loc:"Remote",url:"https://to.indeed.com/aalbkm29v9y8",posted:"2026-06-18",fit:80,comp:78,growth:86,prob:66,why:"Strong brand, India-based remote; PM I level fits your experience well."},
+    {id:"J32",title:"Senior Product Manager",co:"DrinkPrime",loc:"Bangalore",url:"https://to.indeed.com/aaqztvj6mcmg",posted:"2026-05-18",fit:82,comp:70,growth:80,prob:66,why:"B2C subscription product; subscription monetization is your wheelhouse; senior stretch."},
+    {id:"J7",title:"Product Manager",co:"Thrifty AI",loc:"Noida",url:"https://to.indeed.com/aayfnwf6lchc",posted:"2026-06-15",fit:80,comp:60,growth:78,prob:78,why:"NCR-local product startup; your 0→1 + automation profile fits."},
+    {id:"J19",title:"Product Operations Manager",co:"Remofirst",loc:"Remote",url:"https://to.indeed.com/aaq69mgmkvf6",posted:"2026-06-14",fit:78,comp:70,growth:70,prob:64,why:"Product-ops role; your CRM/process-automation experience is a direct match."},
+    {id:"J37",title:"Product Manager",co:"SymphonyAI",loc:"Bangalore",url:"https://to.indeed.com/aaqcr7stnh4l",posted:"2026-06-11",fit:78,comp:74,growth:80,prob:64,why:"Enterprise product; AI exposure is a bonus, not the whole job."},
+    {id:"J11",title:"Senior Product Manager",co:"Indeed",loc:"Remote",url:"https://to.indeed.com/aacfxmxn6j6y",posted:"2026-06-10",fit:80,comp:86,growth:88,prob:50,why:"Excellent brand & comp; general (not AI) PM; senior bar raises difficulty."},
+    {id:"J16",title:"Product Manager – Data & AI Platform",co:"NUVISTA AI",loc:"Remote",url:"https://to.indeed.com/aavzdphlljp2",posted:"2026-06-02",fit:77,comp:72,growth:84,prob:72,why:"AI-platform PM; your LLM shipping is a differentiator here."},
+    {id:"J4",title:"Product Manager",co:"Navvyasa Consulting",loc:"Gurugram",url:"https://to.indeed.com/aatjl7v8kt7t",posted:"2026-02-19",fit:76,comp:60,growth:68,prob:74,why:"Local generalist PM; solid, straightforward fit."},
+    {id:"J42",title:"Product Manager",co:"Optimiser",loc:"Remote",url:"https://to.indeed.com/aa8k8kttmd2t",posted:"2026-06-16",fit:76,comp:64,growth:70,prob:68,why:"CRM/SaaS product — directly mirrors your CRM-revamp experience."},
+    {id:"J6",title:"Product Manager",co:"Syook",loc:"Noida",url:"https://to.indeed.com/aadvp48skq64",posted:"2026-06-16",fit:75,comp:60,growth:72,prob:70,why:"B2B IoT startup, NCR; broadens you beyond B2C."},
+    {id:"J39",title:"Senior Product Manager I",co:"SIXT",loc:"Bangalore",url:"https://to.indeed.com/aacglwmsfsg6",posted:"2026-05-20",fit:76,comp:78,growth:78,prob:58,why:"Global mobility B2C brand; senior level + relocation."},
+    {id:"J34",title:"Product Manager",co:"Weekday",loc:"Bangalore",url:"https://to.indeed.com/aa6xwsmnzfny",posted:"2026-06-15",fit:74,comp:64,growth:70,prob:66,why:"Startup generalist PM; clean fit for your level."},
+    {id:"J13",title:"Senior Product Manager, AI",co:"Trellix",loc:"Remote",url:"https://to.indeed.com/aa7pnvfhjycm",posted:"2026-05-26",fit:74,comp:82,growth:80,prob:54,why:"AI security product; senior + domain raise the bar."},
+    {id:"J38",title:"Senior Product Manager",co:"JOSYS",loc:"Bangalore",url:"https://to.indeed.com/aaxq8t6j6gxl",posted:"2026-02-20",fit:74,comp:70,growth:74,prob:64,why:"SaaS IT-management product; senior stretch."},
+    {id:"J33",title:"Senior Product Manager",co:"Saviynt",loc:"Bangalore",url:"https://to.indeed.com/aa4h7jtyqfz7",posted:"2026-04-10",fit:72,comp:80,growth:78,prob:56,why:"Enterprise security SaaS; strong comp, but domain + senior gap."},
+    {id:"J31",title:"Senior/Staff Product Manager – AI & Data Platform",co:"Intropeer",loc:"Bangalore",url:"https://to.indeed.com/aawr2cwv2ph2",posted:"2026-06-05",fit:72,comp:76,growth:80,prob:52,why:"Senior/Staff level is a reach; data-platform domain."},
+    {id:"J48",title:"Product Manager (India)",co:"Plan Left",loc:"Remote",url:"https://to.indeed.com/aa7wzwjgt4y2",posted:"2026-06-01",fit:68,comp:60,growth:62,prob:62,why:"Remote India PM; smaller shop, generalist."},
+    {id:"J22",title:"Junior Product Manager",co:"Turning Cloud Solutions",loc:"Gurugram",url:"https://to.indeed.com/aa9xx2fd64gq",posted:"2026-06-17",fit:58,comp:50,growth:60,prob:80,why:"Below your level but local & high-probability — a fast-yes fallback."},
+    {id:"J43",title:"Product Manager",co:"StatValu",loc:"Remote",url:"https://to.indeed.com/aawlxryfbz7r",posted:"2026-06-09",fit:66,comp:60,growth:64,prob:66,why:"Remote generalist PM; analytics-leaning."},
+    {id:"J1",title:"Global Product Owner Sr Mgr – Consolidations",co:"Boston Consulting Group",loc:"Gurugram",url:"https://to.indeed.com/aa94d7d64jnk",posted:"2026-04-21",fit:60,comp:88,growth:86,prob:36,why:"Elite brand/comp but finance-systems PO; senior + domain gap."},
+    /* ----- NAUKRI (pulled live via Chrome, Jun 2026) ----- */
+    {id:"N1",src:"Naukri",title:"Product Manager",co:"UnifyApps",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-qikrecruit-gurugram-2-to-4-years-090626031256",posted:"2026-06-09",fit:85,comp:80,growth:80,prob:76,why:"₹25–40 LPA with end-to-end ownership — strong comp & strengths match; at 5 yrs you're now just above the 2–4 yr band, so pitch as a confident senior IC."},
+    {id:"N2",src:"Naukri",title:"Product Manager",co:"Innocode Ventures",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-innocode-ventures-gurugram-4-to-6-years-271025502347",posted:"2026-05-28",fit:80,comp:66,growth:72,prob:70,why:"Enterprise-SaaS PM (B2B, user research, roadmap); local and right experience band (4–6 yrs)."},
+    {id:"N3",src:"Naukri",title:"Product Manager",co:"Oliv AI",loc:"Remote",url:"https://www.naukri.com/job-listings-product-manager-oliv-ai-remote-5-to-10-years-180626506281",posted:"2026-06-18",fit:76,comp:72,growth:82,prob:60,why:"AI sales product, fully remote; your AI + product mix fits — upper exp band (5–10 yrs) a slight stretch."},
+    {id:"N4",src:"Naukri",title:"Product Manager",co:"Broadway",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-broadway-gurugram-5-to-7-years-150526503469",posted:"2026-05-15",fit:76,comp:64,growth:70,prob:68,why:"Consumer retail/experiences PM; KPI & customer-engagement focus matches your growth work; local."},
+    {id:"N5",src:"Naukri",title:"Product Manager",co:"Versante Software",loc:"Remote",url:"https://www.naukri.com/job-listings-product-manager-versante-software-technologies-remote-3-to-7-years-100326504061",posted:"2026-03-10",fit:68,comp:60,growth:64,prob:64,why:"Remote PM, 3–7 yrs band fits well; smaller firm — verify scope before prioritizing."},
+    {id:"N6",src:"Naukri",title:"Product Manager",co:"Cvent",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-cvent-india-pvt-ltd-gurugram-7-to-9-years-120626505115",posted:"2026-06-12",fit:66,comp:74,growth:74,prob:56,why:"Event-tech SaaS at a known brand, local; the 7–9 yrs band makes it a stretch."},
+    {id:"N7",src:"Naukri",title:"Product Manager",co:"ZIGRAM",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-zigram-gurugram-6-to-9-years-190326020864",posted:"2026-03-19",fit:64,comp:66,growth:70,prob:58,why:"Fintech/RegTech PM (Figma, JIRA, fintech); 6–9 yrs sits above your current band."},
+    {id:"N8",src:"Naukri",title:"Product Manager",co:"TechBlocks",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-techblocks-consulting-pvt-ltd-gurugram-6-to-10-years-160626917462",posted:"2026-06-16",fit:62,comp:70,growth:70,prob:52,why:"Data-heavy product role, local; 6–10 yrs band is a senior stretch."},
+    /* ----- NAUKRI bulk: all PM-titled roles, Gurgaon page 1 (live via Chrome, Jun 2026; fit auto-scored) ----- */
+    {id:"NP1",src:"Naukri",title:"Product Manager",co:"Aakash Educational Services (AESL)",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-aakash-educational-services-aesl-gurugram-3-to-5-years-170326009840",posted:"2026-06-26",fit:84,comp:66,growth:70,prob:70,why:"3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."},
+    {id:"NP2",src:"Naukri",title:"Product Manager",co:"Vivirooms Ecomm",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-vivirooms-gurugram-6-to-11-years-120423502110",posted:"2026-06-05",fit:72,comp:60,growth:70,prob:58,why:"6-11 Yrs · Gurugram · e-commerce; upper band."},
+    {id:"NP3",src:"Naukri",title:"Product Manager (Brokerage) – India",co:"Syfe",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-brokerage-india-syfe-gurugram-6-to-11-years-200226502659",posted:"2026-06-05",fit:72,comp:60,growth:70,prob:58,why:"6-11 Yrs · Gurugram · fintech/brokerage; senior of your band."},
+    {id:"NP4",src:"Naukri",title:"Product Manager",co:"Dario Health Services",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-dario-health-gurugram-5-to-7-years-030626502638",posted:"2026-06-05",fit:80,comp:60,growth:70,prob:70,why:"5-7 Yrs · Gurugram · healthcare (Jira/Confluence/Salesforce) — in-band."},
+    {id:"NP5",src:"Naukri",title:"Product Manager",co:"Wcube",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-wcube-gurugram-5-to-8-years-171121501875",posted:"2026-06-05",fit:80,comp:60,growth:70,prob:70,why:"5-8 Yrs · Gurugram · e-commerce — in-band."},
+    {id:"NP6",src:"Naukri",title:"Product Manager",co:"SOTI",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-soti-india-private-limited-gurugram-2-to-7-years-280526503982",posted:"2026-06-05",fit:80,comp:60,growth:70,prob:70,why:"2-7 Yrs · Gurugram · enterprise mobility SaaS — in-band."},
+    {id:"NP7",src:"Naukri",title:"Product Manager",co:"Aspire Impact Mission Initiatives",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-aspire-impact-mission-initiatives-private-limited-gurugram-5-to-8-years-220526504641",posted:"2026-06-05",fit:78,comp:60,growth:70,prob:68,why:"5-8 Yrs · Gurugram · impact/SaaS — in-band."},
+    {id:"NP8",src:"Naukri",title:"Product Manager",co:"Excel Net Solutions",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-excel-net-solutions-pvt-ltd-gurugram-2-to-3-years-291225505058",posted:"2026-06-05",fit:64,comp:58,growth:68,prob:58,why:"2-3 Yrs · Gurugram — below your level; smaller firm."},
+    {id:"NP9",src:"Naukri",title:"Product Manager",co:"The Fast Media",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-fast-media-private-limited-gurugram-3-to-5-years-181124504895",posted:"2026-06-05",fit:60,comp:58,growth:64,prob:56,why:"3-5 Yrs · Gurugram — ⚠ JD lists Java/MySQL/Scrum; likely a mislabeled dev role, verify."},
+    {id:"NP10",src:"Naukri",title:"Product Manager",co:"Scry Analytics",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-scry-analytics-gurugram-3-to-8-years-060326504438",posted:"2026-06-05",fit:80,comp:60,growth:72,prob:70,why:"3-8 Yrs · Gurugram · AI/analytics product — in-band, AI bonus."},
+    {id:"NP11",src:"Naukri",title:"Product Manager",co:"Aionos",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-aionos-gurugram-8-to-12-years-120925502820",posted:"2026-06-05",fit:64,comp:62,growth:70,prob:54,why:"8-12 Yrs · Gurugram — well above your band."},
+    {id:"NP12",src:"Naukri",title:"Product Manager",co:"Collegedunia",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-collegedunia-web-private-limited-gurugram-0-to-2-years-081024500841",posted:"2026-06-05",fit:68,comp:58,growth:68,prob:60,why:"0-2 Yrs · Gurugram · EdTech (domain match) but below your level."},
+    {id:"NP13",src:"Naukri",title:"Product Manager",co:"Payoneer",loc:"Gurugram",url:"https://www.naukri.com/job-listings-product-manager-payoneer-gurugram-8-to-12-years-130226500965",posted:"2026-06-05",fit:66,comp:72,growth:74,prob:50,why:"8-12 Yrs · Gurugram · fintech, strong brand — above your band but worth a stretch."}
+  ],
+
+  /* ---------- TOP RECRUITMENT FIRMS (PM-focused, India) ---------- */
+  recruiters:[
+    {firm:"Michael Page India", type:"Global executive search", roles:"Product Manager · Senior PM · Head of Product", sectors:"Tech, Fintech, Consumer, SaaS", hq:"Gurugram / Bangalore / Mumbai", fit:"High — mid–senior PM is their core", link:"https://www.michaelpage.co.in/"},
+    {firm:"CareerNet", type:"India's largest tech-talent firm", roles:"APM · PM · Senior PM · Product leadership", sectors:"Internet, Product, Startups, GCCs", hq:"Bangalore (pan-India)", fit:"High — huge product mandate volume", link:"https://careernet.in/"},
+    {firm:"HuQuo", type:"Consulting & recruitment", roles:"Product · Analytics · Tech (mid–senior)", sectors:"Consumer Internet, Fintech, Analytics", hq:"Gurugram (local to you)", fit:"High — NCR-based, your patch", link:"https://huquo.com/"},
+    {firm:"Vito India", type:"Tech & product recruitment", roles:"PM · Senior PM · Product Owner", sectors:"IT, Product, SaaS, Fintech", hq:"Bangalore / Pune", fit:"High — mid-level product focus", link:"https://www.vitoindia.com/"},
+    {firm:"Xpheno", type:"Specialist staffing", roles:"PM · Technical PM · Product roles", sectors:"Tech, Fintech, GCCs", hq:"Bangalore (pan-India)", fit:"Medium-High", link:"https://www.xpheno.com/"},
+    {firm:"ABC Consultants", type:"Executive search (since 1969)", roles:"PM → CPO (mid–senior)", sectors:"Tech, Financial Services, Consumer", hq:"Delhi NCR / Bangalore", fit:"Medium — leans senior", link:"https://www.abcconsultants.in/"},
+    {firm:"Antal International (India)", type:"Global exec recruitment", roles:"PM · Senior PM · Product leadership", sectors:"Tech, Fintech, SaaS", hq:"Multiple India offices", fit:"Medium", link:"https://www.antal.com/"},
+    {firm:"New Era India", type:"Executive search", roles:"Product & Technology leadership", sectors:"Internet, BFSI, Consumer", hq:"Delhi NCR / Bangalore", fit:"Medium — leans senior", link:"https://www.newera.in/"},
+    {firm:"Storm2", type:"Specialist FINTECH product search", roles:"PM → CPO (fintech only)", sectors:"Fintech", hq:"Global (India coverage)", fit:"Medium — only if you target fintech", link:"https://storm2.com/"},
+    {firm:"Longhouse Consulting (CareerNet)", type:"Leadership / exec search", roles:"Senior PM · Director/VP Product · CPO", sectors:"Consumer Internet, Startups, Fintech", hq:"Bangalore", fit:"Future — for your next jump up", link:"https://www.longhouseconsulting.com/"}
+  ],
+
+  /* ---------- SEED TRACKING DATA (editable, persists) ---------- */
+  applications:[
+    {id:1,role:"AI Product Enablement Manager",co:"Marsh McLennan (Oliver Wyman)",stage:"To Apply",date:"2026-06-22",link:"https://to.indeed.com/aap4jm4nfjxg",notes:"Top match. Tailor resume to AI-enablement + ops."},
+    {id:2,role:"Product Manager – Data & AI Platform",co:"NUVISTA AI",stage:"To Apply",date:"2026-06-22",link:"https://to.indeed.com/aavzdphlljp2",notes:"Lead with LLM shipping + revenue."}
+  ],
+  interviews:[],
+  network:[
+    {id:1,name:"(example) Hiring Mgr",co:"NUVISTA AI",channel:"LinkedIn",status:"To Reach Out",date:"2026-06-22",notes:"Find PM/hiring lead; reference AI-platform interest."}
+  ],
+  companies:[
+    {id:1,name:"Marsh McLennan / Oliver Wyman",tier:"A",status:"Researching",notes:"AI enablement, Gurugram. Strong fit + brand."},
+    {id:2,name:"AlphaSense",tier:"A",status:"Researching",notes:"AI market intel; remote India PM I open."},
+    {id:3,name:"PhysicsWallah / Vedantu / upGrad",tier:"B",status:"Watchlist",notes:"Edtech domain continuity for a seniority bump."},
+    {id:4,name:"HighLevel",tier:"B",status:"Watchlist",notes:"SaaS AI platform, Sr PM remote."}
+  ],
+  growth:[
+    {id:1,goal:"Ship a personal RAG / GenAI side-project (public demo + writeup)",cat:"Skill",progress:10,target:"2026-08-31"},
+    {id:2,goal:"Reach confident SQL (window fns, cohort/retention queries)",cat:"Skill",progress:30,target:"2026-08-15"},
+    {id:3,goal:"Rewrite resume: fix table format for ATS, add analytics/GTM keywords",cat:"Brand",progress:20,target:"2026-06-30"},
+    {id:4,goal:"Apply to 15 high-fit roles (fit≥80)",cat:"Pipeline",progress:13,target:"2026-07-31"},
+    {id:5,goal:"Learn Amplitude/Mixpanel (free course + cert)",cat:"Skill",progress:0,target:"2026-07-31"}
+  ]
+};
+
+/* ---------------- STATE / PERSISTENCE ---------------- */
+const LS_KEY="careerDash_v1";
+let DB;
+function load(){
+  const saved=localStorage.getItem(LS_KEY);
+  if(saved){try{DB=JSON.parse(saved);}catch(e){DB=structuredClone(SEED);}}
+  else DB=structuredClone(SEED);
+  // ensure new seed-only (analysis) sections always reflect latest
+  DB.profile=SEED.profile;DB.resume=SEED.resume;DB.skills=SEED.skills;DB.jobs=SEED.jobs;DB.resumeDoc=SEED.resumeDoc;DB.recruiters=SEED.recruiters;
+}
+function save(){DB.savedAt=new Date().toISOString();localStorage.setItem(LS_KEY,JSON.stringify(DB));renderUpdated();}
+function renderUpdated(){document.getElementById('lastUpdated').textContent='Data updated '+new Date(DB.savedAt||Date.now()).toLocaleString();}
+function resetData(){if(confirm('Reset ALL tracking data to seed defaults?')){localStorage.removeItem(LS_KEY);load();save();renderAll();}}
+function exportData(){
+  const blob=new Blob([JSON.stringify(DB,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='career-dashboard-'+new Date().toISOString().slice(0,10)+'.json';a.click();
+}
+const uid=()=>Date.now()+Math.floor(Math.random()*999);
+const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------------- TABS ---------------- */
+const TABS=[
+  ["overview","Overview"],["resumedoc","My Resume"],["resume","Resume Analysis"],["skills","Skill Gaps"],
+  ["jobs","Job Matches"],["apps","Applications"],["interviews","Interviews"],
+  ["network","Networking"],["companies","Target Companies"],["recruiters","Recruiters"],["growth","Growth"]
+];
+function buildTabs(){
+  const t=document.getElementById('tabs');
+  t.innerHTML=TABS.map((x,i)=>`<button class="tab${i===0?' active':''}" data-v="${x[0]}" onclick="switchTab('${x[0]}')">${x[1]}</button>`).join('');
+}
+function switchTab(v){
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.v===v));
+  document.querySelectorAll('.view').forEach(el=>el.classList.toggle('active',el.id==='v-'+v));
+}
+
+/* ---------------- HELPERS ---------------- */
+function color(v){return v>=80?'var(--good)':v>=60?'var(--accent)':v>=45?'var(--warn)':'var(--bad)';}
+function bar(v){return `<div class="bar"><span style="width:${v}%;background:${color(v)}"></span></div>`;}
+function gauge(v,label){
+  const r=52,c=2*Math.PI*r,off=c*(1-v/100);
+  return `<div class="gauge"><svg width="150" height="150" viewBox="0 0 150 150">
+    <circle cx="75" cy="75" r="${r}" fill="none" stroke="var(--panel2)" stroke-width="14"/>
+    <circle cx="75" cy="75" r="${r}" fill="none" stroke="${color(v)}" stroke-width="14"
+      stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${off}"
+      transform="rotate(-90 75 75)"/>
+    <text x="75" y="72" text-anchor="middle" font-size="30" font-weight="800" fill="var(--txt)">${v}</text>
+    <text x="75" y="94" text-anchor="middle" font-size="11" fill="var(--muted)">${label||''}</text>
+  </svg></div>`;
+}
+
+/* ---------------- RENDERERS ---------------- */
+function renderOverview(){
+  const r=DB.resume, apps=DB.applications, nw=DB.network;
+  const pipeline=apps.length, inProg=apps.filter(a=>!['Rejected','Offer'].includes(a.stage)).length;
+  const replies=nw.filter(n=>['Replied','Meeting','Connected'].includes(n.status)).length;
+  const rr=nw.length?Math.round(replies/nw.length*100):0;
+  const topJobs=[...DB.jobs].sort((a,b)=>score(b)-score(a)).slice(0,5);
+  const avgGrowth=Math.round(DB.growth.reduce((s,g)=>s+g.progress,0)/DB.growth.length);
+  document.getElementById('v-overview').innerHTML=`
+   <div class="grid g4">
+     <div class="card"><h3>ATS Score</h3>${gauge(r.atsScore,'/ 100')}</div>
+     <div class="card"><h3>Pipeline</h3><div class="stat">${pipeline}<small> apps</small></div>
+        <div class="mini">${inProg} active</div>
+        <div class="legend">Interviews logged: ${DB.interviews.length}</div></div>
+     <div class="card"><h3>Outreach Response</h3><div class="stat">${rr}<small>%</small></div>
+        <div class="mini">${replies}/${nw.length} replied</div>${bar(rr)}</div>
+     <div class="card"><h3>Growth Progress</h3><div class="stat">${avgGrowth}<small>%</small></div>${bar(avgGrowth)}
+        <div class="legend">${DB.growth.length} goals tracked</div></div>
+   </div>
+   <div class="grid g2" style="margin-top:16px">
+     <div class="card">
+       <h3>Market Positioning</h3>
+       <p style="margin:0">${esc(r.positioning)}</p>
+       <div class="note">Your moat: <b>you've shipped LLM features with real revenue attached</b> — most "AI PMs" can't say that. Lead with it everywhere.</div>
+     </div>
+     <div class="card">
+       <h3>Top 5 Job Matches</h3>
+       <table><thead><tr><th>Role</th><th>Company</th><th class="right">Score</th></tr></thead><tbody>
+       ${topJobs.map(j=>`<tr><td><a href="${j.url}" target="_blank">${esc(j.title)}</a></td>
+         <td class="muted">${esc(j.co)}</td>
+         <td class="right"><span class="scorebadge" style="background:${color(score(j))}22;color:${color(score(j))}">${score(j)}</span></td></tr>`).join('')}
+       </tbody></table>
+       <div class="legend">Composite score = fit 40% · comp 20% · growth 20% · hiring-probability 20%. Full list in <b>Job Matches</b>.</div>
+     </div>
+   </div>
+   <div class="card" style="margin-top:16px">
+     <h3>This Week — Recommended Focus</h3>
+     <ul class="clean">
+       <li><b>Apply to the 2 top matches</b> (Oliver Wyman AI Enablement, NUVISTA AI) — both flagged "To Apply".</li>
+       <li><b>Fix the resume's table format</b> for ATS (biggest single score lever, +~15 pts) and inject analytics/GTM keywords.</li>
+       <li><b>Start the RAG side-project</b> — converts "used ChatGPT" into "built & shipped GenAI", your strongest differentiator.</li>
+       <li><b>Send 3 LinkedIn outreaches</b> to PMs/hiring leads at target companies to lift response rate above ${rr}%.</li>
+     </ul>
+   </div>`;
+}
+
+function renderResumeDoc(){
+  const d=DB.resumeDoc;
+  document.getElementById('v-resumedoc').innerHTML=`
+   <div class="card">
+     <div class="spread">
+       <div>
+         <div class="stat" style="font-size:22px">Kshitiz Yadav</div>
+         <div class="muted" style="margin-top:4px">${esc(d.headline)}</div>
+         <div class="legend" style="margin-top:4px">${esc(d.contact)}</div>
+       </div>
+       <div class="right">
+         <div class="flex" style="justify-content:flex-end">
+           <a class="btn primary" href="${encodeURI(d.file)}" download style="text-decoration:none">⭳ .docx</a>
+           <a class="btn primary" href="${encodeURI(d.pdf)}" download style="text-decoration:none">⭳ .pdf</a>
+         </div>
+         <div class="legend" style="margin-top:6px">${d.pages}-page · ATS-clean · single column</div>
+       </div>
+     </div>
+     <div class="note">Live one-page master resume — merges the depth of your OYO version with one-page ATS structure; scores <b>${DB.resume.atsScore}/100</b>. Regenerate via <code>build_resume.py</code>. <b>To add:</b> a real metric on the funnel bullet (e.g. sign-up→enrolment % lift).</div>
+   </div>
+
+   <div class="card" style="margin-top:16px"><h3>Professional Summary</h3><p style="margin:0">${esc(d.summary)}</p></div>
+
+   <div class="card" style="margin-top:16px"><h3>Core Competencies</h3><p style="margin:0">${esc(d.competencies||'')}</p></div>
+
+   <div class="card" style="margin-top:16px"><h3>Technical Skills & Tools</h3>
+     <table><thead><tr><th style="width:160px">Category</th><th>Skills</th></tr></thead><tbody>
+     ${d.skills.map(s=>`<tr><td><b>${esc(s[0])}</b></td><td>${esc(s[1])}</td></tr>`).join('')}
+     </tbody></table>
+   </div>
+
+   <div class="card" style="margin-top:16px"><h3>Professional Experience</h3>
+     ${d.experience.map(e=>`
+       <div class="row-flex"><b style="font-size:14px">${esc(e.role)}</b><span class="muted nowrap">${esc(e.dates)}</span></div>
+       <div class="muted" style="margin-bottom:8px">${esc(e.co)}</div>
+       <table><thead><tr><th style="width:160px">Area</th><th>Achievements</th></tr></thead><tbody>
+       ${e.groups.map(g=>`<tr><td><b>${esc(g.h)}</b></td><td><ul class="clean">${g.items.map(it=>`<li>${esc(it)}</li>`).join('')}</ul></td></tr>`).join('')}
+       </tbody></table>
+     `).join('')}
+   </div>
+
+   <div class="grid g2" style="margin-top:16px">
+     <div class="card"><h3>Education</h3>
+       <table><tbody>${d.education.map(ed=>`<tr><td>${esc(ed[0])}</td><td class="right muted nowrap">${esc(ed[1])}</td></tr>`).join('')}</tbody></table>
+     </div>
+     <div class="card"><h3>Certifications</h3>
+       <ul class="clean">${d.certifications.map(c=>`<li>${esc(c)}</li>`).join('')}</ul>
+     </div>
+   </div>`;
+}
+
+function renderResume(){
+  const r=DB.resume;
+  document.getElementById('v-resume').innerHTML=`
+   <div class="grid g2">
+     <div class="card">
+       <h3>ATS Score — ${r.atsScore}/100</h3>
+       ${r.atsBreakdown.map(b=>`<div class="row-flex"><span>${esc(b.k)}</span><b style="color:${color(b.v)}">${b.v}</b></div>${bar(b.v)}<div class="legend">${esc(b.note)}</div>`).join('')}
+       <div class="note">✅ ${esc(r.atsNote||'')} Single-column, keyword-rich layout now parses cleanly across ATS systems.</div>
+     </div>
+     <div class="card">
+       <h3>Salary Potential</h3>
+       <div class="legend" style="margin-top:0">${esc(r.salary.note)}</div>
+       ${r.salary.bands.map(b=>`<div style="margin-top:12px"><div class="row-flex"><span>${esc(b.seg)}</span><b class="nowrap">${b.low}–${b.high} ${b.unit}</b></div>${bar(Math.min(100,b.high/(b.unit==='LPA'?60:90)*100))}</div>`).join('')}
+     </div>
+   </div>
+   <div class="grid g2" style="margin-top:16px">
+     <div class="card"><h3>✅ Strengths</h3><ul class="clean">${r.strengths.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div>
+     <div class="card"><h3>⚠️ Weaknesses</h3><ul class="clean">${r.weaknesses.map(s=>`<li>${esc(s)}</li>`).join('')}</ul></div>
+   </div>
+   <div class="grid g2" style="margin-top:16px">
+     <div class="card"><h3>Remaining Gaps to Close</h3><div>${r.keywordGaps.map(k=>`<span class="tag">${esc(k)}</span>`).join('')}</div>
+       <div class="legend">${esc(r.keywordGapsNote||'')}</div></div>
+     <div class="card"><h3>Best-Fit Career Paths</h3>
+       ${r.careerPaths.map(p=>`<div class="row-flex"><span><b>${esc(p.path)}</b></span><span style="color:${color(p.fit)}">${p.fit}% fit</span></div>${bar(p.fit)}<div class="legend">${esc(p.note)}</div>`).join('')}
+     </div>
+   </div>
+   <div class="card" style="margin-top:16px">
+     <h3>Missing Skills — Prioritized</h3>
+     <table><thead><tr><th>Skill</th><th>Why it matters</th><th>Priority</th></tr></thead><tbody>
+     ${r.missingSkills.map(m=>`<tr><td><b>${esc(m.s)}</b></td><td class="muted">${esc(m.why)}</td>
+       <td><span class="pill ${m.pri.includes('High')?'bad':m.pri.includes('Med')?'warn':'acc'}">${esc(m.pri)}</span></td></tr>`).join('')}
+     </tbody></table>
+   </div>`;
+}
+
+function renderSkills(){
+  const s=DB.skills;
+  document.getElementById('v-skills').innerHTML=`
+   <div class="grid g2">
+     <div class="card"><h3>Current Skills</h3>
+       ${s.have.map(x=>`<div class="row-flex"><span>${esc(x.s)}</span><b style="color:${color(x.lvl)}">${x.lvl}</b></div>${bar(x.lvl)}`).join('')}
+     </div>
+     <div class="card"><h3>Target Skills to Build</h3>
+       ${s.target.map(x=>`<div class="row-flex"><span>${esc(x.s)} <span class="pill ${x.gap==='new'?'bad':'warn'}">${esc(x.gap)}</span></span><b style="color:${color(x.lvl)}">${x.lvl}</b></div>${bar(x.lvl)}`).join('')}
+       <div class="note">Closing "RAG/LLMOps" and "product analytics" gaps moves you from "PM who used AI" to "AI PM" — the single highest-leverage upgrade for both comp and fit.</div>
+     </div>
+   </div>`;
+}
+
+/* ----- JOB MATCHES ----- */
+let jobSort={k:'score',dir:-1};
+function score(j){return Math.round(j.fit*0.4 + j.comp*0.2 + j.growth*0.2 + j.prob*0.2);}
+function srcOf(j){
+  if(j.src) return j.src;
+  const u=(j.url||'').toLowerCase();
+  if(u.includes('naukri')) return 'Naukri';
+  if(u.includes('linkedin')) return 'LinkedIn';
+  if(u.includes('wellfound')||u.includes('angel.co')) return 'Wellfound';
+  if(u.includes('workatastartup')||u.includes('ycombinator')) return 'YC';
+  if(u.includes('indeed')) return 'Indeed';
+  return 'Web';
+}
+function srcColor(s){return {Indeed:'#2557a7',Naukri:'#6a3df0',LinkedIn:'#0a66c2',YC:'#ff6600',Wellfound:'#11a3a3',Web:'#888'}[s]||'#888';}
+function srcTag(j){const s=srcOf(j);return `<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`;}
+function agize(d){if(!d)return '—';const then=new Date(d+'T00:00:00');const days=Math.max(0,Math.round((Date.now()-then)/86400000));
+  if(days<=0)return 'Today';if(days===1)return '1d ago';if(days<7)return days+'d ago';if(days<30)return Math.round(days/7)+'w ago';if(days<365)return Math.round(days/30)+'mo ago';return Math.round(days/365)+'y ago';}
+function ageColor(d){if(!d)return 'var(--muted)';const days=Math.max(0,Math.round((Date.now()-new Date(d+'T00:00:00'))/86400000));return days<=7?'var(--good)':days<=21?'var(--warn)':'var(--bad)';}
+function renderJobs(){
+  const rows=[...DB.jobs].sort((a,b)=>{
+    const k=jobSort.k; const av=k==='score'?score(a):(k==='src'?srcOf(a):a[k]), bv=k==='score'?score(b):(k==='src'?srcOf(b):b[k]);
+    if(typeof av==='string')return jobSort.dir*av.localeCompare(bv);
+    return jobSort.dir*(av-bv);
+  });
+  const sources=[...new Set(DB.jobs.map(srcOf))];
+  const applied=new Set(DB.applications.map(a=>a.link));
+  document.getElementById('v-jobs').innerHTML=`
+   <div class="toolbar">
+     <b>${DB.jobs.length} live matches</b>
+     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline</span>
+   </div>
+   <div class="card" style="padding:6px 4px">
+   <table><thead><tr>
+     ${[['title','Role'],['co','Company'],['loc','Location'],['src','Source'],['posted','Posted'],['fit','Fit'],['comp','Comp'],['growth','Growth'],['prob','Hire %'],['score','Score']].map(c=>`<th onclick="setJobSort('${c[0]}')">${c[1]}${jobSort.k===c[0]?(jobSort.dir<0?' ▾':' ▴'):''}</th>`).join('')}
+     <th></th></tr></thead><tbody>
+   ${rows.map(j=>`<tr>
+     <td><a href="${j.url}" target="_blank"><b>${esc(j.title)}</b></a> <a href="${j.url}" target="_blank" class="mini" title="Open application link">↗ apply</a><div class="legend">${esc(j.why)}</div></td>
+     <td class="muted">${esc(j.co)}</td>
+     <td class="muted nowrap">${esc(j.loc)}</td>
+     <td class="nowrap">${srcTag(j)}</td>
+     <td class="nowrap"><b style="color:${ageColor(j.posted)}">${agize(j.posted)}</b><div class="legend" style="margin-top:0">${esc(j.posted||'')}</div></td>
+     <td style="color:${color(j.fit)}">${j.fit}</td>
+     <td style="color:${color(j.comp)}">${j.comp}</td>
+     <td style="color:${color(j.growth)}">${j.growth}</td>
+     <td style="color:${color(j.prob)}">${j.prob}</td>
+     <td><span class="scorebadge" style="background:${color(score(j))}22;color:${color(score(j))}">${score(j)}</span></td>
+     <td class="nowrap">${applied.has(j.url)?'<span class="pill good">tracked</span>':`<button class="btn" onclick="trackJob('${j.id}')">＋ Track</button>`}</td>
+   </tr>`).join('')}
+   </tbody></table></div>
+   <div class="note">Scores are an analytical estimate, <b>calibrated to a 5-year general-PM level</b> (Jun 2026): Senior/Staff roles get a hiring-probability + fit lift (now in-band for you), junior roles a fit cut (you're over-qualified), mid roles a small probability lift. Treat hiring-probability as a prioritization hint, not a guarantee. Always read the full JD before applying.</div>`;
+}
+function setJobSort(k){if(jobSort.k===k)jobSort.dir*=-1;else{jobSort.k=k;jobSort.dir=-1;}renderJobs();}
+function trackJob(id){
+  const j=DB.jobs.find(x=>x.id===id);if(!j)return;
+  DB.applications.push({id:uid(),role:j.title,co:j.co,stage:"To Apply",date:new Date().toISOString().slice(0,10),link:j.url,notes:j.why});
+  save();renderJobs();renderApps();renderOverview();
+  switchTab('apps');
+}
+
+/* ----- APPLICATIONS (kanban) ----- */
+const STAGES=["To Apply","Applied","Screening","Interview","Offer","Rejected"];
+function renderApps(){
+  const cols=STAGES.slice(0,5);
+  document.getElementById('v-apps').innerHTML=`
+   <div class="toolbar">
+     <button class="btn primary" onclick="addApp()">＋ Add application</button>
+     <span class="muted">Total: ${DB.applications.length} · move with the stage dropdown on each card</span>
+   </div>
+   <div class="kanban">
+   ${STAGES.map(st=>`<div class="kcol"><h4>${st} <span class="muted">(${DB.applications.filter(a=>a.stage===st).length})</span></h4>
+     ${DB.applications.filter(a=>a.stage===st).map(a=>appCard(a)).join('')}
+   </div>`).join('')}
+   </div>`;
+}
+function appCard(a){
+  return `<div class="kcard">
+    <div class="spread"><b>${esc(a.role)}</b><button class="btn danger" onclick="delApp(${a.id})">✕</button></div>
+    <div class="muted">${esc(a.co)}</div>
+    ${a.link?`<div><a href="${esc(a.link)}" target="_blank">apply ↗</a></div>`:''}
+    <div style="margin-top:6px"><select onchange="setStage(${a.id},this.value)">${STAGES.map(s=>`<option ${s===a.stage?'selected':''}>${s}</option>`).join('')}</select></div>
+    <div class="legend">${esc(a.date)}</div>
+    ${a.notes?`<div class="legend">${esc(a.notes)}</div>`:''}
+  </div>`;
+}
+function setStage(id,v){const a=DB.applications.find(x=>x.id===id);if(a){a.stage=v;save();renderApps();renderOverview();}}
+function delApp(id){DB.applications=DB.applications.filter(x=>x.id!==id);save();renderApps();renderOverview();}
+function addApp(){
+  const role=prompt("Role title?");if(!role)return;
+  const co=prompt("Company?")||"";
+  DB.applications.push({id:uid(),role,co,stage:"To Apply",date:new Date().toISOString().slice(0,10),link:"",notes:""});
+  save();renderApps();renderOverview();
+}
+
+/* ----- INTERVIEWS ----- */
+function renderInterviews(){
+  document.getElementById('v-interviews').innerHTML=`
+   <div class="toolbar"><button class="btn primary" onclick="addInterview()">＋ Log interview</button>
+     <span class="muted">${DB.interviews.length} logged</span></div>
+   <div class="card" style="padding:6px 4px"><table><thead><tr><th>Role</th><th>Company</th><th>Round</th><th>Date</th><th>Outcome</th><th>Notes</th><th></th></tr></thead><tbody>
+   ${DB.interviews.length?DB.interviews.map(i=>`<tr>
+     <td>${esc(i.role)}</td><td class="muted">${esc(i.co)}</td><td>${esc(i.round)}</td><td class="nowrap">${esc(i.date)}</td>
+     <td><span class="pill ${i.outcome==='Passed'?'good':i.outcome==='Failed'?'bad':'warn'}">${esc(i.outcome)}</span></td>
+     <td class="muted">${esc(i.notes)}</td>
+     <td><button class="btn danger" onclick="delRow('interviews',${i.id})">✕</button></td></tr>`).join('')
+     :`<tr><td colspan="7" class="muted">No interviews yet. They'll appear here once you log them.</td></tr>`}
+   </tbody></table></div>`;
+}
+function addInterview(){
+  const role=prompt("Role?");if(!role)return;
+  const co=prompt("Company?")||"";const round=prompt("Round (e.g. Recruiter / PM round / Case)?")||"R1";
+  const outcome=prompt("Outcome (Scheduled / Passed / Failed)?","Scheduled")||"Scheduled";
+  const notes=prompt("Notes?")||"";
+  DB.interviews.push({id:uid(),role,co,round,date:new Date().toISOString().slice(0,10),outcome,notes});
+  save();renderInterviews();renderOverview();
+}
+
+/* ----- NETWORKING ----- */
+const NSTATUS=["To Reach Out","Sent","Replied","Connected","Meeting","No Response"];
+function renderNetwork(){
+  const replies=DB.network.filter(n=>['Replied','Meeting','Connected'].includes(n.status)).length;
+  const rr=DB.network.length?Math.round(replies/DB.network.length*100):0;
+  document.getElementById('v-network').innerHTML=`
+   <div class="toolbar"><button class="btn primary" onclick="addContact()">＋ Add contact</button>
+     <span class="muted">Response rate: <b style="color:${color(rr)}">${rr}%</b> (${replies}/${DB.network.length})</span></div>
+   <div class="card" style="padding:6px 4px"><table><thead><tr><th>Name</th><th>Company</th><th>Channel</th><th>Status</th><th>Date</th><th>Notes</th><th></th></tr></thead><tbody>
+   ${DB.network.map(n=>`<tr>
+     <td><b>${esc(n.name)}</b></td><td class="muted">${esc(n.co)}</td><td>${esc(n.channel)}</td>
+     <td><select onchange="setNStatus(${n.id},this.value)">${NSTATUS.map(s=>`<option ${s===n.status?'selected':''}>${s}</option>`).join('')}</select></td>
+     <td class="nowrap">${esc(n.date)}</td><td class="muted">${esc(n.notes)}</td>
+     <td><button class="btn danger" onclick="delRow('network',${n.id})">✕</button></td></tr>`).join('')}
+   </tbody></table></div>`;
+}
+function setNStatus(id,v){const n=DB.network.find(x=>x.id===id);if(n){n.status=v;save();renderNetwork();renderOverview();}}
+function addContact(){
+  const name=prompt("Contact name?");if(!name)return;
+  const co=prompt("Company?")||"";const channel=prompt("Channel (LinkedIn/Email/Referral)?","LinkedIn")||"LinkedIn";
+  DB.network.push({id:uid(),name,co,channel,status:"To Reach Out",date:new Date().toISOString().slice(0,10),notes:""});
+  save();renderNetwork();renderOverview();
+}
+
+/* ----- TARGET COMPANIES ----- */
+const CSTATUS=["Watchlist","Researching","Applied","In Process","Closed"];
+function renderCompanies(){
+  document.getElementById('v-companies').innerHTML=`
+   <div class="toolbar"><button class="btn primary" onclick="addCompany()">＋ Add company</button></div>
+   <div class="card" style="padding:6px 4px"><table><thead><tr><th>Company</th><th>Tier</th><th>Status</th><th>Notes</th><th></th></tr></thead><tbody>
+   ${DB.companies.map(c=>`<tr>
+     <td><b>${esc(c.name)}</b></td>
+     <td><span class="pill ${c.tier==='A'?'good':c.tier==='B'?'acc':'warn'}">Tier ${esc(c.tier)}</span></td>
+     <td><select onchange="setCStatus(${c.id},this.value)">${CSTATUS.map(s=>`<option ${s===c.status?'selected':''}>${s}</option>`).join('')}</select></td>
+     <td class="muted">${esc(c.notes)}</td>
+     <td><button class="btn danger" onclick="delRow('companies',${c.id})">✕</button></td></tr>`).join('')}
+   </tbody></table></div>`;
+}
+function setCStatus(id,v){const c=DB.companies.find(x=>x.id===id);if(c){c.status=v;save();renderCompanies();}}
+function addCompany(){
+  const name=prompt("Company name?");if(!name)return;
+  const tier=prompt("Tier (A/B/C)?","B")||"B";
+  DB.companies.push({id:uid(),name,tier:tier.toUpperCase(),status:"Watchlist",notes:""});
+  save();renderCompanies();
+}
+
+/* ----- RECRUITERS ----- */
+function renderRecruiters(){
+  const rs=DB.recruiters||[];
+  document.getElementById('v-recruiters').innerHTML=`
+   <div class="toolbar"><b>${rs.length} recruitment firms hiring Product Managers</b>
+     <span class="muted">· ordered by fit for your 5-yr B2C-PM profile</span></div>
+   <div class="note">How to use: most don't take public applications — <b>submit your CV on each firm's site</b> and <b>connect with their consultants on LinkedIn</b> (search "&lt;firm&gt; product manager recruiter India"). Register with 3–4 (not just one), keep it warm, and re-ping every few weeks.</div>
+   <div class="card" style="padding:6px 4px;margin-top:14px"><table><thead><tr>
+     <th>Firm</th><th>Type</th><th>Roles they hire</th><th>Sectors</th><th>Base</th><th>Fit for you</th></tr></thead><tbody>
+   ${rs.map(r=>`<tr>
+     <td><a href="${r.link}" target="_blank"><b>${esc(r.firm)}</b></a> <a href="${r.link}" target="_blank" class="mini">↗</a></td>
+     <td class="muted">${esc(r.type)}</td>
+     <td>${esc(r.roles)}</td>
+     <td class="muted">${esc(r.sectors)}</td>
+     <td class="muted nowrap">${esc(r.hq)}</td>
+     <td><span class="pill ${/^High/.test(r.fit)?'good':/Medium/.test(r.fit)?'warn':'acc'}">${esc(r.fit)}</span></td>
+   </tr>`).join('')}
+   </tbody></table></div>`;
+}
+
+/* ----- GROWTH ----- */
+function renderGrowth(){
+  document.getElementById('v-growth').innerHTML=`
+   <div class="toolbar"><button class="btn primary" onclick="addGoal()">＋ Add goal</button></div>
+   <div class="grid g2">
+   ${DB.growth.map(g=>`<div class="card">
+     <div class="spread"><div><b>${esc(g.goal)}</b><div class="legend"><span class="tag">${esc(g.cat)}</span> target ${esc(g.target)}</div></div>
+       <button class="btn danger" onclick="delRow('growth',${g.id})">✕</button></div>
+     <div class="row-flex" style="margin-top:8px"><span class="muted">${g.progress}%</span>
+       <input type="range" min="0" max="100" value="${g.progress}" oninput="setProgress(${g.id},this.value)" style="flex:1"></div>
+     ${bar(g.progress)}
+   </div>`).join('')}
+   </div>`;
+}
+function setProgress(id,v){const g=DB.growth.find(x=>x.id===id);if(g){g.progress=+v;save();renderGrowth();renderOverview();}}
+function addGoal(){
+  const goal=prompt("Goal?");if(!goal)return;
+  const cat=prompt("Category (Skill/Brand/Pipeline/Other)?","Skill")||"Skill";
+  const target=prompt("Target date (YYYY-MM-DD)?")||"";
+  DB.growth.push({id:uid(),goal,cat,progress:0,target});
+  save();renderGrowth();renderOverview();
+}
+
+function delRow(coll,id){DB[coll]=DB[coll].filter(x=>x.id!==id);save();renderAll();}
+
+/* ---------------- INIT ---------------- */
+function renderAll(){
+  renderOverview();renderResumeDoc();renderResume();renderSkills();renderJobs();
+  renderApps();renderInterviews();renderNetwork();renderCompanies();renderRecruiters();renderGrowth();
+}
+/* ---- live jobs feed: used when hosted with an hourly-refreshed jobs.json;
+   fails silently when opened locally (file://) so the baked-in jobs stay. ---- */
+async function loadLiveJobs(){
+  try{
+    const res=await fetch('jobs.json',{cache:'no-store'});
+    if(!res.ok) return;
+    const data=await res.json();
+    if(data&&Array.isArray(data.jobs)&&data.jobs.length){
+      DB.jobs=data.jobs;
+      renderJobs();renderOverview();
+      if(data.updated){const el=document.getElementById('lastUpdated');if(el)el.textContent='Jobs auto-refreshed '+new Date(data.updated).toLocaleString();}
+    }
+  }catch(e){/* local/offline: keep baked-in jobs */}
+}
+load();buildTabs();renderAll();renderUpdated();loadLiveJobs();
+</script>
+</body>
+</html>
