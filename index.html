@@ -744,7 +744,7 @@ function renderAll(){
    fails silently when opened locally (file://) so the baked-in jobs stay. ---- */
 async function loadLiveJobs(){
   try{
-    const res=await fetch('jobs.json',{cache:'no-store'});
+    const res=await fetch('jobs.json?t='+Date.now(),{cache:'no-store'});
     if(!res.ok) return;
     const data=await res.json();
     if(data&&Array.isArray(data.jobs)&&data.jobs.length){
