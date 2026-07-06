@@ -567,7 +567,7 @@ function renderJobs(){
   document.getElementById('v-jobs').innerHTML=`
    <div class="toolbar">
      <b>${DB.jobs.length} live matches</b>
-     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" to approve a job for tailoring</span>
+     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" then "Submit new issue" to auto-tailor a resume for that job</span>
    </div>
    <div class="card" style="padding:6px 4px">
    <table><thead><tr>
@@ -598,13 +598,16 @@ function trackJob(id){
   switchTab('apps');
 }
 
-/* ----- TAILOR MY RESUME (approve a job -> queue it for Claude to tailor) -----
-   Static site can't write resumes itself. Approving a job here (a) saves it to a local
-   queue so you don't lose track of it, (b) gives an instant estimated JD-match % if you
-   paste the JD, and (c) copies a ready-to-paste request for a Claude Code chat, which
-   does the actual tailoring and writes "resume" + "matchScore" back onto the job in
-   seed_jobs.json -- at which point this column shows the real download + score. */
-function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-+|-+$)/g,'');}
+/* ----- TAILOR MY RESUME (approve a job -> a GitHub Action tailors it automatically) -----
+   Static site can't run anything itself, but a public GitHub Issue can carry a durable,
+   git-visible signal without exposing any credentials client-side. Approving a job here
+   (a) saves it to a local queue so you don't lose track of it, (b) gives an instant
+   estimated JD-match % if you paste the JD, and (c) opens a pre-filled GitHub Issue --
+   one click on "Submit new issue" there and the "Tailor Resume" Action (triggered by the
+   `tailor-resume` label) fetches the JD, calls Claude to tailor the resume, and writes
+   "resume" + "matchScore" back onto the job in seed_jobs.json. This column then shows
+   the real download + score once that lands. */
+const REPO_URL="https://github.com/kshitizyadav788-svg/career-dashboard";
 function jdMatchScore(jdText){
   if(!jdText) return null;
   const stop=new Set(['the','and','for','with','you','are','our','that','this','will','have','from','your','role','job','team','work','years','experience','including','across','into','who','what','when','their','they','more','than','also','able','such','can','not','all','any','other','skills','requirements','responsibilities']);
@@ -616,35 +619,29 @@ function jdMatchScore(jdText){
   const hits=meaningful.filter(w=>resumeSet.has(w)).length;
   return Math.round(100*hits/meaningful.length);
 }
-function tailorPromptText(req,j){
-  return `Tailor my resume for this job (approved via the dashboard's Tailor My Resume column):
-Role: ${j.title}
-Company: ${j.co}
-Location: ${j.loc}
-JD link: ${j.url}
-${req.jd?('Full JD pasted below:\n'+req.jd):'(No JD pasted -- please fetch the JD from the link above.)'}
-
-Please: extract the must-have keywords, tailor a resume variant (reorder/reword bullets to mirror the JD), aim ATS/JD-match >=85, save it to resumes/${slug(j.co)}-${slug(j.title)}.docx (+ .pdf), and add "resume" and "matchScore" fields to job id "${j.id}" in seed_jobs.json (promote it into seed_jobs.json first if it's a live-fetched job, so it survives the next hourly refresh) -- then commit and push so the dashboard shows the tailored resume + score.`;
-}
-function copyText(text){
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).catch(()=>{});}
+function tailorIssueUrl(req,j){
+  const params=new URLSearchParams({
+    template:'tailor-resume.yml', labels:'tailor-resume',
+    title:`Tailor resume: ${j.title} @ ${j.co}`,
+    job_id:j.id, role:j.title, company:j.co, location:j.loc||'', jd_url:j.url||'', jd_text:req.jd||''
+  });
+  return `${REPO_URL}/issues/new?${params.toString()}`;
 }
 function requestTailor(id){
   const j=DB.jobs.find(x=>x.id===id);if(!j)return;
-  const jd=prompt("Paste the full job description (optional -- gives you an instant estimated match score and helps Claude tailor precisely). Leave blank to skip:","")||"";
+  const jd=prompt("Paste the full job description (optional -- gives you an instant estimated match score and lets the auto-tailor Action produce a sharper resume). Leave blank to let the Action try to fetch the JD itself:","")||"";
   DB.tailorRequests=DB.tailorRequests||[];
   const req={id:uid(),jobId:j.id,title:j.title,co:j.co,url:j.url,jd,requestedAt:new Date().toISOString().slice(0,10)};
   DB.tailorRequests.push(req);
   save();
-  copyText(tailorPromptText(req,j));
-  alert('Saved as "Requested". A ready-to-paste prompt for Claude was copied to your clipboard -- paste it into your Claude Code chat to generate the tailored resume.');
+  window.open(tailorIssueUrl(req,j),'_blank');
+  alert('Saved as "Requested". A pre-filled GitHub Issue just opened in a new tab -- click "Submit new issue" there and the Tailor Resume Action will fetch the JD, tailor your resume, and update this dashboard in a couple of minutes.');
   renderJobs();
 }
-function copyTailorPrompt(jobId){
+function reopenTailorIssue(jobId){
   const j=DB.jobs.find(x=>x.id===jobId);const req=(DB.tailorRequests||[]).find(r=>r.jobId===jobId);
   if(!j||!req)return;
-  copyText(tailorPromptText(req,j));
-  alert('Prompt copied to clipboard.');
+  window.open(tailorIssueUrl(req,j),'_blank');
 }
 function cancelTailor(jobId){
   DB.tailorRequests=(DB.tailorRequests||[]).filter(r=>r.jobId!==jobId);
@@ -664,7 +661,7 @@ function tailorCell(j){
     return `<div>
       <span class="pill warn">Requested</span>${est!=null?` <span class="mini">~${est}% match (est.)</span>`:''}
       <div class="flex" style="margin-top:4px">
-        <button class="btn" onclick="copyTailorPrompt('${j.id}')" title="Copy the Claude prompt again">📋</button>
+        <button class="btn" onclick="reopenTailorIssue('${j.id}')" title="Haven't submitted the issue yet? Reopen it">↗ Reopen issue</button>
         <button class="btn danger" onclick="cancelTailor('${j.id}')" title="Cancel request">✕</button>
       </div>
     </div>`;

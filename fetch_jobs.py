@@ -143,6 +143,26 @@ def fetch_adzuna():
     return out
 
 
+def merge_jobs(seed, fresh):
+    """De-dupe by (title, company), keep the curated/seed version first, sort by composite score."""
+    seen, merged = set(), []
+    for j in seed + fresh:
+        k = (j.get("title", "").strip().lower(), j.get("co", "").strip().lower())
+        if k in seen or not j.get("url"):
+            continue
+        seen.add(k); merged.append(j)
+    merged.sort(key=lambda j: round(j["fit"] * .4 + j["comp"] * .2 + j["growth"] * .2 + j["prob"] * .2),
+                reverse=True)
+    return merged
+
+
+def write_jobs_json(merged, path="jobs.json"):
+    out = {"updated": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
+           "source": "live", "count": len(merged), "jobs": merged}
+    json.dump(out, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return out
+
+
 def main():
     base = []
     try:
@@ -150,20 +170,8 @@ def main():
     except Exception:
         pass
     fresh = fetch_jsearch() + fetch_adzuna()
-
-    # de-dupe by (title + company), keep the curated/seed version first
-    seen, merged = set(), []
-    for j in base + fresh:
-        k = (j.get("title", "").strip().lower(), j.get("co", "").strip().lower())
-        if k in seen or not j.get("url"):
-            continue
-        seen.add(k); merged.append(j)
-
-    merged.sort(key=lambda j: round(j["fit"] * .4 + j["comp"] * .2 + j["growth"] * .2 + j["prob"] * .2),
-                reverse=True)
-    out = {"updated": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
-           "source": "live", "count": len(merged), "jobs": merged}
-    json.dump(out, open("jobs.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    merged = merge_jobs(base, fresh)
+    write_jobs_json(merged)
     print(f"Wrote jobs.json: {len(base)} seed + {len(fresh)} fresh = {len(merged)} unique")
 
 

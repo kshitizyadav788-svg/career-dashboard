@@ -1,0 +1,36 @@
+name: Tailor My Resume
+description: Auto-generate a resume tailored to a specific job. Filled in automatically by the dashboard's "Tailor My Resume" button -- you just need to hit Submit.
+title: "Tailor resume: "
+labels: ["tailor-resume"]
+body:
+  - type: input
+    id: job_id
+    attributes:
+      label: Job ID
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Role / Title
+    validations:
+      required: true
+  - type: input
+    id: company
+    attributes:
+      label: Company
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+  - type: input
+    id: jd_url
+    attributes:
+      label: Job Link (JD URL)
+  - type: textarea
+    id: jd_text
+    attributes:
+      label: Full Job Description (optional, but recommended)
+      description: If you pasted the JD on the dashboard, it's already filled in below. Leave blank to let the Action try to fetch it from the link instead.
