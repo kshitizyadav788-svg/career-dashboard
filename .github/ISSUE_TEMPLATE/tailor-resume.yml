@@ -1,5 +1,5 @@
 name: Tailor My Resume
-description: Auto-generate a resume tailored to a specific job. Filled in automatically by the dashboard's "Tailor My Resume" button -- you just need to hit Submit.
+description: Queues a job for Claude to tailor a resume against, next time you ask it to process this queue. Filled in automatically by the dashboard's "Tailor My Resume" button -- you just need to hit Submit.
 title: "Tailor resume: "
 labels: ["tailor-resume"]
 body:
@@ -33,4 +33,4 @@ body:
     id: jd_text
     attributes:
       label: Full Job Description (optional, but recommended)
-      description: If you pasted the JD on the dashboard, it's already filled in below. Leave blank to let the Action try to fetch it from the link instead.
+      description: If you pasted the JD on the dashboard, it's already filled in below. Leave blank and Claude will fetch it from the link above when processing this request.

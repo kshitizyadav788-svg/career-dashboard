@@ -567,7 +567,7 @@ function renderJobs(){
   document.getElementById('v-jobs').innerHTML=`
    <div class="toolbar">
      <b>${DB.jobs.length} live matches</b>
-     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" then "Submit new issue" to auto-tailor a resume for that job</span>
+     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" then "Submit new issue" to queue that job for Claude to tailor next chat</span>
    </div>
    <div class="card" style="padding:6px 4px">
    <table><thead><tr>
@@ -598,15 +598,16 @@ function trackJob(id){
   switchTab('apps');
 }
 
-/* ----- TAILOR MY RESUME (approve a job -> a GitHub Action tailors it automatically) -----
-   Static site can't run anything itself, but a public GitHub Issue can carry a durable,
-   git-visible signal without exposing any credentials client-side. Approving a job here
-   (a) saves it to a local queue so you don't lose track of it, (b) gives an instant
-   estimated JD-match % if you paste the JD, and (c) opens a pre-filled GitHub Issue --
-   one click on "Submit new issue" there and the "Tailor Resume" Action (triggered by the
-   `tailor-resume` label) fetches the JD, calls Claude to tailor the resume, and writes
-   "resume" + "matchScore" back onto the job in seed_jobs.json. This column then shows
-   the real download + score once that lands. */
+/* ----- TAILOR MY RESUME (approve a job -> queues it for Claude to tailor by hand) -----
+   Static site can't run anything itself, and free automated LLM options turned out to be a
+   dead end (Anthropic has no free tier; Gemini's free tier hit an unresolved account-level
+   quota=0 restriction) -- so this is a durable to-do queue, not an automated pipeline.
+   Approving a job here (a) saves it to a local queue so you don't lose track of it, (b) gives
+   an instant estimated JD-match % if you paste the JD, and (c) opens a pre-filled GitHub Issue
+   (label `tailor-resume`) -- one click on "Submit new issue" there queues it. Next time you're
+   in a Claude Code chat, ask Claude to process the open tailor-resume issues; it tailors the
+   resume, writes "resume" + "matchScore" onto the job in seed_jobs.json, and this column then
+   shows the real download + score. */
 const REPO_URL="https://github.com/kshitizyadav788-svg/career-dashboard";
 function jdMatchScore(jdText){
   if(!jdText) return null;
@@ -635,7 +636,7 @@ function requestTailor(id){
   DB.tailorRequests.push(req);
   save();
   window.open(tailorIssueUrl(req,j),'_blank');
-  alert('Saved as "Requested". A pre-filled GitHub Issue just opened in a new tab -- click "Submit new issue" there and the Tailor Resume Action will fetch the JD, tailor your resume, and update this dashboard in a couple of minutes.');
+  alert('Saved as "Requested". A pre-filled GitHub Issue just opened in a new tab -- click "Submit new issue" there to queue it. Next time you\'re in a Claude Code chat, ask Claude to process your tailor-resume queue and it\'ll tailor the resume, commit it, and this column will show the download + score.');
   renderJobs();
 }
 function reopenTailorIssue(jobId){

@@ -23,57 +23,63 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
 | `seed_jobs.json` | Curated + Naukri roles (no API) always merged into `jobs.json`. Regenerate when re-scraping Naukri. |
 | `fetch_jobs.py` | Hourly refresh: JSearch + Adzuna → score → merge with seed → write `jobs.json`. |
 | `build_resume.py` | Renders Kshitiz's resume to `.docx` from a `DATA` dict via `render(data, out_path)`. Base for tailoring. |
-| `tailor_resume.py` | Runs inside the Tailor Resume Action: fetches the JD, calls Claude to tailor `build_resume.DATA`, renders + converts to PDF, writes `resume`/`matchScore` onto the job in `seed_jobs.json`, regenerates `jobs.json`. |
 | `resumes/` | Generated resumes (base + per-JD tailored versions). |
 | `.github/workflows/refresh-jobs.yml` | Runs `fetch_jobs.py` hourly, commits `jobs.json`. |
-| `.github/workflows/tailor-resume.yml` | Runs `tailor_resume.py` when a `tailor-resume`-labeled issue is opened (see below). |
-| `.github/ISSUE_TEMPLATE/tailor-resume.yml` | The issue form the dashboard deep-links into to trigger tailoring. |
+| `.github/ISSUE_TEMPLATE/tailor-resume.yml` | The issue form the dashboard deep-links into — a durable to-do queue, not an automated trigger (see below). |
 
 ## How hosting / refresh works (already live)
 - Hosted on **GitHub Pages** at `https://kshitizyadav788-svg.github.io/career-dashboard/` (public).
 - Hourly **GitHub Action** refreshes jobs in the cloud — no laptop needed.
-- Secrets in the repo: `RAPIDAPI_KEY` (JSearch), `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `GEMINI_API_KEY` (resume tailoring — free tier, no billing).
+- Secrets in the repo: `RAPIDAPI_KEY` (JSearch), `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`. (`ANTHROPIC_API_KEY`
+  and `GEMINI_API_KEY` are leftover from an abandoned automated-tailoring attempt — see below — and
+  are unused; harmless to leave or remove.)
 - Source reality: **Adzuna** auto-refreshes; **Indeed/LinkedIn/Glassdoor** only once JSearch's free
   plan is subscribed; **Naukri has no API** → refreshed manually via Claude-in-Chrome.
 
-## The resume-tailoring workflow (fully automated, on-demand per job)
-The dashboard's **Job Matches** tab has a **"Tailor My Resume"** column. Clicking "✎ Tailor my
-Resume" on a job (a) optionally prompts for a pasted JD, (b) saves it to a local
-`DB.tailorRequests` queue (per-device, localStorage — shows "Requested" + an instant client-side
-estimated match % if a JD was pasted), and (c) opens a **pre-filled GitHub Issue** using the
-`tailor-resume.yml` issue form. Kshitiz just clicks **"Submit new issue"** — no typing needed.
+## The resume-tailoring workflow (manual, Claude-driven, on-demand)
+**Why not automated:** we tried wiring "click Tailor My Resume" straight through to an unattended
+GitHub Action that called an LLM API and committed the result with zero further input. Anthropic's
+API has no free tier and Kshitiz didn't want to pay for it; swapping to Google Gemini's free tier
+hit an unresolved account-level `quota=0` restriction across every model tried (not a code bug —
+verified by testing 4 different model names, all `limit: 0`). Rather than keep chasing that, the
+tailoring step itself is now something **you (Claude) do by hand in a chat**, using the same
+quality bar as writing any other tailored resume — the GitHub Issue is just a durable to-do queue,
+not a pipeline.
 
-That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.yml`, which runs
-`tailor_resume.py`:
-1. Parses the issue form fields (job id, role, company, location, JD link, optional pasted JD).
-2. If no JD was pasted, fetches the JD link itself (`requests` + BeautifulSoup) — best-effort;
-   some job boards block simple fetches, in which case it tailors generically and caps the score.
-3. Calls the **Gemini API** (free tier, no billing required — switched from the paid Anthropic API
-   for this reason) with `build_resume.DATA` + the JD, instructed to **only reorder/reword existing
-   content — never invent achievements or metrics** — and return a tailored
-   summary/competencies/experience-bullets JSON plus an honest JD-match score. `tailor_resume.py`'s
-   `pick_gemini_model()` **auto-discovers an available "flash" model** at runtime rather than
-   hardcoding a name — Gemini model names/availability shift over time and hardcoded names have
-   already 404'd once during testing. Set `GEMINI_MODEL` to force a specific one if needed.
-4. Renders the tailored `.docx` via `build_resume.render()`, converts to `.pdf` via LibreOffice.
-5. Writes `"resume"` (path) and `"matchScore"` fields onto that job's entry in `seed_jobs.json`
-   (promoting the job into `seed_jobs.json` first if it was only in the live JSearch/Adzuna feed,
-   so it survives the next hourly refresh), then regenerates `jobs.json`.
-6. Commits + pushes (with a same-run conflict-reconciliation step if the hourly refresh Action
-   raced it — same manual fix pattern as any `jobs.json` merge conflict: keep `seed_jobs.json` as
-   authoritative, rebuild `jobs.json` from the remote's fresher live feed).
-7. Comments the match score + resume links on the issue and closes it.
+**The flow:**
+1. The dashboard's **Job Matches** tab has a **"Tailor My Resume"** column. Clicking "✎ Tailor my
+   Resume" on a job (a) optionally prompts for a pasted JD, (b) saves it to a local
+   `DB.tailorRequests` queue (per-device, localStorage — shows "Requested" + an instant client-side
+   estimated match % if a JD was pasted), and (c) opens a **pre-filled GitHub Issue** using the
+   `tailor-resume.yml` issue form. Kshitiz clicks **"Submit new issue"** — that's the only action
+   needed on the dashboard side.
+2. **When Kshitiz asks you to process the tailor-resume queue**, run:
+   `gh issue list --repo kshitizyadav788-svg/career-dashboard --label tailor-resume --state open`
+   and handle each one:
+   a. Read the issue body for job id, role, company, location, JD link, and (usually) the full
+      pasted JD. If no JD was pasted, fetch the JD link yourself.
+   b. Extract the JD's keywords/must-haves.
+   c. Tailor a variant of `build_resume.DATA`: reorder/reword bullets, mirror their language,
+      front-load their requirements. **Never invent achievements, employers, or metrics** — only
+      reorder and re-emphasize what's actually true. **Aim ATS/JD-match ≥ 85.**
+   d. Render via `build_resume.render(data, "resumes/<Company>-<Role>.docx")`, convert to `.pdf`
+      (`soffice --headless --convert-to pdf --outdir resumes "resumes/NAME.docx"` — needs
+      LibreOffice; `brew install --cask libreoffice` on Mac if missing).
+   e. Add `"resume"` (path) and `"matchScore"` (your honest JD-match estimate) fields onto that
+      job's entry in **`seed_jobs.json`** (promote the job into `seed_jobs.json` first if it's only
+      in the live JSearch/Adzuna feed, so it survives the next hourly refresh).
+   f. Regenerate `jobs.json` from `seed_jobs.json` + the live feed (same merge logic as
+      `fetch_jobs.py`'s `merge_jobs()`/`write_jobs_json()` — import and reuse them, don't reimplement).
+   g. `git add resumes/ seed_jobs.json jobs.json && git commit && git push` (pull first; if rejected,
+      it's almost always the hourly refresh's `jobs.json` — regenerate from the remote's fresher
+      live feed + your `seed_jobs.json`, same fix as any `jobs.json` merge conflict).
+   h. `gh issue close <N> --comment "..."` with the match score and resume links.
 
-**If you're asked to debug or extend this pipeline**, the most likely things to need attention are
-(a) JD-fetch reliability for a specific job board's HTML, (b) whether `GEMINI_API_KEY` is set as a
-repo secret (get a free one at aistudio.google.com — no card needed), and (c) whether the
-`tailor-resume` **label exists on the repo** — GitHub silently drops a label referenced in an issue
-template or `?labels=` URL param if that label doesn't already exist; it does not auto-create it.
-If a submitted issue's Action run shows `skipped`, check `gh label list` first. (The repo's default
-Actions token permission is read-only, but both `tailor-resume.yml` and `refresh-jobs.yml` declare
-`permissions: contents: write` explicitly at the workflow level, which overrides that default —
-confirmed working since `refresh-jobs.yml` has pushed hourly commits under the same setup. No repo
-settings change needed.)
+**Gotcha to know about:** GitHub silently drops a label referenced in an issue template's front
+matter (or a `?labels=` URL param) if that label doesn't already exist in the repo — it does not
+auto-create it. The `tailor-resume` label already exists now (`gh label create` was run once), but
+if this ever needs recreating on a fresh repo, create the label first or submitted issues won't
+carry it.
 
 ## Build / run commands
 ```bash
