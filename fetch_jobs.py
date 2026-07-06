@@ -114,7 +114,9 @@ def fetch_jsearch():
                              params={"query": q, "page": "1", "num_pages": "1", "date_posted": "month"},
                              timeout=30)
             r.raise_for_status()
-            data = r.json().get("data", []) or []
+            # /search-v2 nests results one level deeper than the old /search did:
+            # {"data": {"jobs": [...]}} instead of {"data": [...]}
+            data = (r.json().get("data") or {}).get("jobs", []) or []
             out += [norm_jsearch(j) for j in data]
             print(f"· JSearch '{q}': {len(data)}")
         except Exception as e:
