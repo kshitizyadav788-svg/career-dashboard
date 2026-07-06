@@ -26,3 +26,14 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
 - ...
 
 -->
+
+## Open Questions (post-paid — answer whenever, no rush)
+Things flagged during tailoring that need Kshitiz's input, or general resume-strengthening
+ideas Claude noticed. Each entry should say *why* it came up (which job/JD, or what pattern).
+Once answered, move the fact into the sections above and delete the question here.
+
+<!-- Example:
+- **Payment API integration depth** (flagged while tailoring for <Company>, job <id>): JD wanted
+  specifics beyond "6 API-integrated payment gateways" -- which gateways, whose API docs,
+  webhook/reconciliation handling? -->
+

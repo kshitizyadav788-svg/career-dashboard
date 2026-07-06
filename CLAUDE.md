@@ -66,18 +66,38 @@ not a pipeline.
       don't fit the one-page base — and swap in a relevant entry from there instead of a
       less-relevant base bullet. **Never invent achievements, employers, or metrics** — only pull
       from `build_resume.DATA` and `experience_bank.md`. **Aim ATS/JD-match ≥ 85.**
+      **If the JD needs something genuinely missing from both** (e.g. chatbot automation depth,
+      payment API integration specifics, a named tool with no evidence anywhere): **don't block on
+      it and don't invent it.** Instead, this is Kshitiz's preferred flow -- flag it and let him
+      answer post-hoc, on his own time, rather than needing everything upfront:
+        - Comment on the issue with the specific question (e.g. "Can you describe your payment
+          API integration work in more detail? Which gateways, what scope?").
+        - Add `"tailorNote"` (short version of the ask, e.g. `"Needs: payment API integration
+          details"`) and `"tailorIssue"` (the issue number) onto the job in `seed_jobs.json` --
+          the dashboard's Tailor column shows this as a "🏳 Needs info" pill instead of a
+          finished resume.
+        - **Leave the issue open** (don't close it) -- it stays in the queue until answered.
+        - Tailor and finish everything else about the resume that doesn't depend on the missing
+          piece; only the specific gap blocks completion.
+      When Kshitiz answers (on the issue, or in a later chat), add the new fact to
+      `experience_bank.md`, finish the tailoring, then continue with steps d-h below.
+      **Separately**, if you notice something that would generally strengthen the resume
+      (not blocking any specific job, just a good addition) log it under an "Open Questions"
+      section in `experience_bank.md` for Kshitiz to answer whenever -- same post-paid principle.
    d. Render via `build_resume.render(data, "resumes/<Company>-<Role>.docx")`, convert to `.pdf`
       (`soffice --headless --convert-to pdf --outdir resumes "resumes/NAME.docx"` — needs
       LibreOffice; `brew install --cask libreoffice` on Mac if missing).
    e. Add `"resume"` (path) and `"matchScore"` (your honest JD-match estimate) fields onto that
       job's entry in **`seed_jobs.json`** (promote the job into `seed_jobs.json` first if it's only
-      in the live JSearch/Adzuna feed, so it survives the next hourly refresh).
+      in the live JSearch/Adzuna feed, so it survives the next hourly refresh). Clear any
+      `"tailorNote"`/`"tailorIssue"` fields from a prior flag once resolved.
    f. Regenerate `jobs.json` from `seed_jobs.json` + the live feed (same merge logic as
       `fetch_jobs.py`'s `merge_jobs()`/`write_jobs_json()` — import and reuse them, don't reimplement).
    g. `git add resumes/ seed_jobs.json jobs.json && git commit && git push` (pull first; if rejected,
       it's almost always the hourly refresh's `jobs.json` — regenerate from the remote's fresher
       live feed + your `seed_jobs.json`, same fix as any `jobs.json` merge conflict).
-   h. `gh issue close <N> --comment "..."` with the match score and resume links.
+   h. `gh issue close <N> --comment "..."` with the match score and resume links (only once
+      complete -- skip this for issues still waiting on a flagged answer).
 
 **Gotcha to know about:** GitHub silently drops a label referenced in an issue template's front
 matter (or a `?labels=` URL param) if that label doesn't already exist in the repo — it does not

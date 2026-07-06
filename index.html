@@ -567,7 +567,7 @@ function renderJobs(){
   document.getElementById('v-jobs').innerHTML=`
    <div class="toolbar">
      <b>${DB.jobs.length} live matches</b>
-     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" then "Submit new issue" to queue that job for Claude to tailor next chat</span>
+     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" then "Submit new issue" to queue that job for Claude to tailor next chat · "Needs info" means Claude found a gap and left a question on the issue</span>
    </div>
    <div class="card" style="padding:6px 4px">
    <table><thead><tr>
@@ -607,7 +607,10 @@ function trackJob(id){
    (label `tailor-resume`) -- one click on "Submit new issue" there queues it. Next time you're
    in a Claude Code chat, ask Claude to process the open tailor-resume issues; it tailors the
    resume, writes "resume" + "matchScore" onto the job in seed_jobs.json, and this column then
-   shows the real download + score. */
+   shows the real download + score. If the JD needs a skill/project Claude can't find on file,
+   it instead writes "tailorNote" (+ "tailorIssue") onto the job -- shown here as "Needs info" --
+   and asks the specific question as a comment on that GitHub issue; answer it there or in your
+   next chat and Claude finishes the tailoring. */
 const REPO_URL="https://github.com/kshitizyadav788-svg/career-dashboard";
 function jdMatchScore(jdText){
   if(!jdText) return null;
@@ -654,6 +657,13 @@ function tailorCell(j){
     return `<div class="flex" style="gap:6px">
       <a class="btn" href="${encodeURI(j.resume)}" target="_blank" download>⭳ Resume</a>
       ${s!=null?`<span class="scorebadge" style="background:${color(s)}22;color:${color(s)}">${s}</span>`:''}
+    </div>`;
+  }
+  if(j.tailorNote){
+    return `<div>
+      <span class="pill warn">🏳 Needs info</span>
+      <div class="mini" style="margin-top:4px;max-width:220px">${esc(j.tailorNote)}</div>
+      ${j.tailorIssue?`<div style="margin-top:4px"><a href="${REPO_URL}/issues/${j.tailorIssue}" target="_blank" class="mini">↗ reply on issue #${j.tailorIssue}</a></div>`:''}
     </div>`;
   }
   const req=(DB.tailorRequests||[]).find(r=>r.jobId===j.id);
