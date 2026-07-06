@@ -60,10 +60,12 @@ That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.y
    authoritative, rebuild `jobs.json` from the remote's fresher live feed).
 7. Comments the match score + resume links on the issue and closes it.
 
-**If you're asked to debug or extend this pipeline**, the two things most likely to need attention
-are (a) JD-fetch reliability for a specific job board's HTML, and (b) whether `ANTHROPIC_API_KEY`
-is set as a repo secret and the repo's Settings → Actions → "Workflow permissions" is set to
-"Read and write permissions" (required for the Action's `git push` to work).
+**If you're asked to debug or extend this pipeline**, the most likely things to need attention are
+(a) JD-fetch reliability for a specific job board's HTML, and (b) whether `ANTHROPIC_API_KEY` is
+set as a repo secret. (The repo's default Actions token permission is read-only, but both
+`tailor-resume.yml` and `refresh-jobs.yml` declare `permissions: contents: write` explicitly at
+the workflow level, which overrides that default — confirmed working since `refresh-jobs.yml` has
+pushed hourly commits under the same setup. No repo settings change needed.)
 
 ## Build / run commands
 ```bash
