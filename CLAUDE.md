@@ -48,7 +48,7 @@ That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.y
 1. Parses the issue form fields (job id, role, company, location, JD link, optional pasted JD).
 2. If no JD was pasted, fetches the JD link itself (`requests` + BeautifulSoup) — best-effort;
    some job boards block simple fetches, in which case it tailors generically and caps the score.
-3. Calls the **Gemini API** (free tier, model `gemini-2.0-flash` by default, no billing required —
+3. Calls the **Gemini API** (free tier, model `gemini-1.5-flash` by default, no billing required —
    switched from the paid Anthropic API for this reason) with `build_resume.DATA` + the JD,
    instructed to **only reorder/reword existing content — never invent achievements or metrics** —
    and return a tailored summary/competencies/experience-bullets JSON plus an honest JD-match score.

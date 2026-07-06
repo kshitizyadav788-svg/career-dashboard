@@ -11,7 +11,7 @@ seed_jobs.json, then regenerates jobs.json so the dashboard picks it up.
 Required env vars (set by the workflow from the issue event):
   ISSUE_BODY      -- the raw issue body (GitHub issue-form markdown)
   GEMINI_API_KEY  -- repo secret, a free key from aistudio.google.com
-  GEMINI_MODEL    -- optional, defaults to "gemini-2.0-flash"
+  GEMINI_MODEL    -- optional, defaults to "gemini-1.5-flash"
 """
 import os
 import re
@@ -95,7 +95,7 @@ def call_llm(jd_text, role, company):
                                         "matchScore at 65 to reflect the missing JD.)"),
     })
     model = genai.GenerativeModel(
-        os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"),
+        os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"),
         system_instruction=system,
     )
     resp = model.generate_content(
