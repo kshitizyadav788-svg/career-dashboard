@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-06T07:12:18+00:00",
+ "updated": "2026-07-06T10:16:17+00:00",
  "source": "live",
  "count": 120,
  "jobs": [
@@ -575,7 +575,9 @@
    "comp": 62,
    "growth": 68,
    "prob": 66,
-   "why": "Retail e-commerce catalogue PM at a known consumer brand, in-band and local — catalog-ops angle fits your B2C domain."
+   "why": "Retail e-commerce catalogue PM at a known consumer brand, in-band and local — catalog-ops angle fits your B2C domain.",
+   "resume": "resumes/Vishal Mega Mart-Product Manager.docx",
+   "matchScore": 85
   },
   {
    "id": "J6",
@@ -631,7 +633,9 @@
    "comp": 62,
    "growth": 68,
    "prob": 62,
-   "why": "Broad product-strategy generalist role, in-band (4-9 yrs) and local; small/lower-rated firm — verify scope."
+   "why": "Broad product-strategy generalist role, in-band (4-9 yrs) and local; small/lower-rated firm — verify scope.",
+   "resume": "resumes/Velocitai Digital-Product Manager.docx",
+   "matchScore": 80
   },
   {
    "id": "AZ_5786033028",
