@@ -23,13 +23,13 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends libreoffice
 
       - name: Install Python deps
-        run: pip install python-docx requests beautifulsoup4 anthropic
+        run: pip install python-docx requests beautifulsoup4 google-generativeai
 
       - name: Tailor resume
         id: tailor
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python tailor_resume.py
 
       - name: Commit tailored resume + updated job data

@@ -32,7 +32,7 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
 ## How hosting / refresh works (already live)
 - Hosted on **GitHub Pages** at `https://kshitizyadav788-svg.github.io/career-dashboard/` (public).
 - Hourly **GitHub Action** refreshes jobs in the cloud — no laptop needed.
-- Secrets in the repo: `RAPIDAPI_KEY` (JSearch), `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `ANTHROPIC_API_KEY` (resume tailoring).
+- Secrets in the repo: `RAPIDAPI_KEY` (JSearch), `ADZUNA_APP_ID`, `ADZUNA_APP_KEY`, `GEMINI_API_KEY` (resume tailoring — free tier, no billing).
 - Source reality: **Adzuna** auto-refreshes; **Indeed/LinkedIn/Glassdoor** only once JSearch's free
   plan is subscribed; **Naukri has no API** → refreshed manually via Claude-in-Chrome.
 
@@ -48,9 +48,10 @@ That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.y
 1. Parses the issue form fields (job id, role, company, location, JD link, optional pasted JD).
 2. If no JD was pasted, fetches the JD link itself (`requests` + BeautifulSoup) — best-effort;
    some job boards block simple fetches, in which case it tailors generically and caps the score.
-3. Calls the Claude API (model `claude-sonnet-5`) with `build_resume.DATA` + the JD, instructed to
-   **only reorder/reword existing content — never invent achievements or metrics** — and return a
-   tailored summary/competencies/experience-bullets JSON plus an honest JD-match score estimate.
+3. Calls the **Gemini API** (free tier, model `gemini-2.0-flash` by default, no billing required —
+   switched from the paid Anthropic API for this reason) with `build_resume.DATA` + the JD,
+   instructed to **only reorder/reword existing content — never invent achievements or metrics** —
+   and return a tailored summary/competencies/experience-bullets JSON plus an honest JD-match score.
 4. Renders the tailored `.docx` via `build_resume.render()`, converts to `.pdf` via LibreOffice.
 5. Writes `"resume"` (path) and `"matchScore"` fields onto that job's entry in `seed_jobs.json`
    (promoting the job into `seed_jobs.json` first if it was only in the live JSearch/Adzuna feed,
@@ -61,11 +62,15 @@ That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.y
 7. Comments the match score + resume links on the issue and closes it.
 
 **If you're asked to debug or extend this pipeline**, the most likely things to need attention are
-(a) JD-fetch reliability for a specific job board's HTML, and (b) whether `ANTHROPIC_API_KEY` is
-set as a repo secret. (The repo's default Actions token permission is read-only, but both
-`tailor-resume.yml` and `refresh-jobs.yml` declare `permissions: contents: write` explicitly at
-the workflow level, which overrides that default — confirmed working since `refresh-jobs.yml` has
-pushed hourly commits under the same setup. No repo settings change needed.)
+(a) JD-fetch reliability for a specific job board's HTML, (b) whether `GEMINI_API_KEY` is set as a
+repo secret (get a free one at aistudio.google.com — no card needed), and (c) whether the
+`tailor-resume` **label exists on the repo** — GitHub silently drops a label referenced in an issue
+template or `?labels=` URL param if that label doesn't already exist; it does not auto-create it.
+If a submitted issue's Action run shows `skipped`, check `gh label list` first. (The repo's default
+Actions token permission is read-only, but both `tailor-resume.yml` and `refresh-jobs.yml` declare
+`permissions: contents: write` explicitly at the workflow level, which overrides that default —
+confirmed working since `refresh-jobs.yml` has pushed hourly commits under the same setup. No repo
+settings change needed.)
 
 ## Build / run commands
 ```bash

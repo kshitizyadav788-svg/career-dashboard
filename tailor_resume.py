@@ -3,14 +3,15 @@
 Runs inside the "Tailor Resume" GitHub Action, triggered when a dashboard-
 generated issue (label: tailor-resume) is opened.
 
-Fetches the JD, asks Claude to tailor Kshitiz's resume against it (reorder/
-reword only -- never invent achievements), renders the docx/pdf, and writes
-the result back onto the job entry in seed_jobs.json, then regenerates
-jobs.json so the dashboard picks it up.
+Fetches the JD, asks Gemini (free API tier -- no billing required) to tailor
+Kshitiz's resume against it (reorder/reword only -- never invent achievements),
+renders the docx/pdf, and writes the result back onto the job entry in
+seed_jobs.json, then regenerates jobs.json so the dashboard picks it up.
 
 Required env vars (set by the workflow from the issue event):
-  ISSUE_BODY         -- the raw issue body (GitHub issue-form markdown)
-  ANTHROPIC_API_KEY  -- repo secret, used by the Anthropic SDK directly
+  ISSUE_BODY      -- the raw issue body (GitHub issue-form markdown)
+  GEMINI_API_KEY  -- repo secret, a free key from aistudio.google.com
+  GEMINI_MODEL    -- optional, defaults to "gemini-2.0-flash"
 """
 import os
 import re
@@ -69,17 +70,17 @@ def fetch_jd_text(url):
         return ""
 
 
-def call_claude(jd_text, role, company):
-    from anthropic import Anthropic
-    client = Anthropic()  # reads ANTHROPIC_API_KEY from env
+def call_llm(jd_text, role, company):
+    """Uses Google Gemini's free API tier (no billing required) to tailor the resume content."""
+    import google.generativeai as genai
+    genai.configure(api_key=os.environ["GEMINI_API_KEY"])
     base = build_resume.DATA
     system = (
         "You are tailoring Kshitiz Yadav's one-page Product Manager resume for a specific job. "
         "He is a general B2C-growth Product Manager (~5 yrs) -- AI is a force-multiplier skill, "
         "not his whole identity. Never invent achievements, employers, or metrics; only reorder, "
         "reword, and re-emphasize content that is already in his base resume below so it mirrors "
-        "the JD's language and priorities. Return ONLY valid JSON (no prose, no markdown fences) "
-        "matching exactly this schema: "
+        "the JD's language and priorities. Return ONLY valid JSON matching exactly this schema: "
         '{"summary": string, "competencies": string, '
         '"groups": [{"heading": string, "bullets": [string, ...]}], '
         '"matchScore": integer 0-100 (honest ATS/JD-keyword-match estimate for the tailored resume), '
@@ -93,16 +94,18 @@ def call_claude(jd_text, role, company):
                                         "title/company using the base resume as-is, and cap "
                                         "matchScore at 65 to reflect the missing JD.)"),
     })
-    resp = client.messages.create(
-        model="claude-sonnet-5",
-        max_tokens=4000,
-        system=system,
-        messages=[{"role": "user", "content": user}],
+    model = genai.GenerativeModel(
+        os.environ.get("GEMINI_MODEL", "gemini-2.0-flash"),
+        system_instruction=system,
     )
-    text = "".join(b.text for b in resp.content if b.type == "text")
+    resp = model.generate_content(
+        user,
+        generation_config={"response_mime_type": "application/json"},
+    )
+    text = resp.text
     m = re.search(r"\{.*\}", text, re.S)
     if not m:
-        raise ValueError("Claude did not return JSON: " + text[:500])
+        raise ValueError("Gemini did not return JSON: " + text[:500])
     return json.loads(m.group(0))
 
 
@@ -127,7 +130,7 @@ def main():
     if not jd_text:
         jd_text = fetch_jd_text(jd_url)
 
-    tailored = call_claude(jd_text, role, company)
+    tailored = call_llm(jd_text, role, company)
 
     data = json.loads(json.dumps(build_resume.DATA))  # deep copy
     data["summary"] = tailored.get("summary") or data["summary"]
