@@ -48,10 +48,13 @@ That issue (labeled `tailor-resume`) triggers `.github/workflows/tailor-resume.y
 1. Parses the issue form fields (job id, role, company, location, JD link, optional pasted JD).
 2. If no JD was pasted, fetches the JD link itself (`requests` + BeautifulSoup) — best-effort;
    some job boards block simple fetches, in which case it tailors generically and caps the score.
-3. Calls the **Gemini API** (free tier, model `gemini-1.5-flash` by default, no billing required —
-   switched from the paid Anthropic API for this reason) with `build_resume.DATA` + the JD,
-   instructed to **only reorder/reword existing content — never invent achievements or metrics** —
-   and return a tailored summary/competencies/experience-bullets JSON plus an honest JD-match score.
+3. Calls the **Gemini API** (free tier, no billing required — switched from the paid Anthropic API
+   for this reason) with `build_resume.DATA` + the JD, instructed to **only reorder/reword existing
+   content — never invent achievements or metrics** — and return a tailored
+   summary/competencies/experience-bullets JSON plus an honest JD-match score. `tailor_resume.py`'s
+   `pick_gemini_model()` **auto-discovers an available "flash" model** at runtime rather than
+   hardcoding a name — Gemini model names/availability shift over time and hardcoded names have
+   already 404'd once during testing. Set `GEMINI_MODEL` to force a specific one if needed.
 4. Renders the tailored `.docx` via `build_resume.render()`, converts to `.pdf` via LibreOffice.
 5. Writes `"resume"` (path) and `"matchScore"` fields onto that job's entry in `seed_jobs.json`
    (promoting the job into `seed_jobs.json` first if it was only in the live JSearch/Adzuna feed,

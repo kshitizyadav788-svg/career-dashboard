@@ -11,7 +11,8 @@ seed_jobs.json, then regenerates jobs.json so the dashboard picks it up.
 Required env vars (set by the workflow from the issue event):
   ISSUE_BODY      -- the raw issue body (GitHub issue-form markdown)
   GEMINI_API_KEY  -- repo secret, a free key from aistudio.google.com
-  GEMINI_MODEL    -- optional, defaults to "gemini-1.5-flash"
+  GEMINI_MODEL    -- optional; if unset, auto-discovers an available "flash" model
+                     (Gemini model names/availability change over time)
 """
 import os
 import re
@@ -70,10 +71,31 @@ def fetch_jd_text(url):
         return ""
 
 
+def pick_gemini_model(genai):
+    """Gemini model availability shifts over time; auto-discover a live 'flash' model
+    rather than hardcoding a name that can 404 once Google deprecates it."""
+    override = os.environ.get("GEMINI_MODEL")
+    if override:
+        return override
+    try:
+        models = list(genai.list_models())
+    except Exception as e:
+        print(f"Could not list Gemini models ({e}); falling back to gemini-1.5-flash", file=sys.stderr)
+        return "gemini-1.5-flash"
+    names = [m.name.split("/")[-1] for m in models
+             if "generateContent" in getattr(m, "supported_generation_methods", [])]
+    flash = sorted(n for n in names if "flash" in n and "8b" not in n and "tts" not in n and "image" not in n)
+    if flash:
+        return flash[-1]
+    return names[0] if names else "gemini-1.5-flash"
+
+
 def call_llm(jd_text, role, company):
     """Uses Google Gemini's free API tier (no billing required) to tailor the resume content."""
     import google.generativeai as genai
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+    model_name = pick_gemini_model(genai)
+    print(f"Using Gemini model: {model_name}", file=sys.stderr)
     base = build_resume.DATA
     system = (
         "You are tailoring Kshitiz Yadav's one-page Product Manager resume for a specific job. "
@@ -94,10 +116,7 @@ def call_llm(jd_text, role, company):
                                         "title/company using the base resume as-is, and cap "
                                         "matchScore at 65 to reflect the missing JD.)"),
     })
-    model = genai.GenerativeModel(
-        os.environ.get("GEMINI_MODEL", "gemini-1.5-flash"),
-        system_instruction=system,
-    )
+    model = genai.GenerativeModel(model_name, system_instruction=system)
     resp = model.generate_content(
         user,
         generation_config={"response_mime_type": "application/json"},
