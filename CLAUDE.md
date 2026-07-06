@@ -23,6 +23,7 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
 | `seed_jobs.json` | Curated + Naukri roles (no API) always merged into `jobs.json`. Regenerate when re-scraping Naukri. |
 | `fetch_jobs.py` | Hourly refresh: JSearch + Adzuna → score → merge with seed → write `jobs.json`. |
 | `build_resume.py` | Renders Kshitiz's resume to `.docx` from a `DATA` dict via `render(data, out_path)`. Base for tailoring. |
+| `experience_bank.md` | Pool of real projects/skills Kshitiz has done but that don't fit the one-page base resume. Pull from here when a JD needs something `build_resume.DATA` doesn't cover -- never invent. Add to it whenever he mentions something new. |
 | `resumes/` | Generated resumes (base + per-JD tailored versions). |
 | `.github/workflows/refresh-jobs.yml` | Runs `fetch_jobs.py` hourly, commits `jobs.json`. |
 | `.github/ISSUE_TEMPLATE/tailor-resume.yml` | The issue form the dashboard deep-links into — a durable to-do queue, not an automated trigger (see below). |
@@ -60,8 +61,11 @@ not a pipeline.
       pasted JD. If no JD was pasted, fetch the JD link yourself.
    b. Extract the JD's keywords/must-haves.
    c. Tailor a variant of `build_resume.DATA`: reorder/reword bullets, mirror their language,
-      front-load their requirements. **Never invent achievements, employers, or metrics** — only
-      reorder and re-emphasize what's actually true. **Aim ATS/JD-match ≥ 85.**
+      front-load their requirements. If the JD needs a skill/tool/domain not covered by the base
+      resume, check **`experience_bank.md`** first — it holds real projects Kshitiz has done that
+      don't fit the one-page base — and swap in a relevant entry from there instead of a
+      less-relevant base bullet. **Never invent achievements, employers, or metrics** — only pull
+      from `build_resume.DATA` and `experience_bank.md`. **Aim ATS/JD-match ≥ 85.**
    d. Render via `build_resume.render(data, "resumes/<Company>-<Role>.docx")`, convert to `.pdf`
       (`soffice --headless --convert-to pdf --outdir resumes "resumes/NAME.docx"` — needs
       LibreOffice; `brew install --cask libreoffice` on Mac if missing).
