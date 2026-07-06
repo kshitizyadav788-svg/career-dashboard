@@ -56,8 +56,12 @@ def score_fit(title, loc, exp_years=None):
     if "junior" in t or "associate" in t or "apm" in t:
         f -= 8          # below level
     L = (loc or "").lower()
-    if any(c in L for c in ["gurgaon", "gurugram", "delhi", "noida", "remote"]):
-        f += 3
+    if any(c in L for c in ["gurgaon", "gurugram"]):
+        f += 8          # top priority: home base
+    elif any(c in L for c in ["bangalore", "bengaluru"]):
+        f += 5          # second priority
+    elif any(c in L for c in ["delhi", "noida", "remote"]):
+        f += 2
     if any(k in t for k in ["growth", "monetization", "consumer", "b2c", "platform"]):
         f += 3
     return max(50, min(90, f))

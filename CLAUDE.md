@@ -7,6 +7,9 @@ GitHub is the single source of truth; work from a fresh `git pull` and end with 
 ## Who this is for
 Kshitiz Yadav — **Product Manager, ~5 yrs**, Gurgaon (open to remote/Bangalore).
 Positioning: **general B2C-growth PM first; AI is a skill/force-multiplier, NOT the identity.**
+**Location priority: Gurugram first, then Bangalore** — baked into the composite job score
+(+8 Gurugram, +5 Bangalore) in both `fetch_jobs.py`'s `score_fit()` and `index.html`'s
+client-side `score()`/`locBonus()`, so these cities sort to the top of Job Matches by default.
 Signature wins (use these when tailoring resumes): +20% revenue, +25% ARPU (₹35K→₹45K),
 ₹70L/month product-led renewals, funnel re-architecture (single-step OTP, preference→ranking
 model, 6 payment gateways), consumer app MVP in 2 months, Sales CRM revamp (−80% ops), ₹1.6L/mo
@@ -31,14 +34,26 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
   plan is subscribed; **Naukri has no API** → refreshed manually via Claude-in-Chrome.
 
 ## The resume-tailoring workflow (on-demand, per targeted job)
-Static site can't write resumes itself — Claude generates them. Steps:
-1. Get the target job's **full JD** (user pastes it, or Claude fetches the job's link).
+Static site can't write resumes itself — Claude generates them. The dashboard's **Job Matches**
+tab has a **"Tailor My Resume"** column: clicking "✎ Tailor my Resume" on a job (a) optionally
+prompts for the pasted JD, (b) saves it to a local `DB.tailorRequests` queue (per-device,
+localStorage — shows "Requested" + an instant client-side estimated match % if a JD was pasted),
+and (c) copies a ready-made request to the clipboard for Kshitiz to paste into a Claude Code chat.
+**When you receive that pasted request, do this:**
+1. Get the target job's **full JD** (it's usually pasted in the request; otherwise fetch the JD link).
 2. Extract the JD's keywords / must-haves.
 3. Copy `build_resume.py` → tailor a variant: reorder bullets, mirror their language, front-load
-   their requirements. **Aim ATS ≥ 85** and keep it recruiter-pleasing (strong top third, quantified).
+   their requirements. **Aim ATS/JD-match ≥ 85** and keep it recruiter-pleasing (strong top third, quantified).
 4. Output to `resumes/<Company>-<Role>.docx` and convert to `.pdf` (see build commands).
-5. Wire it into the dashboard's Resume column + record a JD-match score.
-6. `git add resumes/ index.html && git commit && git push`.
+5. Add `"resume"` (path, e.g. `"resumes/Acme-Product-Manager.docx"`) and `"matchScore"` (the ATS/JD-match
+   number) fields directly onto that job's entry in **`seed_jobs.json`** — this is what makes the
+   dashboard's Tailor column show the download + score instead of "Requested". If the job came from
+   the live JSearch/Adzuna feed (not already in `seed_jobs.json`), **copy/promote the full job entry
+   into `seed_jobs.json` first** (with the new fields added), otherwise the next hourly refresh
+   overwrites `jobs.json` from scratch and the tailored-resume link is lost.
+6. Regenerate `jobs.json` from `seed_jobs.json` + the live feed (same merge logic as `fetch_jobs.py`'s
+   `main()`) so the change shows up without waiting for the next hourly run.
+7. `git add resumes/ seed_jobs.json jobs.json && git commit && git push`.
 
 ## Build / run commands
 ```bash
@@ -68,4 +83,3 @@ If push is rejected → `git pull` then `git push` again. Never force-push (the 
 - [ ] Finish Naukri profile edits (Summary + Employment) — content in the chat history.
 - [ ] Optional: make site private (Cloudflare Pages + Access) — currently PUBLIC.
 - [ ] Optional: cross-device sync of tracking data (Supabase) — currently per-device localStorage.
-- [ ] Build the "Tailor my resume?" column + tailored resumes per job.

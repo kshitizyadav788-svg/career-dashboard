@@ -328,7 +328,10 @@ const SEED = {
     {id:3,goal:"Rewrite resume: fix table format for ATS, add analytics/GTM keywords",cat:"Brand",progress:20,target:"2026-06-30"},
     {id:4,goal:"Apply to 15 high-fit roles (fit≥80)",cat:"Pipeline",progress:13,target:"2026-07-31"},
     {id:5,goal:"Learn Amplitude/Mixpanel (free course + cert)",cat:"Skill",progress:0,target:"2026-07-31"}
-  ]
+  ],
+
+  /* ---------- TAILOR-RESUME REQUESTS (approved jobs queue, persists per device) ---------- */
+  tailorRequests:[]
 };
 
 /* ---------------- STATE / PERSISTENCE ---------------- */
@@ -340,6 +343,7 @@ function load(){
   else DB=structuredClone(SEED);
   // ensure new seed-only (analysis) sections always reflect latest
   DB.profile=SEED.profile;DB.resume=SEED.resume;DB.skills=SEED.skills;DB.jobs=SEED.jobs;DB.resumeDoc=SEED.resumeDoc;DB.recruiters=SEED.recruiters;
+  DB.tailorRequests=DB.tailorRequests||[]; // user-tracking queue: persists across loads, not reset from SEED
 }
 function save(){DB.savedAt=new Date().toISOString();localStorage.setItem(LS_KEY,JSON.stringify(DB));renderUpdated();}
 function renderUpdated(){document.getElementById('lastUpdated').textContent='Data updated '+new Date(DB.savedAt||Date.now()).toLocaleString();}
@@ -530,7 +534,13 @@ function renderSkills(){
 
 /* ----- JOB MATCHES ----- */
 let jobSort={k:'score',dir:-1};
-function score(j){return Math.round(j.fit*0.4 + j.comp*0.2 + j.growth*0.2 + j.prob*0.2);}
+function locBonus(loc){
+  const l=(loc||'').toLowerCase();
+  if(l.includes('gurugram')||l.includes('gurgaon')) return 8;
+  if(l.includes('bangalore')||l.includes('bengaluru')) return 5;
+  return 0;
+}
+function score(j){return Math.min(100,Math.round(j.fit*0.4 + j.comp*0.2 + j.growth*0.2 + j.prob*0.2) + locBonus(j.loc));}
 function srcOf(j){
   if(j.src) return j.src;
   const u=(j.url||'').toLowerCase();
@@ -557,12 +567,12 @@ function renderJobs(){
   document.getElementById('v-jobs').innerHTML=`
    <div class="toolbar">
      <b>${DB.jobs.length} live matches</b>
-     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline</span>
+     <span class="muted">· sources: ${sources.map(s=>`<span class="pill" style="background:${srcColor(s)}22;color:${srcColor(s)}">${esc(s)}</span>`).join(' ')} · click a title to apply · click "＋ Track" to push into your pipeline · click "✎ Tailor my Resume" to approve a job for tailoring</span>
    </div>
    <div class="card" style="padding:6px 4px">
    <table><thead><tr>
      ${[['title','Role'],['co','Company'],['loc','Location'],['src','Source'],['posted','Posted'],['fit','Fit'],['comp','Comp'],['growth','Growth'],['prob','Hire %'],['score','Score']].map(c=>`<th onclick="setJobSort('${c[0]}')">${c[1]}${jobSort.k===c[0]?(jobSort.dir<0?' ▾':' ▴'):''}</th>`).join('')}
-     <th></th></tr></thead><tbody>
+     <th></th><th>Tailor My Resume</th></tr></thead><tbody>
    ${rows.map(j=>`<tr>
      <td><a href="${j.url}" target="_blank"><b>${esc(j.title)}</b></a> <a href="${j.url}" target="_blank" class="mini" title="Open application link">↗ apply</a><div class="legend">${esc(j.why)}</div></td>
      <td class="muted">${esc(j.co)}</td>
@@ -575,9 +585,10 @@ function renderJobs(){
      <td style="color:${color(j.prob)}">${j.prob}</td>
      <td><span class="scorebadge" style="background:${color(score(j))}22;color:${color(score(j))}">${score(j)}</span></td>
      <td class="nowrap">${applied.has(j.url)?'<span class="pill good">tracked</span>':`<button class="btn" onclick="trackJob('${j.id}')">＋ Track</button>`}</td>
+     <td class="nowrap">${tailorCell(j)}</td>
    </tr>`).join('')}
    </tbody></table></div>
-   <div class="note">Scores are an analytical estimate, <b>calibrated to a 5-year general-PM level</b> (Jun 2026): Senior/Staff roles get a hiring-probability + fit lift (now in-band for you), junior roles a fit cut (you're over-qualified), mid roles a small probability lift. Treat hiring-probability as a prioritization hint, not a guarantee. Always read the full JD before applying.</div>`;
+   <div class="note">Scores are an analytical estimate, <b>calibrated to a 5-year general-PM level</b> (Jun 2026): Senior/Staff roles get a hiring-probability + fit lift (now in-band for you), junior roles a fit cut (you're over-qualified), mid roles a small probability lift. <b>Location priority: Gurugram (+8) then Bangalore (+5)</b> are added to the composite score so your top target cities sort to the top by default. Treat hiring-probability as a prioritization hint, not a guarantee. Always read the full JD before applying.</div>`;
 }
 function setJobSort(k){if(jobSort.k===k)jobSort.dir*=-1;else{jobSort.k=k;jobSort.dir=-1;}renderJobs();}
 function trackJob(id){
@@ -585,6 +596,80 @@ function trackJob(id){
   DB.applications.push({id:uid(),role:j.title,co:j.co,stage:"To Apply",date:new Date().toISOString().slice(0,10),link:j.url,notes:j.why});
   save();renderJobs();renderApps();renderOverview();
   switchTab('apps');
+}
+
+/* ----- TAILOR MY RESUME (approve a job -> queue it for Claude to tailor) -----
+   Static site can't write resumes itself. Approving a job here (a) saves it to a local
+   queue so you don't lose track of it, (b) gives an instant estimated JD-match % if you
+   paste the JD, and (c) copies a ready-to-paste request for a Claude Code chat, which
+   does the actual tailoring and writes "resume" + "matchScore" back onto the job in
+   seed_jobs.json -- at which point this column shows the real download + score. */
+function slug(s){return (s||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-+|-+$)/g,'');}
+function jdMatchScore(jdText){
+  if(!jdText) return null;
+  const stop=new Set(['the','and','for','with','you','are','our','that','this','will','have','from','your','role','job','team','work','years','experience','including','across','into','who','what','when','their','they','more','than','also','able','such','can','not','all','any','other','skills','requirements','responsibilities']);
+  const resumeText=(DB.resumeDoc.competencies+' '+DB.resumeDoc.summary+' '+DB.resumeDoc.skills.map(s=>s[1]).join(' ')).toLowerCase();
+  const resumeSet=new Set((resumeText.match(/[a-z][a-z0-9+.#/-]{2,}/g)||[]).filter(w=>!stop.has(w)));
+  const jdWords=(jdText.toLowerCase().match(/[a-z][a-z0-9+.#/-]{2,}/g)||[]).filter(w=>!stop.has(w));
+  const meaningful=[...new Set(jdWords)];
+  if(!meaningful.length) return null;
+  const hits=meaningful.filter(w=>resumeSet.has(w)).length;
+  return Math.round(100*hits/meaningful.length);
+}
+function tailorPromptText(req,j){
+  return `Tailor my resume for this job (approved via the dashboard's Tailor My Resume column):
+Role: ${j.title}
+Company: ${j.co}
+Location: ${j.loc}
+JD link: ${j.url}
+${req.jd?('Full JD pasted below:\n'+req.jd):'(No JD pasted -- please fetch the JD from the link above.)'}
+
+Please: extract the must-have keywords, tailor a resume variant (reorder/reword bullets to mirror the JD), aim ATS/JD-match >=85, save it to resumes/${slug(j.co)}-${slug(j.title)}.docx (+ .pdf), and add "resume" and "matchScore" fields to job id "${j.id}" in seed_jobs.json (promote it into seed_jobs.json first if it's a live-fetched job, so it survives the next hourly refresh) -- then commit and push so the dashboard shows the tailored resume + score.`;
+}
+function copyText(text){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).catch(()=>{});}
+}
+function requestTailor(id){
+  const j=DB.jobs.find(x=>x.id===id);if(!j)return;
+  const jd=prompt("Paste the full job description (optional -- gives you an instant estimated match score and helps Claude tailor precisely). Leave blank to skip:","")||"";
+  DB.tailorRequests=DB.tailorRequests||[];
+  const req={id:uid(),jobId:j.id,title:j.title,co:j.co,url:j.url,jd,requestedAt:new Date().toISOString().slice(0,10)};
+  DB.tailorRequests.push(req);
+  save();
+  copyText(tailorPromptText(req,j));
+  alert('Saved as "Requested". A ready-to-paste prompt for Claude was copied to your clipboard -- paste it into your Claude Code chat to generate the tailored resume.');
+  renderJobs();
+}
+function copyTailorPrompt(jobId){
+  const j=DB.jobs.find(x=>x.id===jobId);const req=(DB.tailorRequests||[]).find(r=>r.jobId===jobId);
+  if(!j||!req)return;
+  copyText(tailorPromptText(req,j));
+  alert('Prompt copied to clipboard.');
+}
+function cancelTailor(jobId){
+  DB.tailorRequests=(DB.tailorRequests||[]).filter(r=>r.jobId!==jobId);
+  save();renderJobs();
+}
+function tailorCell(j){
+  if(j.resume){
+    const s=j.matchScore;
+    return `<div class="flex" style="gap:6px">
+      <a class="btn" href="${encodeURI(j.resume)}" target="_blank" download>⭳ Resume</a>
+      ${s!=null?`<span class="scorebadge" style="background:${color(s)}22;color:${color(s)}">${s}</span>`:''}
+    </div>`;
+  }
+  const req=(DB.tailorRequests||[]).find(r=>r.jobId===j.id);
+  if(req){
+    const est=req.jd?jdMatchScore(req.jd):null;
+    return `<div>
+      <span class="pill warn">Requested</span>${est!=null?` <span class="mini">~${est}% match (est.)</span>`:''}
+      <div class="flex" style="margin-top:4px">
+        <button class="btn" onclick="copyTailorPrompt('${j.id}')" title="Copy the Claude prompt again">📋</button>
+        <button class="btn danger" onclick="cancelTailor('${j.id}')" title="Cancel request">✕</button>
+      </div>
+    </div>`;
+  }
+  return `<button class="btn primary" onclick="requestTailor('${j.id}')">✎ Tailor my Resume</button>`;
 }
 
 /* ----- APPLICATIONS (kanban) ----- */
