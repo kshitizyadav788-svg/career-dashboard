@@ -109,7 +109,7 @@ def fetch_jsearch():
     headers = {"X-RapidAPI-Key": key, "X-RapidAPI-Host": "jsearch.p.rapidapi.com"}
     for q in JSEARCH_QUERIES:
         try:
-            r = requests.get("https://jsearch.p.rapidapi.com/search",
+            r = requests.get("https://jsearch.p.rapidapi.com/search-v2",
                              headers=headers,
                              params={"query": q, "page": "1", "num_pages": "1", "date_posted": "month"},
                              timeout=30)
