@@ -2,9 +2,10 @@
 """
 Renders Kshitiz Yadav's one-page ATS resume as a .docx.
 
-DATA holds all resume content as a plain dict so tailor_resume.py can pass a
-modified copy (reworded/reordered bullets per a JD) through the same render()
-without duplicating the docx layout code.
+DATA holds all resume content as a plain dict so a tailored variant (built by hand when
+processing a "Tailor My Resume" request -- see CLAUDE.md) can pass a modified copy
+(reworded/reordered bullets per a JD) through the same render() without duplicating the
+docx layout code. jd_match_score() below scores a tailored variant against a JD.
 """
 import os
 from docx import Document
@@ -182,6 +183,29 @@ def render(data, out_path):
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     doc.save(out_path)
     return out_path
+
+
+def keyword_coverage_score(data, keywords):
+    """Deterministic, honest match score: % of an EXPLICIT curated keyword/must-have list
+    (extracted by hand from the JD while tailoring -- see CLAUDE.md step (b)) that actually
+    appears in the tailored resume text. This is deliberately NOT raw full-JD-text word
+    overlap -- a naive version of that scored a real tailored resume at 33% because JDs are
+    full of generic connector words ("translate", "ensuring", "deliver") no resume would ever
+    contain even when the underlying skill is genuinely covered. Real ATS systems and
+    recruiters key off specific skill/tool/domain terms, not prose glue -- so should this.
+    `keywords` must be the actual must-have terms judged from reading the JD, not padded to
+    inflate the score; the resulting number is only honest if that list is honest. Returns
+    (score, matched, missing) so the gaps are visible, not just a bare percentage."""
+    bullets = " ".join(b for g in data["experience"]["groups"] for b in g["bullets"])
+    resume_text = " ".join([
+        data.get("summary", ""), data.get("competencies", ""),
+        " ".join(t for _, t in data.get("skills", [])),
+        bullets,
+    ]).lower()
+    matched = [k for k in keywords if k.lower() in resume_text]
+    missing = [k for k in keywords if k.lower() not in resume_text]
+    score = round(100 * len(matched) / len(keywords)) if keywords else None
+    return score, matched, missing
 
 
 if __name__ == "__main__":

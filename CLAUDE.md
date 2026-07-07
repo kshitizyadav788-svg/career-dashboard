@@ -59,13 +59,36 @@ not a pipeline.
    and handle each one:
    a. Read the issue body for job id, role, company, location, JD link, and (usually) the full
       pasted JD. If no JD was pasted, fetch the JD link yourself.
-   b. Extract the JD's keywords/must-haves.
+   b. Extract the JD's keywords/must-haves **as an explicit list** (10-20 specific skill/tool/
+      domain terms — e.g. "Agile", "JIRA", "P&L ownership", "cohort analysis" — not generic prose
+      words). This list is what step (c)'s score is computed against, so judge it honestly: it
+      must reflect the JD's actual must-haves, not be padded with easy terms to inflate the score.
    c. Tailor a variant of `build_resume.DATA`: reorder/reword bullets, mirror their language,
       front-load their requirements. If the JD needs a skill/tool/domain not covered by the base
       resume, check **`experience_bank.md`** first — it holds real projects Kshitiz has done that
       don't fit the one-page base — and swap in a relevant entry from there instead of a
       less-relevant base bullet. **Never invent achievements, employers, or metrics** — only pull
-      from `build_resume.DATA` and `experience_bank.md`. **Aim ATS/JD-match ≥ 85.**
+      from `build_resume.DATA` and `experience_bank.md`.
+
+      **Target: matchScore ≥ 90 — and it must be a real, computed number, never an eyeballed
+      guess.** Run `build_resume.keyword_coverage_score(data, keywords)` (in `build_resume.py`)
+      against your step-(b) keyword list once you've drafted the tailored `data` — it returns
+      `(score, matched, missing)`. This is deliberately keyword-coverage against your curated
+      list, not raw full-JD-text word overlap: a naive whole-JD-text version was tried and scored
+      a real tailored resume at 33%, because JDs are full of generic connector words ("translate",
+      "ensuring", "deliver") no resume would ever contain even when the underlying skill is
+      genuinely covered — that's not honest signal, real ATS systems and recruiters key off
+      specific terms, not prose glue.
+      For anything in `missing`, first check if it's **honestly closeable by rewording only**
+      (e.g. writing "Google Analytics (GA4)" instead of just "GA4" is 100% true and closes a
+      keyword gap with zero fabrication — this kind of fix is fair game and expected). For
+      whatever's still missing after that: **do not force the score to 90 by fabricating or
+      stretching the truth.** Report the real computed score to Kshitiz honestly, even if it's
+      well under 90, and explain which specific missing terms are the reason. If real experience
+      might exist that would close a gap (e.g. he may have used a BI tool, or had informal P&L
+      exposure not yet documented), **ask him** — either inline in chat if you're already talking,
+      or via the "Needs info" flag below if processing the queue unattended. Only write the
+      number `keyword_coverage_score()` actually returned into `"matchScore"`.
       **If the JD needs something genuinely missing from both** (e.g. chatbot automation depth,
       payment API integration specifics, a named tool with no evidence anywhere): **don't block on
       it and don't invent it.** Instead, this is Kshitiz's preferred flow -- flag it and let him
