@@ -17,6 +17,22 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
 
 ---
 
+## Marketplace / Aggregator Model (foundational context)
+- PlanetSpark is genuinely a marketplace/aggregator, not just a B2C app: it connects the supply
+  side (teachers) with the demand side (students/customers), providing the content and LMS layer
+  they interact through. This is real marketplace/two-sided-platform experience, not an analogy --
+  relevant to any JD asking for "marketplace," "aggregator," or "two-sided platform" experience.
+
+## Teacher/Partner-Side (Supply-Side) Analytics & Tools
+- Built teacher-facing (supply-side) features: payout history and current-payout-generated
+  visibility, demo-class performance analysis, and conversion analysis (demo-to-enrolment, by
+  teacher) -- the marketplace's partner-facing analytics and monetization tooling.
+
+## Student Journey & Engagement (LMS depth)
+- Built the full student journey and LMS: games and activities, practice classes, per-class
+  teacher feedback, progress showcases, and PTMs (parent-teacher meetings) -- the demand-side
+  engagement layer of the marketplace.
+
 ## P&L / Profitability Ownership & Analytics
 - Built a counselor-wise P&L tracker as a product-led feature: computes weekly profitability per
   sales counselor as Net Revenue − Fixed Cost − Refund Cost − Marketing Cost − Sales Cost, giving

@@ -41,7 +41,7 @@ DATA = {
     "experience": {
         "company_line": "PlanetSpark — Product Manager",
         "meta": "Gurugram · Mar 2021 – Present",
-        "intro": "Own the full product suite of a B2C EdTech startup -- one of India's largest public speaking & creative writing platforms: consumer app, student & teacher LMS, sales CRM, product-led growth & renewal engine, and an in-house AI layer.",
+        "intro": "Own the full product suite of a B2C EdTech marketplace -- one of India's largest public speaking & creative writing platforms, connecting students and teachers via a shared LMS: consumer app, student & teacher LMS, sales CRM, product-led growth & renewal engine, and an in-house AI layer.",
         "groups": [
             {"heading": "Growth & Monetization", "bullets": [
                 "Built the LPP (Learn, Practice, Perform) module — customized 1:1 sessions, group activities, and performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
