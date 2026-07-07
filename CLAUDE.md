@@ -24,6 +24,7 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
 | `fetch_jobs.py` | Hourly refresh: JSearch + Adzuna → score → merge with seed → write `jobs.json`. |
 | `build_resume.py` | Renders Kshitiz's resume to `.docx` from a `DATA` dict via `render(data, out_path)`. Base for tailoring. |
 | `experience_bank.md` | Pool of real projects/skills Kshitiz has done but that don't fit the one-page base resume. Pull from here when a JD needs something `build_resume.DATA` doesn't cover -- never invent. Add to it whenever he mentions something new. |
+| `external_resumes.json` | Resumes tailored from JDs Kshitiz pastes directly in chat (not the automated Job Matches feed) -- dashboard's **"External JD Resumes"** tab. Maintain by hand: append `{id, title, co, addedDate, resume, matchScore, why}` whenever you tailor one of these. |
 | `resumes/` | Generated resumes (base + per-JD tailored versions). |
 | `.github/workflows/refresh-jobs.yml` | Runs `fetch_jobs.py` hourly, commits `jobs.json`. |
 | `.github/ISSUE_TEMPLATE/tailor-resume.yml` | The issue form the dashboard deep-links into — a durable to-do queue, not an automated trigger (see below). |
@@ -133,6 +134,23 @@ matter (or a `?labels=` URL param) if that label doesn't already exist in the re
 auto-create it. The `tailor-resume` label already exists now (`gh label create` was run once), but
 if this ever needs recreating on a fresh repo, create the label first or submitted issues won't
 carry it.
+
+## Externally-found jobs (pasted JD, no dashboard entry)
+When Kshitiz pastes a JD directly in chat for a job he found himself (not from the dashboard's
+Job Matches feed), just tailor it the same way as above — same honesty rules, same
+`keyword_coverage_score()`, same `experience_bank.md`/flagging behavior — but there's no GitHub
+Issue involved. When you finish:
+1. Render + save the resume as usual.
+2. Append an entry to **`external_resumes.json`**: `{id: "EXT<n>", title, co, addedDate
+   (today, ISO), resume: "resumes/<file>.docx", matchScore, why}`. `id` just needs to be unique
+   within the file — increment from the highest existing `EXT<n>`.
+3. This shows up in the dashboard's **"External JD Resumes"** tab automatically (client fetches
+   `external_resumes.json` at runtime, same pattern as `jobs.json`). No `seed_jobs.json` entry
+   needed — that file is for the automated Job Matches feed specifically.
+4. If Kshitiz later gives you the actual job-board URL for one of these, and he wants it tracked
+   in the main Job Matches list too, promote it into `seed_jobs.json` at that point (with the
+   real URL — `merge_jobs()` drops entries with no/empty `url`, so don't add it there without one).
+5. `git add resumes/ external_resumes.json && git commit && git push`.
 
 ## Build / run commands
 ```bash

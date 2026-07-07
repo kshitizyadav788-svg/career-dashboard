@@ -98,6 +98,7 @@
   <div class="view" id="v-resume"></div>
   <div class="view" id="v-skills"></div>
   <div class="view" id="v-jobs"></div>
+  <div class="view" id="v-external"></div>
   <div class="view" id="v-apps"></div>
   <div class="view" id="v-interviews"></div>
   <div class="view" id="v-network"></div>
@@ -331,7 +332,14 @@ const SEED = {
   ],
 
   /* ---------- TAILOR-RESUME REQUESTS (approved jobs queue, persists per device) ---------- */
-  tailorRequests:[]
+  tailorRequests:[],
+
+  /* ---------- EXTERNAL JD-WISE RESUMES ---------- */
+  externalResumes:[
+    {id:"EXT1",title:"Product Manager",co:"boAt",addedDate:"2026-07-07",
+     resume:"resumes/boAt-Product Manager.docx",matchScore:90,
+     why:"Pasted JD, no job-board link yet."}
+  ]
 };
 
 /* ---------------- STATE / PERSISTENCE ---------------- */
@@ -343,6 +351,7 @@ function load(){
   else DB=structuredClone(SEED);
   // ensure new seed-only (analysis) sections always reflect latest
   DB.profile=SEED.profile;DB.resume=SEED.resume;DB.skills=SEED.skills;DB.jobs=SEED.jobs;DB.resumeDoc=SEED.resumeDoc;DB.recruiters=SEED.recruiters;
+  DB.externalResumes=SEED.externalResumes;
   DB.tailorRequests=DB.tailorRequests||[]; // user-tracking queue: persists across loads, not reset from SEED
 }
 function save(){DB.savedAt=new Date().toISOString();localStorage.setItem(LS_KEY,JSON.stringify(DB));renderUpdated();}
@@ -359,7 +368,7 @@ const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;
 /* ---------------- TABS ---------------- */
 const TABS=[
   ["overview","Overview"],["resumedoc","My Resume"],["resume","Resume Analysis"],["skills","Skill Gaps"],
-  ["jobs","Job Matches"],["apps","Applications"],["interviews","Interviews"],
+  ["jobs","Job Matches"],["external","External JD Resumes"],["apps","Applications"],["interviews","Interviews"],
   ["network","Networking"],["companies","Target Companies"],["recruiters","Recruiters"],["growth","Growth"]
 ];
 function buildTabs(){
@@ -680,6 +689,28 @@ function tailorCell(j){
   return `<button class="btn primary" onclick="requestTailor('${j.id}')">✎ Tailor my Resume</button>`;
 }
 
+/* ----- EXTERNAL JD-WISE RESUMES -----
+   Resumes tailored from JDs you paste directly (not from the automated Job Matches feed --
+   e.g. no job-board link yet, or a role you found yourself). Claude maintains this list by hand
+   in external_resumes.json whenever it tailors one of these; see CLAUDE.md. */
+function renderExternalResumes(){
+  const rows=[...(DB.externalResumes||[])].sort((a,b)=>(b.addedDate||'').localeCompare(a.addedDate||''));
+  document.getElementById('v-external').innerHTML=`
+   <div class="toolbar"><b>${rows.length} externally-tailored resume${rows.length===1?'':'s'}</b>
+     <span class="muted">· paste a JD directly in a Claude Code chat to add one here</span></div>
+   <div class="card" style="padding:6px 4px"><table><thead><tr>
+     <th>Role</th><th>Company</th><th>Added</th><th>Match</th><th>Resume</th><th>Notes</th></tr></thead><tbody>
+   ${rows.length?rows.map(r=>`<tr>
+     <td><b>${esc(r.title)}</b></td>
+     <td class="muted">${esc(r.co)}</td>
+     <td class="muted nowrap">${esc(r.addedDate||'')}</td>
+     <td>${r.matchScore!=null?`<span class="scorebadge" style="background:${color(r.matchScore)}22;color:${color(r.matchScore)}">${r.matchScore}</span>`:'—'}</td>
+     <td>${r.resume?`<a class="btn" href="${encodeURI(r.resume)}" target="_blank" download>⭳ Resume</a>`:'—'}</td>
+     <td class="muted">${esc(r.why||'')}</td>
+   </tr>`).join(''):`<tr><td colspan="6" class="muted">None yet. Paste a JD in a Claude Code chat and ask for a tailored resume.</td></tr>`}
+   </tbody></table></div>`;
+}
+
 /* ----- APPLICATIONS (kanban) ----- */
 const STAGES=["To Apply","Applied","Screening","Interview","Offer","Rejected"];
 function renderApps(){
@@ -830,7 +861,7 @@ function delRow(coll,id){DB[coll]=DB[coll].filter(x=>x.id!==id);save();renderAll
 
 /* ---------------- INIT ---------------- */
 function renderAll(){
-  renderOverview();renderResumeDoc();renderResume();renderSkills();renderJobs();
+  renderOverview();renderResumeDoc();renderResume();renderSkills();renderJobs();renderExternalResumes();
   renderApps();renderInterviews();renderNetwork();renderCompanies();renderRecruiters();renderGrowth();
 }
 /* ---- live jobs feed: used when hosted with an hourly-refreshed jobs.json;
@@ -847,7 +878,20 @@ async function loadLiveJobs(){
     }
   }catch(e){/* local/offline: keep baked-in jobs */}
 }
-load();buildTabs();renderAll();renderUpdated();loadLiveJobs();
+/* ---- external JD-wise resumes: hosted = loads external_resumes.json (Claude maintains it by
+   hand); fails silently offline so the baked-in list stays. ---- */
+async function loadExternalResumes(){
+  try{
+    const res=await fetch('external_resumes.json?t='+Date.now(),{cache:'no-store'});
+    if(!res.ok) return;
+    const data=await res.json();
+    if(data&&Array.isArray(data.resumes)){
+      DB.externalResumes=data.resumes;
+      renderExternalResumes();
+    }
+  }catch(e){/* local/offline: keep baked-in list */}
+}
+load();buildTabs();renderAll();renderUpdated();loadLiveJobs();loadExternalResumes();
 </script>
 </body>
 </html>
