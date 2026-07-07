@@ -35,10 +35,16 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
 - Built a unified customer-support helpdesk consolidating issues raised across multiple channels
   -- LMS, email to customer support, WhatsApp chatbot, and in-platform chatbot -- into one system.
 
-## Payment API Integration (expanded detail)
-- API-integrated multiple payment gateways handling both payment creation and status verification
-  (expands on the base resume's "6 API-integrated payment gateways" -- this is the specific detail
-  of what those integrations do, not a separate project).
+## Third-Party Vendor & API Integrations (named vendors)
+- Payment gateways: Razorpay, PayU, PayGlocal, PayPal, Bajaj -- API-integrated for payment
+  creation and status verification (this is the specific detail behind the base resume's
+  "6 API-integrated payment gateways" bullet).
+- WhatsApp/messaging: Gupshup, Venera Connect -- integrated for the WhatsApp chatbot channel of
+  the omnichannel customer-support helpdesk.
+- Telephony/calling: Exotel, Tata Tele -- integrated for the CRM's integrated-calling feature.
+- This is genuine third-party vendor collaboration (coordinating with external platforms for
+  smooth delivery) -- not physical-goods supply chain/logistics, which remains a real gap for
+  any JD that specifically wants that.
 
 <!-- More entries go below this line. Example structure:
 
