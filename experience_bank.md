@@ -43,9 +43,16 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   Marketing, Sales, and Operations teams — giving cross-functional visibility into business
   performance.
 
-## Recommendation Engine / Personalization
-- Built a self-customized in-house recommendation system that suggests courses to students based
-  on customer behavior, session-time requirements, and teacher feedback.
+## Demo Analysis / AI-Driven Counselor Sales Enablement (corrected framing)
+- Built a self-customized in-house AI feature ("Demo Analysis"): analyzes a customer's demo-
+  session behavior and needs, and surfaces a customized plan of 3-4 courses to the **counselor**
+  (sales), informed by the customer's behavior/requirements at the time of session and teacher
+  feedback -- so the counselor can present the right courses during the sales conversation.
+  Correction: this is a counselor-facing sales-enablement tool (AI assists the human seller), not
+  a student-facing recommender -- earlier entries/resumes described it as suggesting courses
+  directly to students, which is imprecise. Not the same as formal cohort analysis (grouping
+  users by shared time-period/segment and tracking aggregate trends) -- that remains a separate
+  open question below.
 
 ## Omnichannel Customer Support / Helpdesk System
 - Built a unified customer-support helpdesk consolidating issues raised across multiple channels
@@ -82,9 +89,11 @@ Once answered, move the fact into the sections above and delete the question her
   specifics beyond "6 API-integrated payment gateways" -- which gateways, whose API docs,
   webhook/reconciliation handling? -->
 
-- **Cohort analysis / catalogue-adjacent work** (flagged while tailoring for Vishal Mega Mart,
-  job NP15): confirmed he has real experience here but only gave specifics for P&L tracking,
-  Power BI dashboards, and the course recommendation engine so far -- still need: which tool he
-  used for cohort/retention analysis (GA4? Excel? something else?), and what the catalogue/
-  content-listing work actually was (which product, what scope).
+- **Formal cohort analysis / catalogue-adjacent work** (flagged while tailoring for Vishal Mega
+  Mart NP15, later also relevant to Tata 1mg): he described the "Demo Analysis" AI feature when
+  asked about cohort analysis (now captured above), but that's individual-customer behavior
+  analysis for sales enablement, not formal cohort analysis (grouping users by shared
+  signup/time-period and tracking aggregate retention/behavior trends). Still open: does he have
+  real experience with that specific technique (in GA4, Excel, or elsewhere)? Also still open:
+  what the catalogue/content-listing work actually was (which product, what scope).
 
