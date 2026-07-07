@@ -31,6 +31,15 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
 - Built a self-customized in-house recommendation system that suggests courses to students based
   on customer behavior, session-time requirements, and teacher feedback.
 
+## Omnichannel Customer Support / Helpdesk System
+- Built a unified customer-support helpdesk consolidating issues raised across multiple channels
+  -- LMS, email to customer support, WhatsApp chatbot, and in-platform chatbot -- into one system.
+
+## Payment API Integration (expanded detail)
+- API-integrated multiple payment gateways handling both payment creation and status verification
+  (expands on the base resume's "6 API-integrated payment gateways" -- this is the specific detail
+  of what those integrations do, not a separate project).
+
 <!-- More entries go below this line. Example structure:
 
 ## SQL / Data depth

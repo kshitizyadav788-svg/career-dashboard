@@ -63,6 +63,12 @@ not a pipeline.
       domain terms — e.g. "Agile", "JIRA", "P&L ownership", "cohort analysis" — not generic prose
       words). This list is what step (c)'s score is computed against, so judge it honestly: it
       must reflect the JD's actual must-haves, not be padded with easy terms to inflate the score.
+      **Watch for OR-lists in the JD** (e.g. "experience with SaaS, Enterprise Applications, or
+      Digital Products") — that's ONE requirement satisfied by ANY of the alternatives, not three
+      separate must-haves. A real mistake made once: listing all three as separate keywords
+      penalized an honestly-90%+ resume down to 85% for "missing" two alternatives it never
+      needed. Collapse an OR-list to whichever single alternative is actually true/covered before
+      scoring, don't count the others as gaps.
    c. Tailor a variant of `build_resume.DATA`: reorder/reword bullets, mirror their language,
       front-load their requirements. If the JD needs a skill/tool/domain not covered by the base
       resume, check **`experience_bank.md`** first — it holds real projects Kshitiz has done that
