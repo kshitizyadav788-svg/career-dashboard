@@ -193,17 +193,30 @@ def keyword_coverage_score(data, keywords):
     full of generic connector words ("translate", "ensuring", "deliver") no resume would ever
     contain even when the underlying skill is genuinely covered. Real ATS systems and
     recruiters key off specific skill/tool/domain terms, not prose glue -- so should this.
+
+    A multi-word keyword phrase matches if ALL of its significant words appear somewhere in the
+    resume (not necessarily adjacent) -- exact contiguous substring matching was tried first and
+    produced false negatives: "product development" didn't match "Product Ideation & Development"
+    (words not adjacent), "market analysis" didn't match "market research and competitor analysis"
+    (same concept, different word order/filler). Single-word keywords still match as substrings.
+
     `keywords` must be the actual must-have terms judged from reading the JD, not padded to
     inflate the score; the resulting number is only honest if that list is honest. Returns
     (score, matched, missing) so the gaps are visible, not just a bare percentage."""
+    _filler = {"and", "the", "of", "a", "an", "for", "to", "in", "&"}
     bullets = " ".join(b for g in data["experience"]["groups"] for b in g["bullets"])
     resume_text = " ".join([
         data.get("summary", ""), data.get("competencies", ""),
         " ".join(t for _, t in data.get("skills", [])),
         bullets,
     ]).lower()
-    matched = [k for k in keywords if k.lower() in resume_text]
-    missing = [k for k in keywords if k.lower() not in resume_text]
+
+    def is_match(keyword):
+        words = [w for w in keyword.lower().split() if w not in _filler]
+        return all(w in resume_text for w in words) if words else False
+
+    matched = [k for k in keywords if is_match(k)]
+    missing = [k for k in keywords if not is_match(k)]
     score = round(100 * len(matched) / len(keywords)) if keywords else None
     return score, matched, missing
 
