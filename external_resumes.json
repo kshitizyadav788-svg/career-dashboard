@@ -64,6 +64,15 @@
    "matchScore": 87,
    "why": "Pasted JD, no job-board link yet. 87% on Required keywords (fintech good-to-have also matched, strong theme fit -- payments company). Genuine gaps: global/matrixed-org experience -- not fixable via wording, real background fact. XYZ bullet format applied per request; content expanded to match master resume's length (page-fill question).",
    "coverLetter": "resumes/Payoneer-Cover Letter.docx"
+  },
+  {
+   "id": "EXT8",
+   "title": "Product Manager/Strategy 3-ProdDev",
+   "co": "Oracle",
+   "addedDate": "2026-07-08",
+   "resume": "resumes/Oracle-Product Manager.docx",
+   "matchScore": 100,
+   "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- note: this JD is unusually generic/templated (mentions 'manufacturing', doesn't name a specific Oracle product line), so the score reflects strong process-skill alignment more than deep domain-specific match. No genuine gaps found, but worth researching which Oracle BU/product this actually is before applying."
   }
  ]
 }
