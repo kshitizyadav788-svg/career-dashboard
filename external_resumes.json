@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-07T00:00:00Z",
+ "updated": "2026-07-08T00:00:00Z",
  "resumes": [
   {
    "id": "EXT1",
@@ -54,6 +54,15 @@
    "resume": "resumes/BlackRock-Associate Product Manager.docx",
    "matchScore": 100,
    "why": "Pasted JD, no job-board link yet. 100% on Required content keywords, AI/ML preferred-item also matched. Real fit consideration flagged separately: this is institutional asset-management/fintech (Aladdin risk platform) at an elite global firm -- a genuine domain transfer from B2C EdTech, not a resume-wording issue."
+  },
+  {
+   "id": "EXT7",
+   "title": "Product Manager",
+   "co": "Payoneer",
+   "addedDate": "2026-07-08",
+   "resume": "resumes/Payoneer-Product Manager.docx",
+   "matchScore": 87,
+   "why": "Pasted JD, no job-board link yet. 87% on Required keywords (fintech good-to-have also matched, strong theme fit -- payments company). Genuine gaps: global/matrixed-org experience -- not fixable via wording, real background fact. XYZ bullet format applied per request; content expanded to match master resume's length (page-fill question)."
   }
  ]
 }
