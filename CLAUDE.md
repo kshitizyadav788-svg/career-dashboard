@@ -24,7 +24,8 @@ automation savings, shipped production GenAI (LLM/ChatGPT). Contact: kshitizyada
 | `fetch_jobs.py` | Hourly refresh: JSearch + Adzuna → score → merge with seed → write `jobs.json`. |
 | `build_resume.py` | Renders Kshitiz's resume to `.docx` from a `DATA` dict via `render(data, out_path)`. Base for tailoring. |
 | `experience_bank.md` | Pool of real projects/skills Kshitiz has done but that don't fit the one-page base resume. Pull from here when a JD needs something `build_resume.DATA` doesn't cover -- never invent. Add to it whenever he mentions something new. |
-| `external_resumes.json` | Resumes tailored from JDs Kshitiz pastes directly in chat (not the automated Job Matches feed) -- dashboard's **"External JD Resumes"** tab. Maintain by hand: append `{id, title, co, addedDate, resume, matchScore, why}` whenever you tailor one of these. |
+| `external_resumes.json` | Resumes tailored from JDs Kshitiz pastes directly in chat (not the automated Job Matches feed) -- dashboard's **"External JD Resumes"** tab. Maintain by hand: append `{id, title, co, addedDate, resume, matchScore, why}` (add `coverLetter` if one was made) whenever you tailor one of these. |
+| `build_cover_letter.py` | Renders a one-page cover letter `.docx` matching the resume's visual style. Same honesty rules as resumes -- only real, already-verified achievements. |
 | `resumes/` | Generated resumes (base + per-JD tailored versions). |
 | `.github/workflows/refresh-jobs.yml` | Runs `fetch_jobs.py` hourly, commits `jobs.json`. |
 | `.github/ISSUE_TEMPLATE/tailor-resume.yml` | The issue form the dashboard deep-links into — a durable to-do queue, not an automated trigger (see below). |
