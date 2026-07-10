@@ -69,6 +69,36 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   smooth delivery) -- not physical-goods supply chain/logistics, which remains a real gap for
   any JD that specifically wants that.
 
+## Team Leadership
+- Trained and led a team of 8 people as Assistant Product Manager (Sep 2022 - Aug 2023) --
+  real, confirmed team-leading experience (closes the "team leading" gap flagged for the
+  INDmoney JD, which was left unclaimed at the time).
+
+## 2:1 Enrolment Automation (backend punching flow)
+- Automated the entire "2:1" enrolment/revenue-punching process end-to-end across three
+  related projects at PlanetSpark:
+  - **2:1 Enrolment Automation** (Mar-Apr 2023): brought manual punching down from 100% to 5%,
+    reducing backend manual intervention by 80%.
+  - **Backend Punching Automation** (Dec 2023 - Feb 2024): further reduced manual punching from
+    60% to 2%, increasing automated punching from 40% to 98%.
+  - As Assistant Product Manager, this same initiative increased same-day revenue realization by
+    70% and improved customer experience/retention by 45%.
+
+## Internal VC (Video Call) Platform
+- Built an in-house video-call platform for the Sales team (Jan-Mar 2024), replacing an external
+  third-party platform -- cutting external platform costs and enhancing customer experience with
+  custom features and PlanetSpark branding.
+
+## Customer Verification Flow (fraud/trust & safety)
+- Built a customer verification process (Jan-Feb 2023) giving customers transparency and more
+  control, which identified fake sales and brought the fake-sales rate down from 10% to 1%,
+  enhancing customer experience with minimal manual intervention. Relevant to any JD asking for
+  fraud detection, trust & safety, or verification/compliance experience.
+
+## Certification
+- "Marketing Researchers and Data Analyst" certification, Proof and Performance Services Limited
+  (valid from Jan 2020).
+
 <!-- More entries go below this line. Example structure:
 
 ## SQL / Data depth
