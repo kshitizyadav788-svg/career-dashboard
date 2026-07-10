@@ -136,6 +136,41 @@ auto-create it. The `tailor-resume` label already exists now (`gh label create` 
 if this ever needs recreating on a fresh repo, create the label first or submitted issues won't
 carry it.
 
+## Cover letters (optional add-on to tailoring)
+`build_cover_letter.py` renders a one-page cover letter (`render(paragraphs, out_path, company,
+role)`) matching the resume's visual style (imports `build_resume`'s `NAVY`/`GREY`/`FONT`). Only
+make one when Kshitiz asks for it (or the job posting requires one) — not a default step of every
+tailoring pass. Same honesty rules as resumes: only real, already-verified achievements. If made,
+add a `"coverLetter"` field alongside `"resume"` in `seed_jobs.json`/`external_resumes.json`.
+
+## Scoring methodology gotchas (learned the hard way — read before tailoring)
+`keyword_coverage_score()` went through three iterations, each fixing a real false-positive/
+false-negative bug found while tailoring real JDs. Know all three before trusting a score:
+1. **Naive full-JD-text overlap → 33% on a genuinely strong match.** JDs are full of generic prose
+   glue ("translate," "ensuring," "deliver") no resume would ever contain even when the underlying
+   skill is fully covered. Fixed by scoring against a curated Required-keyword list (10-20 terms
+   judged by hand from the JD), not raw text overlap.
+2. **OR-lists split into separate must-haves** (found on Tata 1mg/Velocitai): "SaaS, Enterprise
+   Applications, or Digital Products" is ONE requirement satisfiable by any alternative, not three.
+   Splitting it penalized an honest 90%+ resume down to 85% for "missing" alternatives it never
+   needed. Fix: collapse any OR-list to whichever single true alternative applies before scoring.
+3. **Exact-substring matching missed real coverage via word order** (found on boAt): "product
+   development" wasn't detected inside "Product Ideation & Development," and "market analysis"
+   wasn't detected inside "market research and competitor analysis." Fixed by checking that all
+   significant words of a keyword phrase appear anywhere in the resume text, rather than requiring
+   them contiguous/in-order. Re-verified this didn't regress already-shipped scores before shipping.
+
+**Separately** — if a bullet's factual framing turns out to be imprecise (e.g. the "Demo Analysis"
+AI feature was originally described as recommending courses directly to students; Kshitiz corrected
+it to counselor-facing sales enablement), fix the wording in `experience_bank.md` **and** retroactively
+in every resume that already used it, then re-verify each affected score is unchanged (a pure
+precision fix shouldn't move the number).
+
+## Historical one-off actions (context, not standing rules)
+- **Pruned jobs older than 2 weeks** from `seed_jobs.json`/`jobs.json` once. This was a **one-time
+  static cleanup**, explicitly **not** a recurring rule — do not build rolling age-based pruning
+  into `fetch_jobs.py` or anywhere else unless Kshitiz asks again.
+
 ## Externally-found jobs (pasted JD, no dashboard entry)
 When Kshitiz pastes a JD directly in chat for a job he found himself (not from the dashboard's
 Job Matches feed), just tailor it the same way as above — same honesty rules, same
@@ -167,6 +202,58 @@ pip install requests
 RAPIDAPI_KEY=... ADZUNA_APP_ID=... ADZUNA_APP_KEY=... python fetch_jobs.py
 ```
 
+## Naukri / Foundit profile renovation (external sites, not tracked in this repo)
+Kshitiz asked Claude to access his Naukri and Foundit profiles (open in his browser, via
+Claude-in-Chrome) and renovate them into stronger PM profiles. Progress so far, as of 2026-07-08
+(update this section as work continues — it's the durable cross-device record since these sites
+aren't in git):
+
+**Naukri (`https://www.naukri.com/mnjuser/profile`) — in progress:**
+- ✅ **Projects section**: renovated, now has 10 real entries (all verified against
+  `experience_bank.md`/`build_resume.DATA` before adding, no invented content, no duplicates found
+  against existing entries): Demo Analysis (AI sales enablement, Mar-Jun 2026), Counselor-Wise P&L
+  Tracker (Jan-Feb 2026), Internal VC Platform (Jan-Mar 2024), In-Product Renewal Engine (Jan
+  2024-present), Backend Punching Automation (Dec 2023-Feb 2024), 2:1 Enrolment Automation (Mar-Apr
+  2023), Customer Verification Flow (Jan-Feb 2023), Cross-Functional Power BI Dashboards (Jan
+  2023-present), Multi-Gateway Payment Integration (Jan 2022-present), LPP Module (Jan-Dec 2022).
+- ✅ **Employment section**: the current "Product Manager" role's job-profile text was corrected
+  once — Naukri's own "Improve with AI" button (which Kshitiz can click independently of any Claude
+  session) had merged two facts inaccurately: attributed "team of 8" to this role (actually from
+  his **Assistant Product Manager** role) and causally linked ChatGPT API integration to the 25%
+  ARPU growth (actually attributed to the LPP module's session structure). Fixed to separate these
+  correctly.
+- ⏳ **Not yet saved live** — drafted, verified against the honesty rules, but the actual Naukri
+  page edit was not completed before this session ended. Exact text to paste in on a future
+  session:
+
+  **Resume Headline:**
+  > Product Manager | 5+ yrs | B2C Growth & Monetization | Roadmap, PRD, GTM, A/B Testing | SQL &
+  > Power BI | Two-Sided Marketplace | AI-Enabled (LLM/GenAI) | Drove +20% Revenue, +25% ARPU,
+  > ₹70L/Month Renewals
+
+  **Profile Summary** (fixes the current live version's "4+ years" typo and an AI-first framing
+  that contradicts the established B2C-growth-first/AI-as-differentiator positioning):
+  > Product Manager with 5+ years driving B2C growth and monetization for one of India's largest
+  > EdTech marketplaces — connecting students and teachers via a shared LMS. Track record of moving
+  > core metrics: 20% revenue growth, 25% ARPU expansion (₹35K→₹45K), ₹70L in product-led renewals
+  > in a single month, and 2,000+ organic leads/month at 7% conversion. Led end-to-end product
+  > delivery across app, LMS, and CRM — funnel re-architecture, multi-gateway payment integration,
+  > teacher-facing marketplace tools, and team leadership (trained & led a team of 8). Uses AI
+  > (GenAI, LLM APIs, prompt engineering) as a force-multiplier to ship faster — not the whole
+  > story. Core strengths: B2C Growth & Monetization | Product Roadmap & GTM | Cross-Functional
+  > Leadership | Data-Driven Decisions (SQL, Power BI) | AI-Enabled Product Development
+
+  **Key Skills to add** (keep all existing ones, just add): SQL, Power BI, Payment Gateway
+  Integration, Stakeholder Management, Team Leadership, Two-Sided Marketplace, P&L Management.
+
+- **Gotcha**: always re-read the current live Naukri text before assuming a prior Claude draft is
+  what's actually saved — Kshitiz can click "Improve with AI" himself at any time and silently
+  change it.
+
+**Foundit**: not started at all yet. Same renovation approach once Naukri is finished: read current
+live profile fields first, cross-check every claim against `build_resume.DATA` +
+`experience_bank.md`, never invent.
+
 ## Git workflow (BOTH machines)
 ```bash
 git pull            # ALWAYS first — the hourly Action commits to main constantly
@@ -178,6 +265,10 @@ If push is rejected → `git pull` then `git push` again. Never force-push (the 
 ## Open items / TODO
 - [ ] Activate JSearch (subscribe free plan on RapidAPI) → unlocks fresh Indeed/LinkedIn/Glassdoor.
 - [ ] Re-scrape Naukri via Claude-in-Chrome periodically → regenerate `seed_jobs.json`.
-- [ ] Finish Naukri profile edits (Summary + Employment) — content in the chat history.
+- [ ] Save the drafted Naukri **Resume Headline / Profile Summary / Key Skills** live (exact text
+      in the "Naukri / Foundit profile renovation" section above) — Projects + Employment already done.
+- [ ] Renovate the **Foundit** profile (not started at all yet) — same approach as Naukri.
+- [ ] `experience_bank.md`'s "Open Questions" section has two unanswered items (formal cohort
+      analysis experience; catalogue/content-listing work detail) — ask Kshitiz when relevant.
 - [ ] Optional: make site private (Cloudflare Pages + Access) — currently PUBLIC.
 - [ ] Optional: cross-device sync of tracking data (Supabase) — currently per-device localStorage.
