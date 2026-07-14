@@ -115,9 +115,13 @@ not a pipeline.
       **Separately**, if you notice something that would generally strengthen the resume
       (not blocking any specific job, just a good addition) log it under an "Open Questions"
       section in `experience_bank.md` for Kshitiz to answer whenever -- same post-paid principle.
-   d. Render via `build_resume.render(data, "resumes/<Company>-<Role>.docx")`, convert to `.pdf`
-      (`soffice --headless --convert-to pdf --outdir resumes "resumes/NAME.docx"` — needs
-      LibreOffice; `brew install --cask libreoffice` on Mac if missing).
+   d. Render via **`build_resume.fit_to_page(data, "resumes/<Company>-<Role>.docx")`** — NOT the
+      bare `render()`. `fit_to_page()` renders, converts to PDF via LibreOffice, measures the real
+      page count + vertical fill, and auto-selects the loosest font/spacing preset that keeps the
+      resume on **exactly one page filled cleanly (~93–98%)** — so there's never a big empty gap at
+      the bottom and it never spills to page 2. See "The one-page-full rule" section below for the
+      full mechanism and what to do if content is too long/thin. It writes both the `.docx` and
+      `.pdf` and returns `(style, pages, fill_pct, pdf_path)`.
    e. Add `"resume"` (path) and `"matchScore"` (your honest JD-match estimate) fields onto that
       job's entry in **`seed_jobs.json`** (promote the job into `seed_jobs.json` first if it's only
       in the live JSearch/Adzuna feed, so it survives the next hourly refresh). Clear any
@@ -135,6 +139,32 @@ matter (or a `?labels=` URL param) if that label doesn't already exist in the re
 auto-create it. The `tailor-resume` label already exists now (`gh label create` was run once), but
 if this ever needs recreating on a fresh repo, create the label first or submitted issues won't
 carry it.
+
+## The one-page-full rule (every resume, no exceptions)
+Kshitiz's standard: **every resume must be exactly ONE page, filled cleanly with no big empty gap
+at the bottom, and stay ATS-friendly** (single column, standard section headings, no tables /
+text-boxes / columns / graphics that break parsers). This is enforced mechanically, not eyeballed:
+
+- **Always finish a resume with `build_resume.fit_to_page(data, out_path)`**, never a bare
+  `render()`. `fit_to_page()` walks `STYLE_PRESETS` (tight → loose, fonts kept in the ATS-safe
+  9.5–11pt band), renders each via LibreOffice, measures the real PDF page count + how far content
+  reaches down the page (`measure_pdf()`), and keeps the fullest layout that's still a single page,
+  targeting ~93–98% fill. It self-corrects for content volume: a thin tailored variant gets a
+  slightly larger font / looser spacing to fill the page; a dense one gets tightened.
+- **Why it exists:** the old fixed 9.5pt template left even the *base* resume only ~81% full (≈2"
+  of dead space at the bottom); tailored variants with lighter content were worse (~75%). python-docx
+  alone can't know page count/fill — only a real layout engine (LibreOffice) can — so this step
+  hard-depends on `soffice` being installed.
+- **If `fit_to_page()` warns the content is too LONG** (overflows to 2 pages even at the tightest
+  preset): trim — shorten the summary, cut/merge a weaker bullet — don't hunt for a smaller font.
+- **If it NOTEs the content is too THIN** (best fill still < ~93% at the loosest preset): add a real
+  bullet from `experience_bank.md`, don't just inflate spacing to fake fullness.
+- Toolchain on this Mac (already set up): a project `.venv` (gitignored) with `python-docx` + `pypdf`
+  (`.venv/bin/python build_resume.py`), LibreOffice (`soffice`), and `poppler` (`pdftoppm`, lets the
+  Read tool render a resume PDF to an image for a visual check). Windows: has its own python-docx;
+  install LibreOffice for `fit_to_page` there too, or fall back to Word for the final page check.
+- Existing tailored resumes in `resumes/` were built before auto-fit and may under-fill — re-run
+  them through `fit_to_page()` if regenerating.
 
 ## Cover letters (optional add-on to tailoring)
 `build_cover_letter.py` renders a one-page cover letter (`render(paragraphs, out_path, company,
@@ -190,12 +220,15 @@ Issue involved. When you finish:
 
 ## Build / run commands
 ```bash
-# Resume docx  (needs: pip install python-docx)
-python build_resume.py            # writes resumes/*.docx
-
-# docx -> pdf
-#   Mac / Linux (install LibreOffice):  soffice --headless --convert-to pdf --outdir resumes "resumes/NAME.docx"
-#   Windows: LibreOffice same command, OR MS Word COM via PowerShell.
+# Resume (Mac): use the project venv, which has python-docx + pypdf
+.venv/bin/python build_resume.py     # auto-fits the BASE resume to one full page (docx + pdf)
+# For a tailored variant, call build_resume.fit_to_page(data, out_path) from a script (see the
+# tailoring workflow). fit_to_page() handles docx->pdf conversion + one-page-full verification.
+# Needs LibreOffice (soffice) installed for the page measurement; poppler (pdftoppm) lets you
+# visually check the pdf. First-time Mac setup:
+#   python3 -m venv .venv && .venv/bin/pip install python-docx pypdf
+#   brew install --cask libreoffice && brew install poppler
+# Windows: python-docx already present; install LibreOffice for fit_to_page, or use Word to check.
 
 # Refresh jobs locally (optional; the cloud Action does this hourly)
 pip install requests
