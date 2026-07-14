@@ -459,7 +459,7 @@ function renderResumeDoc(){
          <div class="legend" style="margin-top:6px">${d.pages}-page · ATS-clean · single column</div>
        </div>
      </div>
-     <div class="note">Live one-page master resume — merges the depth of your OYO version with one-page ATS structure; scores <b>${DB.resume.atsScore}/100</b>. Regenerate via <code>build_resume.py</code>. <b>To add:</b> a real metric on the funnel bullet (e.g. sign-up→enrolment % lift).</div>
+     <div class="note">Universal one-page master resume — the general-purpose version to download and apply with (tailored per-JD variants live under "Job Matches" and "External JD Resumes"). Auto-fit to fill exactly one page cleanly, ATS-clean single column; scores <b>${DB.resume.atsScore}/100</b>. Regenerate via <code>build_resume.py</code> (uses <code>fit_to_page()</code> so it always comes out one full page).</div>
    </div>
 
    <div class="card" style="margin-top:16px"><h3>Professional Summary</h3><p style="margin:0">${esc(d.summary)}</p></div>
