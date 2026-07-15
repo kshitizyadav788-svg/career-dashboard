@@ -100,6 +100,15 @@
    "resume": "resumes/Barclays-Product Manager.docx",
    "matchScore": 89,
    "why": "Pasted JD, no job-board link yet. LOCATION FIT -- based in Gurugram/Noida (his #1 priority). 89% on Essential-skill keywords (24/27) -- strong, well-transferable: product strategy + development lifecycle, delivery discipline (Agile/JIRA/backlog), analytical & data-driven (SQL, Power BI, funnel/MI), customer-journey/pain-points, stakeholder management, cross-functional, market/competitor analysis, commercial & financial acumen, risk & control, rapid prototyping, AI-enabled tools all covered from real work. 3 keyword gaps, of which 2 are just tool NAMES he has equivalents for: Tableau (has Power BI), HUE (has SQL) -- practical fit higher than 89. Only true gap is Consumer Duty / ORAC (UK-banking governance frameworks). DESIRABLE-only gaps (not scored): loans/banking domain, Agentic AI, Spec-Driven Development. This is a much more realistic fit than a specialized fintech role -- it's a general digital-PM role with a governance overlay, in his target city. Auto-fit to one full page (95.2%)."
+  },
+  {
+   "id": "EXT12",
+   "title": "Manager, Enterprise Payments Product Development",
+   "co": "American Express (GMNS)",
+   "addedDate": "2026-07-15",
+   "resume": "resumes/Amex-Enterprise Payments Product Manager.docx",
+   "matchScore": 88,
+   "why": "Pasted JD, no job-board link yet. 88% on skill keywords (21/24: product development/management, delivery, release plans, Agile/JIRA, user stories, features, capabilities, payments, stakeholder mgmt, cross-functional, analytical, problem solving, scale, performance metrics, modernization, drive change, team leadership, trade-offs, roadmap all covered from real work). BIGGEST STRETCH OF THE BATCH -- the 88% measures transferable delivery/payments SKILLS and materially OVERSTATES the real fit: this is an ENTERPRISE PAYMENTS-INFRASTRUCTURE role on a $1.6T network (clearing & settlement, bank-rail integrations, legacy-to-cloud modernization, scaled Agile/SAFe, leading a product org across 170 markets). His payments experience is B2C payment-GATEWAY integration (Razorpay/PayU/etc.), NOT enterprise money-movement infra -- a different world. Keyword gaps reflect this: clearing & settlement, cloud (legacy->cloud migration), scaled Agile. Honest recommendation: only apply if deliberately pivoting toward enterprise payments; the delivery + multi-gateway-payments + modernization-of-flows story is the angle, but expect the domain gap to be the deciding factor, not the resume. Auto-fit to one full page (94.8%)."
   }
  ]
 }
