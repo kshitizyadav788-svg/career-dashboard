@@ -73,6 +73,15 @@
    "resume": "resumes/Oracle-Product Manager.docx",
    "matchScore": 100,
    "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- note: this JD is unusually generic/templated (mentions 'manufacturing', doesn't name a specific Oracle product line), so the score reflects strong process-skill alignment more than deep domain-specific match. No genuine gaps found, but worth researching which Oracle BU/product this actually is before applying."
+  },
+  {
+   "id": "EXT9",
+   "title": "Product Manager",
+   "co": "OLX India",
+   "addedDate": "2026-07-15",
+   "resume": "resumes/OLX-Product Manager.docx",
+   "matchScore": 92,
+   "why": "Pasted JD, no job-board link yet. 92% on Required keywords (24/26) -- very strong fit: B2C two-sided marketplace, business+consumer users, GenAI/LLM, personalization/ranking, experimentation, payments/trust, GA4, monetization/pricing, mobile-first all covered from real experience. Only 2 genuine gaps, not fabricated: catalog/listing management (still an open question in experience_bank.md) and fulfillment/logistics (real background gap -- no physical-goods logistics experience). Auto-fit to one full page (93.7%)."
   }
  ]
 }

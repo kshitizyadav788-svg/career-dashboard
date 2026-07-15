@@ -34,12 +34,21 @@ STYLE_DEFAULT = {
 }
 
 # Ordered tight -> loose. fit_to_page() walks these and keeps the fullest one that still fits
-# on a single page. Fonts stay in the ATS-safe / readable 9.5-11pt band throughout.
+# on a single page. Fonts stay in the ATS-safe / readable 9.5-11pt band throughout. Steps are
+# intentionally fine-grained (font AND line/gap increments interleaved) so a resume whose content
+# sits between two font sizes -- where the bigger font overflows to 2 pages but the smaller one
+# under-fills -- can still be nudged into the ~93-98% band via line spacing rather than falling
+# back to a visibly short page.
 STYLE_PRESETS = [
     {"body": 9.5,  "line": 1.00, "gap": 1.0, "sec_before": 5.0, "sec_after": 2.0, "sub_before": 3.0},
     {"body": 9.5,  "line": 1.06, "gap": 2.0, "sec_before": 6.0, "sec_after": 2.5, "sub_before": 3.5},
+    {"body": 9.5,  "line": 1.11, "gap": 2.5, "sec_before": 6.5, "sec_after": 2.5, "sub_before": 3.5},
+    {"body": 9.5,  "line": 1.16, "gap": 3.0, "sec_before": 7.0, "sec_after": 3.0, "sub_before": 4.0},
+    {"body": 9.75, "line": 1.14, "gap": 3.0, "sec_before": 7.0, "sec_after": 3.0, "sub_before": 4.0},
+    {"body": 9.5,  "line": 1.22, "gap": 3.5, "sec_before": 7.5, "sec_after": 3.0, "sub_before": 4.0},
     {"body": 10.0, "line": 1.06, "gap": 2.0, "sec_before": 6.0, "sec_after": 2.5, "sub_before": 3.5},
     {"body": 10.0, "line": 1.12, "gap": 3.0, "sec_before": 7.0, "sec_after": 3.0, "sub_before": 4.0},
+    {"body": 10.0, "line": 1.18, "gap": 3.5, "sec_before": 7.5, "sec_after": 3.5, "sub_before": 4.5},
     {"body": 10.5, "line": 1.10, "gap": 3.0, "sec_before": 7.0, "sec_after": 3.0, "sub_before": 4.0},
     {"body": 10.5, "line": 1.16, "gap": 4.0, "sec_before": 8.0, "sec_after": 3.5, "sub_before": 4.5},
     {"body": 11.0, "line": 1.15, "gap": 4.0, "sec_before": 8.0, "sec_after": 4.0, "sub_before": 5.0},
