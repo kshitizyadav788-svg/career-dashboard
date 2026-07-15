@@ -82,6 +82,15 @@
    "resume": "resumes/OLX-Product Manager.docx",
    "matchScore": 92,
    "why": "Pasted JD, no job-board link yet. 92% on Required keywords (24/26) -- very strong fit: B2C two-sided marketplace, business+consumer users, GenAI/LLM, personalization/ranking, experimentation, payments/trust, GA4, monetization/pricing, mobile-first all covered from real experience. Only 2 genuine gaps, not fabricated: catalog/listing management (still an open question in experience_bank.md) and fulfillment/logistics (real background gap -- no physical-goods logistics experience). Auto-fit to one full page (93.7%)."
+  },
+  {
+   "id": "EXT10",
+   "title": "Platform Product Manager",
+   "co": "Airtel Financial Services",
+   "addedDate": "2026-07-15",
+   "resume": "resumes/Airtel-Platform Product Manager.docx",
+   "matchScore": 91,
+   "why": "Pasted JD, no job-board link yet. 91% on the platform/API/data SKILL keywords (20/22: platform, reusable, shared services, API integration, backend systems, systems thinking, fraud/verification, consent, payments, data-driven, prioritization, adoption, business outcomes all covered from real work -- 6-gateway payment integration, in-house VC platform, verification/fraud flow, omnichannel support, backend automation, BI). Keyword gaps: configurable + platform architecture (platform-PM depth). IMPORTANT -- this is an honest STRETCH, and the 91% reflects transferable skills, not overall fit: (1) domain is fintech LENDING (Personal/Gold/Business Loans, Credit Cards, EMI) -- his platform/payments experience is B2C EdTech, a real domain transfer; (2) it's a dedicated Platform-PM role (building shared platform services as the whole job) vs his product/journey ownership; (3) specific named capabilities in the JD -- rule engine, UPI Mandate, selfie liveness/face verification -- he hasn't built (they're listed as examples, not requirements). Defensible application on platform/API/data strength, but not a slam-dunk. Auto-fit to one full page (93.1%)."
   }
  ]
 }
