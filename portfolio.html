@@ -45,6 +45,11 @@
   .nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:58px}
   .brand{font-weight:700;font-size:17px;letter-spacing:-.01em}
+  .nav-left{display:flex;align-items:center;gap:11px}
+  .otw{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--good);border:1px solid color-mix(in srgb,var(--good) 42%,transparent);border-radius:20px;padding:4px 10px;white-space:nowrap}
+  .otw .dot{width:7px;height:7px;border-radius:50%;background:var(--good);animation:otwp 2.2s infinite}
+  @keyframes otwp{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--good) 55%,transparent)}70%{box-shadow:0 0 0 6px transparent}100%{box-shadow:0 0 0 0 transparent}}
+  @media(max-width:600px){.otw{display:none}}
   .nav-links{display:flex;gap:22px}
   .nav-links a{font-size:14px;font-weight:500;color:var(--muted);transition:color .15s}
   .nav-links a:hover{color:var(--ink)}
@@ -195,7 +200,10 @@
 
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="brand">Kshitiz Yadav</a>
+    <div class="nav-left">
+      <a href="#top" class="brand">Kshitiz Yadav</a>
+      <span class="otw"><span class="dot"></span>Open to work</span>
+    </div>
     <nav class="nav-links"><a href="#work">Work</a><a href="#role">Role</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
     <div class="nav-right">
       <button class="themeb" id="themeb" aria-label="Toggle light/dark"><svg id="ticon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M6 6l-1.4-1.4M19.4 19.4 18 18M18 6l1.4-1.4M4.6 19.4 6 18"/></svg></button>
@@ -380,7 +388,7 @@
 
 <!-- 6 · CONTACT -->
 <section id="contact" class="contact"><div class="wrap">
-  <span class="eyebrow" style="display:block;margin-bottom:12px">Open to PM roles · Gurugram · Bangalore · Hyderabad · Remote</span>
+  <span class="eyebrow" style="display:block;margin-bottom:12px">Open to PM roles · Gurugram · Bangalore · Hyderabad · Remote · Open to relocation</span>
   <h2>Let's talk.</h2>
   <p>If you're hiring a PM who leads with growth and ships with AI, I'd love to connect.</p>
   <div class="clinks">
@@ -392,7 +400,7 @@
     <div class="c"><div class="k">Phone</div><a class="v" href="tel:+918756972501">+91 87569 72501</a></div>
     <div class="c"><div class="k">Email</div><a class="v" href="mailto:kshitizyadav788@gmail.com">kshitizyadav788@gmail.com</a></div>
     <div class="c"><div class="k">LinkedIn</div><a class="v" href="https://linkedin.com/in/kshitizyadav" target="_blank" rel="noopener">in/kshitizyadav</a></div>
-    <div class="c"><div class="k">Location</div><div class="v">Gurugram · Bangalore · Hyderabad · Remote</div></div>
+    <div class="c"><div class="k">Location</div><div class="v">Gurugram · Bangalore · Hyderabad · Remote · Open to relocation</div></div>
   </div>
 </div></section>
 
