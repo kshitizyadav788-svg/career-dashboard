@@ -110,6 +110,15 @@
    "resume": "resumes/Amex-Enterprise Payments Product Manager.docx",
    "matchScore": 88,
    "why": "Pasted JD, no job-board link yet. 88% on skill keywords (21/24: product development/management, delivery, release plans, Agile/JIRA, user stories, features, capabilities, payments, stakeholder mgmt, cross-functional, analytical, problem solving, scale, performance metrics, modernization, drive change, team leadership, trade-offs, roadmap all covered from real work). BIGGEST STRETCH OF THE BATCH -- the 88% measures transferable delivery/payments SKILLS and materially OVERSTATES the real fit: this is an ENTERPRISE PAYMENTS-INFRASTRUCTURE role on a $1.6T network (clearing & settlement, bank-rail integrations, legacy-to-cloud modernization, scaled Agile/SAFe, leading a product org across 170 markets). His payments experience is B2C payment-GATEWAY integration (Razorpay/PayU/etc.), NOT enterprise money-movement infra -- a different world. Keyword gaps reflect this: clearing & settlement, cloud (legacy->cloud migration), scaled Agile. Honest recommendation: only apply if deliberately pivoting toward enterprise payments; the delivery + multi-gateway-payments + modernization-of-flows story is the angle, but expect the domain gap to be the deciding factor, not the resume. Auto-fit to one full page (94.8%)."
+  },
+  {
+   "id": "EXT13",
+   "title": "Associate Product Manager - Fintech",
+   "co": "Airtel (Fintech)",
+   "addedDate": "2026-07-15",
+   "resume": "resumes/Airtel-Associate Product Manager Fintech.docx",
+   "matchScore": 91,
+   "why": "Pasted JD, no job-board link yet. Different Airtel role from EXT10 (that's the Platform PM; this is a data-heavy APM in fintech/credit cards). 91% on skill keywords (20/22) -- and this role's CORE is his wheelhouse: deep SQL & data analysis, dashboards & metric validation, first-principles problem solving, sprint/backlog/user-story/acceptance-criteria execution, data validation with APIs & backend systems, cross-functional liaison, trade-offs, event tracking (GA4) & experimentation (A/B), post-launch iteration -- all covered from real work. The 2 keyword gaps are the STATED domain requirements he genuinely lacks: 'financial services experience' (poster requires 1+ yr) and partnering with a 'bank / regulated financial institution' (his payments/gateway work is FS-adjacent but not a bank partnership). NICE-TO-HAVE gaps (not scored): credit cards, credit score, underwriting, risk, compliance-driven products. Honest read: strong on the data/execution skills the role is built around, but the fintech/credit-card/bank-partner domain is the real gap -- better fit than the Amex/Airtel-Platform stretches because the day-to-day (SQL, dashboards, sprints) is exactly what he does. Auto-fit to one full page (93.1%)."
   }
  ]
 }
