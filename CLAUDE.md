@@ -211,10 +211,14 @@ Issue involved. When you finish:
    (today, ISO), resume: "resumes/<file>.docx", matchScore, why}`. `id` just needs to be unique
    within the file — increment from the highest existing `EXT<n>`. The dashboard tab sorts
    **newest-first** by whichever is most recent: `updatedDate` if present, else `addedDate`.
-   **If you're refreshing an existing entry** (re-tailoring the same role — don't create a
-   duplicate), keep its `addedDate` and set/refresh **`updatedDate`** (today, ISO) so it floats
-   back to the top and shows an "updated" pill. Regenerate the resume through `fit_to_page()` and
-   re-verify the score honestly (it may move — explain any change in `why`).
+   **Use a full ISO timestamp with time** (e.g. `2026-07-15T15:00:00`), NOT a date-only string —
+   several resumes tailored on the same day must order by actual sequence, and date-only values
+   tie and fall back to array order (this bug once buried the newest entries mid-list). The tab
+   displays only the date part (`slice(0,10)`), so the time is invisible; it exists purely for
+   ordering. **If you're refreshing an existing entry** (re-tailoring the same role — don't create
+   a duplicate), keep its `addedDate` and set/refresh **`updatedDate`** (full ISO timestamp) so it
+   floats back to the top and shows an "updated" pill. Regenerate the resume through
+   `fit_to_page()` and re-verify the score honestly (it may move — explain any change in `why`).
 3. This shows up in the dashboard's **"External JD Resumes"** tab automatically (client fetches
    `external_resumes.json` at runtime, same pattern as `jobs.json`). No `seed_jobs.json` entry
    needed — that file is for the automated Job Matches feed specifically.

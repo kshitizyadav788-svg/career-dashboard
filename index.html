@@ -705,7 +705,7 @@ function renderExternalResumes(){
    ${rows.length?rows.map(r=>`<tr>
      <td><b>${esc(r.title)}</b></td>
      <td class="muted">${esc(r.co)}</td>
-     <td class="muted nowrap">${r.updatedDate?`${esc(r.updatedDate)} <span class="pill" style="background:#2E5AAC22;color:#2E5AAC">updated</span>`:esc(r.addedDate||'')}</td>
+     <td class="muted nowrap">${esc((r.updatedDate||r.addedDate||'').slice(0,10))}${r.updatedDate?` <span class="pill" style="background:#2E5AAC22;color:#2E5AAC">updated</span>`:''}</td>
      <td>${r.matchScore!=null?`<span class="scorebadge" style="background:${color(r.matchScore)}22;color:${color(r.matchScore)}">${r.matchScore}</span>`:'—'}</td>
      <td class="nowrap">${r.resume?`<a class="btn" href="${encodeURI(r.resume)}" target="_blank" download>⭳ .docx</a> <a class="btn" href="${encodeURI(r.resume.replace(/\.docx$/i,'.pdf'))}" target="_blank" download>⭳ .pdf</a>`:'—'}</td>
      <td class="nowrap">${r.coverLetter?`<a class="btn" href="${encodeURI(r.coverLetter)}" target="_blank" download>⭳ .docx</a> <a class="btn" href="${encodeURI(r.coverLetter.replace(/\.docx$/i,'.pdf'))}" target="_blank" download>⭳ .pdf</a>`:'—'}</td>
