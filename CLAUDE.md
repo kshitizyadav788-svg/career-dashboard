@@ -209,7 +209,12 @@ Issue involved. When you finish:
 1. Render + save the resume as usual.
 2. Append an entry to **`external_resumes.json`**: `{id: "EXT<n>", title, co, addedDate
    (today, ISO), resume: "resumes/<file>.docx", matchScore, why}`. `id` just needs to be unique
-   within the file — increment from the highest existing `EXT<n>`.
+   within the file — increment from the highest existing `EXT<n>`. The dashboard tab sorts
+   **newest-first** by whichever is most recent: `updatedDate` if present, else `addedDate`.
+   **If you're refreshing an existing entry** (re-tailoring the same role — don't create a
+   duplicate), keep its `addedDate` and set/refresh **`updatedDate`** (today, ISO) so it floats
+   back to the top and shows an "updated" pill. Regenerate the resume through `fit_to_page()` and
+   re-verify the score honestly (it may move — explain any change in `why`).
 3. This shows up in the dashboard's **"External JD Resumes"** tab automatically (client fetches
    `external_resumes.json` at runtime, same pattern as `jobs.json`). No `seed_jobs.json` entry
    needed — that file is for the automated Job Matches feed specifically.

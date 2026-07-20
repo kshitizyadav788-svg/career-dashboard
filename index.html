@@ -694,16 +694,18 @@ function tailorCell(j){
    e.g. no job-board link yet, or a role you found yourself). Claude maintains this list by hand
    in external_resumes.json whenever it tailors one of these; see CLAUDE.md. */
 function renderExternalResumes(){
-  const rows=[...(DB.externalResumes||[])].sort((a,b)=>(b.addedDate||'').localeCompare(a.addedDate||''));
+  // sort newest-first by whichever is most recent: updatedDate (a refresh) or addedDate (created)
+  const effDate=x=>(x.updatedDate||x.addedDate||'');
+  const rows=[...(DB.externalResumes||[])].sort((a,b)=>effDate(b).localeCompare(effDate(a)));
   document.getElementById('v-external').innerHTML=`
    <div class="toolbar"><b>${rows.length} externally-tailored resume${rows.length===1?'':'s'}</b>
-     <span class="muted">· paste a JD directly in a Claude Code chat to add one here</span></div>
+     <span class="muted">· newest first · paste a JD directly in a Claude Code chat to add one here</span></div>
    <div class="card" style="padding:6px 4px"><table><thead><tr>
-     <th>Role</th><th>Company</th><th>Added</th><th>Match</th><th>Resume</th><th>Cover Letter</th><th>Notes</th></tr></thead><tbody>
+     <th>Role</th><th>Company</th><th>Added / Updated</th><th>Match</th><th>Resume</th><th>Cover Letter</th><th>Notes</th></tr></thead><tbody>
    ${rows.length?rows.map(r=>`<tr>
      <td><b>${esc(r.title)}</b></td>
      <td class="muted">${esc(r.co)}</td>
-     <td class="muted nowrap">${esc(r.addedDate||'')}</td>
+     <td class="muted nowrap">${r.updatedDate?`${esc(r.updatedDate)} <span class="pill" style="background:#2E5AAC22;color:#2E5AAC">updated</span>`:esc(r.addedDate||'')}</td>
      <td>${r.matchScore!=null?`<span class="scorebadge" style="background:${color(r.matchScore)}22;color:${color(r.matchScore)}">${r.matchScore}</span>`:'—'}</td>
      <td class="nowrap">${r.resume?`<a class="btn" href="${encodeURI(r.resume)}" target="_blank" download>⭳ .docx</a> <a class="btn" href="${encodeURI(r.resume.replace(/\.docx$/i,'.pdf'))}" target="_blank" download>⭳ .pdf</a>`:'—'}</td>
      <td class="nowrap">${r.coverLetter?`<a class="btn" href="${encodeURI(r.coverLetter)}" target="_blank" download>⭳ .docx</a> <a class="btn" href="${encodeURI(r.coverLetter.replace(/\.docx$/i,'.pdf'))}" target="_blank" download>⭳ .pdf</a>`:'—'}</td>
