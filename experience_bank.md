@@ -23,6 +23,15 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   they interact through. This is real marketplace/two-sided-platform experience, not an analogy --
   relevant to any JD asking for "marketplace," "aggregator," or "two-sided platform" experience.
 
+## Platform Scale (real numbers — use for "scale" questions)
+- PlanetSpark enrolled (paying) user base: **138,216 learners** (confirmed 2026-07). It's a
+  high-ticket **paid** B2C EdTech (ARPU ₹35K → ₹45K), a two-sided marketplace (students + teachers)
+  -- NOT a freemium 1M+ MAU product. For "have you worked on a 1M+ user/MAU product?" questions,
+  answer **honestly**: it's ~138K enrolled paying users (below 1M), so do NOT claim 1M+; reframe
+  around paid scale + revenue impact, which is the stronger card for a Revenue/Monetization role.
+- OPEN: total *registered* users / app downloads / MAU (all-signups, typically much higher than
+  enrolled) is not yet confirmed -- ask Kshitiz before citing any figure above 138,216.
+
 ## Teacher/Partner-Side (Supply-Side) Analytics & Tools
 - Built teacher-facing (supply-side) features: payout history and current-payout-generated
   visibility, demo-class performance analysis, and conversion analysis (demo-to-enrolment, by
