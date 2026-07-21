@@ -246,9 +246,19 @@ RAPIDAPI_KEY=... ADZUNA_APP_ID=... ADZUNA_APP_KEY=... python fetch_jobs.py
 
 ## Naukri / Foundit profile renovation (external sites, not tracked in this repo)
 Kshitiz asked Claude to access his Naukri and Foundit profiles (open in his browser, via
-Claude-in-Chrome) and renovate them into stronger PM profiles. Progress so far, as of 2026-07-08
-(update this section as work continues — it's the durable cross-device record since these sites
-aren't in git):
+Claude-in-Chrome) and renovate them into stronger PM profiles. **Status as of 2026-07-15: BOTH
+substantially complete.** Full detail lives in the `project-naukri-profile` memory; summary:
+- **Naukri — DONE**: Resume Headline, Profile Summary (B2C-growth-first, 138K+ enrolled learners),
+  and Key Skills (added SQL, Power BI, Payment Gateway Integration, Stakeholder Management) all
+  saved live, plus the Projects(10)/Employment(3) done earlier.
+- **Foundit — Summary + Skills DONE**: strong Profile Summary saved; 8 PM skills added. Optional
+  remaining (low priority): Foundit Projects section (empty) + work-experience bullet descriptions.
+- **Two hard-won GOTCHAS (see memory for detail):** (1) **On Naukri the ₹ symbol saves as "?"** —
+  always write **"Rs"** (and "to" instead of "→") in Naukri headline/summary text. (2) **Naukri Key
+  Skills are dropdown-restricted** — only taxonomy terms with a matching suggestion can be added;
+  "Team Leadership" glitched and "Two-Sided Marketplace"/"P&L Management" aren't in the taxonomy.
+
+Historical detail (as of 2026-07-08, superseded by the above but kept for context):
 
 **Naukri (`https://www.naukri.com/mnjuser/profile`) — in progress:**
 - ✅ **Projects section**: renovated, now has 10 real entries (all verified against
@@ -307,9 +317,9 @@ If push is rejected → `git pull` then `git push` again. Never force-push (the 
 ## Open items / TODO
 - [ ] Activate JSearch (subscribe free plan on RapidAPI) → unlocks fresh Indeed/LinkedIn/Glassdoor.
 - [ ] Re-scrape Naukri via Claude-in-Chrome periodically → regenerate `seed_jobs.json`.
-- [ ] Save the drafted Naukri **Resume Headline / Profile Summary / Key Skills** live (exact text
-      in the "Naukri / Foundit profile renovation" section above) — Projects + Employment already done.
-- [ ] Renovate the **Foundit** profile (not started at all yet) — same approach as Naukri.
+- [x] ~~Save the drafted Naukri Resume Headline / Profile Summary / Key Skills live~~ — DONE 2026-07-15.
+- [x] ~~Renovate the Foundit profile~~ — Summary + Skills DONE 2026-07-15. Optional leftover:
+      Foundit Projects section (empty) + work-experience bullet descriptions (low priority).
 - [ ] `experience_bank.md`'s "Open Questions" section has two unanswered items (formal cohort
       analysis experience; catalogue/content-listing work detail) — ask Kshitiz when relevant.
 - [ ] Optional: make site private (Cloudflare Pages + Access) — currently PUBLIC.
