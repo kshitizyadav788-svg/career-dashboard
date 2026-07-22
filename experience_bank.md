@@ -180,8 +180,17 @@ Once answered, move the fact into the sections above and delete the question her
   performance, homework submission) to drive renewal triggers and content recommendations, plus an
   internal ops engine covering teacher capacity/scheduling (**3,500+ teachers**), payroll based on
   classes taught, and subscription billing lifecycles. **NOT yet used on any resume** -- that
-  description is of the COMPANY's infrastructure; still need him to confirm (a) which parts he
-  personally built/owned, and (b) whether the 3,500+ teacher figure is accurate. The pieces already
-  independently verified and safe to use: renewal engine/triggers, content recommendations, teacher
-  payout visibility, CRM revamp.
+  description is of the COMPANY's infrastructure. **PARTIAL ANSWER (2026-07-22): Kshitiz confirmed
+  he DOES have real experience here -- he built BOTH the student side and the teacher side** -- but
+  asked to park the detail for later, so it is deliberately still UNUSED on any resume. To finish
+  this when he's ready, ask for his level (A: owned as PM / B: owned some parts / C: used it /
+  D: just aware) on each of: (1) the unified customer-data layer that stitches behavioural signals
+  (site behaviour + demo booking + class performance + homework) into one profile driving renewal
+  triggers and content recommendations; (2) the ops engine -- teacher capacity & scheduling, teacher
+  payout/payroll calculation, subscription billing lifecycle; and (3) whether the **3,500+ teachers**
+  figure is accurate and defensible in an interview.
+  Given he built both marketplace sides, he is likely a legitimate "B" (or higher) -- this would
+  unlock a strong "built a custom CDP-equivalent + internal ops engine" story for data-heavy roles.
+  The pieces already independently verified and safe to use today: renewal engine/triggers, content
+  recommendations, teacher payout visibility, CRM revamp, student journey/LMS, teacher-side tools.
 
