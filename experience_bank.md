@@ -78,6 +78,44 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   smooth delivery) -- not physical-goods supply chain/logistics, which remains a real gap for
   any JD that specifically wants that.
 
+## Content Catalogue & CMS (answers the old "catalogue/content-listing" open question)
+- Collaborated with the content team to build and deploy **grade-wise and course-wise content** for
+  learners and teachers, selected from learner choices + teacher recommendation -- the learner can
+  opt into a course early (from enrolment through the first five classes).
+- Later **automated content generation with AI**: prompt-based generation of grade-wise content,
+  dissolving the manual content-team intervention that was previously required.
+- This is genuine content-catalogue / digital-content-management experience (relevant to any JD
+  asking for "Digital Content Management Systems" or catalogue/content-listing work).
+
+## Lead Attribution & Source Tracking
+- Managed lead sources through a **centralized CRM**. Inbound leads (e.g. Google Ads, website
+  sign-ups) are **automatically tagged via tracking cookies / UTM parameters** on form submission;
+  outbound leads (cold outreach, referrals) are auto-uploaded or entered by Business Development
+  Counselors. Real channel/campaign attribution plumbing.
+
+## Audience Segmentation & Targeting
+- Automated a **customized course plan** so each customer sees only the courses best suited to their
+  child's grade.
+- Built an automated search/keyword approach using the **highest-volume terms customers actually
+  search** (KG, Pre-Nursery, UKG, 1st Grade, ...).
+- For working professionals, segmented by **industry and seniority level** (e.g. finance mid-level
+  professional, marketing early-career, operations senior professional) and targeted accordingly.
+
+## Performance Marketing Collaboration
+- Partnered with Marketing and Sales on many initiatives to understand the funnel, optimise **lead
+  flow and lead acceptance**, and iterate the process to identify the **best-performing lead
+  sources**, improving performance-marketing / ad-generated lead quality. (Collaboration and funnel
+  ownership -- NOT hands-on ad-buying: he has no bidding / pacing / auction-dynamics / ad-server /
+  DSP / SSP experience. Do not claim those.)
+
+## Third-Party Service Integrations (expanded vendor list)
+- Telephony / calling: **Exotel, Servetel, Tata Tele**.
+- Live classes / video: **Daily.co, 100ms**. Video counselling sessions + recording: **Convin**.
+- (Plus the payment gateways and Gupshup / Venera Connect messaging listed above.) Onboarding and
+  integrating these third-party services end-to-end is genuine partner-integration lifecycle work.
+  NOTE: this is third-party *service* integration -- it does NOT by itself prove internal
+  **microservices architecture** experience; don't claim microservices.
+
 ## Team Leadership
 - Trained and led a team of 8 people as Assistant Product Manager (Sep 2022 - Aug 2023) --
   real, confirmed team-leading experience (closes the "team leading" gap flagged for the
@@ -128,11 +166,22 @@ Once answered, move the fact into the sections above and delete the question her
   specifics beyond "6 API-integrated payment gateways" -- which gateways, whose API docs,
   webhook/reconciliation handling? -->
 
-- **Formal cohort analysis / catalogue-adjacent work** (flagged while tailoring for Vishal Mega
-  Mart NP15, later also relevant to Tata 1mg): he described the "Demo Analysis" AI feature when
-  asked about cohort analysis (now captured above), but that's individual-customer behavior
-  analysis for sales enablement, not formal cohort analysis (grouping users by shared
-  signup/time-period and tracking aggregate retention/behavior trends). Still open: does he have
-  real experience with that specific technique (in GA4, Excel, or elsewhere)? Also still open:
-  what the catalogue/content-listing work actually was (which product, what scope).
+- **Formal cohort analysis** (flagged while tailoring for Vishal Mega Mart NP15, later also
+  relevant to Tata 1mg): he described the "Demo Analysis" AI feature when asked about cohort
+  analysis (now captured above), but that's individual-customer behavior analysis for sales
+  enablement, not formal cohort analysis (grouping users by shared signup/time-period and tracking
+  aggregate retention/behavior trends). Still open: does he have real experience with that specific
+  technique (in GA4, Excel, or elsewhere)?
+  *(The catalogue/content-listing half of this question was ANSWERED 2026-07-22 -- see the
+  "Content Catalogue & CMS" section above.)*
+- **In-house CDP-like data unification & operations engine** (flagged while tailoring for dunnhumby
+  EXT21, 2026-07-22): Kshitiz described PlanetSpark as having a proprietary CRM/CDP that unifies
+  first-party behavioural signals (website interaction, trial-class booking behaviour, in-class
+  performance, homework submission) to drive renewal triggers and content recommendations, plus an
+  internal ops engine covering teacher capacity/scheduling (**3,500+ teachers**), payroll based on
+  classes taught, and subscription billing lifecycles. **NOT yet used on any resume** -- that
+  description is of the COMPANY's infrastructure; still need him to confirm (a) which parts he
+  personally built/owned, and (b) whether the 3,500+ teacher figure is accurate. The pieces already
+  independently verified and safe to use: renewal engine/triggers, content recommendations, teacher
+  payout visibility, CRM revamp.
 
