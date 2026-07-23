@@ -140,6 +140,30 @@ auto-create it. The `tailor-resume` label already exists now (`gh label create` 
 if this ever needs recreating on a fresh repo, create the label first or submitted issues won't
 carry it.
 
+## Master-resume conventions (set by Kshitiz 2026-07-22 — apply to EVERY resume, base + tailored)
+These came from him reviewing the base resume line by line. Follow them unless a specific JD makes
+one of them counter-productive:
+1. **Don't over-use "B2C" — cap it at ONE mention.** It used to appear 4x (tagline, summary,
+   competencies, experience intro) and that **typecasts him as a consumer-only PM**, causing
+   B2B/SaaS/platform recruiters to filter him out. It now appears exactly once, in the experience
+   intro (factual company context), which still gives the ATS a "B2C" hit for the roles that want
+   it (PhysicsWallah/Nat Habit/MakeMyTrip/OLX all asked for B2C) without dominating. Prefer broader
+   but equally true framing elsewhere: "consumer & marketplace platforms", "two-sided marketplace",
+   "consumer apps". This is also more ACCURATE — his work includes agent-facing CRM, teacher/supply-
+   side tools, platform integrations and automation, which are not B2C-only.
+2. **Professional Summary = 2-3 lines of positioning, NOT a metrics dump.** The old 6-line summary
+   restated the same numbers that appear in the bullets below it, so recruiters read everything
+   twice. The summary should say: who he is, what he owns, how he works, and at most one or two
+   headline numbers. Detailed metrics belong in the experience bullets where they have context.
+3. **Never let the summary duplicate the experience bullets.** If a metric is in a bullet, don't
+   repeat it in the summary (and vice versa).
+4. **If a tailored variant leaves spare space, add a differentiated bullet** rather than padding.
+   Pick one that covers a dimension the other bullets don't. The **counselor-wise P&L tracker** was
+   added to the base resume for exactly this reason — it's the only bullet showing P&L /
+   unit-economics ownership, which is rare at his level and gets noticed.
+5. Retention stays in the positioning line — it's a core PM metric he genuinely owns (₹70L renewals,
+   +45% retention from the 2:1 automation, +25% ARPU) and is frequently a named JD requirement.
+
 ## The one-page-full rule (every resume, no exceptions)
 Kshitiz's standard: **every resume must be exactly ONE page, filled cleanly with no big empty gap
 at the bottom, and stay ATS-friendly** (single column, standard section headings, no tables /

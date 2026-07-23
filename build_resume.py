@@ -57,15 +57,16 @@ STYLE_PRESETS = [
 
 DATA = {
     "name": "KSHITIZ YADAV",
-    "tagline": "Product Manager  |  B2C Consumer Apps  |  Growth & Monetization  |  Two-Sided Platforms  |  AI-Enabled",
+    "tagline": "Product Manager  |  Growth & Monetization  |  Consumer & Marketplace Platforms  |  Funnel, Retention & Payments  |  Data-Driven, AI-Enabled",
     "contact": "Gurugram, India  •  +91 8756972501  •  kshitizyadav788@gmail.com  •  linkedin.com/in/kshitizyadav",
+    # Keep this SHORT (2-3 lines): positioning only -- who he is, what he owns, how he works, one
+    # or two headline numbers. Do NOT restate the metrics that already appear in the bullets below;
+    # that duplication was the reason this was rewritten (see CLAUDE.md "Master-resume conventions").
     "summary": (
-        "Product Manager with 5+ years owning the full B2C product lifecycle across a consumer app, a two-sided "
-        "student/teacher LMS, a sales CRM, and a product-led growth & renewal engine at a high-growth EdTech startup. "
-        "Consistent record of moving core metrics — 20% revenue growth, 25% ARPU expansion, ₹70L in product-led "
-        "renewals, and 2,000+ organic leads/month at 7% conversion. Pairs monetization and unit-economics thinking "
-        "with hands-on data analysis (SQL, GA4), A/B testing, and shipping production GenAI features; works across "
-        "engineering, design, marketing, sales, and operations."
+        "Product Manager with 5+ years owning products end-to-end — from discovery and PRDs through launch, "
+        "experimentation, and iteration — across consumer apps, a two-sided marketplace, and internal platform "
+        "and CRM systems. Partners closely with engineering, design, and business teams, using data (SQL, Power BI, "
+        "GA4) and AI to move core metrics. Track record of driving 20% revenue growth and ₹70L in product-led renewals."
     ),
     "experience": {
         "company_line": "PlanetSpark — Product Manager",
@@ -76,6 +77,7 @@ DATA = {
                 "Built the LPP (Learn, Practice, Perform) module — customized 1:1 sessions, group activities, and performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
                 "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that lowered sales cost and generated ₹70L in renewals in a single month (Jan 2025).",
                 "Launched organic acquisition loops surfacing student progress (Sparkline, Word Wisdom, practice classes, workshops) across social channels, bringing 2,000+ organic leads/month at a 7% conversion rate.",
+                "Built a counselor-wise P&L tracker computing weekly profitability per sales counselor (Net Revenue − Fixed, Refund, Marketing & Sales cost), giving each counselor the revenue figure needed to turn profitable — putting unit-economics visibility in the hands of the front line.",
             ]},
             {"heading": "Funnel & Platform (0→1)", "bullets": [
                 "Re-architected the sign-up → demo → enrolment funnel: single-step OTP sign-in (replacing a two-step create-then-login flow), a preference-capture ranking model that surfaces best-fit courses during the counselor VC, 6 API-integrated payment gateways with pre-filled links, and auto-cleared parent-approval on payment — reducing drop-off across the sign-up, payment, and enrolment stages.",
@@ -88,7 +90,7 @@ DATA = {
             ]},
         ],
     },
-    "competencies": "Product Strategy & Roadmapping · Monetization & Unit Economics · Retention & Lifecycle · Funnel & Conversion Optimization · Product Design & Prototyping · A/B Testing & Experimentation · GTM & North-Star Metrics · B2C & Two-Sided Platforms · GenAI Product Development · Stakeholder Management · User Research · Agile/Scrum",
+    "competencies": "Product Strategy & Roadmapping · Monetization & Unit Economics · Retention & Lifecycle · Funnel & Conversion Optimization · Product Design & Prototyping · A/B Testing & Experimentation · GTM & North-Star Metrics · Consumer & Two-Sided Marketplace Platforms · GenAI Product Development · Stakeholder Management · User Research · Agile/Scrum",
     "skills": [
         ("Data & Analytics", "SQL, GA4, MS Excel (Advanced), Python (basic)"),
         ("Design & Prototyping", "Figma, Adobe Express, Canva AI, wireframing, clickable prototypes"),
