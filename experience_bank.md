@@ -174,8 +174,9 @@ Once answered, move the fact into the sections above and delete the question her
   technique (in GA4, Excel, or elsewhere)?
   *(The catalogue/content-listing half of this question was ANSWERED 2026-07-22 -- see the
   "Content Catalogue & CMS" section above.)*
-- **In-house CDP-like data unification & operations engine** (flagged while tailoring for dunnhumby
-  EXT21, 2026-07-22): Kshitiz described PlanetSpark as having a proprietary CRM/CDP that unifies
+- **In-house CDP-like data unification & operations engine** — **DROPPED 2026-07-22: Kshitiz chose
+  to leave this out; not pursuing it on resumes for now.** (Original detail kept below for context in
+  case he revisits.) He described PlanetSpark as having a proprietary CRM/CDP that unifies
   first-party behavioural signals (website interaction, trial-class booking behaviour, in-class
   performance, homework submission) to drive renewal triggers and content recommendations, plus an
   internal ops engine covering teacher capacity/scheduling (**3,500+ teachers**), payroll based on

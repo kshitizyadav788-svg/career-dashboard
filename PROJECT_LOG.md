@@ -54,11 +54,10 @@ Each has a REAL computed score and an honest "why" including gaps. Strongest rea
 - Expanded vendor list: Daily.co, 100ms, Convin, Servetel (on top of payments/Gupshup/Exotel).
 
 ### Parked (needs Kshitiz's input before use)
-- **Salary inconsistency**: Naukri ₹10.75L / Foundit ₹11L / iimjobs ₹9L — confirm true current CTC
-  so all three can be aligned.
-- **In-house CDP + ops engine** (teacher scheduling/payroll/subscription billing; "3,500+ teachers"):
-  he confirmed he built BOTH student & teacher sides but asked to detail later. Kept OFF all resumes
-  until he specifies ownership level and confirms the 3,500+ figure.
+- **Salary — CONFIRMED 2026-07-22: true current CTC = Rs 10.75 LPA** (Naukri already correct). Still
+  to align: iimjobs (shows 9L → 10.75L) and Foundit (shows 11L → 10.75L) — both need a quick
+  Claude-in-Chrome edit.
+- **In-house CDP + ops engine** — DROPPED 2026-07-22: Kshitiz chose to leave it out; not pursuing.
 - **Formal cohort analysis**: still open (Demo Analysis is individual-behaviour, not cohort).
 
 ---
