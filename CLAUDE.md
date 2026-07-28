@@ -4,6 +4,18 @@ This repo IS the deployed dashboard for **Kshitiz Yadav** (Product Manager job s
 Any Claude Code session — Windows laptop or Mac — should read this first, then continue.
 GitHub is the single source of truth; work from a fresh `git pull` and end with `git push`.
 
+> **Documentation set (read in this order for a cold start):**
+> 1. `CLAUDE.md` (this file) — the operating rules & conventions.
+> 2. `PROJECT_LOG.md` — current state / what's been done / what's parked (updated 2026-07-22).
+> 3. `PRD.md` — product requirements: what this is and why.
+> 4. `ARCHITECTURE.md` — tech stack & how it's built, in plain language.
+>
+> **Quick status (2026-07-22):** dashboard + hourly job Action live; auto-fit one-page resume engine
+> working; **24 tailored resumes** (EXT1–EXT24) in `external_resumes.json`; master resume revamped
+> (B2C capped at 1, tighter summary, P&L bullet added); Naukri/Foundit/iimjobs profiles renovated.
+> Parked pending Kshitiz's input: salary alignment (Naukri 10.75L / Foundit 11L / iimjobs 9L), the
+> in-house CDP/ops-engine ownership detail, and formal cohort-analysis experience.
+
 ## Who this is for
 Kshitiz Yadav — **Product Manager, ~5 yrs**, Gurgaon (open to remote/Bangalore).
 Positioning: **general B2C-growth PM first; AI is a skill/force-multiplier, NOT the identity.**
