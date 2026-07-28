@@ -62,12 +62,20 @@
   .btn.solid{background:var(--accent);border-color:var(--accent);color:#fff}
   .btn.solid:hover{filter:brightness(1.06)}
   .navtog{display:none;width:34px;height:34px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);cursor:pointer;align-items:center;justify-content:center}
-  .mmenu{display:none}
+  .mmenu,.mbackdrop{display:none}
+  .mbackdrop{position:fixed;inset:0;z-index:60;background:rgba(20,15,10,.42);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);opacity:0;pointer-events:none;transition:opacity .25s}
+  .mbackdrop.open{opacity:1;pointer-events:auto}
   @media(max-width:800px){
     .nav-links{display:none}.navtog{display:flex}
-    .mmenu{display:none;border-bottom:1px solid var(--line);background:var(--bg)}
-    .mmenu.open{display:block}
-    .mmenu a{display:block;padding:13px clamp(20px,5vw,52px);border-top:1px solid var(--line-2);color:var(--muted);font-weight:500}
+    .mbackdrop{display:block}
+    .mmenu{display:block;position:fixed;top:12px;left:12px;right:12px;z-index:70;background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 60px -18px rgba(42,36,29,.5);padding:10px 12px 14px;opacity:0;transform:translateY(-16px) scale(.98);pointer-events:none;transition:opacity .28s,transform .28s}
+    .mmenu.open{opacity:1;transform:none;pointer-events:auto}
+    .mtop{display:flex;align-items:center;justify-content:space-between;padding:6px 6px 10px;border-bottom:1px solid var(--line-2);margin-bottom:6px}
+    .mtop span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .mclose{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink);cursor:pointer}
+    .mclose svg{width:16px;height:16px}
+    .mmenu a{display:block;padding:14px 8px;border-radius:10px;color:var(--ink);font-weight:600;font-size:16px}
+    .mmenu a:hover,.mmenu a:active{background:var(--bg-2)}
   }
 
   section{padding:clamp(34px,4.5vw,56px) 0}
@@ -98,22 +106,16 @@
   .arw svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
   .vp{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
   .track{display:flex;transition:transform .5s cubic-bezier(.5,.05,.15,1);will-change:transform}
-  .slide{flex:0 0 100%;min-width:0;display:grid;grid-template-columns:1.5fr .85fr}
-  @media(max-width:720px){.slide{grid-template-columns:1fr}}
-  .sbody{padding:clamp(22px,2.8vw,32px)}
+  .slide{flex:0 0 100%;min-width:0;padding:clamp(22px,2.8vw,32px)}
   .scat{font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent)}
-  .sbody h3{font-size:clamp(19px,2.2vw,24px);font-weight:700;letter-spacing:-.01em;margin:8px 0 16px;line-height:1.15}
+  .slide h3{font-size:clamp(19px,2.2vw,24px);font-weight:700;letter-spacing:-.01em;margin:8px 0 16px;line-height:1.15}
   .pb{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
   .pb li{display:grid;grid-template-columns:58px 1fr;gap:10px;font-size:14.5px;line-height:1.45}
   .pb .lab{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding-top:3px}
-  .sresult{background:var(--accent-soft);padding:clamp(22px,2.8vw,32px);display:flex;flex-direction:column;justify-content:center;gap:4px;border-left:1px solid var(--line)}
-  @media(max-width:720px){.sresult{border-left:none;border-top:1px solid var(--line)}}
-  .sresult .lab{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--good)}
-  .sresult .rbig{font-size:clamp(30px,4vw,40px);font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--good);margin-top:8px}
-  .sresult .rbig span{font-size:15px;font-weight:600;color:var(--ink);opacity:.75}
-  .sresult .rsub{font-size:13.5px;color:var(--ink);margin-top:10px;line-height:1.4}
-  .sresult .plink{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13.5px;font-weight:600;color:var(--accent)}
-  .sresult .plink:hover{text-decoration:underline}
+  .pb li.res .lab{color:var(--good)}
+  .pb li.res .rv{color:var(--good);font-weight:700}
+  .stags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line-2)}
+  .stags span{font-size:12px;color:var(--accent);background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 26%,transparent);border-radius:20px;padding:4px 10px;font-weight:500}
   .pbar{height:3px;background:var(--line-2);border-radius:3px;overflow:hidden;margin-top:12px}
   .pbar i{display:block;height:100%;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left}
   .pbar i.run{transition:transform 4.5s linear;transform:scaleX(1)}
@@ -204,15 +206,19 @@
       <a href="#top" class="brand">Kshitiz Yadav</a>
       <span class="otw"><span class="dot"></span>Open to work</span>
     </div>
-    <nav class="nav-links"><a href="#work">Work</a><a href="#role">Role</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+    <nav class="nav-links"><a href="#work">Work</a><a href="#role">Role</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
     <div class="nav-right">
       <button class="themeb" id="themeb" aria-label="Toggle light/dark"><svg id="ticon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M6 6l-1.4-1.4M19.4 19.4 18 18M18 6l1.4-1.4M4.6 19.4 6 18"/></svg></button>
       <a href="resumes/Kshitiz Yadav - Product Manager Resume.pdf" download class="btn solid">Resume ↓</a>
       <button class="navtog" id="navtog" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     </div>
   </div>
-  <nav class="mmenu" id="mmenu"><a href="#work">Work</a><a href="#role">Role</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
 </header>
+<nav class="mmenu" id="mmenu">
+  <div class="mtop"><span>Menu</span><button class="mclose" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <a href="#work">Work</a><a href="#role">Role</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+<div class="mbackdrop" id="mbackdrop" aria-hidden="true"></div>
 
 <main id="top">
 
@@ -241,63 +247,63 @@
     <div class="vp" id="vp"><div class="track" id="track">
 
       <article class="slide">
-        <div class="sbody"><div class="scat">CRM · Sales enablement</div><h3>In-house Sales CRM for Counselors</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Built a CRM 0→1 — leads, integrated calling, targets, incentives, P&amp;L, and an AI "Demo Analysis" that suggests the right courses to pitch.</span></li>
-            <li><span class="lab">Users</span><span>Counselors work from one tool instead of many; every pitch is guided by the customer's demo behavior.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">−80% <span>sales-ops load</span></div><div class="rsub">₹1.6L saved / month · 100% verified enrolment</div></div>
+        <div class="scat">CRM · Sales enablement</div><h3>In-house Sales CRM for Counselors</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Built a CRM 0→1 — leads, integrated calling, targets, incentives, P&amp;L, and an AI "Demo Analysis" that suggests the right courses to pitch.</span></li>
+          <li><span class="lab">Users</span><span>Counselors work from one tool instead of many; every pitch is guided by the customer's demo behavior.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">−80% sales-ops load · ₹1.6L saved / month · 100% verified enrolment</span></li>
+        </ul>
+        <div class="stags"><span>REST APIs</span><span>Stakeholder Management</span><span>Team Leadership</span><span>P&amp;L Ownership</span><span>Storytelling</span></div>
       </article>
 
       <article class="slide">
-        <div class="sbody"><div class="scat">LMS · Learning experience</div><h3>Student LMS — demand side</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Built the student experience — live classes, practice, per-class feedback, progress showcases, and parent-teacher meetings.</span></li>
-            <li><span class="lab">Users</span><span>Students see their progress and stay engaged; parents get real visibility into learning.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">+15% <span>completion · 2 mo</span></div><div class="rsub">2,000+ organic leads/month at 7% conversion · +25% platform engagement via LPP</div></div>
+        <div class="scat">LMS · Learning experience</div><h3>Student LMS — demand side</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Built the student experience — live classes, practice, per-class feedback, progress showcases, and parent-teacher meetings.</span></li>
+          <li><span class="lab">Users</span><span>Students see their progress and stay engaged; parents get real visibility into learning.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">+15% completion in first 2 months · 2,000+ organic leads/month at 7% conversion · +25% platform engagement via LPP</span></li>
+        </ul>
+        <div class="stags"><span>GA4</span><span>A/B Testing</span><span>Figma</span><span>Adobe Express</span><span>User Research</span></div>
       </article>
 
       <article class="slide">
-        <div class="sbody"><div class="scat">Marketplace · Supply side</div><h3>Teacher LMS — supply side</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Built a teacher LMS — payout visibility, demo performance, demo→enrolment analytics, live class tracking, automated payouts, and teacher-led renewals.</span></li>
-            <li><span class="lab">Users</span><span>Teachers see earnings, start classes on time, and track better metrics — driving stronger class conduction and a healthy two-sided marketplace.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">80% <span>class conduction</span></div><div class="rsub">90% on-time class starts · live class tracking · automated payouts</div></div>
+        <div class="scat">Marketplace · Supply side</div><h3>Teacher LMS — supply side</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Built a teacher LMS — payout visibility, demo performance, demo→enrolment analytics, live class tracking, automated payouts, and teacher-led renewals.</span></li>
+          <li><span class="lab">Users</span><span>Teachers see earnings, start classes on time, and track better metrics — driving stronger class conduction and a healthy two-sided marketplace.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">80% class conduction · 90% on-time class starts · live class tracking · automated payouts</span></li>
+        </ul>
+        <div class="stags"><span>SQL</span><span>Metabase</span><span>Power BI</span><span>Cross-functional Leadership</span></div>
       </article>
 
       <article class="slide">
-        <div class="sbody"><div class="scat">Monetization · Retention</div><h3>Growth &amp; renewal engine</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Restructured pricing value with the LPP module and moved renewals into the product (nudges, early-bird, free trials).</span></li>
-            <li><span class="lab">Users</span><span>Families get more value per class and renew in-product instead of via a sales call.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">+25% <span>ARPU</span></div><div class="rsub">₹35K→₹45K · +20% revenue · ₹70L renewals in one month</div></div>
+        <div class="scat">Monetization · Retention</div><h3>Growth &amp; renewal engine</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Restructured pricing value with the LPP module and moved renewals into the product (nudges, early-bird, free trials).</span></li>
+          <li><span class="lab">Users</span><span>Families get more value per class and renew in-product instead of via a sales call.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">+25% ARPU (₹35K→₹45K) · +20% revenue · ₹70L renewals in one month</span></li>
+        </ul>
+        <div class="stags"><span>Monetization &amp; Unit Economics</span><span>Product Strategy</span><span>Prioritization</span><span>RICE</span><span>MS Excel (Advanced)</span><span>GTM</span></div>
       </article>
 
       <article class="slide">
-        <div class="sbody"><div class="scat">Growth · Funnel · 0→1</div><h3>Funnel re-architecture &amp; app MVP</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Rebuilt sign-up→demo→enrolment: single-step OTP, best-fit course ranking, 6 payment gateways; shipped the app MVP in 2 months.</span></li>
-            <li><span class="lab">Users</span><span>Fewer steps to sign up, pay, and enrol; the right courses surface inside the counselor call.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">2 mo <span>0→1 MVP</span></div><div class="rsub">Lower funnel drop-off · fewer clicks across the whole journey for a seamless flow</div></div>
+        <div class="scat">Growth · Funnel · 0→1</div><h3>Funnel re-architecture &amp; app MVP</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Rebuilt sign-up→demo→enrolment: single-step OTP, best-fit course ranking, 6 payment gateways; shipped the app MVP in 2 months.</span></li>
+          <li><span class="lab">Users</span><span>Fewer steps to sign up, pay, and enrol; the right courses surface inside the counselor call.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">2-mo 0→1 MVP · lower funnel drop-off · fewer clicks across the whole journey for a seamless flow</span></li>
+        </ul>
+        <div class="stags"><span>Roadmapping</span><span>JIRA</span><span>Confluence</span><span>Agile / Scrum</span><span>Payment-gateway integration</span><span>Canva AI</span></div>
       </article>
 
       <article class="slide">
-        <div class="sbody"><div class="scat">AI · Automation</div><h3>Production GenAI &amp; automation</h3>
-          <ul class="pb">
-            <li><span class="lab">Impact</span><span>Shipped a production GenAI layer, an omnichannel helpdesk, enrolment automation, in-house video calls, and a verification flow.</span></li>
-            <li><span class="lab">Users</span><span>Faster support for customers, far less manual work for teams, and fewer fake sales.</span></li>
-          </ul>
-        </div>
-        <div class="sresult"><div class="lab">Result</div><div class="rbig">10%→1% <span>fake sales</span></div><div class="rsub">Manual punching 100%→5% · fewer escalations · better customer CSAT</div></div>
+        <div class="scat">AI · Automation</div><h3>Production GenAI &amp; automation</h3>
+        <ul class="pb">
+          <li><span class="lab">Impact</span><span>Shipped a production GenAI layer, an omnichannel helpdesk, enrolment automation, in-house video calls, and a verification flow.</span></li>
+          <li><span class="lab">Users</span><span>Faster support for customers, far less manual work for teams, and fewer fake sales.</span></li>
+          <li class="res"><span class="lab">Result</span><span class="rv">Fake sales 10%→1% · manual punching 100%→5% · fewer escalations · better customer CSAT</span></li>
+        </ul>
+        <div class="stags"><span>OpenAI / Gemini / Claude APIs</span><span>Prompt Engineering</span><span>Python (basic)</span><span>Problem-solving</span></div>
       </article>
 
     </div></div>
@@ -316,7 +322,7 @@
     <ul class="pb">
       <li><span class="lab">Impact</span><span>Hourly PM-role scraping, a weighted fit-scoring model, AI résumé tailoring, and a full application pipeline — designed and shipped solo, running live in the cloud.</span></li>
       <li><span class="lab">Users</span><span>One place for my whole search; shows recruiters a real, shipped, self-running product.</span></li>
-      <li class="res"><span class="lab">Result</span><span><b>Live &amp; auto-refreshing hourly via a GitHub Action.</b></span></li>
+      <li class="res"><span class="lab">Result</span><span class="rv">Live &amp; auto-refreshing hourly via a GitHub Action.</span></li>
     </ul>
     <a class="btn solid" href="https://kshitizyadav788-svg.github.io/career-dashboard/" target="_blank" rel="noopener" style="margin-top:18px">Open live dashboard →</a>
   </div>
@@ -346,28 +352,25 @@
 
 <!-- 4 · EDUCATION + 5 · SKILLS (compact, side by side to reduce scroll) -->
 <section id="education" class="band"><div class="wrap">
+  <div class="shead">Education &amp; certification</div>
   <div class="two">
     <div>
-      <div class="shead" id="edu">Education &amp; certification</div>
       <div class="item"><div class="t">BBA — Business Administration</div><div class="m">Chandigarh University · 2019–2021</div></div>
-      <div class="item"><div class="t">Product Management Certification</div><div class="m">Udemy · 2024</div></div>
-      <div class="item"><div class="t">JIRA Certification · Marketing Researchers &amp; Data Analyst</div><div class="m">Udemy 2024 · Proof &amp; Performance Services 2020</div></div>
+      <div class="item"><div class="t">Class XII (ISC)</div><div class="m">St. Thomas High School, Kanpur · 2018</div></div>
     </div>
-    <div id="skills">
-      <div class="shead">Skills</div>
-      <div class="subhead">Technical</div>
-      <div class="chiprow" style="margin-bottom:14px"><span>SQL</span><span>Metabase</span><span>GA4</span><span>Power BI</span><span>MS Excel (Advanced)</span><span>Python (basic)</span><span>A/B Testing</span><span>Figma</span><span>Adobe Express</span><span>Canva AI</span><span>JIRA</span><span>Confluence</span><span>Agile / Scrum</span><span>RICE</span><span>REST APIs</span><span>Payment-gateway integration</span><span>OpenAI / Gemini / Claude APIs</span><span>Prompt Engineering</span></div>
-      <div class="subhead">Non-technical</div>
-      <div class="chiprow"><span>Product Strategy</span><span>Roadmapping</span><span>Monetization &amp; Unit Economics</span><span>GTM</span><span>Stakeholder Management</span><span>Cross-functional Leadership</span><span>Team Leadership</span><span>User Research</span><span>Prioritization</span><span>P&amp;L Ownership</span><span>Storytelling</span><span>Problem-solving</span></div>
+    <div>
+      <div class="item"><div class="t">Product Management Certification</div><div class="m">Udemy · 2024</div></div>
+      <div class="item"><div class="t">JIRA Certification</div><div class="m">Udemy · 2024</div></div>
+      <div class="item"><div class="t">Marketing Researchers &amp; Data Analyst</div><div class="m">Proof &amp; Performance Services · 2020</div></div>
     </div>
   </div>
 </div></section>
 
 <!-- 5b · IMPACT, COMPOUNDING (growth path) -->
 <section id="impact"><div class="wrap">
-  <div class="shead">Impact, compounding</div>
+  <div class="shead">My journey as a PM</div>
   <div class="impanel reveal">
-    <div class="imhead"><span>The product manager growth path</span><span>2021 → 2026 · PlanetSpark</span></div>
+    <div class="imhead"><span>The path so far</span><span>2021 → 2026 · PlanetSpark</span></div>
     <svg viewBox="0 0 1000 200" preserveAspectRatio="none" role="img" aria-label="Impact rising from intern to Product Manager">
       <defs>
         <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--good)"/></linearGradient>
@@ -396,12 +399,6 @@
     <a href="tel:+918756972501" class="btn">+91 87569 72501</a>
     <a href="https://linkedin.com/in/kshitizyadav" target="_blank" rel="noopener" class="btn">LinkedIn ↗</a>
   </div>
-  <div class="cgrid">
-    <div class="c"><div class="k">Phone</div><a class="v" href="tel:+918756972501">+91 87569 72501</a></div>
-    <div class="c"><div class="k">Email</div><a class="v" href="mailto:kshitizyadav788@gmail.com">kshitizyadav788@gmail.com</a></div>
-    <div class="c"><div class="k">LinkedIn</div><a class="v" href="https://linkedin.com/in/kshitizyadav" target="_blank" rel="noopener">in/kshitizyadav</a></div>
-    <div class="c"><div class="k">Location</div><div class="v">Gurugram · Bangalore · Hyderabad · Remote · Open to relocation</div></div>
-  </div>
 </div></section>
 
 </main>
@@ -420,9 +417,14 @@
   function icon(){ic.innerHTML=isDark()?sun:moon;}
   icon();
   document.getElementById('themeb').addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('kp-theme',n);}catch(e){}icon();if(BG)BG.recolor();});
-  var tog=document.getElementById('navtog'), mm=document.getElementById('mmenu');
-  tog.addEventListener('click',function(){mm.classList.toggle('open');});
-  mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mm.classList.remove('open');});});
+  var tog=document.getElementById('navtog'), mm=document.getElementById('mmenu'), mb=document.getElementById('mbackdrop'), mc=document.getElementById('mclose');
+  function openM(){mm.classList.add('open');mb.classList.add('open');}
+  function closeM(){mm.classList.remove('open');mb.classList.remove('open');}
+  tog.addEventListener('click',openM);
+  mc.addEventListener('click',closeM);
+  mb.addEventListener('click',closeM);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeM();});
+  mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeM);});
 
   /* subtle animated background */
   var BG=null;
