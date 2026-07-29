@@ -1,234 +1,243 @@
 {
- "updated": "2026-07-08T00:00:00Z",
- "resumes": [
-  {
-   "id": "EXT1",
-   "title": "Product Manager",
-   "co": "boAt",
-   "addedDate": "2026-07-07",
-   "resume": "resumes/boAt-Product Manager.docx",
-   "matchScore": 90,
-   "why": "Pasted JD, no job-board link yet."
-  },
-  {
-   "id": "EXT2",
-   "title": "Associate Product Manager - Growth",
-   "co": "INDmoney",
-   "addedDate": "2026-07-07",
-   "resume": "resumes/IND Money-Associate Product Manager.docx",
-   "matchScore": 100,
-   "why": "Pasted JD, no job-board link yet. 100% on Required keywords; good-to-have gap: fintech/trading interest, team-leading (both optional per JD)."
-  },
-  {
-   "id": "EXT3",
-   "title": "Associate Product Manager",
-   "co": "Policybazaar",
-   "addedDate": "2026-07-07",
-   "resume": "resumes/Policybazaar-Associate Product Manager.docx",
-   "matchScore": 100,
-   "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- strong direct overlap with existing retention/PRD/BI/agile work."
-  },
-  {
-   "id": "EXT4",
-   "title": "Product Manager (Assistant Manager, Connect)",
-   "co": "MakeMyTrip",
-   "addedDate": "2026-07-07",
-   "updatedDate": "2026-07-15T13:00:00",
-   "resume": "resumes/MakeMyTrip-Product Manager.docx",
-   "matchScore": 96,
-   "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurugram (his #1 priority). Refreshed 2026-07-15 (re-tailored to the current JD + auto-fit to one full page at 96.3%, re-scored honestly). 96% on Required keywords (23/24): his teacher(supply)/student(consumer) LMS is genuinely a two-sided marketplace, directly analogous to MMT Connect's host+consumer model -- product vision/strategy/roadmap, conversions, pricing, partner visibility, personalization/ranking, payments, KPIs, market research & competitive benchmarking, analytical/data-driven, customer centricity, cross-functional, scalable all covered from real work. Only genuine gap: inventory management (hotel inventory -- no direct experience). Note: earlier version was scored 100% before 'inventory management' was counted as a must-have; 96% is the more honest number."
-  },
-  {
-   "id": "EXT5",
-   "title": "Product Manager II",
-   "co": "Tata 1mg",
-   "addedDate": "2026-07-07",
-   "resume": "resumes/Tata 1mg-Product Manager II.docx",
-   "matchScore": 93,
-   "why": "Pasted JD, no job-board link yet. 93% on Required content keywords -- strong AI-first + marketplace fit, only cohort analysis genuinely missing (open question). Note: real non-content risk factors flagged separately -- education tier (BBA, not Tier-1/MBA) and non-classic-commerce background, neither fixable via resume wording."
-  },
-  {
-   "id": "EXT6",
-   "title": "Associate Product Manager",
-   "co": "BlackRock (Aladdin)",
-   "addedDate": "2026-07-07",
-   "resume": "resumes/BlackRock-Associate Product Manager.docx",
-   "matchScore": 100,
-   "why": "Pasted JD, no job-board link yet. 100% on Required content keywords, AI/ML preferred-item also matched. Real fit consideration flagged separately: this is institutional asset-management/fintech (Aladdin risk platform) at an elite global firm -- a genuine domain transfer from B2C EdTech, not a resume-wording issue."
-  },
-  {
-   "id": "EXT7",
-   "title": "Product Manager",
-   "co": "Payoneer",
-   "addedDate": "2026-07-08",
-   "resume": "resumes/Payoneer-Product Manager.docx",
-   "matchScore": 87,
-   "why": "Pasted JD, no job-board link yet. 87% on Required keywords (fintech good-to-have also matched, strong theme fit -- payments company). Genuine gaps: global/matrixed-org experience -- not fixable via wording, real background fact. XYZ bullet format applied per request; content expanded to match master resume's length (page-fill question).",
-   "coverLetter": "resumes/Payoneer-Cover Letter.docx"
-  },
-  {
-   "id": "EXT8",
-   "title": "Product Manager/Strategy 3-ProdDev",
-   "co": "Oracle",
-   "addedDate": "2026-07-08",
-   "resume": "resumes/Oracle-Product Manager.docx",
-   "matchScore": 100,
-   "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- note: this JD is unusually generic/templated (mentions 'manufacturing', doesn't name a specific Oracle product line), so the score reflects strong process-skill alignment more than deep domain-specific match. No genuine gaps found, but worth researching which Oracle BU/product this actually is before applying."
-  },
-  {
-   "id": "EXT9",
-   "title": "Product Manager",
-   "co": "OLX India",
-   "addedDate": "2026-07-15T09:00:00",
-   "resume": "resumes/OLX-Product Manager.docx",
-   "matchScore": 92,
-   "why": "Pasted JD, no job-board link yet. 92% on Required keywords (24/26) -- very strong fit: B2C two-sided marketplace, business+consumer users, GenAI/LLM, personalization/ranking, experimentation, payments/trust, GA4, monetization/pricing, mobile-first all covered from real experience. Only 2 genuine gaps, not fabricated: catalog/listing management (still an open question in experience_bank.md) and fulfillment/logistics (real background gap -- no physical-goods logistics experience). Auto-fit to one full page (93.7%)."
-  },
-  {
-   "id": "EXT10",
-   "title": "Platform Product Manager",
-   "co": "Airtel Financial Services",
-   "addedDate": "2026-07-15T10:00:00",
-   "resume": "resumes/Airtel-Platform Product Manager.docx",
-   "matchScore": 91,
-   "why": "Pasted JD, no job-board link yet. 91% on the platform/API/data SKILL keywords (20/22: platform, reusable, shared services, API integration, backend systems, systems thinking, fraud/verification, consent, payments, data-driven, prioritization, adoption, business outcomes all covered from real work -- 6-gateway payment integration, in-house VC platform, verification/fraud flow, omnichannel support, backend automation, BI). Keyword gaps: configurable + platform architecture (platform-PM depth). IMPORTANT -- this is an honest STRETCH, and the 91% reflects transferable skills, not overall fit: (1) domain is fintech LENDING (Personal/Gold/Business Loans, Credit Cards, EMI) -- his platform/payments experience is B2C EdTech, a real domain transfer; (2) it's a dedicated Platform-PM role (building shared platform services as the whole job) vs his product/journey ownership; (3) specific named capabilities in the JD -- rule engine, UPI Mandate, selfie liveness/face verification -- he hasn't built (they're listed as examples, not requirements). Defensible application on platform/API/data strength, but not a slam-dunk. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT11",
-   "title": "Product Manager",
-   "co": "Barclays",
-   "addedDate": "2026-07-15T11:00:00",
-   "resume": "resumes/Barclays-Product Manager.docx",
-   "matchScore": 89,
-   "why": "Pasted JD, no job-board link yet. LOCATION FIT -- based in Gurugram/Noida (his #1 priority). 89% on Essential-skill keywords (24/27) -- strong, well-transferable: product strategy + development lifecycle, delivery discipline (Agile/JIRA/backlog), analytical & data-driven (SQL, Power BI, funnel/MI), customer-journey/pain-points, stakeholder management, cross-functional, market/competitor analysis, commercial & financial acumen, risk & control, rapid prototyping, AI-enabled tools all covered from real work. 3 keyword gaps, of which 2 are just tool NAMES he has equivalents for: Tableau (has Power BI), HUE (has SQL) -- practical fit higher than 89. Only true gap is Consumer Duty / ORAC (UK-banking governance frameworks). DESIRABLE-only gaps (not scored): loans/banking domain, Agentic AI, Spec-Driven Development. This is a much more realistic fit than a specialized fintech role -- it's a general digital-PM role with a governance overlay, in his target city. Auto-fit to one full page (95.2%)."
-  },
-  {
-   "id": "EXT12",
-   "title": "Manager, Enterprise Payments Product Development",
-   "co": "American Express (GMNS)",
-   "addedDate": "2026-07-15T12:00:00",
-   "resume": "resumes/Amex-Enterprise Payments Product Manager.docx",
-   "matchScore": 88,
-   "why": "Pasted JD, no job-board link yet. 88% on skill keywords (21/24: product development/management, delivery, release plans, Agile/JIRA, user stories, features, capabilities, payments, stakeholder mgmt, cross-functional, analytical, problem solving, scale, performance metrics, modernization, drive change, team leadership, trade-offs, roadmap all covered from real work). BIGGEST STRETCH OF THE BATCH -- the 88% measures transferable delivery/payments SKILLS and materially OVERSTATES the real fit: this is an ENTERPRISE PAYMENTS-INFRASTRUCTURE role on a $1.6T network (clearing & settlement, bank-rail integrations, legacy-to-cloud modernization, scaled Agile/SAFe, leading a product org across 170 markets). His payments experience is B2C payment-GATEWAY integration (Razorpay/PayU/etc.), NOT enterprise money-movement infra -- a different world. Keyword gaps reflect this: clearing & settlement, cloud (legacy->cloud migration), scaled Agile. Honest recommendation: only apply if deliberately pivoting toward enterprise payments; the delivery + multi-gateway-payments + modernization-of-flows story is the angle, but expect the domain gap to be the deciding factor, not the resume. Auto-fit to one full page (94.8%)."
-  },
-  {
-   "id": "EXT13",
-   "title": "Associate Product Manager - Fintech",
-   "co": "Airtel (Fintech)",
-   "addedDate": "2026-07-15T14:00:00",
-   "resume": "resumes/Airtel-Associate Product Manager Fintech.docx",
-   "matchScore": 91,
-   "why": "Pasted JD, no job-board link yet. Different Airtel role from EXT10 (that's the Platform PM; this is a data-heavy APM in fintech/credit cards). 91% on skill keywords (20/22) -- and this role's CORE is his wheelhouse: deep SQL & data analysis, dashboards & metric validation, first-principles problem solving, sprint/backlog/user-story/acceptance-criteria execution, data validation with APIs & backend systems, cross-functional liaison, trade-offs, event tracking (GA4) & experimentation (A/B), post-launch iteration -- all covered from real work. The 2 keyword gaps are the STATED domain requirements he genuinely lacks: 'financial services experience' (poster requires 1+ yr) and partnering with a 'bank / regulated financial institution' (his payments/gateway work is FS-adjacent but not a bank partnership). NICE-TO-HAVE gaps (not scored): credit cards, credit score, underwriting, risk, compliance-driven products. Honest read: strong on the data/execution skills the role is built around, but the fintech/credit-card/bank-partner domain is the real gap -- better fit than the Amex/Airtel-Platform stretches because the day-to-day (SQL, dashboards, sprints) is exactly what he does. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT14",
-   "title": "Product Manager",
-   "co": "Nat Habit",
-   "addedDate": "2026-07-15T15:00:00",
-   "resume": "resumes/Nat Habit-Product Manager.docx",
-   "matchScore": 96,
-   "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurgaon (Udyog Vihar), his #1 priority. One of his STRONGEST fits: this is squarely his core positioning (general B2C-growth PM, AI as force-multiplier). 96% on keywords (23/24): B2C growth, CRO & conversions, retention, revenue-per-user (ARPU), roadmap & feature conceptualization, wireframing (Figma), consumer engagement (content/community), A/B testing, data-driven decisions (SQL, GA4, Power BI), AI-built internal tools & operational efficiency, market trends & competitor analysis, cross-functional (marketing/sales/ops/finance/tech), stakeholder influence, bias for action -- all covered from real work. Only keyword gap: AOV (average order value -- an e-commerce metric; he has ARPU, the direct services analog). ONE domain nuance to note (not a keyword gap): Nat Habit is D2C PHYSICAL personal-care goods (e-commerce), while his B2C experience is digital/EdTech -- the growth-PM playbook (CRO, retention, funnels, A/B, engagement) transfers cleanly, but he hasn't run a physical-product/inventory D2C catalog. Strong, honest apply. Auto-fit to one full page (95.2%)."
-  },
-  {
-   "id": "EXT15",
-   "title": "Product Manager - US Stocks",
-   "co": "INDmoney",
-   "addedDate": "2026-07-15T16:00:00",
-   "resume": "resumes/INDmoney-Product Manager US Stocks.docx",
-   "matchScore": 92,
-   "why": "Pasted JD, no job-board link yet. Different INDmoney role from EXT2 (that's APM-Growth; this is PM - US Stocks, New Banking division). 92% on keywords (22/24) -- strong consumer-tech-PM fit: conversion funnels & funnel optimization, user journeys/stories/workflows/edge cases, product specifications/use cases, onboarding & activation, data/analytics/SQL (large datasets), execution roadmap & market trends, third-party API integration, technical & operational risk mitigation, cross-functional (eng/architects/UX/business), execution at scale, customer needs, problem statements -- all from real work. 2 keyword gaps: banking systems (advantageous, US-stocks/banking domain) and regulatory (regulatory risk). TWO flags NOT scored: (1) EDUCATION -- JD requires MBA or Engineering degree; he has a BBA (neither) -- a real, non-wording gap; (2) US-stocks/wealth/banking DOMAIN is a fintech transfer from his EdTech background. Core consumer-tech-PM skills are a strong fit; domain + degree are the real considerations. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT16",
-   "title": "Product Manager II / Senior PM I - Revenue",
-   "co": "PhysicsWallah",
-   "addedDate": "2026-07-15T17:00:00",
-   "resume": "resumes/PhysicsWallah-Product Manager Revenue.docx",
-   "matchScore": 96,
-   "why": "Pasted JD, no job-board link yet. ARGUABLY HIS SINGLE BEST FIT -- same INDUSTRY (EdTech) AND his exact signature STRENGTH (B2C revenue & monetization: LPP module, ₹70L renewals, +20% revenue, +25% ARPU, pricing). Location Noida (Delhi-NCR, near his Gurgaon base). Experience 4-8 yrs (PM2) fits his ~5 yrs. 96% on keywords (25/26): every one of the JD's explicit Required Skills covered -- product management, revenue & monetization strategy, B2C, growth product, product analytics, experimentation & A/B testing, funnel optimization, user research, SQL, data analysis, product strategy, PRD writing, agile, stakeholder management, roadmap -- plus conversion, retention, upsell, renewals, customer lifetime value, pricing, subscription, success metrics, KPIs. Only keyword gap: cross-sell (has conversion/retention/upsell/renewals/CLTV, but no documented cross-sell of complementary products). No real domain gap -- this is his home turf. Strongest apply of the batch. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT17",
-   "title": "Product Manager (Noon Minutes)",
-   "co": "noon",
-   "addedDate": "2026-07-15T18:00:00",
-   "resume": "resumes/Noon-Product Manager.docx",
-   "matchScore": 90,
-   "why": "Pasted JD, no job-board link yet. 90% on the JD's stated skill requirements (18/20) -- all attainable and covered: product management (idea->launch), analytical & data-driven (SQL, Power BI, Excel), automation & process improvement (his STRONGEST angle here: backend automation, -80% sales-ops, Rs1.6L/mo savings), product requirements + eng collaboration, metrics & business outcomes, bottleneck identification, two-sided marketplace, stakeholder management, high ownership & bias for action. The stated requirements are broad (1-5 yrs PM/analytics/strategy/ops) and the domain 'plus' (E-commerce/Supply Chain/Logistics/Retail/OR Marketplace) is an OR-list satisfied by his marketplace experience. TWO honest considerations (not keyword-fixable): (1) DOMAIN -- the day-to-day is supply-chain / fulfillment / inventory / warehousing / logistics ops for a 15-min q-commerce grocery platform, which he has NOT worked in (his automation/ops-efficiency work is transferable but not physical supply-chain); keyword gaps supply chain + fulfillment reflect this. (2) LOCATION -- Middle East (UAE/Saudi), requires relocation (he's marked open to relocation). Honest read: requirements are met and the process-improvement/data angle is genuine, but the physical supply-chain domain + overseas relocation are the real deciders. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT18",
-   "title": "Product Manager",
-   "co": "Zippee",
-   "addedDate": "2026-07-15T19:00:00",
-   "resume": "resumes/Zippee-Product Manager.docx",
-   "matchScore": 89,
-   "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurgaon HQ, in-person (his #1 priority, no relocation). 89% on stated requirements + 0-1 responsibilities (16/18): product management, strong tech understanding / technical solutioning, problem solving, cross-functional (Eng/Ops/Product), end-to-end scoping->execution, business requirements -> scalable functional flows, external-partner integration, rollout, 0-1 building, high ownership -- all covered from real work (0-1 consumer app MVP, 6-gateway payment integration, in-house platform builds, omnichannel system consolidation, backend automation). ONE honest domain consideration (not keyword-fixable): the role solves last-mile delivery / warehousing / real-time tracking / quick-commerce logistics, which he has NOT worked in -- keyword gaps quick commerce + logistics reflect this. BUT the domain is 'preferred', not required, and it's a 0-1 platform-BUILDING role (technical solutioning, stitching systems) where his integration/automation/0-1 experience genuinely transfers. Much more viable than the Noon q-commerce role: same domain gap but GURGAON (no relocation) + startup intensity that matches his background. Auto-fit to one full page (96.4%)."
-  },
-  {
-   "id": "EXT19",
-   "title": "Product Manager - Analytics & Visualization (GenAI)",
-   "co": "D. E. Shaw",
-   "addedDate": "2026-07-15T20:00:00",
-   "resume": "resumes/DE Shaw-Product Manager AnV.docx",
-   "matchScore": 95,
-   "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurugram (one of the two offices). 95% on SKILL keywords (19/20) -- genuinely strong AI-product fit: Generative AI product management & adoption, translating business problems into data-driven/AI solutions, data science/analytics collaboration, senior stakeholder management, project management (multiple projects), analytics & visualization (SQL, Power BI), project scoping, technical-business communication, problem solving, prompt engineering, GenAI as a daily productivity multiplier -- all from real work (production GenAI layer, Demo Analysis AI tool, Power BI dashboards, cross-functional stakeholder work). Only keyword gap: agentic AI (a PREFERRED item -- he uses GenAI tools but hasn't built agentic-agent workflows). IMPORTANT -- the 95% is SKILLS; the real deciders are NOT keyword-fixable and pull the practical odds down: (1) EDUCATION -- the BASIC qualification is a bachelor's in ENGINEERING + a POST-GRADUATE degree in business/finance; he has a BBA only (no engineering UG, no PG) -- a hard stated basic-qual gap; (2) PEDIGREE BAR -- D.E. Shaw is an elite, highly selective $90B investment firm where education pedigree is heavily weighted; (3) DOMAIN -- capital-markets / FinOp (financial operations) context vs his B2C EdTech background (though the role is GenAI-adoption/PM, so domain matters less than the education screen). Honest read: skills are a strong match and the GenAI-adoption angle is real, but the engineering+PG education requirement at an elite firm is a significant screening risk the resume cannot fix. Aspirational apply. Auto-fit to one full page (94.7%)."
-  },
-  {
-   "id": "EXT20",
-   "title": "Product Manager, Billing & Operations",
-   "co": "Salesforce (MuleSoft)",
-   "addedDate": "2026-07-22T10:00:00",
-   "resume": "resumes/Salesforce-Product Manager Billing Operations.docx",
-   "matchScore": 75,
-   "why": "Pasted JD (Bangalore/Hyderabad; his #2 location). 75% on keywords (18/24) -- and this is a SIGNIFICANT STRETCH, on par with or beyond the Amex one: the 75% reflects transferable skills, not domain fit. Covered from real work: AI-first product management (a HEAVILY emphasized JD theme he genuinely fits -- ships GenAI, uses it across discovery/specs/docs, evaluates AI outputs), monetization & subscription understanding (LPP, renewals, ARPU), API-driven workflows (6-gateway payment integration = billing-adjacent), backend automation, SQL/BI + relational databases, technical specs, cross-functional (eng + business), strategic thinking, deal/sales support. The 6 keyword gaps ARE the core of the role and are genuine, non-wording-fixable domain gaps: billing/invoicing systems, automated provisioning, entitlement management, consumption metering, Salesforce CPQ, and SKU creation/NPI. His monetization experience is PRODUCT-level (pricing/renewals), NOT backend billing-systems/metering/provisioning infrastructure -- a different discipline. Honest read: apply only if targeting a pivot into billing/monetization-systems PM; the AI-first + payments-API + automation angle is a legitimate hook, but the billing-infrastructure/CPQ domain gap (plus the big-tech bar) is the real deciding factor. Note: Salesforce asks candidates to apply to <=3 roles per 12 months. Auto-fit to one full page (93.1%)."
-  },
-  {
-   "id": "EXT21",
-   "title": "Product Manager - Retail & Insights (Retail Media Platform)",
-   "co": "dunnhumby",
-   "addedDate": "2026-07-22T11:00:00",
-   "resume": "resumes/dunnhumby-Product Manager Retail Media.docx",
-   "coverLetter": "resumes/dunnhumby-Cover Letter.docx",
-   "updatedDate": "2026-07-22T12:30:00",
-   "matchScore": 84,
-   "why": "REFRESHED 2026-07-22 after Kshitiz confirmed real experience that legitimately closed 4 gaps -- rescored 80% -> 84% (21/25), no fabrication. NEWLY VERIFIED AND ADDED: (1) CONTENT MANAGEMENT -- built/deployed a grade- and course-wise content catalogue (surfaced by learner choice + teacher recommendation) and automated content generation with AI prompts, dissolving manual content-team effort; this satisfies the ESSENTIAL OR-list 'strong understanding of one or more of Ad Servers / DSPs / SSPs / CDPs / DMPs / Digital CMS / ERP' via CMS, which was previously a hard gap. (2) ATTRIBUTION -- centralized CRM lead-source management with inbound leads auto-tagged via UTM parameters and tracking cookies, outbound uploaded/entered. (3) AUDIENCE SEGMENTATION & TARGETING -- personalised course plans by learner grade, professional segments by industry + seniority, and keyword targeting on highest-volume search terms. (4) CAMPAIGN PERFORMANCE -- partnered with Marketing/Sales optimising lead flow, lead acceptance and best-performing sources. Also expanded the third-party partner list (Daily.co, 100ms, Convin, Servetel on top of payments/Gupshup/Exotel). STILL GENUINELY NOT CLAIMED (the 4 remaining gaps): auction dynamics/bidding/pacing, ad servers & DSPs/SSPs, Retail Media/AdTech domain, and microservices architecture (his answer described onboarding third-party SERVICES, which is not internal microservices). OPEN/UNUSED: he also described an in-house CDP-like behavioural-data unification + ops engine (3,500+ teacher scheduling, payroll, subscription billing) -- deliberately NOT put on the resume until he confirms which parts he personally built and whether 3,500+ is accurate (logged in experience_bank Open Questions). Honest read: now a solid fit on the role's actual craft (API-first integrations, partner lifecycle, reusable capabilities, CMS/catalogue, attribution, targeting); the remaining gap is AdTech auction mechanics + Retail Media domain, which is learnable but will be the screen. ORIGINAL SCORING NOTE: 80% on keywords (16/20). GENUINELY STRONG on the role's day-to-day craft, which is API-first platform integrations: he really does own third-party integration lifecycles end-to-end (6 payment gateways via APIs incl. status verification/webhooks, messaging via Gupshup/Venera Connect, telephony via Exotel/Tata Tele) as the primary partner point of contact, and has built REUSABLE configurable capabilities rather than point solutions (shared payments capability, omnichannel support service reused across app/LMS/CRM). Also covered: product requirements/user stories/acceptance criteria/integration specs, API contracts & data mappings, adoption + reliability + data-quality metrics, business+technical stakeholder management, cross-functional agile, roadmap & prioritisation of large ambiguous initiatives. Essentials met: 5+ yrs PM, and the degree OR-list (Business/Marketing/Eng/CS) is satisfied by his BBA (Business). THE REAL GAP is the DOMAIN, and 3 of the 4 keyword misses are it: digital-advertising concepts (bidding, pacing, auction dynamics, targeting, attribution, campaign delivery) -- an ESSENTIAL he entirely lacks -- plus the essential 'strong understanding of one or more of Ad Servers / DSPs / SSPs / CDPs / DMPs / CMS / ERP' (OR-list; he satisfies NONE of the alternatives), and Retail Media/AdTech domain (desirable). 4th miss: microservices (desirable). Honest read: BETTER fit than the Salesforce-billing or Amex stretches because the integration/partner/reusable-platform work is the same KIND of work he actually does -- just a different industry. But the AdTech domain is an essential he'd have to learn, so expect that to be the screen. Worth applying if open to a Retail Media/AdTech pivot. Auto-fit to one full page (94.8%)."
-  },
-  {
-   "id": "EXT22",
-   "title": "Product Manager",
-   "co": "Credgenics",
-   "addedDate": "2026-07-22T13:00:00",
-   "resume": "resumes/Credgenics-Product Manager.docx",
-   "matchScore": 88,
-   "why": "Pasted JD (location not stated; Credgenics is an NPA/collections SaaS for banks & NBFCs). 88% on keywords (22/25). STRONG STRUCTURAL ANALOG worth leading with in interviews: Credgenics is an agent-driven COLLECTIONS platform, and his Sales CRM revamp is the closest thing he's built to it -- lead navigation, integrated calling (Exotel/Servetel/Tata Tele), revenue tracking, target-vs-achievement and incentive management for counseling agents, cutting ops workload 80% -- plus an omnichannel customer-communication helpdesk (calling, WhatsApp, email, chatbot), backend automation (manual punching 100%->2%), and a customer verification/trust flow (fake sales 10%->1%). Different industry, very similar PRODUCT SHAPE (agent workflow + omnichannel contact + automation + trust). Core PM craft all covered: roadmap ownership & planning, comprehensive PRDs with acceptance criteria (incl. non-functional/security), agile & sprint execution, cross-functional (eng/design/sales/marketing), SQL + Google Analytics + Power BI, market research & competitive analysis, customer feedback, user journeys, GTM & launches, adoption, stakeholder management & risk communication. Essentials met: 3-5 yrs PM (he's 5+), and the degree OR-list (Engineering/Business) is satisfied by his BBA (Business); the analytics-tool OR-list (SQL/GA/Mixpanel/etc.) is satisfied by SQL + GA (no Mixpanel, but not required). 3 genuine gaps, all domain-level: lending/collections experience (the JD lists this as 'a plus', not essential), B2B SaaS (his platform is B2C -- JD says 'preferably FinTech, SaaS, or B2B'), and regulatory/data-compliance in a regulated financial environment. Honest read: one of his better fintech-adjacent fits precisely because the requirements are PM-craft-first and the domain is only 'preferred' -- the CRM/collections-workflow analogy is genuinely strong. Worth applying. Auto-fit to one full page (93.6%)."
-  },
-  {
-   "id": "EXT23",
-   "title": "Product Manager",
-   "co": "Blitz",
-   "addedDate": "2026-07-22T14:00:00",
-   "resume": "resumes/Blitz-Product Manager.docx",
-   "matchScore": 93,
-   "why": "Pasted JD. Bengaluru, ON-SITE (his #2 city, but a relocation from Gurgaon). Blitz does same-day delivery for eCommerce brands. 93% on keywords (25/27) -- and the score is high for a real reason: this JD has NO stated domain requirement at all. The Basic Qualifications are pure general PM craft (analytical/problem-solving, data-driven decisions, communication, stakeholder management, customer-first mindset, fast-paced cross-functional environment, basic understanding of product development/experimentation/agile) and the responsibilities are end-to-end feature ownership, discovery->launch->iteration, user feedback + product metrics + operational data, PRDs/user stories/acceptance criteria, roadmap prioritisation, A/B experiment design & analysis, and post-launch monitoring -- ALL of which he does daily and at greater depth than the role asks. Only 2 keyword misses, and neither is a stated requirement: eCommerce and same-day-delivery/logistics (company domain context; same logistics gap as Zippee/Noon). *** THE BIG FLAG IS NOT KEYWORD-BASED: the JD asks for 1-3 YEARS of PM experience and he has 5+. He is OVER-QUALIFIED for the stated band. Real risks: (a) screened out as too senior, (b) levelled down / offered below his current Rs 11L. Worth applying only if he's specifically drawn to the q-commerce/logistics space or to Bengaluru, and ideally after confirming the band/comp with the recruiter first -- otherwise this is a step sideways or down versus PhysicsWallah/Nat Habit/MakeMyTrip (all 96% and at-or-above his level). *** Auto-fit to one full page (93.6%)."
-  },
-  {
-   "id": "EXT24",
-   "title": "Senior Product Manager",
-   "co": "Battery Smart",
-   "addedDate": "2026-07-22T15:00:00",
-   "resume": "resumes/Battery Smart-Senior Product Manager.docx",
-   "matchScore": 96,
-   "why": "Pasted JD. STRONG FIT + LOCATION: Gurugram, on-site (his #1 city). Battery Smart is an EV battery-swapping network; the role is ops-tech-heavy. 96% on keywords (25/26). Led the resume with the angle that maps almost 1:1 to their ownership areas -- Operations & Workforce-Productivity Platforms + Internal Business Tools & Automation via his Sales CRM revamp (agent workspace: lead nav, integrated calling, target-vs-achievement, incentive mgmt, -80% ops) and backend automation (punching ~100%->2%, Rs 1.6L/mo, +70% same-day revenue realization) -- plus Growth & Marketplace (two-sided marketplace, monetization/retention) and Data/Reporting/BI (SQL, Power BI). Critically, it proves what they explicitly PREFER: 'building products for both external customers AND internal business users' (consumer app + agent CRM). All core requirements covered: end-to-end ownership ideation->launch->scale, product discovery, roadmap planning, prioritization & trade-offs, translating business problems into scalable solutions, stakeholder mgmt, cross-functional (Eng/Design/Ops/Growth/Finance), data-driven decisions, experimentation/analytics/user research, Agile, and mentoring APMs (his team of 8). Experience: 3-5 yrs asked, he's 5+ -- fits Senior band. The preferred domain OR-list (Mobility/EV/Logistics/SaaS/FinTech/Marketplace/Supply Chain/Ops-Tech) is satisfied by his marketplace + operations-tech, so not a gap. 1 genuine keyword gap: Asset & Inventory Management -- one of six listed ownership areas he has no direct experience in (did NOT claim it to inflate the score). Other preferred-only gaps: EV/mobility domain (learnable) and engineering degree / MBA (he has BBA). Honest read: one of his best overall fits of the batch -- home city, right level, ops-tech + internal-tools story is genuinely his strongest, and no hard requirement is missed. Strong apply. Auto-fit to one full page (95.2%)."
-  },
-  {
-   "id": "EXT25",
-   "title": "Manager - Business Collaboration (Unified Collaboration)",
-   "co": "Tata Communications",
-   "addedDate": "2026-07-22T16:00:00",
-   "resume": "resumes/Tata Communications-Manager Business Collaboration.docx",
-   "matchScore": 88,
-   "why": "Pasted JD. Hybrid PM / Product-Marketing / Pre-Sales / Solution-Consulting role for enterprise Unified Collaboration (UCaaS/telecom) products. 88% on keywords (22/25). GENUINE UNDERRATED HOOK: he has actually BUILT collaboration & communication products -- an in-house video-call platform (replaced a vendor), an omnichannel comms system (calling/WhatsApp/email/chatbot), and telephony + live-video integrations (Exotel, Servetel, TATA TELE, Daily.co, 100ms, Convin). That's a real, honest angle for the 'Collaboration' domain, not a stretch. All PM-craft requirements covered: product strategy/roadmap/lifecycle, requirement gathering & prioritization, Agile ceremonies (standups/sprint planning/reviews/retros/demos), product adoption & KPIs, product documentation/user guides, cross-functional (sales/marketing/pricing/ops/CS), GTM & positioning, market trends & competitive analysis, stakeholder mgmt & presentations, revenue growth & retention. Essentials met: 4-7 yrs (he's 5), degree OR-list (eng/tech/business) satisfied by BBA, role-type OR-list (PM/ProdMktg/Pre-Sales/SolCon/SalesEng) satisfied by PM. 3 genuine gaps, all real: (1) enterprise UNIFIED COMMUNICATIONS / UCaaS domain (his comms products are B2C-internal, not enterprise UCaaS); (2) PRE-SALES / SOLUTION CONSULTING -- this is a customer-facing role (enterprise product demos, POCs, solution presentations to external customers) and he's an in-house B2C PM, not customer-facing pre-sales -- the biggest real gap; (3) contact center / telecom domain. TWO LOGISTICS FLAGS (not skills): mandatory 5-day WORK-FROM-OFFICE and willingness to work ROTATIONAL SHIFTS -- confirm he's ok with both. Honest read: decent fit on PM-craft + the real collaboration-product angle, but the enterprise B2B pre-sales/customer-facing nature and UCaaS domain are the real considerations. Worth applying if open to a customer-facing/pre-sales-flavored PM role and the shift/WFO terms. Auto-fit to one full page (93.7%)."
-  }
- ]
+  "updated": "2026-07-29T09:49:15Z",
+  "resumes": [
+    {
+      "id": "EXT1",
+      "title": "Product Manager",
+      "co": "boAt",
+      "addedDate": "2026-07-07",
+      "resume": "resumes/boAt-Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD, no job-board link yet."
+    },
+    {
+      "id": "EXT2",
+      "title": "Associate Product Manager - Growth",
+      "co": "INDmoney",
+      "addedDate": "2026-07-07",
+      "resume": "resumes/IND Money-Associate Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD, no job-board link yet. 100% on Required keywords; good-to-have gap: fintech/trading interest, team-leading (both optional per JD)."
+    },
+    {
+      "id": "EXT3",
+      "title": "Associate Product Manager",
+      "co": "Policybazaar",
+      "addedDate": "2026-07-07",
+      "resume": "resumes/Policybazaar-Associate Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- strong direct overlap with existing retention/PRD/BI/agile work."
+    },
+    {
+      "id": "EXT4",
+      "title": "Product Manager (Assistant Manager, Connect)",
+      "co": "MakeMyTrip",
+      "addedDate": "2026-07-07",
+      "updatedDate": "2026-07-15T13:00:00",
+      "resume": "resumes/MakeMyTrip-Product Manager.docx",
+      "matchScore": 96,
+      "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurugram (his #1 priority). Refreshed 2026-07-15 (re-tailored to the current JD + auto-fit to one full page at 96.3%, re-scored honestly). 96% on Required keywords (23/24): his teacher(supply)/student(consumer) LMS is genuinely a two-sided marketplace, directly analogous to MMT Connect's host+consumer model -- product vision/strategy/roadmap, conversions, pricing, partner visibility, personalization/ranking, payments, KPIs, market research & competitive benchmarking, analytical/data-driven, customer centricity, cross-functional, scalable all covered from real work. Only genuine gap: inventory management (hotel inventory -- no direct experience). Note: earlier version was scored 100% before 'inventory management' was counted as a must-have; 96% is the more honest number."
+    },
+    {
+      "id": "EXT5",
+      "title": "Product Manager II",
+      "co": "Tata 1mg",
+      "addedDate": "2026-07-07",
+      "resume": "resumes/Tata 1mg-Product Manager II.docx",
+      "matchScore": 93,
+      "why": "Pasted JD, no job-board link yet. 93% on Required content keywords -- strong AI-first + marketplace fit, only cohort analysis genuinely missing (open question). Note: real non-content risk factors flagged separately -- education tier (BBA, not Tier-1/MBA) and non-classic-commerce background, neither fixable via resume wording."
+    },
+    {
+      "id": "EXT6",
+      "title": "Associate Product Manager",
+      "co": "BlackRock (Aladdin)",
+      "addedDate": "2026-07-07",
+      "resume": "resumes/BlackRock-Associate Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD, no job-board link yet. 100% on Required content keywords, AI/ML preferred-item also matched. Real fit consideration flagged separately: this is institutional asset-management/fintech (Aladdin risk platform) at an elite global firm -- a genuine domain transfer from B2C EdTech, not a resume-wording issue."
+    },
+    {
+      "id": "EXT7",
+      "title": "Product Manager",
+      "co": "Payoneer",
+      "addedDate": "2026-07-08",
+      "resume": "resumes/Payoneer-Product Manager.docx",
+      "matchScore": 87,
+      "why": "Pasted JD, no job-board link yet. 87% on Required keywords (fintech good-to-have also matched, strong theme fit -- payments company). Genuine gaps: global/matrixed-org experience -- not fixable via wording, real background fact. XYZ bullet format applied per request; content expanded to match master resume's length (page-fill question).",
+      "coverLetter": "resumes/Payoneer-Cover Letter.docx"
+    },
+    {
+      "id": "EXT8",
+      "title": "Product Manager/Strategy 3-ProdDev",
+      "co": "Oracle",
+      "addedDate": "2026-07-08",
+      "resume": "resumes/Oracle-Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD, no job-board link yet. 100% on Required keywords -- note: this JD is unusually generic/templated (mentions 'manufacturing', doesn't name a specific Oracle product line), so the score reflects strong process-skill alignment more than deep domain-specific match. No genuine gaps found, but worth researching which Oracle BU/product this actually is before applying."
+    },
+    {
+      "id": "EXT9",
+      "title": "Product Manager",
+      "co": "OLX India",
+      "addedDate": "2026-07-15T09:00:00",
+      "resume": "resumes/OLX-Product Manager.docx",
+      "matchScore": 92,
+      "why": "Pasted JD, no job-board link yet. 92% on Required keywords (24/26) -- very strong fit: B2C two-sided marketplace, business+consumer users, GenAI/LLM, personalization/ranking, experimentation, payments/trust, GA4, monetization/pricing, mobile-first all covered from real experience. Only 2 genuine gaps, not fabricated: catalog/listing management (still an open question in experience_bank.md) and fulfillment/logistics (real background gap -- no physical-goods logistics experience). Auto-fit to one full page (93.7%)."
+    },
+    {
+      "id": "EXT10",
+      "title": "Platform Product Manager",
+      "co": "Airtel Financial Services",
+      "addedDate": "2026-07-15T10:00:00",
+      "resume": "resumes/Airtel-Platform Product Manager.docx",
+      "matchScore": 91,
+      "why": "Pasted JD, no job-board link yet. 91% on the platform/API/data SKILL keywords (20/22: platform, reusable, shared services, API integration, backend systems, systems thinking, fraud/verification, consent, payments, data-driven, prioritization, adoption, business outcomes all covered from real work -- 6-gateway payment integration, in-house VC platform, verification/fraud flow, omnichannel support, backend automation, BI). Keyword gaps: configurable + platform architecture (platform-PM depth). IMPORTANT -- this is an honest STRETCH, and the 91% reflects transferable skills, not overall fit: (1) domain is fintech LENDING (Personal/Gold/Business Loans, Credit Cards, EMI) -- his platform/payments experience is B2C EdTech, a real domain transfer; (2) it's a dedicated Platform-PM role (building shared platform services as the whole job) vs his product/journey ownership; (3) specific named capabilities in the JD -- rule engine, UPI Mandate, selfie liveness/face verification -- he hasn't built (they're listed as examples, not requirements). Defensible application on platform/API/data strength, but not a slam-dunk. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT11",
+      "title": "Product Manager",
+      "co": "Barclays",
+      "addedDate": "2026-07-15T11:00:00",
+      "resume": "resumes/Barclays-Product Manager.docx",
+      "matchScore": 89,
+      "why": "Pasted JD, no job-board link yet. LOCATION FIT -- based in Gurugram/Noida (his #1 priority). 89% on Essential-skill keywords (24/27) -- strong, well-transferable: product strategy + development lifecycle, delivery discipline (Agile/JIRA/backlog), analytical & data-driven (SQL, Power BI, funnel/MI), customer-journey/pain-points, stakeholder management, cross-functional, market/competitor analysis, commercial & financial acumen, risk & control, rapid prototyping, AI-enabled tools all covered from real work. 3 keyword gaps, of which 2 are just tool NAMES he has equivalents for: Tableau (has Power BI), HUE (has SQL) -- practical fit higher than 89. Only true gap is Consumer Duty / ORAC (UK-banking governance frameworks). DESIRABLE-only gaps (not scored): loans/banking domain, Agentic AI, Spec-Driven Development. This is a much more realistic fit than a specialized fintech role -- it's a general digital-PM role with a governance overlay, in his target city. Auto-fit to one full page (95.2%)."
+    },
+    {
+      "id": "EXT12",
+      "title": "Manager, Enterprise Payments Product Development",
+      "co": "American Express (GMNS)",
+      "addedDate": "2026-07-15T12:00:00",
+      "resume": "resumes/Amex-Enterprise Payments Product Manager.docx",
+      "matchScore": 88,
+      "why": "Pasted JD, no job-board link yet. 88% on skill keywords (21/24: product development/management, delivery, release plans, Agile/JIRA, user stories, features, capabilities, payments, stakeholder mgmt, cross-functional, analytical, problem solving, scale, performance metrics, modernization, drive change, team leadership, trade-offs, roadmap all covered from real work). BIGGEST STRETCH OF THE BATCH -- the 88% measures transferable delivery/payments SKILLS and materially OVERSTATES the real fit: this is an ENTERPRISE PAYMENTS-INFRASTRUCTURE role on a $1.6T network (clearing & settlement, bank-rail integrations, legacy-to-cloud modernization, scaled Agile/SAFe, leading a product org across 170 markets). His payments experience is B2C payment-GATEWAY integration (Razorpay/PayU/etc.), NOT enterprise money-movement infra -- a different world. Keyword gaps reflect this: clearing & settlement, cloud (legacy->cloud migration), scaled Agile. Honest recommendation: only apply if deliberately pivoting toward enterprise payments; the delivery + multi-gateway-payments + modernization-of-flows story is the angle, but expect the domain gap to be the deciding factor, not the resume. Auto-fit to one full page (94.8%)."
+    },
+    {
+      "id": "EXT13",
+      "title": "Associate Product Manager - Fintech",
+      "co": "Airtel (Fintech)",
+      "addedDate": "2026-07-15T14:00:00",
+      "resume": "resumes/Airtel-Associate Product Manager Fintech.docx",
+      "matchScore": 91,
+      "why": "Pasted JD, no job-board link yet. Different Airtel role from EXT10 (that's the Platform PM; this is a data-heavy APM in fintech/credit cards). 91% on skill keywords (20/22) -- and this role's CORE is his wheelhouse: deep SQL & data analysis, dashboards & metric validation, first-principles problem solving, sprint/backlog/user-story/acceptance-criteria execution, data validation with APIs & backend systems, cross-functional liaison, trade-offs, event tracking (GA4) & experimentation (A/B), post-launch iteration -- all covered from real work. The 2 keyword gaps are the STATED domain requirements he genuinely lacks: 'financial services experience' (poster requires 1+ yr) and partnering with a 'bank / regulated financial institution' (his payments/gateway work is FS-adjacent but not a bank partnership). NICE-TO-HAVE gaps (not scored): credit cards, credit score, underwriting, risk, compliance-driven products. Honest read: strong on the data/execution skills the role is built around, but the fintech/credit-card/bank-partner domain is the real gap -- better fit than the Amex/Airtel-Platform stretches because the day-to-day (SQL, dashboards, sprints) is exactly what he does. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT14",
+      "title": "Product Manager",
+      "co": "Nat Habit",
+      "addedDate": "2026-07-15T15:00:00",
+      "resume": "resumes/Nat Habit-Product Manager.docx",
+      "matchScore": 96,
+      "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurgaon (Udyog Vihar), his #1 priority. One of his STRONGEST fits: this is squarely his core positioning (general B2C-growth PM, AI as force-multiplier). 96% on keywords (23/24): B2C growth, CRO & conversions, retention, revenue-per-user (ARPU), roadmap & feature conceptualization, wireframing (Figma), consumer engagement (content/community), A/B testing, data-driven decisions (SQL, GA4, Power BI), AI-built internal tools & operational efficiency, market trends & competitor analysis, cross-functional (marketing/sales/ops/finance/tech), stakeholder influence, bias for action -- all covered from real work. Only keyword gap: AOV (average order value -- an e-commerce metric; he has ARPU, the direct services analog). ONE domain nuance to note (not a keyword gap): Nat Habit is D2C PHYSICAL personal-care goods (e-commerce), while his B2C experience is digital/EdTech -- the growth-PM playbook (CRO, retention, funnels, A/B, engagement) transfers cleanly, but he hasn't run a physical-product/inventory D2C catalog. Strong, honest apply. Auto-fit to one full page (95.2%)."
+    },
+    {
+      "id": "EXT15",
+      "title": "Product Manager - US Stocks",
+      "co": "INDmoney",
+      "addedDate": "2026-07-15T16:00:00",
+      "resume": "resumes/INDmoney-Product Manager US Stocks.docx",
+      "matchScore": 92,
+      "why": "Pasted JD, no job-board link yet. Different INDmoney role from EXT2 (that's APM-Growth; this is PM - US Stocks, New Banking division). 92% on keywords (22/24) -- strong consumer-tech-PM fit: conversion funnels & funnel optimization, user journeys/stories/workflows/edge cases, product specifications/use cases, onboarding & activation, data/analytics/SQL (large datasets), execution roadmap & market trends, third-party API integration, technical & operational risk mitigation, cross-functional (eng/architects/UX/business), execution at scale, customer needs, problem statements -- all from real work. 2 keyword gaps: banking systems (advantageous, US-stocks/banking domain) and regulatory (regulatory risk). TWO flags NOT scored: (1) EDUCATION -- JD requires MBA or Engineering degree; he has a BBA (neither) -- a real, non-wording gap; (2) US-stocks/wealth/banking DOMAIN is a fintech transfer from his EdTech background. Core consumer-tech-PM skills are a strong fit; domain + degree are the real considerations. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT16",
+      "title": "Product Manager II / Senior PM I - Revenue",
+      "co": "PhysicsWallah",
+      "addedDate": "2026-07-15T17:00:00",
+      "resume": "resumes/PhysicsWallah-Product Manager Revenue.docx",
+      "matchScore": 96,
+      "why": "Pasted JD, no job-board link yet. ARGUABLY HIS SINGLE BEST FIT -- same INDUSTRY (EdTech) AND his exact signature STRENGTH (B2C revenue & monetization: LPP module, ₹70L renewals, +20% revenue, +25% ARPU, pricing). Location Noida (Delhi-NCR, near his Gurgaon base). Experience 4-8 yrs (PM2) fits his ~5 yrs. 96% on keywords (25/26): every one of the JD's explicit Required Skills covered -- product management, revenue & monetization strategy, B2C, growth product, product analytics, experimentation & A/B testing, funnel optimization, user research, SQL, data analysis, product strategy, PRD writing, agile, stakeholder management, roadmap -- plus conversion, retention, upsell, renewals, customer lifetime value, pricing, subscription, success metrics, KPIs. Only keyword gap: cross-sell (has conversion/retention/upsell/renewals/CLTV, but no documented cross-sell of complementary products). No real domain gap -- this is his home turf. Strongest apply of the batch. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT17",
+      "title": "Product Manager (Noon Minutes)",
+      "co": "noon",
+      "addedDate": "2026-07-15T18:00:00",
+      "resume": "resumes/Noon-Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD, no job-board link yet. 90% on the JD's stated skill requirements (18/20) -- all attainable and covered: product management (idea->launch), analytical & data-driven (SQL, Power BI, Excel), automation & process improvement (his STRONGEST angle here: backend automation, -80% sales-ops, Rs1.6L/mo savings), product requirements + eng collaboration, metrics & business outcomes, bottleneck identification, two-sided marketplace, stakeholder management, high ownership & bias for action. The stated requirements are broad (1-5 yrs PM/analytics/strategy/ops) and the domain 'plus' (E-commerce/Supply Chain/Logistics/Retail/OR Marketplace) is an OR-list satisfied by his marketplace experience. TWO honest considerations (not keyword-fixable): (1) DOMAIN -- the day-to-day is supply-chain / fulfillment / inventory / warehousing / logistics ops for a 15-min q-commerce grocery platform, which he has NOT worked in (his automation/ops-efficiency work is transferable but not physical supply-chain); keyword gaps supply chain + fulfillment reflect this. (2) LOCATION -- Middle East (UAE/Saudi), requires relocation (he's marked open to relocation). Honest read: requirements are met and the process-improvement/data angle is genuine, but the physical supply-chain domain + overseas relocation are the real deciders. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT18",
+      "title": "Product Manager",
+      "co": "Zippee",
+      "addedDate": "2026-07-15T19:00:00",
+      "resume": "resumes/Zippee-Product Manager.docx",
+      "matchScore": 89,
+      "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurgaon HQ, in-person (his #1 priority, no relocation). 89% on stated requirements + 0-1 responsibilities (16/18): product management, strong tech understanding / technical solutioning, problem solving, cross-functional (Eng/Ops/Product), end-to-end scoping->execution, business requirements -> scalable functional flows, external-partner integration, rollout, 0-1 building, high ownership -- all covered from real work (0-1 consumer app MVP, 6-gateway payment integration, in-house platform builds, omnichannel system consolidation, backend automation). ONE honest domain consideration (not keyword-fixable): the role solves last-mile delivery / warehousing / real-time tracking / quick-commerce logistics, which he has NOT worked in -- keyword gaps quick commerce + logistics reflect this. BUT the domain is 'preferred', not required, and it's a 0-1 platform-BUILDING role (technical solutioning, stitching systems) where his integration/automation/0-1 experience genuinely transfers. Much more viable than the Noon q-commerce role: same domain gap but GURGAON (no relocation) + startup intensity that matches his background. Auto-fit to one full page (96.4%)."
+    },
+    {
+      "id": "EXT19",
+      "title": "Product Manager - Analytics & Visualization (GenAI)",
+      "co": "D. E. Shaw",
+      "addedDate": "2026-07-15T20:00:00",
+      "resume": "resumes/DE Shaw-Product Manager AnV.docx",
+      "matchScore": 95,
+      "why": "Pasted JD, no job-board link yet. LOCATION FIT -- Gurugram (one of the two offices). 95% on SKILL keywords (19/20) -- genuinely strong AI-product fit: Generative AI product management & adoption, translating business problems into data-driven/AI solutions, data science/analytics collaboration, senior stakeholder management, project management (multiple projects), analytics & visualization (SQL, Power BI), project scoping, technical-business communication, problem solving, prompt engineering, GenAI as a daily productivity multiplier -- all from real work (production GenAI layer, Demo Analysis AI tool, Power BI dashboards, cross-functional stakeholder work). Only keyword gap: agentic AI (a PREFERRED item -- he uses GenAI tools but hasn't built agentic-agent workflows). IMPORTANT -- the 95% is SKILLS; the real deciders are NOT keyword-fixable and pull the practical odds down: (1) EDUCATION -- the BASIC qualification is a bachelor's in ENGINEERING + a POST-GRADUATE degree in business/finance; he has a BBA only (no engineering UG, no PG) -- a hard stated basic-qual gap; (2) PEDIGREE BAR -- D.E. Shaw is an elite, highly selective $90B investment firm where education pedigree is heavily weighted; (3) DOMAIN -- capital-markets / FinOp (financial operations) context vs his B2C EdTech background (though the role is GenAI-adoption/PM, so domain matters less than the education screen). Honest read: skills are a strong match and the GenAI-adoption angle is real, but the engineering+PG education requirement at an elite firm is a significant screening risk the resume cannot fix. Aspirational apply. Auto-fit to one full page (94.7%)."
+    },
+    {
+      "id": "EXT20",
+      "title": "Product Manager, Billing & Operations",
+      "co": "Salesforce (MuleSoft)",
+      "addedDate": "2026-07-22T10:00:00",
+      "resume": "resumes/Salesforce-Product Manager Billing Operations.docx",
+      "matchScore": 75,
+      "why": "Pasted JD (Bangalore/Hyderabad; his #2 location). 75% on keywords (18/24) -- and this is a SIGNIFICANT STRETCH, on par with or beyond the Amex one: the 75% reflects transferable skills, not domain fit. Covered from real work: AI-first product management (a HEAVILY emphasized JD theme he genuinely fits -- ships GenAI, uses it across discovery/specs/docs, evaluates AI outputs), monetization & subscription understanding (LPP, renewals, ARPU), API-driven workflows (6-gateway payment integration = billing-adjacent), backend automation, SQL/BI + relational databases, technical specs, cross-functional (eng + business), strategic thinking, deal/sales support. The 6 keyword gaps ARE the core of the role and are genuine, non-wording-fixable domain gaps: billing/invoicing systems, automated provisioning, entitlement management, consumption metering, Salesforce CPQ, and SKU creation/NPI. His monetization experience is PRODUCT-level (pricing/renewals), NOT backend billing-systems/metering/provisioning infrastructure -- a different discipline. Honest read: apply only if targeting a pivot into billing/monetization-systems PM; the AI-first + payments-API + automation angle is a legitimate hook, but the billing-infrastructure/CPQ domain gap (plus the big-tech bar) is the real deciding factor. Note: Salesforce asks candidates to apply to <=3 roles per 12 months. Auto-fit to one full page (93.1%)."
+    },
+    {
+      "id": "EXT21",
+      "title": "Product Manager - Retail & Insights (Retail Media Platform)",
+      "co": "dunnhumby",
+      "addedDate": "2026-07-22T11:00:00",
+      "resume": "resumes/dunnhumby-Product Manager Retail Media.docx",
+      "coverLetter": "resumes/dunnhumby-Cover Letter.docx",
+      "updatedDate": "2026-07-22T12:30:00",
+      "matchScore": 84,
+      "why": "REFRESHED 2026-07-22 after Kshitiz confirmed real experience that legitimately closed 4 gaps -- rescored 80% -> 84% (21/25), no fabrication. NEWLY VERIFIED AND ADDED: (1) CONTENT MANAGEMENT -- built/deployed a grade- and course-wise content catalogue (surfaced by learner choice + teacher recommendation) and automated content generation with AI prompts, dissolving manual content-team effort; this satisfies the ESSENTIAL OR-list 'strong understanding of one or more of Ad Servers / DSPs / SSPs / CDPs / DMPs / Digital CMS / ERP' via CMS, which was previously a hard gap. (2) ATTRIBUTION -- centralized CRM lead-source management with inbound leads auto-tagged via UTM parameters and tracking cookies, outbound uploaded/entered. (3) AUDIENCE SEGMENTATION & TARGETING -- personalised course plans by learner grade, professional segments by industry + seniority, and keyword targeting on highest-volume search terms. (4) CAMPAIGN PERFORMANCE -- partnered with Marketing/Sales optimising lead flow, lead acceptance and best-performing sources. Also expanded the third-party partner list (Daily.co, 100ms, Convin, Servetel on top of payments/Gupshup/Exotel). STILL GENUINELY NOT CLAIMED (the 4 remaining gaps): auction dynamics/bidding/pacing, ad servers & DSPs/SSPs, Retail Media/AdTech domain, and microservices architecture (his answer described onboarding third-party SERVICES, which is not internal microservices). OPEN/UNUSED: he also described an in-house CDP-like behavioural-data unification + ops engine (3,500+ teacher scheduling, payroll, subscription billing) -- deliberately NOT put on the resume until he confirms which parts he personally built and whether 3,500+ is accurate (logged in experience_bank Open Questions). Honest read: now a solid fit on the role's actual craft (API-first integrations, partner lifecycle, reusable capabilities, CMS/catalogue, attribution, targeting); the remaining gap is AdTech auction mechanics + Retail Media domain, which is learnable but will be the screen. ORIGINAL SCORING NOTE: 80% on keywords (16/20). GENUINELY STRONG on the role's day-to-day craft, which is API-first platform integrations: he really does own third-party integration lifecycles end-to-end (6 payment gateways via APIs incl. status verification/webhooks, messaging via Gupshup/Venera Connect, telephony via Exotel/Tata Tele) as the primary partner point of contact, and has built REUSABLE configurable capabilities rather than point solutions (shared payments capability, omnichannel support service reused across app/LMS/CRM). Also covered: product requirements/user stories/acceptance criteria/integration specs, API contracts & data mappings, adoption + reliability + data-quality metrics, business+technical stakeholder management, cross-functional agile, roadmap & prioritisation of large ambiguous initiatives. Essentials met: 5+ yrs PM, and the degree OR-list (Business/Marketing/Eng/CS) is satisfied by his BBA (Business). THE REAL GAP is the DOMAIN, and 3 of the 4 keyword misses are it: digital-advertising concepts (bidding, pacing, auction dynamics, targeting, attribution, campaign delivery) -- an ESSENTIAL he entirely lacks -- plus the essential 'strong understanding of one or more of Ad Servers / DSPs / SSPs / CDPs / DMPs / CMS / ERP' (OR-list; he satisfies NONE of the alternatives), and Retail Media/AdTech domain (desirable). 4th miss: microservices (desirable). Honest read: BETTER fit than the Salesforce-billing or Amex stretches because the integration/partner/reusable-platform work is the same KIND of work he actually does -- just a different industry. But the AdTech domain is an essential he'd have to learn, so expect that to be the screen. Worth applying if open to a Retail Media/AdTech pivot. Auto-fit to one full page (94.8%)."
+    },
+    {
+      "id": "EXT22",
+      "title": "Product Manager",
+      "co": "Credgenics",
+      "addedDate": "2026-07-22T13:00:00",
+      "resume": "resumes/Credgenics-Product Manager.docx",
+      "matchScore": 88,
+      "why": "Pasted JD (location not stated; Credgenics is an NPA/collections SaaS for banks & NBFCs). 88% on keywords (22/25). STRONG STRUCTURAL ANALOG worth leading with in interviews: Credgenics is an agent-driven COLLECTIONS platform, and his Sales CRM revamp is the closest thing he's built to it -- lead navigation, integrated calling (Exotel/Servetel/Tata Tele), revenue tracking, target-vs-achievement and incentive management for counseling agents, cutting ops workload 80% -- plus an omnichannel customer-communication helpdesk (calling, WhatsApp, email, chatbot), backend automation (manual punching 100%->2%), and a customer verification/trust flow (fake sales 10%->1%). Different industry, very similar PRODUCT SHAPE (agent workflow + omnichannel contact + automation + trust). Core PM craft all covered: roadmap ownership & planning, comprehensive PRDs with acceptance criteria (incl. non-functional/security), agile & sprint execution, cross-functional (eng/design/sales/marketing), SQL + Google Analytics + Power BI, market research & competitive analysis, customer feedback, user journeys, GTM & launches, adoption, stakeholder management & risk communication. Essentials met: 3-5 yrs PM (he's 5+), and the degree OR-list (Engineering/Business) is satisfied by his BBA (Business); the analytics-tool OR-list (SQL/GA/Mixpanel/etc.) is satisfied by SQL + GA (no Mixpanel, but not required). 3 genuine gaps, all domain-level: lending/collections experience (the JD lists this as 'a plus', not essential), B2B SaaS (his platform is B2C -- JD says 'preferably FinTech, SaaS, or B2B'), and regulatory/data-compliance in a regulated financial environment. Honest read: one of his better fintech-adjacent fits precisely because the requirements are PM-craft-first and the domain is only 'preferred' -- the CRM/collections-workflow analogy is genuinely strong. Worth applying. Auto-fit to one full page (93.6%)."
+    },
+    {
+      "id": "EXT23",
+      "title": "Product Manager",
+      "co": "Blitz",
+      "addedDate": "2026-07-22T14:00:00",
+      "resume": "resumes/Blitz-Product Manager.docx",
+      "matchScore": 93,
+      "why": "Pasted JD. Bengaluru, ON-SITE (his #2 city, but a relocation from Gurgaon). Blitz does same-day delivery for eCommerce brands. 93% on keywords (25/27) -- and the score is high for a real reason: this JD has NO stated domain requirement at all. The Basic Qualifications are pure general PM craft (analytical/problem-solving, data-driven decisions, communication, stakeholder management, customer-first mindset, fast-paced cross-functional environment, basic understanding of product development/experimentation/agile) and the responsibilities are end-to-end feature ownership, discovery->launch->iteration, user feedback + product metrics + operational data, PRDs/user stories/acceptance criteria, roadmap prioritisation, A/B experiment design & analysis, and post-launch monitoring -- ALL of which he does daily and at greater depth than the role asks. Only 2 keyword misses, and neither is a stated requirement: eCommerce and same-day-delivery/logistics (company domain context; same logistics gap as Zippee/Noon). *** THE BIG FLAG IS NOT KEYWORD-BASED: the JD asks for 1-3 YEARS of PM experience and he has 5+. He is OVER-QUALIFIED for the stated band. Real risks: (a) screened out as too senior, (b) levelled down / offered below his current Rs 11L. Worth applying only if he's specifically drawn to the q-commerce/logistics space or to Bengaluru, and ideally after confirming the band/comp with the recruiter first -- otherwise this is a step sideways or down versus PhysicsWallah/Nat Habit/MakeMyTrip (all 96% and at-or-above his level). *** Auto-fit to one full page (93.6%)."
+    },
+    {
+      "id": "EXT24",
+      "title": "Senior Product Manager",
+      "co": "Battery Smart",
+      "addedDate": "2026-07-22T15:00:00",
+      "resume": "resumes/Battery Smart-Senior Product Manager.docx",
+      "matchScore": 96,
+      "why": "Pasted JD. STRONG FIT + LOCATION: Gurugram, on-site (his #1 city). Battery Smart is an EV battery-swapping network; the role is ops-tech-heavy. 96% on keywords (25/26). Led the resume with the angle that maps almost 1:1 to their ownership areas -- Operations & Workforce-Productivity Platforms + Internal Business Tools & Automation via his Sales CRM revamp (agent workspace: lead nav, integrated calling, target-vs-achievement, incentive mgmt, -80% ops) and backend automation (punching ~100%->2%, Rs 1.6L/mo, +70% same-day revenue realization) -- plus Growth & Marketplace (two-sided marketplace, monetization/retention) and Data/Reporting/BI (SQL, Power BI). Critically, it proves what they explicitly PREFER: 'building products for both external customers AND internal business users' (consumer app + agent CRM). All core requirements covered: end-to-end ownership ideation->launch->scale, product discovery, roadmap planning, prioritization & trade-offs, translating business problems into scalable solutions, stakeholder mgmt, cross-functional (Eng/Design/Ops/Growth/Finance), data-driven decisions, experimentation/analytics/user research, Agile, and mentoring APMs (his team of 8). Experience: 3-5 yrs asked, he's 5+ -- fits Senior band. The preferred domain OR-list (Mobility/EV/Logistics/SaaS/FinTech/Marketplace/Supply Chain/Ops-Tech) is satisfied by his marketplace + operations-tech, so not a gap. 1 genuine keyword gap: Asset & Inventory Management -- one of six listed ownership areas he has no direct experience in (did NOT claim it to inflate the score). Other preferred-only gaps: EV/mobility domain (learnable) and engineering degree / MBA (he has BBA). Honest read: one of his best overall fits of the batch -- home city, right level, ops-tech + internal-tools story is genuinely his strongest, and no hard requirement is missed. Strong apply. Auto-fit to one full page (95.2%)."
+    },
+    {
+      "id": "EXT25",
+      "title": "Manager - Business Collaboration (Unified Collaboration)",
+      "co": "Tata Communications",
+      "addedDate": "2026-07-22T16:00:00",
+      "resume": "resumes/Tata Communications-Manager Business Collaboration.docx",
+      "matchScore": 88,
+      "why": "Pasted JD. Hybrid PM / Product-Marketing / Pre-Sales / Solution-Consulting role for enterprise Unified Collaboration (UCaaS/telecom) products. 88% on keywords (22/25). GENUINE UNDERRATED HOOK: he has actually BUILT collaboration & communication products -- an in-house video-call platform (replaced a vendor), an omnichannel comms system (calling/WhatsApp/email/chatbot), and telephony + live-video integrations (Exotel, Servetel, TATA TELE, Daily.co, 100ms, Convin). That's a real, honest angle for the 'Collaboration' domain, not a stretch. All PM-craft requirements covered: product strategy/roadmap/lifecycle, requirement gathering & prioritization, Agile ceremonies (standups/sprint planning/reviews/retros/demos), product adoption & KPIs, product documentation/user guides, cross-functional (sales/marketing/pricing/ops/CS), GTM & positioning, market trends & competitive analysis, stakeholder mgmt & presentations, revenue growth & retention. Essentials met: 4-7 yrs (he's 5), degree OR-list (eng/tech/business) satisfied by BBA, role-type OR-list (PM/ProdMktg/Pre-Sales/SolCon/SalesEng) satisfied by PM. 3 genuine gaps, all real: (1) enterprise UNIFIED COMMUNICATIONS / UCaaS domain (his comms products are B2C-internal, not enterprise UCaaS); (2) PRE-SALES / SOLUTION CONSULTING -- this is a customer-facing role (enterprise product demos, POCs, solution presentations to external customers) and he's an in-house B2C PM, not customer-facing pre-sales -- the biggest real gap; (3) contact center / telecom domain. TWO LOGISTICS FLAGS (not skills): mandatory 5-day WORK-FROM-OFFICE and willingness to work ROTATIONAL SHIFTS -- confirm he's ok with both. Honest read: decent fit on PM-craft + the real collaboration-product angle, but the enterprise B2B pre-sales/customer-facing nature and UCaaS domain are the real considerations. Worth applying if open to a customer-facing/pre-sales-flavored PM role and the shift/WFO terms. Auto-fit to one full page (93.7%)."
+    },
+    {
+      "id": "EXT26",
+      "title": "Product Manager 2 - Beauty Search",
+      "co": "Nykaa",
+      "addedDate": "2026-07-29T13:35:00",
+      "resume": "resumes/Nykaa-Product Manager 2 Search.docx",
+      "matchScore": 75,
+      "why": "Pasted JD (Gurgaon-preferred, 5 days office) — an AI-first Search/Discovery PM role owning query understanding, ranking, relevance, and LLM-powered search for e-commerce. 75% on keywords (15/20). HONEST PARTIAL FIT: strong on the adjacent AI/ML + product-craft half — he genuinely built a preference-capture RANKING model, personalized course RECOMMENDATION surfaces, a behavioral-analytics AI recommendation feature (Demo Analysis), shipped production GenAI/LLM + NLP chatbot (LLM APIs + prompt engineering), and does A/B testing, PRDs, and cross-functional work with engineering/data/design; Gurugram location matches. REAL GAPS (the 5 missing keywords, NOT fabricated): deep search-IR internals the JD leans on — query understanding, spell correction/synonyms, semantic search/retrieval, learning-to-rank, and embeddings/vector search. He has no hands-on experience with these specific search-engine techniques, and no beauty/fashion e-commerce domain exposure. Frame him as an AI/ML product builder who can own ranking, recommendations, personalization, and LLM search features and ramp on the IR internals — not as an existing search-infra specialist."
+    }
+  ]
 }
