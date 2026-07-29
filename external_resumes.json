@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T09:49:15Z",
+  "updated": "2026-07-29T09:58:22Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -238,6 +238,15 @@
       "resume": "resumes/Nykaa-Product Manager 2 Search.docx",
       "matchScore": 75,
       "why": "Pasted JD (Gurgaon-preferred, 5 days office) — an AI-first Search/Discovery PM role owning query understanding, ranking, relevance, and LLM-powered search for e-commerce. 75% on keywords (15/20). HONEST PARTIAL FIT: strong on the adjacent AI/ML + product-craft half — he genuinely built a preference-capture RANKING model, personalized course RECOMMENDATION surfaces, a behavioral-analytics AI recommendation feature (Demo Analysis), shipped production GenAI/LLM + NLP chatbot (LLM APIs + prompt engineering), and does A/B testing, PRDs, and cross-functional work with engineering/data/design; Gurugram location matches. REAL GAPS (the 5 missing keywords, NOT fabricated): deep search-IR internals the JD leans on — query understanding, spell correction/synonyms, semantic search/retrieval, learning-to-rank, and embeddings/vector search. He has no hands-on experience with these specific search-engine techniques, and no beauty/fashion e-commerce domain exposure. Frame him as an AI/ML product builder who can own ranking, recommendations, personalization, and LLM search features and ramp on the IR internals — not as an existing search-infra specialist."
+    },
+    {
+      "id": "EXT27",
+      "title": "Product Manager (Capability / Healthcare Tech)",
+      "co": "Optum",
+      "addedDate": "2026-07-29T15:45:00",
+      "resume": "resumes/Optum-Product Manager.docx",
+      "matchScore": 85,
+      "why": "Pasted JD (Optum / UnitedHealth Group). Capability-management PM role for healthcare/PBM enterprise. 85% keyword coverage (17/20) — but READ THIS AS CRAFT-ONLY; the number OVERSTATES the real fit. He genuinely covers the transferable PM craft the JD lists: end-to-end capability/product strategy, vision, lifecycle & roadmap; KPI targets + scale/maintain/de-invest decisions (via unit-economics/P&L tool); operational readiness; cross-functional & cross-enterprise delivery; product adoption; market & customer insights; stakeholder management & influence without authority; risk mitigation (customer-verification/fraud); business cases; enterprise data & reporting flows (CRM/attribution/Power BI). TWO HARD GATES ARE UNMET and no resume wording can honestly close them: (1) EXPERIENCE — JD requires 7+ years; he has ~5. (2) DOMAIN — JD requires solid knowledge of healthcare operations, PBM (pharmacy benefit management), and specialty workflow; he has ZERO healthcare/PBM/pharmacy exposure (these are exactly the 3 missing keywords, deliberately not fabricated). MBA preferred; he has a BBA. NET: low-probability application — a strong generalist PM profile aimed at a role explicitly gated on seniority + healthcare/PBM domain. Only worth pursuing if Optum is open to a domain-agnostic PM willing to ramp on healthcare; otherwise deprioritize."
     }
   ]
 }
