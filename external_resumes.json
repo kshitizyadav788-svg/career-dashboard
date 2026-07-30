@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T05:56:21Z",
+  "updated": "2026-07-30T05:58:08Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -255,7 +255,8 @@
       "addedDate": "2026-07-29T16:05:00",
       "resume": "resumes/Dario-Product Owner.docx",
       "matchScore": 95,
-      "why": "Pasted JD. Senior Product Owner role — a STRONG, honest fit (95%, 19/20 keywords). Hits every gating requirement: Gurugram residency (JD is Gurugram-only / relocation) — he lives in Gurugram; 4+ yrs PO/PM (he has 5+); owns backlog end-to-end; Agile/Scrum with backlog refinement, sprint planning, and acceptance criteria; data-driven prioritization (dashboards, KPIs, A/B tests); Jira/Confluence/Figma; SDLC/APIs/basic system architecture; and the two differentiators the JD emphasizes — genuine AI-in-daily-work enthusiasm (ships production GenAI, uses LLMs + prompt engineering daily) and DTC mobile experience (his 0->1 direct-to-consumer app, highly preferred). ONLY MISSING KEYWORD: CI/CD — and the JD asks merely for CI/CD 'awareness', so it is a minor gap, not a blocker (left unclaimed rather than fabricated). SOFT DOMAIN NOTE (not a required qual): the backlog aligns with clinical/regulatory/compliance needs in a healthcare product; he has no healthcare domain background, but the JD's 'What you have' gates on PO craft + AI + Agile, not healthcare — so this is context to ramp on, not a disqualifier. Recommend applying — one of his best-matched external roles."
+      "why": "Pasted JD. Senior Product Owner role — a STRONG, honest fit (95%, 19/20 keywords). Hits every gating requirement: Gurugram residency (JD is Gurugram-only / relocation) — he lives in Gurugram; 4+ yrs PO/PM (he has 5+); owns backlog end-to-end; Agile/Scrum with backlog refinement, sprint planning, and acceptance criteria; data-driven prioritization (dashboards, KPIs, A/B tests); Jira/Confluence/Figma; SDLC/APIs/basic system architecture; and the two differentiators the JD emphasizes — genuine AI-in-daily-work enthusiasm (ships production GenAI, uses LLMs + prompt engineering daily) and DTC mobile experience (his 0->1 direct-to-consumer app, highly preferred). ONLY MISSING KEYWORD: CI/CD — and the JD asks merely for CI/CD 'awareness', so it is a minor gap, not a blocker (left unclaimed rather than fabricated). SOFT DOMAIN NOTE (not a required qual): the backlog aligns with clinical/regulatory/compliance needs in a healthcare product; he has no healthcare domain background, but the JD's 'What you have' gates on PO craft + AI + Agile, not healthcare — so this is context to ramp on, not a disqualifier. Recommend applying — one of his best-matched external roles.",
+      "coverLetter": "resumes/Dario-Product Owner Cover Letter.docx"
     }
   ]
 }
