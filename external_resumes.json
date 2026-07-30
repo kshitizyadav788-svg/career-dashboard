@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T05:58:08Z",
+  "updated": "2026-07-30T10:50:24Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -257,6 +257,15 @@
       "matchScore": 95,
       "why": "Pasted JD. Senior Product Owner role — a STRONG, honest fit (95%, 19/20 keywords). Hits every gating requirement: Gurugram residency (JD is Gurugram-only / relocation) — he lives in Gurugram; 4+ yrs PO/PM (he has 5+); owns backlog end-to-end; Agile/Scrum with backlog refinement, sprint planning, and acceptance criteria; data-driven prioritization (dashboards, KPIs, A/B tests); Jira/Confluence/Figma; SDLC/APIs/basic system architecture; and the two differentiators the JD emphasizes — genuine AI-in-daily-work enthusiasm (ships production GenAI, uses LLMs + prompt engineering daily) and DTC mobile experience (his 0->1 direct-to-consumer app, highly preferred). ONLY MISSING KEYWORD: CI/CD — and the JD asks merely for CI/CD 'awareness', so it is a minor gap, not a blocker (left unclaimed rather than fabricated). SOFT DOMAIN NOTE (not a required qual): the backlog aligns with clinical/regulatory/compliance needs in a healthcare product; he has no healthcare domain background, but the JD's 'What you have' gates on PO craft + AI + Agile, not healthcare — so this is context to ramp on, not a disqualifier. Recommend applying — one of his best-matched external roles.",
       "coverLetter": "resumes/Dario-Product Owner Cover Letter.docx"
+    },
+    {
+      "id": "EXT29",
+      "title": "Product Manager",
+      "co": "Ozi",
+      "addedDate": "2026-07-29T16:25:00",
+      "resume": "resumes/Ozi-Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD. Generic, core-PM role with no domain, seniority, or degree gate stated — every listed responsibility is standard product-management craft he genuinely owns, so this is a clean 100% keyword match (20/20): product strategy, roadmap & end-to-end lifecycle; PRDs, user stories & acceptance criteria; cross-functional delivery with engineering/design/analytics/ops; user research & customer feedback; data analysis & A/B testing; success metrics/KPIs & product performance; RICE prioritization; GTM & product launches; scalable, user-centric products; stakeholder management; business impact. NOTE: the 100% reflects that the JD is broad/generic (no specialized must-haves to miss), not that it is a uniquely perfect fit — treat it as 'fully qualified for a standard PM role.' No gaps to fabricate around. Only unknowns are the ones the JD omits — company 'Ozi', comp, location, seniority — worth clarifying before applying."
     }
   ]
 }
