@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T10:50:24Z",
+  "updated": "2026-07-30T11:25:08Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -266,6 +266,15 @@
       "resume": "resumes/Ozi-Product Manager.docx",
       "matchScore": 100,
       "why": "Pasted JD. Generic, core-PM role with no domain, seniority, or degree gate stated — every listed responsibility is standard product-management craft he genuinely owns, so this is a clean 100% keyword match (20/20): product strategy, roadmap & end-to-end lifecycle; PRDs, user stories & acceptance criteria; cross-functional delivery with engineering/design/analytics/ops; user research & customer feedback; data analysis & A/B testing; success metrics/KPIs & product performance; RICE prioritization; GTM & product launches; scalable, user-centric products; stakeholder management; business impact. NOTE: the 100% reflects that the JD is broad/generic (no specialized must-haves to miss), not that it is a uniquely perfect fit — treat it as 'fully qualified for a standard PM role.' No gaps to fabricate around. Only unknowns are the ones the JD omits — company 'Ozi', comp, location, seniority — worth clarifying before applying."
+    },
+    {
+      "id": "EXT30",
+      "title": "Product Owner - AI",
+      "co": "Solifi",
+      "addedDate": "2026-07-29T17:05:00",
+      "resume": "resumes/Solifi-Product Owner AI.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Bangalore hybrid; fintech SaaS AI team). Applied, hands-on AI Product Owner role — a strong, honest fit at 90% (18/20). Hits the must-haves squarely: 4-6 yrs PM in tech (he has 5+); real AI/ML product exposure (shipped production GenAI + NLP chatbot, built an AI recommendation feature, uses LLMs + prompt design daily); problem-framing; hands-on prototyping/POCs + experimentation (A/B); writes structured product requirements; backlog prioritization in Agile/Scrum + Kanban; high-level fluency with APIs, data pipelines (Metabase->Power BI), and system architecture; stakeholder alignment; strong AI curiosity. Location fits his #2 priority (Bangalore). GAPS (the 2 missing keywords, not fabricated): formal MODEL-EVALUATION workflows and RAG systems — both are 'nice-to-have' AI-specialist items, and RAG is OR-satisfied by his LLM experience; he experiments with/iterates models but doesn't own formal ML eval pipelines. Other soft gaps (all nice-to-have / preferred, not must-have): no technical/CS degree and Master's is 'preferred' (he has a BBA); SaaS/enterprise-software domain is partial (his enterprise exposure is internal tooling/CRM, not a SaaS product); no fintech domain. CONFIRM: Kanban familiarity (claimed via JIRA/Agile usage) — reasonable but worth him being ready to speak to. Recommend applying — one of his better-matched AI-PO roles alongside Dario."
     }
   ]
 }
