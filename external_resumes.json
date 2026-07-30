@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T09:58:22Z",
+  "updated": "2026-07-30T05:56:21Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -247,6 +247,15 @@
       "resume": "resumes/Optum-Product Manager.docx",
       "matchScore": 85,
       "why": "Pasted JD (Optum / UnitedHealth Group). Capability-management PM role for healthcare/PBM enterprise. 85% keyword coverage (17/20) — but READ THIS AS CRAFT-ONLY; the number OVERSTATES the real fit. He genuinely covers the transferable PM craft the JD lists: end-to-end capability/product strategy, vision, lifecycle & roadmap; KPI targets + scale/maintain/de-invest decisions (via unit-economics/P&L tool); operational readiness; cross-functional & cross-enterprise delivery; product adoption; market & customer insights; stakeholder management & influence without authority; risk mitigation (customer-verification/fraud); business cases; enterprise data & reporting flows (CRM/attribution/Power BI). TWO HARD GATES ARE UNMET and no resume wording can honestly close them: (1) EXPERIENCE — JD requires 7+ years; he has ~5. (2) DOMAIN — JD requires solid knowledge of healthcare operations, PBM (pharmacy benefit management), and specialty workflow; he has ZERO healthcare/PBM/pharmacy exposure (these are exactly the 3 missing keywords, deliberately not fabricated). MBA preferred; he has a BBA. NET: low-probability application — a strong generalist PM profile aimed at a role explicitly gated on seniority + healthcare/PBM domain. Only worth pursuing if Optum is open to a domain-agnostic PM willing to ramp on healthcare; otherwise deprioritize."
+    },
+    {
+      "id": "EXT28",
+      "title": "Product Owner",
+      "co": "Dario (DarioHealth)",
+      "addedDate": "2026-07-29T16:05:00",
+      "resume": "resumes/Dario-Product Owner.docx",
+      "matchScore": 95,
+      "why": "Pasted JD. Senior Product Owner role — a STRONG, honest fit (95%, 19/20 keywords). Hits every gating requirement: Gurugram residency (JD is Gurugram-only / relocation) — he lives in Gurugram; 4+ yrs PO/PM (he has 5+); owns backlog end-to-end; Agile/Scrum with backlog refinement, sprint planning, and acceptance criteria; data-driven prioritization (dashboards, KPIs, A/B tests); Jira/Confluence/Figma; SDLC/APIs/basic system architecture; and the two differentiators the JD emphasizes — genuine AI-in-daily-work enthusiasm (ships production GenAI, uses LLMs + prompt engineering daily) and DTC mobile experience (his 0->1 direct-to-consumer app, highly preferred). ONLY MISSING KEYWORD: CI/CD — and the JD asks merely for CI/CD 'awareness', so it is a minor gap, not a blocker (left unclaimed rather than fabricated). SOFT DOMAIN NOTE (not a required qual): the backlog aligns with clinical/regulatory/compliance needs in a healthcare product; he has no healthcare domain background, but the JD's 'What you have' gates on PO craft + AI + Agile, not healthcare — so this is context to ramp on, not a disqualifier. Recommend applying — one of his best-matched external roles."
     }
   ]
 }
