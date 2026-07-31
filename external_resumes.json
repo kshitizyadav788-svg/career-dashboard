@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T11:25:08Z",
+  "updated": "2026-07-31T07:29:14Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -275,6 +275,15 @@
       "resume": "resumes/Solifi-Product Owner AI.docx",
       "matchScore": 90,
       "why": "Pasted JD (Bangalore hybrid; fintech SaaS AI team). Applied, hands-on AI Product Owner role — a strong, honest fit at 90% (18/20). Hits the must-haves squarely: 4-6 yrs PM in tech (he has 5+); real AI/ML product exposure (shipped production GenAI + NLP chatbot, built an AI recommendation feature, uses LLMs + prompt design daily); problem-framing; hands-on prototyping/POCs + experimentation (A/B); writes structured product requirements; backlog prioritization in Agile/Scrum + Kanban; high-level fluency with APIs, data pipelines (Metabase->Power BI), and system architecture; stakeholder alignment; strong AI curiosity. Location fits his #2 priority (Bangalore). GAPS (the 2 missing keywords, not fabricated): formal MODEL-EVALUATION workflows and RAG systems — both are 'nice-to-have' AI-specialist items, and RAG is OR-satisfied by his LLM experience; he experiments with/iterates models but doesn't own formal ML eval pipelines. Other soft gaps (all nice-to-have / preferred, not must-have): no technical/CS degree and Master's is 'preferred' (he has a BBA); SaaS/enterprise-software domain is partial (his enterprise exposure is internal tooling/CRM, not a SaaS product); no fintech domain. CONFIRM: Kanban familiarity (claimed via JIRA/Agile usage) — reasonable but worth him being ready to speak to. Recommend applying — one of his better-matched AI-PO roles alongside Dario."
+    },
+    {
+      "id": "EXT31",
+      "title": "Product Manager - Business Product Management",
+      "co": "CBTS",
+      "addedDate": "2026-07-29T17:45:00",
+      "resume": "resumes/CBTS-Product Manager Business.docx",
+      "matchScore": 95,
+      "why": "Pasted JD. Senior enterprise Product Manager role — core PM craft with no hard years/degree/domain gate in the JD text, so it scores a strong 95% (19/20). Covers the full brief honestly: product vision/strategy/multi-release roadmap; market research, customer discovery & data analysis; PRDs, user stories, acceptance criteria & backlog prioritization (value/commercial impact/feasibility/risk/dependencies); cross-functional delivery incl. finance; GTM (launch readiness, positioning, PRICING inputs, SALES ENABLEMENT — his Demo Analysis tool is genuine sales enablement); adoption + KPIs incl. revenue, PROFITABILITY (real, via his counselor-wise P&L tracker) and CSAT; product lifecycle; stakeholder influence; PM standards/playbooks. ONLY MISSING KEYWORD: 'Competitive analysis' — deliberately NOT fabricated; it isn't documented in his experience, so it's left as an honest gap (logged as an open question in experience_bank.md — if he has done competitor benchmarking, it closes to ~100%). SOFT DOMAIN NOTE: CBTS products are ENTERPRISE B2B (IT/tech services); his background is B2C/consumer + internal enterprise tooling. The JD as provided doesn't hard-gate on enterprise-B2B experience, and his commercial/pricing/P&L/sales-enablement work maps well — but expect enterprise-B2B domain to come up in interview. Solid, applyable fit."
     }
   ]
 }
