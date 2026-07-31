@@ -142,6 +142,15 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   enhancing customer experience with minimal manual intervention. Relevant to any JD asking for
   fraud detection, trust & safety, or verification/compliance experience.
 
+## Competitive Analysis / Competitor Benchmarking
+- Has real competitive-analysis experience (confirmed by Kshitiz 2026-07-29): benchmarking against
+  competitor products, features, and pricing to inform product and pricing decisions. Safe to claim
+  as a skill/competency on resumes now.
+- OPEN (post-paid, to strengthen — not blocking): capture ONE concrete example so it's
+  interview-defensible — which competitors he benchmarked (other EdTech players?), whether it was a
+  feature/pricing teardown, and what product/pricing decision it informed. Add specifics here when he
+  shares them.
+
 ## Certification
 - "Marketing Researchers and Data Analyst" certification, Proof and Performance Services Limited
   (valid from Jan 2020).
@@ -166,13 +175,6 @@ Once answered, move the fact into the sections above and delete the question her
   specifics beyond "6 API-integrated payment gateways" -- which gateways, whose API docs,
   webhook/reconciliation handling? -->
 
-- **Competitive analysis / competitor benchmarking** (recurring gap — flagged while tailoring for
-  CBTS, and relevant to many PM JDs that list "market research, competitive analysis, customer
-  discovery"): it's a very common PM must-have but isn't documented in `DATA` or this bank, so it's
-  been left unclaimed (honest miss). Does Kshitiz have real competitor-benchmarking experience —
-  e.g. benchmarking PlanetSpark's product/pricing against other EdTech players, feature/pricing
-  teardown, or win/loss analysis? If yes, capture the specifics here and it closes a keyword gap
-  that recurs across roles.
 - **Formal cohort analysis** (flagged while tailoring for Vishal Mega Mart NP15, later also
   relevant to Tata 1mg): he described the "Demo Analysis" AI feature when asked about cohort
   analysis (now captured above), but that's individual-customer behavior analysis for sales

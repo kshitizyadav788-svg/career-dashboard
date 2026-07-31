@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T07:29:14Z",
+  "updated": "2026-07-31T07:31:22Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -282,8 +282,9 @@
       "co": "CBTS",
       "addedDate": "2026-07-29T17:45:00",
       "resume": "resumes/CBTS-Product Manager Business.docx",
-      "matchScore": 95,
-      "why": "Pasted JD. Senior enterprise Product Manager role — core PM craft with no hard years/degree/domain gate in the JD text, so it scores a strong 95% (19/20). Covers the full brief honestly: product vision/strategy/multi-release roadmap; market research, customer discovery & data analysis; PRDs, user stories, acceptance criteria & backlog prioritization (value/commercial impact/feasibility/risk/dependencies); cross-functional delivery incl. finance; GTM (launch readiness, positioning, PRICING inputs, SALES ENABLEMENT — his Demo Analysis tool is genuine sales enablement); adoption + KPIs incl. revenue, PROFITABILITY (real, via his counselor-wise P&L tracker) and CSAT; product lifecycle; stakeholder influence; PM standards/playbooks. ONLY MISSING KEYWORD: 'Competitive analysis' — deliberately NOT fabricated; it isn't documented in his experience, so it's left as an honest gap (logged as an open question in experience_bank.md — if he has done competitor benchmarking, it closes to ~100%). SOFT DOMAIN NOTE: CBTS products are ENTERPRISE B2B (IT/tech services); his background is B2C/consumer + internal enterprise tooling. The JD as provided doesn't hard-gate on enterprise-B2B experience, and his commercial/pricing/P&L/sales-enablement work maps well — but expect enterprise-B2B domain to come up in interview. Solid, applyable fit."
+      "matchScore": 100,
+      "why": "Pasted JD. Senior enterprise Product Manager role — core PM craft with no hard years/degree/domain gate in the JD text. Now a full 100% (20/20) after Kshitiz confirmed competitive-analysis experience (2026-07-29, added to experience_bank). Covers the entire brief honestly: product vision/strategy/multi-release roadmap; market research, COMPETITIVE ANALYSIS, customer discovery & data analysis; PRDs, user stories, acceptance criteria & backlog prioritization (value/commercial impact/feasibility/risk/dependencies); cross-functional delivery incl. finance; GTM (launch readiness, positioning, PRICING inputs, SALES ENABLEMENT via his Demo Analysis tool); adoption + KPIs incl. revenue, PROFITABILITY (real, via his counselor-wise P&L tracker) and CSAT; product lifecycle; stakeholder influence; PM standards/playbooks. SOFT DOMAIN NOTE: CBTS products are ENTERPRISE B2B (IT/tech services); his background is B2C/consumer + internal enterprise tooling. The JD as provided does not hard-gate on enterprise-B2B experience and his commercial/pricing/P&L/sales-enablement work maps well, but expect enterprise-B2B domain to come up in interview. Strong, applyable fit.",
+      "updatedDate": "2026-07-29T18:05:00"
     }
   ]
 }
