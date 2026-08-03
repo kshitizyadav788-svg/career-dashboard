@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T07:31:22Z",
+  "updated": "2026-08-03T07:25:08Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -285,6 +285,15 @@
       "matchScore": 100,
       "why": "Pasted JD. Senior enterprise Product Manager role — core PM craft with no hard years/degree/domain gate in the JD text. Now a full 100% (20/20) after Kshitiz confirmed competitive-analysis experience (2026-07-29, added to experience_bank). Covers the entire brief honestly: product vision/strategy/multi-release roadmap; market research, COMPETITIVE ANALYSIS, customer discovery & data analysis; PRDs, user stories, acceptance criteria & backlog prioritization (value/commercial impact/feasibility/risk/dependencies); cross-functional delivery incl. finance; GTM (launch readiness, positioning, PRICING inputs, SALES ENABLEMENT via his Demo Analysis tool); adoption + KPIs incl. revenue, PROFITABILITY (real, via his counselor-wise P&L tracker) and CSAT; product lifecycle; stakeholder influence; PM standards/playbooks. SOFT DOMAIN NOTE: CBTS products are ENTERPRISE B2B (IT/tech services); his background is B2C/consumer + internal enterprise tooling. The JD as provided does not hard-gate on enterprise-B2B experience and his commercial/pricing/P&L/sales-enablement work maps well, but expect enterprise-B2B domain to come up in interview. Strong, applyable fit.",
       "updatedDate": "2026-07-29T18:05:00"
+    },
+    {
+      "id": "EXT32",
+      "title": "Product Owner",
+      "co": "Deloitte",
+      "addedDate": "2026-07-29T19:30:00",
+      "resume": "resumes/Deloitte-Product Owner.docx",
+      "matchScore": 100,
+      "why": "Pasted JD (link: southasiacareers.deloitte.com/job-invite/107617). Standard Agile Product Owner role — core PO/PM craft with no domain or seniority gate stated, squarely in his wheelhouse, so a clean 100% (20/20). Covers the whole brief honestly: product vision/strategy/roadmap; backlog management & feature prioritization; requirement gathering & documentation; user stories, acceptance criteria & functional requirements; Agile Scrum ceremonies (sprint planning, daily stand-ups, reviews, retrospectives); stakeholder management & product demonstrations; UAT support & release management; UX principles & customer experience; digital product delivery; cross-functional collaboration (business/technology/operations); Jira & Confluence. NOTE: the 100% reflects that this is a broad, generic PO JD (no specialized must-haves to miss) — read it as 'fully qualified for a standard Agile PO role,' not a uniquely perfect fit. Soft context (not a gate): Deloitte PO roles are often consulting/client-delivery engagements; he has no formal consulting background, but the JD does not require it. Strong, applyable fit."
     }
   ]
 }
