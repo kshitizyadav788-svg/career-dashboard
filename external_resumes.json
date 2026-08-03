@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T09:41:13Z",
+  "updated": "2026-08-03T09:45:24Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -339,6 +339,15 @@
       "resume": "resumes/symplr-Product Manager.docx",
       "matchScore": 95,
       "why": "Pasted JD (symplr — US healthcare operations/GRC software, enterprise B2B SaaS). Strong 95% (19/20) and a solid, applyable fit. Covers the must-have PM craft cleanly: product vision/strategy/roadmap & feature definition (why/when/what); market/TAM & COMPETITIVE analysis (he confirmed competitive-analysis experience); high-level requirements & prototypes; Agile methodology & user stories; PRICING, revenue, profitability & ROI (genuine — LPP pricing/ARPU + counselor P&L tracker); budget & cost management; business-value articulation; cross-functional influence WITHOUT formal authority; partner relationships & integrations; GTM & release milestones; stakeholder communication; software release launch. BIG PLUS: the JD's DESIRED skill 'leveraging Generative AI to automate tasks and extract actionable insights' is squarely his strength (production GenAI, automation, AI insights). ONLY MISSING KEYWORD: Healthcare industry knowledge — and it is a DESIRED (nice-to-have) skill, not a must-have, so this is a minor gap (not fabricated; he has no healthcare domain). OTHER SOFT GAPS (all desired or mild, none hard must-have): Master's degree is DESIRED (he has a BBA, which satisfies the required Bachelor's in Business); the required '6+ years overall in software/product development' is a mild stretch (he is ~5 yrs) though he clears the '3+ years as a PM' must-have; and external evangelism (conferences/customer visits) is lighter for him. NET: apply — one of his stronger fits; healthcare + Master's are only 'desired', and his GenAI edge matches what they explicitly want."
+    },
+    {
+      "id": "EXT38",
+      "title": "Product Manager - Operations & Reporting (Content Supply Chain)",
+      "co": "Target",
+      "addedDate": "2026-07-29T22:20:00",
+      "resume": "resumes/Target-Product Manager Operations Reporting.docx",
+      "matchScore": 95,
+      "why": "Pasted JD. PM for Operations & Reporting within Target's Content Supply Chain / Studio Tools — an INTERNAL ops-platform + enterprise-reporting + process-transformation role. Strong 95% (19/20) and notable because it surfaces Kshitiz's UNDER-USED strengths that consumer-PM framing hides: he genuinely built internal operational platforms (Sales CRM, in-house video-call platform) 0->1, automated business processes (-80% ops workload, punching 100%->5%, verification), built enterprise REPORTING (Power BI dashboards from Metabase SQL, KPIs, reporting standards, operational visibility), owns performance metrics (P&L tracker), and drove ORGANIZATIONAL ADOPTION / CHANGE MANAGEMENT of new tools (training/documentation/communication) — which map almost one-to-one to this JD's must-haves (operational platforms/workflow systems, scheduling, reporting strategy/KPIs/dashboards, business-process transformation, change management, cross-functional). He clears the must-haves: 4-yr degree (BBA), 5+ yrs, operational-platform + reporting-strategy + org-change experience. ONLY MISSING KEYWORD: 'sample order management' — a studio-specific domain term he lacks (not fabricated); the broader retail-studio / content-supply-chain domain is the soft gap, but the role is fundamentally ops/workflow/reporting product management, which he does. TWO THINGS TO CONFIRM: (1) LOCATION/work-authorization — Target's product teams are largely US (Minneapolis) but Target also has a large India tech center in BANGALORE (his #2 priority); check which this is, as US would need work auth he likely lacks. (2) 'influence senior/executive stakeholders' is a mild stretch at ~5 yrs. NET: strong, applyable fit if the location works — one of his better-aligned enterprise roles."
     }
   ]
 }
