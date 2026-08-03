@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T07:53:18Z",
+  "updated": "2026-08-03T09:31:36Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -303,6 +303,15 @@
       "resume": "resumes/Pluang-Product Manager Global Products.docx",
       "matchScore": 60,
       "why": "Pasted JD (aggregated). HONEST WEAK FIT — recommend DEPRIORITIZE/SKIP. 60% (12/20): the resume front-loads his genuine transferable strengths and they score well — end-to-end business & P&L OWNERSHIP (real: counselor-wise P&L tracker + unit economics), A/B testing & experimentation, systems thinking (frontend->backend->partner APIs->ops), cross-functional & third-party partner coordination (payments/telephony/video vendors), rigorous PRDs/SOPs/documentation, prioritization by business impact, user-behavior analysis, and the self-directed-learner-with-AI mindset the JD explicitly values. BUT the 8 missing keywords are the JD's MANDATORY, interview-TESTED domain, and none can be honestly fabricated: brokerage/trading/capital-markets fintech experience (stated MANDATORY), US Stocks & derivatives, order lifecycle & settlement, corporate actions, margin & leverage, FX/multi-currency, broker/LP economics, and options/CFDs/IPO. The JD says market mechanics is a HARD REQUIREMENT and 'candidates will be tested on this in interviews' — he has zero capital-markets/trading background (EdTech), so he would fail the fundamentals screen regardless of resume quality. His only finance-adjacent exposure is e-commerce payment-gateway integration, which is NOT brokerage. NET: strong PM craft aimed at a role gated on trading-domain expertise he doesn't have; the resume is as honest-strong as possible but this is a very low-probability application. Only pursue if he has undisclosed trading/markets experience."
+    },
+    {
+      "id": "EXT34",
+      "title": "Product Manager (Generalist / AI-first)",
+      "co": "TruKKer Technologies",
+      "addedDate": "2026-07-29T20:40:00",
+      "resume": "resumes/TruKKer-Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD. Generalist 'hand-you-anything' PM role at a B2B logistics/trucking marketplace. Strong 90% (18/20) and genuinely worth applying. Nails the two things this JD cares most about: (1) AI AS A DAILY WORKING TOOL is a stated HARD REQUIREMENT ('not a bonus... show us how') and it is exactly his strength — resume shows AI across research/synthesis (competitor teardowns), SQL/data, clickable prototyping, automation, and AI built into shipped products; (2) 'Something you built for yourself — we will always ask about' — he has the CAREER INTELLIGENCE DASHBOARD (built solo: hourly scraping, weighted fit-scoring, AI resume-tailoring, live via GitHub Action), a perfect real answer. Also covers: generalist cross-surface end-to-end ownership (customer-facing + internal ops tool + pricing), owner-not-coordinator, own-your-data (SQL/Metabase/Power BI), opportunity sizing, success metrics, competitor teardowns (competitive analysis), writing-first specs/decision notes, dated shipping track record, marketplace. TWO HONEST GAPS (the 2 missing keywords): (a) LOGISTICS/SUPPLY-CHAIN domain — nice-to-have only, he lacks it; (b) SERVICES/CONSULTING BACKGROUND — the JD's stated ideal is 'predominantly services or consulting, with meaningful time inside a product company', and he is the INVERSE (pure product, no consulting) — this is a real mismatch against their described profile, though the SPIRIT (generalist who juggles anything + uses AI daily + builds his own tools) fits him well. NET: apply — his AI-daily + self-built-tool story is a standout here; just be ready to address the no-consulting-background point honestly."
     }
   ]
 }
