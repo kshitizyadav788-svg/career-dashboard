@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T09:31:36Z",
+  "updated": "2026-08-03T09:36:15Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -312,6 +312,15 @@
       "resume": "resumes/TruKKer-Product Manager.docx",
       "matchScore": 90,
       "why": "Pasted JD. Generalist 'hand-you-anything' PM role at a B2B logistics/trucking marketplace. Strong 90% (18/20) and genuinely worth applying. Nails the two things this JD cares most about: (1) AI AS A DAILY WORKING TOOL is a stated HARD REQUIREMENT ('not a bonus... show us how') and it is exactly his strength — resume shows AI across research/synthesis (competitor teardowns), SQL/data, clickable prototyping, automation, and AI built into shipped products; (2) 'Something you built for yourself — we will always ask about' — he has the CAREER INTELLIGENCE DASHBOARD (built solo: hourly scraping, weighted fit-scoring, AI resume-tailoring, live via GitHub Action), a perfect real answer. Also covers: generalist cross-surface end-to-end ownership (customer-facing + internal ops tool + pricing), owner-not-coordinator, own-your-data (SQL/Metabase/Power BI), opportunity sizing, success metrics, competitor teardowns (competitive analysis), writing-first specs/decision notes, dated shipping track record, marketplace. TWO HONEST GAPS (the 2 missing keywords): (a) LOGISTICS/SUPPLY-CHAIN domain — nice-to-have only, he lacks it; (b) SERVICES/CONSULTING BACKGROUND — the JD's stated ideal is 'predominantly services or consulting, with meaningful time inside a product company', and he is the INVERSE (pure product, no consulting) — this is a real mismatch against their described profile, though the SPIRIT (generalist who juggles anything + uses AI daily + builds his own tools) fits him well. NET: apply — his AI-daily + self-built-tool story is a standout here; just be ready to address the no-consulting-background point honestly."
+    },
+    {
+      "id": "EXT35",
+      "title": "Product Manager - Client Experiences",
+      "co": "TCS",
+      "addedDate": "2026-07-29T21:05:00",
+      "resume": "resumes/TCS-Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD. Intermediate Product Manager role (TCS) for a 'client Experiences' account — theme parks, resorts, cruise ships (reads like a Disney-type end client). Core PM craft with an explicit Bachelor's requirement and no seniority gate, so a clean 100% (20/20). Covers the whole brief honestly: product strategy & vision; user stories, epics & requirement documents; acceptance criteria/test cases; user/guest research & behavioral analytics for data-driven decisions; scrum ceremonies, prioritization & removing roadblocks; mentoring/informal guidance to new team members; managing multiple projects; cross-functional collaboration; problem-solving, communication & stakeholder management. NOTES: (1) 100% reflects a broad, generic JD (no specialized must-haves to miss) — read as 'fully qualified for a standard intermediate PM role', and he actually clears the Bachelor's bar with his BBA. (2) LIGHTEST claim to be ready for: 'feature approvals from financial, legal, privacy, and security teams' — he has genuine finance (P&L) and compliance-via-verification exposure, but formal legal/privacy/security sign-off coordination is thinner; be ready to speak to it honestly. (3) DOMAIN: hospitality/entertainment 'guest experience' (theme parks/cruise) is not his background, but the JD does not require it — framed around consumer/customer experience, which is genuine. Strong, applyable fit."
     }
   ]
 }
