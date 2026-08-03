@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T09:36:15Z",
+  "updated": "2026-08-03T09:38:52Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -321,6 +321,15 @@
       "resume": "resumes/TCS-Product Manager.docx",
       "matchScore": 100,
       "why": "Pasted JD. Intermediate Product Manager role (TCS) for a 'client Experiences' account — theme parks, resorts, cruise ships (reads like a Disney-type end client). Core PM craft with an explicit Bachelor's requirement and no seniority gate, so a clean 100% (20/20). Covers the whole brief honestly: product strategy & vision; user stories, epics & requirement documents; acceptance criteria/test cases; user/guest research & behavioral analytics for data-driven decisions; scrum ceremonies, prioritization & removing roadblocks; mentoring/informal guidance to new team members; managing multiple projects; cross-functional collaboration; problem-solving, communication & stakeholder management. NOTES: (1) 100% reflects a broad, generic JD (no specialized must-haves to miss) — read as 'fully qualified for a standard intermediate PM role', and he actually clears the Bachelor's bar with his BBA. (2) LIGHTEST claim to be ready for: 'feature approvals from financial, legal, privacy, and security teams' — he has genuine finance (P&L) and compliance-via-verification exposure, but formal legal/privacy/security sign-off coordination is thinner; be ready to speak to it honestly. (3) DOMAIN: hospitality/entertainment 'guest experience' (theme parks/cruise) is not his background, but the JD does not require it — framed around consumer/customer experience, which is genuine. Strong, applyable fit."
+    },
+    {
+      "id": "EXT36",
+      "title": "Product Manager (AI-Native / Digital Transformation)",
+      "co": "Trianz",
+      "addedDate": "2026-07-29T21:35:00",
+      "resume": "resumes/Trianz-Product Manager.docx",
+      "matchScore": 80,
+      "why": "Pasted JD. High-autonomy PM to ship an AI-native digital-transformation product + own GTM. MEDIUM fit at 80% (16/20). GENUINE STRENGTHS (matched): 5+ yrs at a product company; owns an entire product with growth & revenue targets; AI-native + CONVERSATIONAL AI products (his GenAI layer + NLP chatbot are a real match for the nice-to-have 'AI/conversational products'); GTM & growth strategy; user research & requirements prioritization; SQL + basic programming; works directly with engineers/UX; startup experience; full ownership + comfort with ambiguity (the mindset the JD stresses). REAL GAPS — the 4 missing keywords are honest and not fabricated: Regulated industry (finance/healthcare/government — MUST-HAVE he lacks; EdTech is not it), Agentic products (he has conversational, not agentic), Digital transformation and Cloud/infrastructure domain (VMware/cloud migrations/app modernization — the product's whole domain, which he has zero of; nice-to-have but central). ADDITIONAL MUST-HAVE GAPS NOT IN THE KEYWORD COUNT (education isn't scored): (1) MBA/Master's is a stated MUST-HAVE — he has a BBA; (2) 'enterprise products' is claimed via internal enterprise TOOLING (CRM/VC platform), not enterprise-SaaS product management — be ready to speak to that honestly. NET: his AI-native/conversational + ownership + startup story is genuinely strong, but two hard must-haves (MBA, regulated-industry) plus the missing infra/cloud domain make this a stretch. Apply only if comfortable being upfront about the MBA and domain gaps; deprioritize vs the 90-100% roles."
     }
   ]
 }
