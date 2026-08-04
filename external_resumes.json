@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T09:55:09Z",
+  "updated": "2026-08-04T10:05:06Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -411,6 +411,15 @@
       "resume": "resumes/MiQ-Product Manager.docx",
       "matchScore": 95,
       "why": "Pasted JD (MiQ — global programmatic media partner; PM in Bengaluru, req JR100262; product = Campaign Management, a real-time central hub of cost/performance/profit). Strong 95% (19/20) and genuinely applyable. Three tailwinds: (1) LOW BAR — 'minimum 2+ years PM' vs his 5+; (2) LOCATION Bengaluru (his #2 priority, India — no work-auth issue); (3) the JD is explicit that ad-tech is only PREFERABLE and 'don't worry if you don't meet every single one.' Best of all, the actual product maps to his under-used strengths: a 'central view of cost, performance and profit in real time' is almost exactly his counselor-wise P&L TRACKER + Power BI reporting/dashboards + CRM revenue tracking. Covers all the must-haves: product management; ideation/vision/validation; data management & internal enterprise tooling; cost/performance/profit tracking; reporting & metrics (definition, collection, analysis); feature prioritization & roadmap; usability studies/research/market analysis; product requirements; ideation->launch->adoption; collaboration with engineers & data scientists; analytical/QUANTITATIVE problem-solving; conflicting-stakeholder-priority management; quick to learn new tech. ONLY MISS: advertising-technology/programmatic domain — and it is PREFERABLE, not required (same ad-tech domain he lacked at Affle, but here it is not gated, and there is NO engineering-degree requirement). NET: strong, applyable fit — his internal-tooling + P&L/reporting + analytical profile fits the Campaign Management product well; prioritize alongside his other Bengaluru/Gurugram 90-100% roles."
+    },
+    {
+      "id": "EXT46",
+      "title": "Product Manager - Growth & Acquisition (AI-first)",
+      "co": "upGrad",
+      "addedDate": "2026-07-30T02:35:00",
+      "resume": "resumes/upGrad-Product Manager.docx",
+      "matchScore": 95,
+      "why": "Pasted JD (upGrad — EdTech; PM owning growth & acquisition for a business vertical, AI-first). ONE OF HIS STRONGEST FITS THIS SESSION — 95% (19/20) — and notably, SAME DOMAIN as his own employer (EdTech / B2C consumer internet), plus BOTH stated MANDATORY requirements are his core strengths: (1) '2-5 yrs PM in B2C, consumer internet, or high-growth tech (mandatory)' — he is B2C EdTech, 5+ yrs (top of the range but fits); (2) 'hands-on building & shipping END-TO-END AI-POWERED product features with measurable impact (mandatory)' — his production GenAI layer, NLP chatbot, and Demo Analysis AI feature are exactly this. The role's charter (GROWTH & ACQUISITION across the customer journey — acquisition->conversion->engagement->optimization) is his single strongest area (funnel re-architecture, acquisition loops, 20% revenue, renewals/retention). Also covers: roadmap & execution, PRDs/user stories/acceptance criteria/functional specs, Agile (backlog/sprint/reviews/releases), LLMs + prompt engineering + AI-assisted workflows & automation, user research/customer feedback, success metrics & experimentation, data-driven, cross-functional (eng/design/marketing/analytics/business), stakeholder mgmt & influence, launches & adoption, high ownership. ONLY MISS: AI AGENTS / RAG / MCPs — the JD wants 'strong understanding' of these modern-AI specifics and he genuinely lacks agentic/RAG/MCP experience (has LLMs/prompt/AI-assisted instead); NOT marked mandatory (the mandatory is 'hands-on AI-powered features', which he has), so it is a soft knowledge gap — worth skimming what RAG/AI-agents/MCP are before an interview. SOFT PREFERRED GAP (not mandatory): 'Bachelor's in engineering/technical from a Tier-1 institute (preferred)' — he has a BBA from Chandigarh University; MBA is 'a plus but not mandatory'. NET: top-tier fit — prioritize applying; his EdTech + growth + shipped-AI story is exactly the profile."
     }
   ]
 }
