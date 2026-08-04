@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T10:05:06Z",
+  "updated": "2026-08-04T10:31:48Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -420,6 +420,15 @@
       "resume": "resumes/upGrad-Product Manager.docx",
       "matchScore": 95,
       "why": "Pasted JD (upGrad — EdTech; PM owning growth & acquisition for a business vertical, AI-first). ONE OF HIS STRONGEST FITS THIS SESSION — 95% (19/20) — and notably, SAME DOMAIN as his own employer (EdTech / B2C consumer internet), plus BOTH stated MANDATORY requirements are his core strengths: (1) '2-5 yrs PM in B2C, consumer internet, or high-growth tech (mandatory)' — he is B2C EdTech, 5+ yrs (top of the range but fits); (2) 'hands-on building & shipping END-TO-END AI-POWERED product features with measurable impact (mandatory)' — his production GenAI layer, NLP chatbot, and Demo Analysis AI feature are exactly this. The role's charter (GROWTH & ACQUISITION across the customer journey — acquisition->conversion->engagement->optimization) is his single strongest area (funnel re-architecture, acquisition loops, 20% revenue, renewals/retention). Also covers: roadmap & execution, PRDs/user stories/acceptance criteria/functional specs, Agile (backlog/sprint/reviews/releases), LLMs + prompt engineering + AI-assisted workflows & automation, user research/customer feedback, success metrics & experimentation, data-driven, cross-functional (eng/design/marketing/analytics/business), stakeholder mgmt & influence, launches & adoption, high ownership. ONLY MISS: AI AGENTS / RAG / MCPs — the JD wants 'strong understanding' of these modern-AI specifics and he genuinely lacks agentic/RAG/MCP experience (has LLMs/prompt/AI-assisted instead); NOT marked mandatory (the mandatory is 'hands-on AI-powered features', which he has), so it is a soft knowledge gap — worth skimming what RAG/AI-agents/MCP are before an interview. SOFT PREFERRED GAP (not mandatory): 'Bachelor's in engineering/technical from a Tier-1 institute (preferred)' — he has a BBA from Chandigarh University; MBA is 'a plus but not mandatory'. NET: top-tier fit — prioritize applying; his EdTech + growth + shipped-AI story is exactly the profile."
+    },
+    {
+      "id": "EXT47",
+      "title": "Associate Product Manager",
+      "co": "Groww",
+      "addedDate": "2026-07-30T03:10:00",
+      "resume": "resumes/Groww-Associate Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Groww — India's fastest-growing consumer fintech / multi-product investing platform; APM role). Strong 90% (18/20) on the merits, with ONE STRATEGIC CAVEAT: it is an ASSOCIATE PM role and the mandatory bar is '1-2 years PM' — he has 5+, so he clears it easily but is arguably OVER-QUALIFIED for the APM title; joining Groww as an APM would be a level step-down from PM. Some take that to join a top company, but it's a deliberate choice — flag before applying. On fit: the key requirement 'AI/ML product development OR expertise in financial systems (Risk/Margin/trading)' is an OR he SATISFIES via AI/ML product development (his genuine strength: production GenAI, ML Demo Analysis, NLP chatbot) — so financial-systems is NOT a gap. Also covers: user-centered product strategy from tradeoffs & COMPETITIVE landscape; measurable outcomes; cross-functional delivery incl. finance & compliance; PRDs/mocks/sprints/data analysis; hands-on DATA FLUENCY (SQL + Excel, which the JD marks 'necessary'); HLD/LLD technical discussion with engineering; first-principles/data-driven decisions; radical customer centricity (Groww's core value); communication; problem-solving. TWO HONEST MISSES, both soft/non-mandatory: (1) FINTECH — 'preferred but not necessary' (he lacks it; his B2C consumer + payments-integration is adjacent); (2) prototyping tools REPLIT/LOVABLE/BOLT — the JD wants comfort with these vibe-coding tools to showcase ideas; he does AI-assisted prototyping with Figma+LLMs but hasn't used those exact tools (easily learnable, he's AI-first). NET: good craft + AI/ML fit for a top consumer-fintech; main decision is whether he's open to an APM title at 5 yrs. If yes, apply — his AI/ML + data + customer-obsession profile is on-brand for Groww."
     }
   ]
 }
