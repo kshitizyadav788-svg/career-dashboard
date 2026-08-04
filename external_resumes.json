@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T10:31:48Z",
+  "updated": "2026-08-04T12:14:05Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -429,6 +429,15 @@
       "resume": "resumes/Groww-Associate Product Manager.docx",
       "matchScore": 90,
       "why": "Pasted JD (Groww — India's fastest-growing consumer fintech / multi-product investing platform; APM role). Strong 90% (18/20) on the merits, with ONE STRATEGIC CAVEAT: it is an ASSOCIATE PM role and the mandatory bar is '1-2 years PM' — he has 5+, so he clears it easily but is arguably OVER-QUALIFIED for the APM title; joining Groww as an APM would be a level step-down from PM. Some take that to join a top company, but it's a deliberate choice — flag before applying. On fit: the key requirement 'AI/ML product development OR expertise in financial systems (Risk/Margin/trading)' is an OR he SATISFIES via AI/ML product development (his genuine strength: production GenAI, ML Demo Analysis, NLP chatbot) — so financial-systems is NOT a gap. Also covers: user-centered product strategy from tradeoffs & COMPETITIVE landscape; measurable outcomes; cross-functional delivery incl. finance & compliance; PRDs/mocks/sprints/data analysis; hands-on DATA FLUENCY (SQL + Excel, which the JD marks 'necessary'); HLD/LLD technical discussion with engineering; first-principles/data-driven decisions; radical customer centricity (Groww's core value); communication; problem-solving. TWO HONEST MISSES, both soft/non-mandatory: (1) FINTECH — 'preferred but not necessary' (he lacks it; his B2C consumer + payments-integration is adjacent); (2) prototyping tools REPLIT/LOVABLE/BOLT — the JD wants comfort with these vibe-coding tools to showcase ideas; he does AI-assisted prototyping with Figma+LLMs but hasn't used those exact tools (easily learnable, he's AI-first). NET: good craft + AI/ML fit for a top consumer-fintech; main decision is whether he's open to an APM title at 5 yrs. If yes, apply — his AI/ML + data + customer-obsession profile is on-brand for Groww."
+    },
+    {
+      "id": "EXT48",
+      "title": "Product Manager - Workspace Admin Reporting & Insights (BIP)",
+      "co": "Google",
+      "addedDate": "2026-07-30T03:45:00",
+      "resume": "resumes/Google-Product Manager BIP.docx",
+      "matchScore": 95,
+      "why": "Pasted JD (Google Cloud — PM for Workspace Admin Reporting & Insights / Business Insights Platform, BENGALURU). 95% (19/20) on keyword CRAFT, but treat this as an ASPIRATIONAL/STRETCH application — the paper score does not reflect Google's real bar. He TECHNICALLY MEETS THE MINIMUM QUALS: Bachelor's (BBA) ✓; 5 yrs in PM ✓ (exactly meets); 2 yrs conception-to-launch / 0->1 ✓. GENUINE ADJACENCY: the product is an enterprise REPORTING & INSIGHTS PLATFORM, which maps well to his real reporting/BI work (Power BI dashboards from Metabase SQL, KPIs, reporting standards, P&L tracker) + internal platform/tooling (CRM, in-house VC platform) + 0->1 + market/competitive analysis + cross-functional. THREE HONEST REALITIES THAT MAKE IT A STRETCH: (1) MIN-QUAL #4 — '2 years developing/launching products within SaaS or related area' — is BORDERLINE: his EdTech LMS/CRM are software/platform products but NOT classic B2B SaaS; I deliberately left 'SaaS' UNCLAIMED (the one missing keyword) rather than fake it. (2) GOOGLE PM BAR IS ELITE & HYPER-COMPETITIVE — thousands of applicants, heavy preference for tier-1 pedigree and big-tech/enterprise-SCALE experience; his profile (5 yrs, EdTech, Chandigarh University, ~138K users) is well below the typical scale/pedigree Google screens for. (3) PREFERRED quals lean enterprise-platform/horizontals & 'large, complex products' — his are meaningful but not Google-scale. NET: worth a shot ONLY as an aspirational application (Bengaluru + genuine reporting-platform adjacency + meets min quals) — but realistically low odds through Google's screen; do NOT prioritize over his 90-100% right-sized fits (Lowe's, upGrad, GoodScore, Noise, MiQ, Dario, Solifi). A referral would matter enormously here if he can get one."
     }
   ]
 }
