@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T06:38:38Z",
+  "updated": "2026-08-04T09:55:09Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -402,6 +402,15 @@
       "resume": "resumes/Noise-Product Manager Growth.docx",
       "matchScore": 85,
       "why": "Pasted JD (Noise — India #1 smartwatch brand, 40M users; PM Growth owning monetisation for the NoiseFit app). 85% (17/20) BUT the number UNDERSTATES the fit: this role is a BULLSEYE for his single signature strength — turning a free, habit-forming product into revenue via subscription/renewals, pricing/packaging, trial mechanics, and free-to-paid conversion, with the ARPU<->retention coupling. All 17 matched keywords are his core, near-verbatim: monetisation engine (LPP: 20% revenue, 25% ARPU), subscription/RENEWAL engine (₹70L in a month, TRIAL mechanics via LMS free trials, renewal optimisation), free-to-paid conversion funnel, A/B testing END-TO-END, monetisation metrics (ARPU/conversion/LTV/retention), funnel instrumentation & dashboards, hypothesis backlog, SQL, and Indian-consumer/UPI-first/price-sensitivity. The experience ask (2-4 yrs) is BELOW him (5+). The 3 misses are all PERIPHERAL/learnable, not core: (1) 'revenue per cohort' — his known formal-cohort-analysis gap (open question in experience_bank); (2) the specific product-analytics TOOLS Amplitude/Mixpanel/CleverTap/Firebase — he uses GA4/SQL/Power BI instead (SQL is only a 'bonus' here, which he has); (3) IAP (in-app-purchase store mechanics) — he has monetisation but not IAP stores. Note the JD's 'paywall/subscription/IAP' is an OR-list satisfied by his SUBSCRIPTION-flow experience, so that requirement is MET. Soft domain gap: wearables/health-fitness (not required). NET: one of his STRONGEST-aligned roles this session — prioritize applying; his monetisation story is exactly what they're hiring for. Quick wins before interview: get familiar with Amplitude/Mixpanel/CleverTap (tool names) and be ready to speak to cohort-based revenue analysis."
+    },
+    {
+      "id": "EXT45",
+      "title": "Product Manager (Campaign Management / Data)",
+      "co": "MiQ",
+      "addedDate": "2026-07-30T02:00:00",
+      "resume": "resumes/MiQ-Product Manager.docx",
+      "matchScore": 95,
+      "why": "Pasted JD (MiQ — global programmatic media partner; PM in Bengaluru, req JR100262; product = Campaign Management, a real-time central hub of cost/performance/profit). Strong 95% (19/20) and genuinely applyable. Three tailwinds: (1) LOW BAR — 'minimum 2+ years PM' vs his 5+; (2) LOCATION Bengaluru (his #2 priority, India — no work-auth issue); (3) the JD is explicit that ad-tech is only PREFERABLE and 'don't worry if you don't meet every single one.' Best of all, the actual product maps to his under-used strengths: a 'central view of cost, performance and profit in real time' is almost exactly his counselor-wise P&L TRACKER + Power BI reporting/dashboards + CRM revenue tracking. Covers all the must-haves: product management; ideation/vision/validation; data management & internal enterprise tooling; cost/performance/profit tracking; reporting & metrics (definition, collection, analysis); feature prioritization & roadmap; usability studies/research/market analysis; product requirements; ideation->launch->adoption; collaboration with engineers & data scientists; analytical/QUANTITATIVE problem-solving; conflicting-stakeholder-priority management; quick to learn new tech. ONLY MISS: advertising-technology/programmatic domain — and it is PREFERABLE, not required (same ad-tech domain he lacked at Affle, but here it is not gated, and there is NO engineering-degree requirement). NET: strong, applyable fit — his internal-tooling + P&L/reporting + analytical profile fits the Campaign Management product well; prioritize alongside his other Bengaluru/Gurugram 90-100% roles."
     }
   ]
 }
