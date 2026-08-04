@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T06:01:14Z",
+  "updated": "2026-08-04T06:18:23Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -384,6 +384,15 @@
       "resume": "resumes/Talentoj-Senior Product Manager.docx",
       "matchScore": 95,
       "why": "Pasted JD (posted by Talentoj, a recruiter — actual hiring company undisclosed; bonus sectors hint mobility/energy/supply-chain/fintech). STRONG 95% (19/20) and comfortably applyable: despite the 'Senior' title, the requirement bar is LOW — '3 years total, at least 2 in product management' — and he has 5+ yrs, so he clears it easily. Every requirement is core craft he owns: own roadmap & execution for a product pod; define/track/improve product KPIs aligned to business goals; ruthless prioritization for OUTCOMES not outputs; crisp specs / tight PRDs; user research, data analytics, and SYSTEMS THINKING; ideation-to-launch; high ownership & bias for action; stakeholder alignment; and the ZERO-TO-ONE + ONE-TO-TEN journey (his 0->1 app MVP then scaling). MENTORING/POD LEADERSHIP is a genuine differentiator here and a real match — he trained & led a team of 8 as APM, and the resume claims mentoring PMs/APMs and leading cross-functional pods (designers, engineers, analysts, operations) honestly. ONLY MISS: the BONUS domain (supply chain / mobility / energy / fintech) — nice-to-have, not required, and he lacks it. NOTE: kept his real title 'Product Manager' (not relabeled 'Senior'). CAVEATS: company/location undisclosed (recruiter post) — confirm both before investing; and 'managing junior PMs' formal people-management is via his APM team-of-8, so be ready to speak to it. NET: top-tier fit on the merits — apply, pending company/location details."
+    },
+    {
+      "id": "EXT43",
+      "title": "Product Manager",
+      "co": "GoodScore",
+      "addedDate": "2026-07-30T00:45:00",
+      "resume": "resumes/GoodScore-Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD (GoodScore — B2C fintech, credit-score/management app, top-10 India finance app, 30M+ downloads, Series A, high-ownership 0->1/1->many culture). One of his BEST-ALIGNED roles — 100% (20/20) — because it is explicitly a B2C consumer-product role, which is his core positioning. Bar is LOW and he clears it: '2+ years in product management, PREFERABLY B2C' — he has 5+ yrs and is B2C. Covers everything: product vision/strategy/roadmap (with founder/leadership); zero-to-one & one-to-many scaling; stakeholder management + cross-functional (engineering/design/marketing/sales); market research & customer insights + feedback; PRDs & BRDs; feature prioritization; project management (conception to launch); post-launch performance monitoring & metrics; product innovation/improvement; analytical/data-driven decisions; problem-solving; entrepreneurial high-ownership + bias for action; managing multiple priorities in a fast-paced environment; user-centric products. TWO SOFT FLAGS (neither a keyword miss, worth knowing): (1) FINTECH/CREDIT domain — he has no fintech experience; it is the company's space but not a stated requirement, and his B2C consumer-app + growth/monetization + payments-integration background is strongly transferable; (2) 'Bachelor's or Master's from a TOP-TIER INSTITUTION' is in the quals — his BBA is from Chandigarh University, which may not clear a strict tier-1 (IIT/IIM/BITS/top-NIT) filter; if GoodScore screens hard on college pedigree that is the main risk. NET: apply — prime B2C fit; only real risk is the top-tier-college filter, which is out of his control."
     }
   ]
 }
