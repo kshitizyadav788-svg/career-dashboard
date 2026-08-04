@@ -23,6 +23,16 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   they interact through. This is real marketplace/two-sided-platform experience, not an analogy --
   relevant to any JD asking for "marketplace," "aggregator," or "two-sided platform" experience.
 
+## SaaS / Software-Platform (framing — confirmed by Kshitiz 2026-07-30)
+- PlanetSpark is genuinely a **SaaS / software platform**: a cloud LMS + sales CRM + internal tooling
+  delivered as a service that students and teachers access to run classes. Kshitiz didn't just use it —
+  he **product-managed and shipped software within it end-to-end (0→1)**. So it's honest to claim
+  "SaaS / software-platform product development / launched products within SaaS" on any JD asking for it.
+- NUANCE (be precise in interviews): this is **B2C** SaaS (software delivering an education *service* to
+  consumers), NOT **B2B enterprise SaaS** (subscription software licensed to organizations). Claim
+  "SaaS / software platform" freely; do NOT imply "B2B enterprise SaaS PM." Honest framing:
+  "a cloud software platform — LMS, CRM, internal tools — delivered as a service; B2C, not B2B enterprise SaaS."
+
 ## Platform Scale (real numbers — use for "scale" questions)
 - PlanetSpark enrolled (paying) user base: **138,216 learners** (confirmed 2026-07). It's a
   high-ticket **paid** B2C EdTech (ARPU ₹35K → ₹45K), a two-sided marketplace (students + teachers)
