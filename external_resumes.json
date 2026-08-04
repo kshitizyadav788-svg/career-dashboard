@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T06:18:23Z",
+  "updated": "2026-08-04T06:38:38Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -393,6 +393,15 @@
       "resume": "resumes/GoodScore-Product Manager.docx",
       "matchScore": 100,
       "why": "Pasted JD (GoodScore — B2C fintech, credit-score/management app, top-10 India finance app, 30M+ downloads, Series A, high-ownership 0->1/1->many culture). One of his BEST-ALIGNED roles — 100% (20/20) — because it is explicitly a B2C consumer-product role, which is his core positioning. Bar is LOW and he clears it: '2+ years in product management, PREFERABLY B2C' — he has 5+ yrs and is B2C. Covers everything: product vision/strategy/roadmap (with founder/leadership); zero-to-one & one-to-many scaling; stakeholder management + cross-functional (engineering/design/marketing/sales); market research & customer insights + feedback; PRDs & BRDs; feature prioritization; project management (conception to launch); post-launch performance monitoring & metrics; product innovation/improvement; analytical/data-driven decisions; problem-solving; entrepreneurial high-ownership + bias for action; managing multiple priorities in a fast-paced environment; user-centric products. TWO SOFT FLAGS (neither a keyword miss, worth knowing): (1) FINTECH/CREDIT domain — he has no fintech experience; it is the company's space but not a stated requirement, and his B2C consumer-app + growth/monetization + payments-integration background is strongly transferable; (2) 'Bachelor's or Master's from a TOP-TIER INSTITUTION' is in the quals — his BBA is from Chandigarh University, which may not clear a strict tier-1 (IIT/IIM/BITS/top-NIT) filter; if GoodScore screens hard on college pedigree that is the main risk. NET: apply — prime B2C fit; only real risk is the top-tier-college filter, which is out of his control."
+    },
+    {
+      "id": "EXT44",
+      "title": "Product Manager - Growth (Monetisation, NoiseFit)",
+      "co": "Noise",
+      "addedDate": "2026-07-30T01:20:00",
+      "resume": "resumes/Noise-Product Manager Growth.docx",
+      "matchScore": 85,
+      "why": "Pasted JD (Noise — India #1 smartwatch brand, 40M users; PM Growth owning monetisation for the NoiseFit app). 85% (17/20) BUT the number UNDERSTATES the fit: this role is a BULLSEYE for his single signature strength — turning a free, habit-forming product into revenue via subscription/renewals, pricing/packaging, trial mechanics, and free-to-paid conversion, with the ARPU<->retention coupling. All 17 matched keywords are his core, near-verbatim: monetisation engine (LPP: 20% revenue, 25% ARPU), subscription/RENEWAL engine (₹70L in a month, TRIAL mechanics via LMS free trials, renewal optimisation), free-to-paid conversion funnel, A/B testing END-TO-END, monetisation metrics (ARPU/conversion/LTV/retention), funnel instrumentation & dashboards, hypothesis backlog, SQL, and Indian-consumer/UPI-first/price-sensitivity. The experience ask (2-4 yrs) is BELOW him (5+). The 3 misses are all PERIPHERAL/learnable, not core: (1) 'revenue per cohort' — his known formal-cohort-analysis gap (open question in experience_bank); (2) the specific product-analytics TOOLS Amplitude/Mixpanel/CleverTap/Firebase — he uses GA4/SQL/Power BI instead (SQL is only a 'bonus' here, which he has); (3) IAP (in-app-purchase store mechanics) — he has monetisation but not IAP stores. Note the JD's 'paywall/subscription/IAP' is an OR-list satisfied by his SUBSCRIPTION-flow experience, so that requirement is MET. Soft domain gap: wearables/health-fitness (not required). NET: one of his STRONGEST-aligned roles this session — prioritize applying; his monetisation story is exactly what they're hiring for. Quick wins before interview: get familiar with Amplitude/Mixpanel/CleverTap (tool names) and be ready to speak to cohort-based revenue analysis."
     }
   ]
 }
