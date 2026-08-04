@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T14:05:44Z",
+  "updated": "2026-08-04T05:48:44Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -366,6 +366,15 @@
       "resume": "resumes/Atlys-Senior Product Manager.docx",
       "matchScore": 90,
       "why": "Pasted JD (Atlys — AI-first travel/visa platform, 1M+ visas across 127 countries). Strong 90% (18/20) and worth applying despite the 'Senior' title: the JD's ACTUAL bar is '5+ years PM, ideally in consumer technology, fintech, travel, mobility or another complex product' — he meets it (5+ yrs, CONSUMER TECHNOLOGY), so the domain requirement is satisfied via consumer-tech even without travel. Best of all, the role is fundamentally GROWTH/CONVERSION + SIMPLIFYING COMPLEX USER JOURNEYS via funnel optimization & experimentation — his single strongest area: his sign-up->demo->enrolment funnel re-architecture (single-step OTP replacing a two-step flow, best-fit ranking, 6 payment gateways, reduced drop-off) is almost a textbook match for 'identify friction, redesign flows, improve conversion'. Also covers: product strategy/roadmap/ownership, experimentation/A-B, acquisition & onboarding, data-driven decisions & customer insights, cross-functional execution with Eng/Design, prioritization & trade-offs, edge cases + compliance/verification constraints (his fraud/verification flow), reliability, and AI-first product development (fits the company's AI-first identity). TWO HONEST SOFT GAPS (the 2 missing keywords): (1) GLOBAL/MULTI-MARKET SCALE — his products are India-focused, not multi-country; the JD wants 'build products that scale globally across destinations/compliance/edge cases'; (2) TRAVEL/VISA DOMAIN — none, but NOT required (consumer-tech satisfies the domain OR-list). NOTE: kept his real title 'Product Manager' on the resume rather than relabeling him 'Senior' — applying up one level at 5 yrs is fine and honest. NET: strong, applyable fit — his funnel/conversion/simplification story is exactly what they're hiring for."
+    },
+    {
+      "id": "EXT41",
+      "title": "Manager - Product Management (Newton / mobile ad-tech)",
+      "co": "Affle",
+      "addedDate": "2026-07-29T23:45:00",
+      "resume": "resumes/Affle-Manager Product Management.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Affle, BU Newton — Apple Search Ads / mobile ad-tech platform; office GURUGRAM = his #1 location priority). 90% (18/20) on PM CRAFT, but read as a MEDIUM/stretch fit because of domain + qualification gaps the keyword score does not fully capture. STRONG (matched): prioritized product & feature roadmap balancing metric movers/delights/asks; business-metrics & report analysis; market & COMPETITIVE analysis + new business opportunities; product lifecycle (concept to phase-out); stakeholder partnerships (internal & external); project planning (timelines/resources); customer research/direct connect; SQL & database structures; data/analytics tools (Power BI as Tableau-equivalent, GA4); strong documentation; cross-functional communication; growth/market share; and genuine ATTRIBUTION & TRACKING (UTM/cookie-based lead attribution in a centralized CRM) — a real, honest adjacency to the JD's attribution focus. REAL GAPS (not fabricated): (1) 'MMP platforms like Appsflyer, Branch' is called a KEY REQUIREMENT — he has the attribution CONCEPT but not those specific mobile-measurement platforms (missing keyword 1); (2) online advertising / ad-tech domain — he has performance-marketing COLLABORATION (funnel/lead-source/lead-quality) but NO hands-on ad-buying/bidding/DSP/SSP (experience_bank explicitly forbids claiming these), and this role's world is Apple Search Ads / bid optimization / UA campaigns (missing keyword 2). ADDITIONAL HARD QUAL GAP (not a scored keyword): 'An engineering degree' is a stated REQUIRED skill — he has a BBA (business), not engineering; a PG degree is only 'desirable'. NET: his craft + Gurugram location + attribution adjacency make him presentable, but the engineering-degree requirement + the 'key' MMP-platform gap + ad-tech domain are real hurdles. Apply if okay being upfront (lean on attribution/tracking + analytics + fast learning); temper expectations vs his 100% Gurugram/Bangalore fits."
     }
   ]
 }
