@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T05:48:44Z",
+  "updated": "2026-08-04T06:01:14Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -375,6 +375,15 @@
       "resume": "resumes/Affle-Manager Product Management.docx",
       "matchScore": 90,
       "why": "Pasted JD (Affle, BU Newton — Apple Search Ads / mobile ad-tech platform; office GURUGRAM = his #1 location priority). 90% (18/20) on PM CRAFT, but read as a MEDIUM/stretch fit because of domain + qualification gaps the keyword score does not fully capture. STRONG (matched): prioritized product & feature roadmap balancing metric movers/delights/asks; business-metrics & report analysis; market & COMPETITIVE analysis + new business opportunities; product lifecycle (concept to phase-out); stakeholder partnerships (internal & external); project planning (timelines/resources); customer research/direct connect; SQL & database structures; data/analytics tools (Power BI as Tableau-equivalent, GA4); strong documentation; cross-functional communication; growth/market share; and genuine ATTRIBUTION & TRACKING (UTM/cookie-based lead attribution in a centralized CRM) — a real, honest adjacency to the JD's attribution focus. REAL GAPS (not fabricated): (1) 'MMP platforms like Appsflyer, Branch' is called a KEY REQUIREMENT — he has the attribution CONCEPT but not those specific mobile-measurement platforms (missing keyword 1); (2) online advertising / ad-tech domain — he has performance-marketing COLLABORATION (funnel/lead-source/lead-quality) but NO hands-on ad-buying/bidding/DSP/SSP (experience_bank explicitly forbids claiming these), and this role's world is Apple Search Ads / bid optimization / UA campaigns (missing keyword 2). ADDITIONAL HARD QUAL GAP (not a scored keyword): 'An engineering degree' is a stated REQUIRED skill — he has a BBA (business), not engineering; a PG degree is only 'desirable'. NET: his craft + Gurugram location + attribution adjacency make him presentable, but the engineering-degree requirement + the 'key' MMP-platform gap + ad-tech domain are real hurdles. Apply if okay being upfront (lean on attribution/tracking + analytics + fast learning); temper expectations vs his 100% Gurugram/Bangalore fits."
+    },
+    {
+      "id": "EXT42",
+      "title": "Senior Product Manager",
+      "co": "Talentoj (recruiter — company undisclosed)",
+      "addedDate": "2026-07-30T00:15:00",
+      "resume": "resumes/Talentoj-Senior Product Manager.docx",
+      "matchScore": 95,
+      "why": "Pasted JD (posted by Talentoj, a recruiter — actual hiring company undisclosed; bonus sectors hint mobility/energy/supply-chain/fintech). STRONG 95% (19/20) and comfortably applyable: despite the 'Senior' title, the requirement bar is LOW — '3 years total, at least 2 in product management' — and he has 5+ yrs, so he clears it easily. Every requirement is core craft he owns: own roadmap & execution for a product pod; define/track/improve product KPIs aligned to business goals; ruthless prioritization for OUTCOMES not outputs; crisp specs / tight PRDs; user research, data analytics, and SYSTEMS THINKING; ideation-to-launch; high ownership & bias for action; stakeholder alignment; and the ZERO-TO-ONE + ONE-TO-TEN journey (his 0->1 app MVP then scaling). MENTORING/POD LEADERSHIP is a genuine differentiator here and a real match — he trained & led a team of 8 as APM, and the resume claims mentoring PMs/APMs and leading cross-functional pods (designers, engineers, analysts, operations) honestly. ONLY MISS: the BONUS domain (supply chain / mobility / energy / fintech) — nice-to-have, not required, and he lacks it. NOTE: kept his real title 'Product Manager' (not relabeled 'Senior'). CAVEATS: company/location undisclosed (recruiter post) — confirm both before investing; and 'managing junior PMs' formal people-management is via his APM team-of-8, so be ready to speak to it. NET: top-tier fit on the merits — apply, pending company/location details."
     }
   ]
 }
