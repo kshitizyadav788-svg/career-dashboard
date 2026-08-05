@@ -10,11 +10,23 @@ GitHub is the single source of truth; work from a fresh `git pull` and end with 
 > 3. `PRD.md` — product requirements: what this is and why.
 > 4. `ARCHITECTURE.md` — tech stack & how it's built, in plain language.
 >
-> **Quick status (2026-07-22):** dashboard + hourly job Action live; auto-fit one-page resume engine
-> working; **24 tailored resumes** (EXT1–EXT24) in `external_resumes.json`; master resume revamped
-> (B2C capped at 1, tighter summary, P&L bullet added); Naukri/Foundit/iimjobs profiles renovated.
-> Parked pending Kshitiz's input: salary alignment (Naukri 10.75L / Foundit 11L / iimjobs 9L), the
-> in-house CDP/ops-engine ownership detail, and formal cohort-analysis experience.
+> **Quick status (2026-08-05):** dashboard + hourly job Action live; auto-fit one-page resume engine
+> working; ~48 tailored resumes (EXT1–EXT48) in `external_resumes.json`; Naukri/Foundit/iimjobs/
+> Instahyre profiles renovated (salary aligned to Rs 10.75 LPA everywhere).
+> **BASE RESUME REVAMPED 2026-08-05 (major):** `build_resume.py` now renders the real 3-role
+> progression (Senior Product Analyst → Assistant Product Manager → Product Manager) as dated
+> sub-entries under one company, with a compact honest metrics strip, Core Competencies placed
+> directly BELOW the summary, "Pricing & Packaging" competency (Kshitiz confirmed he owned pricing),
+> de-EdTech'd growth/monetization/payments positioning, and clickable email/LinkedIn. New verified
+> numbers now in the base + `experience_bank.md`: CSAT (share rating 5/5) 10%→25%, teacher NPS
+> −20→+40, RAG chatbot FRT 4min→<10s & escalations ~300→<50, advisor P&L 50→100→125, scale 150K
+> enrolled / 30K DAU, squad of 8 eng + 2 QA, ships features via Claude Code. Dashboard "My Resume"
+> tab (`index.html` `resumeDoc`) and `portfolio.html` updated to match.
+> **NOT yet done:** the ~48 existing tailored resumes (EXT*/seed) still use the OLD single-role
+> template — re-tailor them onto the new base as each becomes active (their source data dicts were
+> not persisted, so each needs a fresh tailoring pass; see "Tailored-resume set" note below).
+> Parked pending Kshitiz's input: in-house CDP/ops-engine ownership detail; formal cohort-analysis
+> experience; whether the funnel "enhanced by 50%" has a real denominator to cite.
 
 ## Who this is for
 Kshitiz Yadav — **Product Manager, ~5 yrs**, Gurgaon (open to remote/Bangalore).

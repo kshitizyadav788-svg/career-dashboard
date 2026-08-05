@@ -34,28 +34,58 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   "a cloud software platform — LMS, CRM, internal tools — delivered as a service; B2C, not B2B enterprise SaaS."
 
 ## Platform Scale (real numbers — use for "scale" questions)
-- PlanetSpark enrolled (paying) user base: **138,216 learners** (confirmed 2026-07). It's a
-  high-ticket **paid** B2C EdTech (ARPU ₹35K → ₹45K), a two-sided marketplace (students + teachers)
-  -- NOT a freemium 1M+ MAU product. For "have you worked on a 1M+ user/MAU product?" questions,
-  answer **honestly**: it's ~138K enrolled paying users (below 1M), so do NOT claim 1M+; reframe
-  around paid scale + revenue impact, which is the stronger card for a Revenue/Monetization role.
-- OPEN: total *registered* users / app downloads / MAU (all-signups, typically much higher than
-  enrolled) is not yet confirmed -- ask Kshitiz before citing any figure above 138,216.
+- PlanetSpark enrolled (paying) user base: **150,000+ learners** (updated 2026-08-04; was 138,216
+  in 2026-07). **Daily Active Users: 30,000+** (confirmed 2026-08-04). It's a high-ticket **paid**
+  B2C EdTech (ARPU ₹35K → ₹45K), a two-sided marketplace (students + teachers) -- NOT a freemium
+  1M+ MAU product. For "have you worked on a 1M+ user/MAU product?" questions, answer **honestly**:
+  it's ~150K enrolled paying users + 30K DAU (below 1M), so do NOT claim 1M+; reframe around paid
+  scale + revenue impact, which is the stronger card for a Revenue/Monetization role.
+- Team scope (confirmed 2026-08-04): leads a cross-functional **team of 8 engineers + 2 QA testers**.
 
 ## Teacher/Partner-Side (Supply-Side) Analytics & Tools
 - Built teacher-facing (supply-side) features: payout history and current-payout-generated
   visibility, demo-class performance analysis, and conversion analysis (demo-to-enrolment, by
   teacher) -- the marketplace's partner-facing analytics and monetization tooling.
+- **Teacher NPS: −20 → +40** (confirmed 2026-08-04). Driven by the full-fledged teacher LMS plus
+  **real-time payout automation**, accurate/correct payout summaries, and consolidated CRM + student
+  class details (schedule, attendance, etc.) — i.e. the supply-side trust/experience improvements.
+  This is a TEACHER (supply-side) NPS number — keep it distinct from any student/demand-side metric.
 
 ## Student Journey & Engagement (LMS depth)
 - Built the full student journey and LMS: games and activities, practice classes, per-class
   teacher feedback, progress showcases, and PTMs (parent-teacher meetings) -- the demand-side
   engagement layer of the marketplace.
+- **CSAT (5/5 rate): 10% → 25%** (clarified/corrected 2026-08-04). **Exact metric:** the *share of
+  enrolled users who rated the product 5 out of 5* rose from 10% to 25% — a genuine top-box (5/5)
+  rate, NOT an average score. Phrase it plainly as "share of enrolled users rating 5 out of 5"
+  (avoid the jargon "top-box"/"top-two-box"), so the 10% baseline reads correctly (a bare "CSAT 10%"
+  looks implausibly low and invites doubt). NOTE: earlier draft said "4+ out of 5" — that was wrong;
+  it is strictly 5/5. Driven by funnel
+  optimization, seamless onboarding, timely & uninterrupted classes, the teacher-PTM feature,
+  student feedback, a user-friendly UI surfacing key details on one page, **student loyalty
+  programs**, and the **PSpark wallet system**. (Student loyalty program + PSpark wallet are two
+  additional real products worth their own mention on retention/loyalty-focused JDs.)
+
+## ARPU Growth — Pricing & Packaging Ownership (confirmed 2026-08-05)
+- **Owned ARPU growth end-to-end, INCLUDING pricing/packaging** (not just product): identified the
+  root problem that ARPU was not growing, then implemented a **segment-wise minimum ARPU** and
+  **phased ARPU increases**, alongside the LPP product implementation — moving ARPU from **₹35K → ₹45K
+  (+25%)**. This is genuine **Pricing & Packaging** ownership — safe to claim "Pricing & Packaging"
+  as a competency and to cite the segment-wise minimum-ARPU + phased-increase mechanism in interviews
+  and on monetization-role resume variants.
 
 ## P&L / Profitability Ownership & Analytics
 - Built a counselor-wise P&L tracker as a product-led feature: computes weekly profitability per
   sales counselor as Net Revenue − Fixed Cost − Refund Cost − Marketing Cost − Sales Cost, giving
   each counselor visibility into the revenue figure they need to hit to be profitable.
+- **Outcome (confirmed 2026-08-04; cycle = one MONTH, clarified same day):** profitable advisors
+  roughly **doubled from 50 to 100 in one month**, then rose to **125 over the next two months**; the
+  count of advisors in negative profitability also shrank. Use the counts (50 → 100 → 125) — clean and
+  defensible — rather than a bare "+50%". **Causation caveat:** the tracker gave *visibility that
+  enabled* profitability interventions — don't claim the tracker alone "doubled" profitability.
+- **Prioritized via RICE** (confirmed 2026-08-04): both the **LPP module** and the **P&L tracker**
+  were prioritized using RICE (Reach, Impact, Confidence, Effort). RICE is genuinely used and
+  interview-defensible — safe to keep on resumes and cite with these two examples.
 
 ## Power BI / BI Dashboarding (cross-functional)
 - Built multiple insight-driven Power BI dashboards, sourced from Metabase SQL queries, for
@@ -76,6 +106,17 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
 ## Omnichannel Customer Support / Helpdesk System
 - Built a unified customer-support helpdesk consolidating issues raised across multiple channels
   -- LMS, email to customer support, WhatsApp chatbot, and in-platform chatbot -- into one system.
+- **RAG-based AI support chatbot (metrics confirmed 2026-08-04):** uses a **RAG (retrieval-augmented
+  generation)** approach to give context-appropriate answers/resolutions. Cut **First Response Time
+  (FRT) from 4 minutes to under 10 seconds**, and reduced **monthly escalations from ~300 → ~100 in
+  the first month**, then to **under 50** over the following three months.
+
+## AI-Augmented Product Development (PM ships code via AI agents)
+- Uses AI coding agents (**Claude Code, Google Antigravity**) to build **minor and mid-level product
+  features end-to-end himself**: scopes the change / defines a small actionable product feature,
+  **writes the code with AI, tests it, and raises the merge request** for it (confirmed 2026-08-04).
+  A genuine differentiator — a PM who ships hands-on via AI, not just specs. Frame as "AI-augmented
+  delivery," not as being a full-time SWE.
 
 ## Third-Party Vendor & API Integrations (named vendors)
 - Payment gateways: Razorpay, PayU, PayGlocal, PayPal, Bajaj -- API-integrated for payment
@@ -126,10 +167,26 @@ resume-phrased, so they can be dropped straight into a tailored bullet list).
   NOTE: this is third-party *service* integration -- it does NOT by itself prove internal
   **microservices architecture** experience; don't claim microservices.
 
+## Role Progression at PlanetSpark (confirmed 2026-08-05)
+- **Full real path: Product Analyst → Senior Product Analyst → Assistant Product Manager → Product
+  Manager** (one continuous tenure, Mar 2021 – present, all Product domain).
+- **Resume decision (Kshitiz, 2026-08-05):** START the resume at **Senior Product Analyst (Mar 2021
+  – Aug 2022)** — do NOT list the junior-most "Product Analyst" rung (adds length without value).
+  Dates on resume: Sr Product Analyst Mar 2021–Aug 2022 · APM Sep 2022–Aug 2023 · PM Sep 2023–present.
+- So the summary progression line reads "Senior Product Analyst → Assistant Product Manager →
+  Product Manager" (NOT "Product Analyst → ..."). Keep base + all tailored variants consistent.
+
 ## Team Leadership
 - Trained and led a team of 8 people as Assistant Product Manager (Sep 2022 - Aug 2023) --
   real, confirmed team-leading experience (closes the "team leading" gap flagged for the
   INDmoney JD, which was left unclaimed at the time).
+- **Direct reports as PM (clarified 2026-08-04):** in the early PM stage he had a **cross-functional
+  squad of 8 engineers + 2 QA reporting directly to him**; they were **later remapped under the Tech
+  Head**. So he has genuine (if time-bounded) people-management experience, but they do NOT currently
+  report to him. Safe framings: "led a cross-functional squad of 8 engineers and 2 QA" (delivery
+  leadership, always true) or, for people-management questions, "had 8 engineers + 2 QA reporting to
+  me during the early PM phase, later restructured under the Tech Head." Do NOT write present-tense
+  "manage a team of 10" as if it's the current reporting line.
 
 ## 2:1 Enrolment Automation (backend punching flow)
 - Automated the entire "2:1" enrolment/revenue-punching process end-to-end across three

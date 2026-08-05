@@ -5,7 +5,13 @@ Renders Kshitiz Yadav's one-page ATS resume as a .docx.
 DATA holds all resume content as a plain dict so a tailored variant (built by hand when
 processing a "Tailor My Resume" request -- see CLAUDE.md) can pass a modified copy
 (reworded/reordered bullets per a JD) through the same render() without duplicating the
-docx layout code. jd_match_score() below scores a tailored variant against a JD.
+docx layout code. keyword_coverage_score() below scores a tailored variant against a JD.
+
+Structure (2026-08-05 revamp): the resume now shows the REAL 3-role progression at PlanetSpark
+(Senior Product Analyst -> Assistant Product Manager -> Product Manager) as separate dated
+sub-entries under one company, a compact honest metrics strip under the header, and Core
+Competencies placed directly BELOW the summary (so recruiters see transferable positioning
+before the EdTech employer context). Email + LinkedIn render as real clickable hyperlinks.
 """
 import os
 from docx import Document
@@ -57,49 +63,56 @@ STYLE_PRESETS = [
 
 DATA = {
     "name": "KSHITIZ YADAV",
-    "tagline": "Product Manager  |  Growth & Monetization  |  Consumer & Marketplace Platforms  |  Funnel, Retention & Payments  |  Data-Driven, AI-Enabled",
+    "tagline": "Product Manager  |  Growth, Monetization & Payments  |  Consumer, Marketplace & Platform Products  |  SQL, Analytics & APIs",
     "contact": "Gurugram, India  •  +91 8756972501  •  kshitizyadav788@gmail.com  •  linkedin.com/in/kshitizyadav",
+    # links rendered as real clickable hyperlinks (see render()); keep these in sync with `contact`.
+    "email": "kshitizyadav788@gmail.com",
+    "linkedin": "linkedin.com/in/kshitizyadav",
+    # Compact, honest headline metrics strip shown under the header. Real numbers only.
+    "metrics": "20% Revenue Growth   •   25% ARPU Expansion (₹35K → ₹45K)   •   ₹70L Renewals in a Single Month   •   80% Lower Ops Workload",
     # Keep this SHORT (2-3 lines): positioning only -- who he is, what he owns, how he works, one
     # or two headline numbers. Do NOT restate the metrics that already appear in the bullets below;
     # that duplication was the reason this was rewritten (see CLAUDE.md "Master-resume conventions").
     "summary": (
-        "Product Manager with 5+ years owning products end-to-end — from discovery and PRDs through launch, "
-        "experimentation, and iteration — across consumer apps, a two-sided marketplace, and internal platform "
-        "and CRM systems. Partners closely with engineering, design, and business teams, using data (SQL, Power BI, "
-        "GA4) and AI to move core metrics. Track record of driving 20% revenue growth and ₹70L in product-led renewals."
+        "Product Manager with 5+ years of product experience building growth, monetization, payments, and "
+        "workflow-automation products across consumer apps, a two-sided marketplace, CRM, and internal platforms "
+        "serving 150,000+ enrolled users. Progressed from Senior Product Analyst to Assistant Product Manager to "
+        "Product Manager — owning discovery, PRDs, prioritization, launch, and iteration with engineering, design, "
+        "and business teams. Delivered 20% revenue growth, 25% ARPU expansion, ₹70L in product-led renewals in a "
+        "single month, and 80% lower operational workload, using SQL, Power BI, and AI as force-multipliers."
     ),
-    "experience": {
-        "company_line": "PlanetSpark — Product Manager",
-        "meta": "Gurugram · Mar 2021 – Present",
-        "intro": "Own the full product suite of a B2C EdTech marketplace -- one of India's largest public speaking & creative writing platforms, connecting students and teachers via a shared LMS: consumer app, student & teacher LMS, sales CRM, product-led growth & renewal engine, and an in-house AI layer.",
-        "groups": [
-            {"heading": "Growth & Monetization", "bullets": [
-                "Built the LPP (Learn, Practice, Perform) module — customized 1:1 sessions, group activities, and performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
-                "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that lowered sales cost and generated ₹70L in renewals in a single month (Jan 2025).",
-                "Launched organic acquisition loops surfacing student progress (Sparkline, Word Wisdom, practice classes, workshops) across social channels, bringing 2,000+ organic leads/month at a 7% conversion rate.",
-                "Built a counselor-wise P&L tracker computing weekly profitability per sales counselor (Net Revenue − Fixed, Refund, Marketing & Sales cost), giving each counselor the revenue figure needed to turn profitable — putting unit-economics visibility in the hands of the front line.",
-            ]},
-            {"heading": "Funnel & Platform (0→1)", "bullets": [
-                "Re-architected the sign-up → demo → enrolment funnel: single-step OTP sign-in (replacing a two-step create-then-login flow), a preference-capture ranking model that surfaces best-fit courses during the counselor VC, 6 API-integrated payment gateways with pre-filled links, and auto-cleared parent-approval on payment — reducing drop-off across the sign-up, payment, and enrolment stages.",
-                "Led the 0→1 launch of the consumer app MVP in 2 months (Feb–Mar 2024: ~1% organic revenue, +10% engagement); built the Student LMS (live classes, feedback reports, PTMs, in-house meeting room), raising course completion 15% and improving NPS.",
-            ]},
-            {"heading": "AI, Design & Automation", "bullets": [
-                "Designed prototypes and MVP interfaces for the app, LMS, and CRM in Figma, Adobe Express, and Canva AI — using Gemini, Claude, ChatGPT, and Codex to accelerate iteration into clickable flows that aligned engineering and stakeholders before build.",
-                "Shipped a production GenAI layer (speech/text learning with contextual, age-appropriate responses) and a support chatbot that cut escalations; revamped the Sales CRM (lead navigation, integrated calling, revenue tracking, target-vs-achievement, incentive management), cutting sales-ops workload 80%.",
-                "Automated incentive flows and enrolment verification (100% coverage), saving ₹1.6L/month and eliminating fake-revenue reporting.",
-            ]},
-        ],
-    },
-    "competencies": "Product Strategy & Roadmapping · Monetization & Unit Economics · Retention & Lifecycle · Funnel & Conversion Optimization · Product Design & Prototyping · A/B Testing & Experimentation · GTM & North-Star Metrics · Consumer & Two-Sided Marketplace Platforms · GenAI Product Development · Stakeholder Management · User Research · Agile/Scrum",
+    # Placed directly below the summary in render(). Transferable-first ordering for an industry switch.
+    "competencies": "Product Strategy & Roadmapping · Product Discovery & User Research · PRDs & Prioritization · Growth & Monetization · Pricing & Packaging · Retention & Lifecycle · Funnel & Conversion Optimization · Payments & API Integrations · Workflow Automation · Product Analytics & Insights · GTM & Product Launch · Marketplace & Platform Products · Unit Economics · Cross-Functional Leadership",
+    "company": "PlanetSpark — Gurugram",
+    "company_intro": "A B2C subscription marketplace (EdTech) connecting 150,000+ enrolled users with teachers via a shared LMS — spanning consumer app, two-sided platform, payments, CRM, renewals, and lifecycle products, with 30,000+ daily active users. Progressed across three roles while owning an expanding product surface.",
+    "roles": [
+        {"title": "Product Manager", "dates": "Sep 2023 – Present", "bullets": [
+            "Own the full product suite — consumer app, student & teacher LMS, advisor CRM, renewal engine, and in-house AI layer — for a platform with 150,000+ enrolled users and 30,000+ daily active users, leading a cross-functional squad of 8 engineers and 2 QA from discovery to launch.",
+            "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that reduced assisted-renewal cost and generated ₹70L in product-led renewals in a single month (Jan 2025).",
+            "Increased the share of enrolled users rating the product 5 out of 5 from 10% to 25% via onboarding and retention work: seamless onboarding, teacher PTMs and feedback, a one-page student-detail UI, a loyalty program, and the PSpark in-app wallet.",
+            "Re-architected the sign-up → demo → enrolment funnel — single-step OTP, a preference-capture ranking model, and 6 API-integrated payment gateways with pre-filled links and auto-cleared approvals — enabling self-serve, plan-based purchase with no manual intervention.",
+            "Built an advisor-wise P&L tracker (weekly Net Revenue − Fixed, Refund, Marketing & Sales cost) whose visibility drove profitability interventions — profitable advisors rose from 50 to 100 in one month and to 125 over the next two.",
+            "Shipped a production GenAI learning layer (age-appropriate speech/text responses) and a RAG-based support chatbot — cutting first-response time from 4 minutes to under 10 seconds and monthly escalations from ~300 to under 50 within three months.",
+            "Ship minor and mid-level product features using AI-assisted development (Claude Code) — scoping, implementing, and testing changes, and raising merge requests for engineering review.",
+        ]},
+        {"title": "Assistant Product Manager", "dates": "Sep 2022 – Aug 2023", "bullets": [
+            "Built the LPP (Learn, Practice, Perform) module — customized 1:1 sessions, group activities, and performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
+            "Rebuilt the teacher LMS with real-time payout automation, accurate payout summaries, and consolidated CRM and class details — lifting teacher NPS from −20 to +40.",
+            "Automated enrolment verification and incentive flows to 100% coverage and revamped the advisor CRM (lead navigation, calling, revenue & target tracking) — cutting operations workload 80% and saving ₹1.6L/month.",
+            "Launched organic acquisition loops surfacing student progress (Sparkline, Word Wisdom, practice classes, workshops) across social channels, bringing 2,000+ organic leads/month at a 7% conversion rate.",
+        ]},
+        {"title": "Senior Product Analyst", "dates": "Mar 2021 – Aug 2022", "bullets": [
+            "Developed SQL and Power BI reporting across growth, revenue, and operations; improved weekly revenue accuracy and created a data foundation for product and commercial decisions.",
+            "Implemented customer-verification controls that reduced invalid or fraudulent transactions from 10% to 1% while minimizing manual intervention.",
+        ]},
+    ],
     "skills": [
-        ("Data & Analytics", "SQL, GA4, MS Excel (Advanced), Python (basic)"),
-        ("Design & Prototyping", "Figma, Adobe Express, Canva AI, wireframing, clickable prototypes"),
-        ("Product & Delivery", "JIRA, Confluence, Agile/Scrum, RICE prioritization"),
-        ("AI & Integration", "OpenAI / Gemini / Claude APIs, Prompt Engineering, REST APIs, NLP use-cases"),
+        ("Data & Analytics", "SQL, GA4, Power BI, MS Excel (Advanced), Python (basic)"),
+        ("Product & Delivery", "JIRA, Confluence, Agile/Scrum, RICE prioritization, Figma"),
+        ("AI & Integration", "OpenAI / Gemini / Claude APIs, Claude Code, Prompt Engineering, RAG, REST APIs, Payment Integrations"),
     ],
     "education": [
-        ("BBA — Chandigarh University, Chandigarh", "2019 – 2021"),
-        ("Class XII (ISC), St. Thomas High School, Kanpur", "2018"),
+        ("BBA — Chandigarh University, Chandigarh", "2018 – 2021"),
     ],
     "certifications": "Product Management Certification — Udemy (2024)    •    JIRA Certification — Udemy (2024)",
 }
@@ -157,6 +170,19 @@ def render(data, out_path, style=None):
         if color is not None: r.font.color.rgb = color
         return r
 
+    def add_hyperlink(p, url, text, size, color):
+        r_id = p.part.relate_to(
+            url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+            is_external=True)
+        link = OxmlElement('w:hyperlink'); link.set(qn('r:id'), r_id)
+        run = OxmlElement('w:r'); rPr = OxmlElement('w:rPr')
+        rf = OxmlElement('w:rFonts'); rf.set(qn('w:ascii'), FONT); rf.set(qn('w:hAnsi'), FONT); rPr.append(rf)
+        c = OxmlElement('w:color'); c.set(qn('w:val'), '%02X%02X%02X' % (color[0], color[1], color[2])); rPr.append(c)
+        szv = OxmlElement('w:sz'); szv.set(qn('w:val'), str(int(size * 2))); rPr.append(szv)
+        run.append(rPr)
+        t = OxmlElement('w:t'); t.set(qn('xml:space'), 'preserve'); t.text = text; run.append(t)
+        link.append(run); p._p.append(link)
+
     def bullet(parts):
         p = doc.add_paragraph(style="List Bullet")
         p.paragraph_format.space_after = Pt(gap); p.paragraph_format.space_before = Pt(0)
@@ -164,11 +190,6 @@ def render(data, out_path, style=None):
         if isinstance(parts, str): add_run(p, parts)
         else:
             for txt, kw in parts: add_run(p, txt, **kw)
-
-    def subhead(text):
-        p = doc.add_paragraph()
-        p.paragraph_format.space_before = Pt(sub_before); p.paragraph_format.space_after = Pt(0)
-        add_run(p, text, bold=True, italic=True, size=body, color=BLUE)
 
     def right_tab(p):
         cw = sec.page_width - sec.left_margin - sec.right_margin
@@ -179,46 +200,57 @@ def render(data, out_path, style=None):
     add_run(p, data["name"], bold=True, size=name_sz, color=NAVY)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after = Pt(0)
     add_run(p, data["tagline"], size=tagline_sz, color=GREY)
-    p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after = Pt(gap)
-    add_run(p, data["contact"], size=contact_sz, color=GREY)
+    # contact line with clickable email + LinkedIn
+    p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after = Pt(1)
+    email = data.get("email"); linkedin = data.get("linkedin")
+    if email and linkedin:
+        add_run(p, "Gurugram, India  •  +91 8756972501  •  ", size=contact_sz, color=GREY)
+        add_hyperlink(p, "mailto:" + email, email, contact_sz, GREY)
+        add_run(p, "  •  ", size=contact_sz, color=GREY)
+        add_hyperlink(p, "https://" + linkedin, linkedin, contact_sz, GREY)
+    else:
+        add_run(p, data["contact"], size=contact_sz, color=GREY)
+    # metrics strip
+    if data.get("metrics"):
+        p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_after = Pt(gap)
+        add_run(p, data["metrics"], bold=True, size=contact_sz, color=BLUE)
 
     # -------- SUMMARY --------
     header_line("Professional Summary")
     p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
     add_run(p, data["summary"])
 
-    # -------- EXPERIENCE --------
-    header_line("Professional Experience")
-    exp = data["experience"]
-    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(0); right_tab(p)
-    add_run(p, exp["company_line"], bold=True, size=company_sz); add_run(p, "\t" + exp["meta"], color=GREY)
-    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
-    add_run(p, exp["intro"], italic=True, color=DGREY)
-
-    for g in exp["groups"]:
-        subhead(g["heading"])
-        for b in g["bullets"]:
-            bullet(b)
-
-    # -------- CORE COMPETENCIES --------
+    # -------- CORE COMPETENCIES (directly below summary) --------
     header_line("Core Competencies")
     p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
     add_run(p, data["competencies"])
+
+    # -------- EXPERIENCE (one company, 3 dated role sub-entries) --------
+    header_line("Professional Experience")
+    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(0)
+    add_run(p, data["company"], bold=True, size=company_sz)
+    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
+    add_run(p, data["company_intro"], italic=True, color=DGREY)
+    for role in data["roles"]:
+        p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(sub_before)
+        p.paragraph_format.space_after = Pt(0); right_tab(p)
+        add_run(p, role["title"], bold=True, italic=True, color=BLUE)
+        add_run(p, "\t" + role["dates"], italic=True, color=GREY)
+        for b in role["bullets"]:
+            bullet(b)
 
     # -------- TECHNICAL SKILLS --------
     header_line("Technical Skills & Tools")
     for label, text in data["skills"]:
         bullet([(label + ": ", {"bold": True}), (text, {})])
 
-    # -------- EDUCATION --------
-    header_line("Education")
+    # -------- EDUCATION & CERTIFICATIONS --------
+    header_line("Education & Certifications")
     for school, dates in data["education"]:
         p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap); right_tab(p)
         add_run(p, school, bold=True); add_run(p, "\t" + dates, color=GREY)
-
-    # -------- CERTIFICATIONS --------
-    header_line("Certifications")
-    bullet(data["certifications"])
+    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
+    add_run(p, data["certifications"], color=GREY)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     doc.save(out_path)
@@ -313,9 +345,10 @@ def keyword_coverage_score(data, keywords):
     inflate the score; the resulting number is only honest if that list is honest. Returns
     (score, matched, missing) so the gaps are visible, not just a bare percentage."""
     _filler = {"and", "the", "of", "a", "an", "for", "to", "in", "&"}
-    bullets = " ".join(b for g in data["experience"]["groups"] for b in g["bullets"])
+    bullets = " ".join(b for r in data["roles"] for b in r["bullets"])
     resume_text = " ".join([
-        data.get("summary", ""), data.get("competencies", ""),
+        data.get("summary", ""), data.get("competencies", ""), data.get("tagline", ""),
+        data.get("company_intro", ""), data.get("metrics", ""),
         " ".join(t for _, t in data.get("skills", [])),
         bullets,
     ]).lower()

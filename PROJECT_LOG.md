@@ -6,6 +6,49 @@ operating rules, then this for "what state are we actually in."
 
 ---
 
+## 2026-08-05 — BASE RESUME + PORTFOLIO + DASHBOARD RESTRUCTURE (major)
+
+Driven by a multi-round review of the one-page resume (Kshitiz + a second AI reviewer). The base
+resume was rebuilt and the change propagated across the whole repo. **This supersedes the single-role
+master-resume structure described in the 2026-07-22 snapshot below.**
+
+**What changed (all in one continuous, verified pass):**
+- **`build_resume.py`** — `DATA` + `render()` rebuilt to the REAL 3-role progression at PlanetSpark
+  shown as dated sub-entries under one company: **Senior Product Analyst (Mar 2021–Aug 2022) →
+  Assistant Product Manager (Sep 2022–Aug 2023) → Product Manager (Sep 2023–Present)**. (Full real
+  path is Product Analyst → Sr Product Analyst → APM → PM; Kshitiz chose to START at Sr Product
+  Analyst — the junior-most rung is intentionally omitted.) Added: compact honest **metrics strip**
+  under the header; **Core Competencies moved directly below the summary** (transferable-first for an
+  industry switch); **clickable email/LinkedIn hyperlinks**; **"Pricing & Packaging"** competency
+  (Kshitiz confirmed he owned the ₹35K→₹45K ARPU move via segment-wise minimum ARPU + phased
+  increases). Positioning de-EdTech'd → growth/monetization/payments/workflow-automation.
+  `keyword_coverage_score()` updated to read the new `data["roles"]` shape.
+- **New verified numbers** (added to base + logged in `experience_bank.md`): CSAT = share of enrolled
+  users rating **5/5** rose 10%→25%; **teacher NPS −20→+40** (payout automation + teacher LMS);
+  **RAG support chatbot** FRT 4min→<10s, monthly escalations ~300→<50; **advisor P&L tracker** grew
+  profitable advisors 50→100 (one month)→125 (next two); scale **150K enrolled / 30K DAU**; leads a
+  **squad of 8 engineers + 2 QA** (reported to him early-PM, later remapped under Tech Head); **ships
+  minor/mid features via Claude Code** (AI-assisted dev, merges reviewed by eng).
+- **Honesty holds:** did NOT add A/B-testing/experimentation (no controlled-experiment experience);
+  did NOT cite the funnel "enhanced by 50%" (no clear denominator — open question); kept "production
+  GenAI" (real). "Pricing & Packaging" only added because pricing ownership was confirmed real.
+- **`index.html`** — `resumeDoc` object + `renderResumeDoc()` rebuilt for the 3-role structure +
+  metrics strip; `profile` title/currentRole fixed ("Product Manager"); overview header string and
+  the `resume` analysis object (strengths/weaknesses/positioning/keyword note) updated to match.
+- **`portfolio.html`** — hero summary (scale + payments), work-slide numbers updated to the verified
+  figures (replaced a couple of unverified stats like "80% class conduction/90% on-time" with the
+  verified teacher NPS), "counselor"→"advisor" wording, education BBA **2018–2021**, and the journey
+  axis fixed **Intern → Sr Product Analyst**.
+- Base resume regenerated via `fit_to_page()` → one page, ~95% fill, one-page-full rule intact.
+
+**Deferred (NOT done in this pass):** the **~48 existing tailored resumes** (EXT*/`seed_jobs.json`)
+still render with the OLD single-role template and older numbers. Their per-JD source data dicts were
+never persisted, so aligning each = a fresh tailoring pass on the new base (honest re-scoring per JD).
+Plan: re-tailor onto the new base as each role becomes active / when Kshitiz applies, in tracked
+batches — rather than a risky blind mass-regeneration.
+
+---
+
 ## Current state snapshot (as of 2026-07-22)
 
 ### Dashboard & engine — DONE and live
