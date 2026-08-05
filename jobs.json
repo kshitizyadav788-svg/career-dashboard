@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-05T03:57:30+00:00",
+ "updated": "2026-08-05T06:29:44+00:00",
  "source": "live",
- "count": 101,
+ "count": 102,
  "jobs": [
   {
    "id": "NP18",
@@ -18,7 +18,7 @@
    "why": "Well-funded SaaS rewards/engagement platform, strong comp (₹18-30L) and in-band; would need to relocate to Bangalore."
   },
   {
-   "id": "JS_95550758",
+   "id": "JS_84319272",
    "src": "Foundit",
    "title": "Product Manager - Growth",
    "co": "Noise",
@@ -46,7 +46,7 @@
    "why": "Healthtech consumer product with funnel analytics + agentic AI — strong overlap with your growth/AI skill set; relocate to Bangalore."
   },
   {
-   "id": "JS_67749932",
+   "id": "JS_91021147",
    "src": "LinkedIn",
    "title": "PRODUCT MANAGER – BUSINESS PRODUCT MANAGEMENT",
    "co": "CBTS",
@@ -60,21 +60,7 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_47296804",
-   "src": "Wellfound",
-   "title": "Product Manager – Monetisation",
-   "co": "Noise",
-   "loc": "Gurugram, Haryana",
-   "url": "https://wellfound.com/jobs/4493200-product-manager-monetisation",
-   "posted": "2026-07-21",
-   "fit": 84,
-   "comp": 68,
-   "growth": 72,
-   "prob": 70,
-   "why": "Wellfound via JSearch"
-  },
-  {
-   "id": "JS_33300881",
+   "id": "JS_72765585",
    "src": "SimplyHired",
    "title": "Product Manager - Global Products",
    "co": "Pluang",
@@ -88,7 +74,7 @@
    "why": "SimplyHired via JSearch"
   },
   {
-   "id": "JS_94395340",
+   "id": "JS_26803429",
    "src": "BeBee",
    "title": "Product Manager - Fintech Solution (5-10 Yrs) Gurgaon/gurugram (marketing/pr/advertising)",
    "co": "Nexthire LLP",
@@ -102,7 +88,7 @@
    "why": "BeBee via JSearch"
   },
   {
-   "id": "JS_44846125",
+   "id": "JS_75617290",
    "src": "Jobrapido.com",
    "title": "Product Manager Stainless Steel Gurugram (India)",
    "co": "Antal International",
@@ -130,7 +116,21 @@
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
   },
   {
-   "id": "JS_59323805",
+   "id": "JS_47050290",
+   "src": "Shine",
+   "title": "Senior Product Manager  Growth",
+   "co": "Expedient Healthcare Marketing Pvt. Ltd",
+   "loc": "Gurugram, Haryana",
+   "url": "https://www.shine.com/jobs/senior-product-manager-growth/expedient-healthcare-marketing-pvt-ltd/19366576",
+   "posted": "2026-08-02",
+   "fit": 83,
+   "comp": 68,
+   "growth": 72,
+   "prob": 70,
+   "why": "Shine via JSearch"
+  },
+  {
+   "id": "JS_80358857",
    "src": "LinkedIn",
    "title": "Senior Product Manager Fintech",
    "co": "Staffnix",
@@ -144,7 +144,7 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_76787277",
+   "id": "JS_11424248",
    "src": "Mastercard",
    "title": "Specialist Product Management",
    "co": "Mastercard",
@@ -158,7 +158,7 @@
    "why": "Mastercard via JSearch"
   },
   {
-   "id": "JS_40429924",
+   "id": "JS_93191332",
    "src": "JobLeads",
    "title": "Senior Product Manager - Product and Agile Management",
    "co": "Publicis Sapient",
@@ -172,7 +172,7 @@
    "why": "JobLeads via JSearch"
   },
   {
-   "id": "JS_90516495",
+   "id": "JS_60018297",
    "src": "Jobs.uber.com",
    "title": "Sr Product Manager, Tech - Product",
    "co": "Uber",
@@ -186,7 +186,7 @@
    "why": "Jobs.uber.com via JSearch"
   },
   {
-   "id": "JS_92771270",
+   "id": "JS_59923187",
    "src": "Equinix Careers",
    "title": "Principal Product Manager - Conversational AI & Agent Platform",
    "co": "Equinix",
@@ -200,7 +200,7 @@
    "why": "Equinix Careers via JSearch"
   },
   {
-   "id": "JS_83966240",
+   "id": "JS_39124235",
    "src": "Target",
    "title": "Sr Product Manager - Roundel",
    "co": "TARGET",
@@ -214,7 +214,7 @@
    "why": "Target via JSearch"
   },
   {
-   "id": "JS_79057082",
+   "id": "JS_69189584",
    "src": "Docusign Careers",
    "title": "AI Product Manager",
    "co": "Docusign",
@@ -226,20 +226,6 @@
    "growth": 72,
    "prob": 70,
    "why": "Docusign Careers via JSearch"
-  },
-  {
-   "id": "JS_24651965",
-   "src": "Shine",
-   "title": "Product Manager Data Bengaluru",
-   "co": "Relanto Global",
-   "loc": "Bengaluru, Karnataka",
-   "url": "https://www.shine.com/jobs/product-manager-data-bengaluru/relanto-global/19378972",
-   "posted": "2026-08-03",
-   "fit": 81,
-   "comp": 68,
-   "growth": 72,
-   "prob": 70,
-   "why": "Shine via JSearch"
   },
   {
    "id": "AZ_5802073875",
@@ -312,6 +298,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5828767917",
+   "src": "Adzuna",
+   "title": "Digital Product Manager",
+   "co": "UnitedHealth Group",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5828767917?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-08-05",
+   "fit": 84,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5812908118",
    "src": "Adzuna",
    "title": "Product Manager - Retail & Insights",
@@ -340,7 +340,7 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "JS_93079917",
+   "id": "JS_38896444",
    "src": "IxDF",
    "title": "Product Manager - Remote",
    "co": "confidential",
@@ -354,7 +354,7 @@
    "why": "IxDF via JSearch · remote"
   },
   {
-   "id": "JS_1094275",
+   "id": "JS_70989267",
    "src": "Vacancy Global Pro",
    "title": "Product Manager - Remote",
    "co": "vacancy global pro",
@@ -368,7 +368,7 @@
    "why": "Vacancy Global Pro via JSearch · remote"
   },
   {
-   "id": "JS_46962546",
+   "id": "JS_61440914",
    "src": "Remote Click Jobs",
    "title": "Product Manager (Fully Remote)",
    "co": "remote click jobs",
@@ -382,7 +382,7 @@
    "why": "Remote Click Jobs via JSearch · remote"
   },
   {
-   "id": "JS_46051755",
+   "id": "JS_13089767",
    "src": "Remote Zest Jobs",
    "title": "Product Manager | Fully Remote US",
    "co": "remote zest jobs",
@@ -396,7 +396,7 @@
    "why": "Remote Zest Jobs via JSearch · remote"
   },
   {
-   "id": "JS_61616048",
+   "id": "JS_45586479",
    "src": "We Work Remotely",
    "title": "Product Manager – Progressive Web Apps (PWA)",
    "co": "Jobgether",
@@ -410,7 +410,7 @@
    "why": "We Work Remotely via JSearch · remote"
   },
   {
-   "id": "JS_31411714",
+   "id": "JS_73991763",
    "src": "Remote Click Jobs",
    "title": "Product Manager I (Remote US)",
    "co": "remote click jobs",
@@ -429,7 +429,7 @@
    "title": "Product Manager",
    "co": "ABB",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5790410646?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=070759BAF53FDE4C10EC5490EEEF52A3D40274DD",
+   "url": "https://www.adzuna.in/land/ad/5790410646?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=070759BAF53FDE4C10EC5490EEEF52A3D40274DD",
    "posted": "2026-07-07",
    "fit": 81,
    "comp": 62,
@@ -443,7 +443,7 @@
    "title": "Bids and Proposal, Product Manager",
    "co": "ABB",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5800931675?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=0C3E73C29DB8EDE3C9965FDA55704DCA38C66A6B",
+   "url": "https://www.adzuna.in/land/ad/5800931675?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=0C3E73C29DB8EDE3C9965FDA55704DCA38C66A6B",
    "posted": "2026-07-15",
    "fit": 81,
    "comp": 62,
@@ -807,7 +807,7 @@
    "title": "DM/AM-Commercial Specialist",
    "co": "Jaquar & Company Private Limited",
    "loc": "Nsg Camp Manesar, Gurgaon",
-   "url": "https://www.adzuna.in/land/ad/5805165128?se=6DABx4GQ8RGJSr6zDeCjPA&utm_medium=api&utm_source=3193978c&v=3E1ADEC64A1807BB2DBC66BD5A8F844BBC188092",
+   "url": "https://www.adzuna.in/land/ad/5805165128?se=6EhsC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=3E1ADEC64A1807BB2DBC66BD5A8F844BBC188092",
    "posted": "2026-07-18",
    "fit": 80,
    "comp": 62,
@@ -821,7 +821,7 @@
    "title": "Legal Analyst",
    "co": "LexisNexis Legal & Professional®",
    "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/land/ad/5823790582?se=6DABx4GQ8RGJSr6zDeCjPA&utm_medium=api&utm_source=3193978c&v=FDBBCBFF57944F08997865FCD1B24409A52E990E",
+   "url": "https://www.adzuna.in/land/ad/5823790582?se=6EhsC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=FDBBCBFF57944F08997865FCD1B24409A52E990E",
    "posted": "2026-08-01",
    "fit": 80,
    "comp": 62,
@@ -846,7 +846,7 @@
    "matchScore": 74
   },
   {
-   "id": "JS_91204947",
+   "id": "JS_97181514",
    "src": "Docusign Careers",
    "title": "Senior Product Manager, AI",
    "co": "Docusign",
@@ -860,21 +860,7 @@
    "why": "Docusign Careers via JSearch"
   },
   {
-   "id": "JS_91502969",
-   "src": "LinkedIn",
-   "title": "Senior Product Manager - Tech, Prime Video",
-   "co": "Prime Video & Amazon MGM Studios",
-   "loc": "Bengaluru, Karnataka",
-   "url": "https://in.linkedin.com/jobs/view/senior-product-manager-tech-prime-video-at-prime-video-amazon-mgm-studios-4443038844",
-   "posted": "2026-07-21",
-   "fit": 77,
-   "comp": 68,
-   "growth": 72,
-   "prob": 58,
-   "why": "LinkedIn via JSearch"
-  },
-  {
-   "id": "JS_35111547",
+   "id": "JS_34886222",
    "src": "Lowe's Careers",
    "title": "Lead Product Manager (Lowe's Blue Technology)",
    "co": "Lowes",
@@ -888,7 +874,21 @@
    "why": "Lowe's Careers via JSearch"
   },
   {
-   "id": "JS_20019085",
+   "id": "JS_28604748",
+   "src": "Equinix Careers",
+   "title": "Product Manager - Senior Staff - Data & AI",
+   "co": "Equinix",
+   "loc": "Bengaluru, Karnataka",
+   "url": "https://careers.equinix.com/nl/jobs/product-manager-senior-staff-data-ai-bengaluru-karnataka-india",
+   "posted": "2026-07-23",
+   "fit": 77,
+   "comp": 68,
+   "growth": 72,
+   "prob": 58,
+   "why": "Equinix Careers via JSearch"
+  },
+  {
+   "id": "JS_29864598",
    "src": "EFinancialCareers",
    "title": "Director of Product Management, New Ventures | Bangalore, IN",
    "co": "Toast",
@@ -902,7 +902,7 @@
    "why": "EFinancialCareers via JSearch"
   },
   {
-   "id": "JS_64239555",
+   "id": "JS_84466714",
    "src": "LinkedIn",
    "title": "Senior Director, Product Management",
    "co": "Rakuten Symphony",
@@ -916,7 +916,21 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_19790323",
+   "id": "JS_58484507",
+   "src": "LinkedIn",
+   "title": "Lead, Product Management (Human Capital Products)",
+   "co": "D. E. Shaw India Private Limited",
+   "loc": "Bengaluru, Karnataka",
+   "url": "https://in.linkedin.com/jobs/view/lead-product-management-human-capital-products-at-d-e-shaw-india-private-limited-4433839439",
+   "posted": "2026-07-29",
+   "fit": 73,
+   "comp": 68,
+   "growth": 72,
+   "prob": 58,
+   "why": "LinkedIn via JSearch"
+  },
+  {
+   "id": "JS_31850391",
    "src": "FlexBoard",
    "title": "[Remote] Senior Product Manager",
    "co": "FlexBoard",
@@ -930,7 +944,7 @@
    "why": "FlexBoard via JSearch · remote"
   },
   {
-   "id": "JS_12081654",
+   "id": "JS_56615425",
    "src": "We Work Remotely",
    "title": "Staff Product Manager, ML Foundations and GenAI",
    "co": "Stripe",
@@ -944,7 +958,7 @@
    "why": "We Work Remotely via JSearch · remote"
   },
   {
-   "id": "JS_9744884",
+   "id": "JS_18637936",
    "src": "Vacancy Global Pro",
    "title": "Sr. Product Manager- Data Warehouse (Remote)",
    "co": "vacancy global pro",
@@ -958,7 +972,7 @@
    "why": "Vacancy Global Pro via JSearch · remote"
   },
   {
-   "id": "JS_6286426",
+   "id": "JS_45616208",
    "src": "Workday",
    "title": "Principal Product Manager- Hyderabad (hybrid)",
    "co": "5264 Syneos Health India Private Limited",
@@ -977,7 +991,7 @@
    "title": "Product Project Manager",
    "co": "Tenarai",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5807302280?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=83EF62D773B1404CE739E6110334228C58ECF49F",
+   "url": "https://www.adzuna.in/land/ad/5807302280?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=83EF62D773B1404CE739E6110334228C58ECF49F",
    "posted": "2026-07-20",
    "fit": 77,
    "comp": 62,
@@ -991,7 +1005,7 @@
    "title": "Product Success Manager",
    "co": "Publicis Production",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5809582142?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=FA098759EF0DD1A0337829E69364D4CA31F9DBFC",
+   "url": "https://www.adzuna.in/land/ad/5809582142?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=FA098759EF0DD1A0337829E69364D4CA31F9DBFC",
    "posted": "2026-07-21",
    "fit": 77,
    "comp": 62,
@@ -1005,7 +1019,7 @@
    "title": "Customer Success Manager: SaaS/Product",
    "co": "Astra Security",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5797155338?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=6E199D6B015AE6233E98ABC1D93FBB9CAFB4EA5F",
+   "url": "https://www.adzuna.in/land/ad/5797155338?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=6E199D6B015AE6233E98ABC1D93FBB9CAFB4EA5F",
    "posted": "2026-07-12",
    "fit": 77,
    "comp": 62,
@@ -1133,7 +1147,7 @@
    "title": "Product Manager-Trainee",
    "co": "Kumaran Systems",
    "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5813878236?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=DC641E0A71893EC62026EB9E256A54B3198019C5",
+   "url": "https://www.adzuna.in/land/ad/5813878236?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=DC641E0A71893EC62026EB9E256A54B3198019C5",
    "posted": "2026-07-24",
    "fit": 76,
    "comp": 62,
@@ -1147,7 +1161,7 @@
    "title": "Product Manager - Compliance",
    "co": "Sonata Software",
    "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5812353815?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=8E3DBC00BF93F436519FC42F0A6334A9F6588D90",
+   "url": "https://www.adzuna.in/land/ad/5812353815?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=8E3DBC00BF93F436519FC42F0A6334A9F6588D90",
    "posted": "2026-07-23",
    "fit": 76,
    "comp": 62,
@@ -1161,7 +1175,7 @@
    "title": "Product Manager- Mutual Funds",
    "co": "Ashika Group",
    "loc": "Worli, Mumbai",
-   "url": "https://www.adzuna.in/land/ad/5818746400?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=92149357D6E4986C182B49E6F8EC2C53162E36C1",
+   "url": "https://www.adzuna.in/land/ad/5818746400?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=92149357D6E4986C182B49E6F8EC2C53162E36C1",
    "posted": "2026-07-29",
    "fit": 76,
    "comp": 62,
@@ -1184,7 +1198,7 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "JS_14891563",
+   "id": "JS_64837412",
    "src": "EFinancialCareers",
    "title": "Senior Associate-Digital Product Management | Gurgaon, IN",
    "co": "American Express",
@@ -1231,7 +1245,7 @@
    "title": "Lead Design Engineer - Aero Engine Product Change Management",
    "co": "Infosys",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5809581077?se=wHZlx4GQ8RGixYuW__XtKQ&utm_medium=api&utm_source=3193978c&v=327D3A1C2ED4AEA18A6F29F75D423FECFF0C2B12",
+   "url": "https://www.adzuna.in/land/ad/5809581077?se=2K-6C5eQ8RG7fvEaTXK3ng&utm_medium=api&utm_source=3193978c&v=327D3A1C2ED4AEA18A6F29F75D423FECFF0C2B12",
    "posted": "2026-07-21",
    "fit": 73,
    "comp": 62,
@@ -1245,7 +1259,7 @@
    "title": "Product Management Specialist",
    "co": "ABB",
    "loc": "Vadodara, Gujarat",
-   "url": "https://www.adzuna.in/land/ad/5800931291?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=09C810929B27317A1CD7EF1EB4A5C8B3D418D964",
+   "url": "https://www.adzuna.in/land/ad/5800931291?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=09C810929B27317A1CD7EF1EB4A5C8B3D418D964",
    "posted": "2026-07-15",
    "fit": 72,
    "comp": 62,
@@ -1259,7 +1273,7 @@
    "title": "Credit Risk Analytics & Product Management",
    "co": "EliteRecruitments",
    "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5804793061?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=0B0F81D8CC0E99AA4018FCEDA53BB9CF6A8CB9EE",
+   "url": "https://www.adzuna.in/land/ad/5804793061?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=0B0F81D8CC0E99AA4018FCEDA53BB9CF6A8CB9EE",
    "posted": "2026-07-17",
    "fit": 72,
    "comp": 62,
@@ -1273,7 +1287,7 @@
    "title": "Product Sales Manager",
    "co": "Digio.in",
    "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5801404477?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=414CC245E147D6313CEA79388347DD02EA5F7CCB",
+   "url": "https://www.adzuna.in/land/ad/5801404477?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=414CC245E147D6313CEA79388347DD02EA5F7CCB",
    "posted": "2026-07-15",
    "fit": 72,
    "comp": 62,
@@ -1287,7 +1301,7 @@
    "title": "Manager/Assistant Manager - Product",
    "co": "NeoGrowth Credit Pvt. Ltd.",
    "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5825674852?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=18DAC6E774DDAD28BE0AF84FF8BEFAB6B90D0811",
+   "url": "https://www.adzuna.in/land/ad/5825674852?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=18DAC6E774DDAD28BE0AF84FF8BEFAB6B90D0811",
    "posted": "2026-08-02",
    "fit": 72,
    "comp": 62,
@@ -1301,7 +1315,7 @@
    "title": "Manager / Sr Manager - Product & Business Development",
    "co": "Carnelian Asset Management and Advisors Pvt Ltd",
    "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5813877482?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=DDAAFCEAFFF23689E974957A399462874C2CB95D",
+   "url": "https://www.adzuna.in/land/ad/5813877482?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=DDAAFCEAFFF23689E974957A399462874C2CB95D",
    "posted": "2026-07-24",
    "fit": 72,
    "comp": 62,
@@ -1315,7 +1329,7 @@
    "title": "National Sales Manager – IVF Products",
    "co": "Esco",
    "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5818524077?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=4823CDDBFCE229481342AC32587B24762A25B224",
+   "url": "https://www.adzuna.in/land/ad/5818524077?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=4823CDDBFCE229481342AC32587B24762A25B224",
    "posted": "2026-07-28",
    "fit": 72,
    "comp": 62,
@@ -1329,23 +1343,9 @@
    "title": "Export Manager – FMCG | Food products -Bangalore",
    "co": "The Banyan HR Consults Chennai",
    "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5810844224?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=DD9D35AC8CA6D9859C9434867C89EE4AEF47AF39",
+   "url": "https://www.adzuna.in/land/ad/5810844224?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=DD9D35AC8CA6D9859C9434867C89EE4AEF47AF39",
    "posted": "2026-07-22",
    "fit": 72,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5802320519",
-   "src": "Adzuna",
-   "title": "Associate Director, Product Management",
-   "co": "S&P Global",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5802320519?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-07-16",
-   "fit": 68,
    "comp": 62,
    "growth": 70,
    "prob": 58,
@@ -1357,7 +1357,7 @@
    "title": "Associate Product Manager - Clinical Product",
    "co": "Cloud Security Web",
    "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5825069809?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=EE19530722AB624EEDF1C26DC1101CC4A364257B",
+   "url": "https://www.adzuna.in/land/ad/5825069809?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=EE19530722AB624EEDF1C26DC1101CC4A364257B",
    "posted": "2026-08-02",
    "fit": 68,
    "comp": 62,
@@ -1371,7 +1371,7 @@
    "title": "Senior Specialist, Technical Product Management",
    "co": "MSD",
    "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/land/ad/5821999970?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=9562E0FB5F84B9BC7D5A3608220ACC2800925436",
+   "url": "https://www.adzuna.in/land/ad/5821999970?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=9562E0FB5F84B9BC7D5A3608220ACC2800925436",
    "posted": "2026-07-31",
    "fit": 68,
    "comp": 62,
@@ -1399,9 +1399,23 @@
    "title": "Associate, Technical Product Management [T500-27883]",
    "co": "McDonald's Global Office in India",
    "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/land/ad/5820158133?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=DFF13270338B4471765444DB1395A6BAD5CDE1FD",
+   "url": "https://www.adzuna.in/land/ad/5820158133?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=DFF13270338B4471765444DB1395A6BAD5CDE1FD",
    "posted": "2026-07-30",
    "fit": 64,
+   "comp": 62,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5815611066",
+   "src": "Adzuna",
+   "title": "Associate Director, Product Management",
+   "co": "S&P Global",
+   "loc": "India",
+   "url": "https://www.adzuna.in/land/ad/5815611066?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=2804632077FECF775887585344F127E09A25A47F",
+   "posted": "2026-07-25",
+   "fit": 60,
    "comp": 62,
    "growth": 70,
    "prob": 58,
@@ -1413,7 +1427,7 @@
    "title": "Associate Director Tech Product Management (DAM & MLR)",
    "co": "Novartis",
    "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5820906238?se=lByvx4GQ8RGLwZkdgahNug&utm_medium=api&utm_source=3193978c&v=EADC51B9BA3F6EC67B46CE9F67631D994935342C",
+   "url": "https://www.adzuna.in/land/ad/5820906238?se=blbxC5eQ8RGGP-w68Vc0-g&utm_medium=api&utm_source=3193978c&v=EADC51B9BA3F6EC67B46CE9F67631D994935342C",
    "posted": "2026-07-30",
    "fit": 60,
    "comp": 62,
