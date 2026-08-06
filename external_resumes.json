@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T16:18:03Z",
+  "updated": "2026-08-06T16:59:23Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -457,6 +457,15 @@
       "resume": "resumes/noon-Growth Product Manager.docx",
       "matchScore": 75,
       "why": "Pasted JD (noon Minutes — quick-commerce / 15-min e-grocery, UAE & KSA; Growth PM owning growth-intelligence & ML-powered customer optimisation). Built on the new 3-role base. 75% (15/20) — a MEDIUM fit: genuinely strong on GROWTH but with real DATA-SCIENCE/ML depth gaps. STRONG (his core): growth levers — acquisition, conversion, retention, and PROMOTIONAL MECHANICS (renewal engine/nudges/early-bird/loyalty); data-driven growth tooling & reporting (SQL, Power BI dashboards); customer SEGMENTATION; EXPERIMENTATION/A-B; personalised promotions/personalization; define metrics, run experiments, iterate; cross-functional with data science/engineering/commercial; marketplace (a 'plus'); ML-powered product FEATURES (his preference-capture ranking model, recommendations, RAG). REAL GAPS (the misses + caveats, honest): (1) formal ML DEPTH — 'propensity modelling' and 'budget optimisation' and owning 'ML-powered SYSTEMS' — he has ML at a PRODUCT level (ranking/recommendation/segmentation features) but NOT hands-on ML modelling/optimisation systems; (2) HANDS-ON PYTHON — the keyword matched on word-presence but his Python is BASIC; the JD explicitly wants 'hands-on with Python', so this is effectively a gap (SQL is strong); (3) QUICK-COMMERCE / E-GROCERY domain — 'a plus', which he lacks (marketplace partially covers). LOCATION: noon Minutes is UAE/KSA (Middle East) — role location not stated; if Dubai/Riyadh it needs relocation/work-auth; confirm before applying (noon does also have India teams). NET: honest medium fit — his growth-lever strength is a real draw, but the ML-modelling + hands-on-Python + quick-commerce gaps make it a stretch vs his 90-100% right-sized fits. Apply if targeting quick-commerce growth and okay being upfront that his ML is product-level and Python is basic."
+    },
+    {
+      "id": "EXT51",
+      "title": "AI Product Manager",
+      "co": "DeHaat",
+      "addedDate": "2026-08-06T17:10:00",
+      "resume": "resumes/DeHaat-AI Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (DeHaat — agritech; AI Product Manager owning AI-powered features across B2B/B2C farmer platforms: assistants, recommendation engines, workflow automation, lending). Built on the new 3-role base. STRONG AI FIT — 90% (18/20). The JD is almost custom-fit to his AI profile: it explicitly wants 'build shoulder-to-shoulder with engineering USING CLAUDE' and 'hands-on building/shipping AI-powered products using LLMs (Claude or similar)' — his new base showcases exactly this (ships features via CLAUDE CODE, shipped a production GenAI layer + RAG assistant/chatbot, LLM APIs, prompt engineering, a preference-capture ranking/recommendation model, workflow automation cutting ops 80%). Also covers: AI-powered features end-to-end; engineering-ready PRDs/specs/user stories/acceptance criteria; user research & customer discovery ('get out of the building'); success metrics + experiments/A-B; data-driven decisions; decision/trade-off documentation ('clean paper trail'); cross-functional (leadership/design/data science/engineering); bias for execution; communication. Experience bar (2-4 yrs) is below him (5+). TWO HONEST GAPS (the 2 misses): (1) DOMAIN — agritech/fintech/lending is only 'good to have' and he lacks it (his AI/consumer/marketplace background is transferable); (2) 'Bachelor's/MBA from a TIER-I college' is a stated REQUIREMENT — his BBA is from Chandigarh University (not Tier-I / IIT/IIM/BITS), which is a real pedigree filter and the main risk (same issue as GoodScore). NET: one of his strongest AI-role fits on the merits — apply; the Claude/LLM story is exactly what they want. Only real risk is the Tier-I-college screen, which is out of his control."
     }
   ]
 }
