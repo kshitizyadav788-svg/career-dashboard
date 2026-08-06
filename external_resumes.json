@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T16:59:23Z",
+  "updated": "2026-08-06T18:04:21Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -466,6 +466,15 @@
       "resume": "resumes/DeHaat-AI Product Manager.docx",
       "matchScore": 90,
       "why": "Pasted JD (DeHaat — agritech; AI Product Manager owning AI-powered features across B2B/B2C farmer platforms: assistants, recommendation engines, workflow automation, lending). Built on the new 3-role base. STRONG AI FIT — 90% (18/20). The JD is almost custom-fit to his AI profile: it explicitly wants 'build shoulder-to-shoulder with engineering USING CLAUDE' and 'hands-on building/shipping AI-powered products using LLMs (Claude or similar)' — his new base showcases exactly this (ships features via CLAUDE CODE, shipped a production GenAI layer + RAG assistant/chatbot, LLM APIs, prompt engineering, a preference-capture ranking/recommendation model, workflow automation cutting ops 80%). Also covers: AI-powered features end-to-end; engineering-ready PRDs/specs/user stories/acceptance criteria; user research & customer discovery ('get out of the building'); success metrics + experiments/A-B; data-driven decisions; decision/trade-off documentation ('clean paper trail'); cross-functional (leadership/design/data science/engineering); bias for execution; communication. Experience bar (2-4 yrs) is below him (5+). TWO HONEST GAPS (the 2 misses): (1) DOMAIN — agritech/fintech/lending is only 'good to have' and he lacks it (his AI/consumer/marketplace background is transferable); (2) 'Bachelor's/MBA from a TIER-I college' is a stated REQUIREMENT — his BBA is from Chandigarh University (not Tier-I / IIT/IIM/BITS), which is a real pedigree filter and the main risk (same issue as GoodScore). NET: one of his strongest AI-role fits on the merits — apply; the Claude/LLM story is exactly what they want. Only real risk is the Tier-I-college screen, which is out of his control."
+    },
+    {
+      "id": "EXT52",
+      "title": "Product Manager II - Storefront & Growth (TOING)",
+      "co": "Swiggy",
+      "addedDate": "2026-08-06T17:35:00",
+      "resume": "resumes/Swiggy TOING-Product Manager II Growth.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Swiggy — TOING, an affordability-first food-ordering app for students & young professionals; PM II Storefront & Growth, BENGALURU hybrid). ONE OF HIS TOP FITS — 90% (18/20) — a B2C consumer-growth bullseye on the new 3-role base. Nearly every requirement is a direct hit: 4-5 yrs PM with 3+ in B2C (he is 5+, B2C EdTech); PROVEN MEASURABLE GROWTH across activation, engagement, retention & revenue (his core: 20% revenue, renewals/retention, CSAT 10->25% = engagement/aha, acquisition loops); 0-to-1-to-SCALE (his 0->1 app MVP then scale); deep consumer empathy; data-driven fluency in FUNNELS, A/B TESTING & product analytics; experimentation DNA (ship fast/iterate); AI-POWERED PERSONALIZATION & growth (his GenAI/RAG/personalization); cross-functional with product/design/eng/marketing/AI; storytelling. BONUS EMPATHY ANGLE: TOING targets STUDENTS and his EdTech is student-focused, so genuine consumer understanding. LOCATION Bengaluru = his #2 priority. TWO HONEST MISSES: (1) COHORTS — the JD wants fluency in 'cohorts'; formal cohort analysis is his documented open question (he does funnels/A-B/behavioral analysis, not formal cohorting) — deliberately NOT claimed; (2) FOOD-DELIVERY / quick-commerce domain — he lacks it, but it is NOT a stated requirement (B2C growth is the ask). NET: strong, high-priority apply — his B2C-growth + 0-to-1 + AI-personalization profile is exactly what TOING wants. Prep a cohort-analysis talking point (or note he uses funnels/behavioral analysis) in case it comes up."
     }
   ]
 }
