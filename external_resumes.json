@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T12:55:03Z",
+  "updated": "2026-08-06T16:15:23Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -439,6 +439,15 @@
       "matchScore": 100,
       "why": "Pasted JD (Google Cloud — PM for Workspace Admin Reporting & Insights / Business Insights Platform, BENGALURU). Now 100% (20/20) after Kshitiz correctly pointed out PlanetSpark IS a SaaS / software platform (cloud LMS + CRM + internal tooling delivered as a service to students & teachers) — he product-managed and shipped software within it 0->1, so claiming SaaS/software-platform experience is HONEST (added to experience_bank 2026-07-30, with the nuance that it is B2C SaaS, NOT B2B enterprise SaaS). He now honestly MEETS ALL MINIMUM QUALS: Bachelor s (BBA); 5 yrs PM; 2 yrs conception-to-launch/0->1; 2 yrs developing products within SaaS. Genuine adjacency to the product: enterprise REPORTING & INSIGHTS platform maps to his Power BI/KPI/dashboard + reporting-standards work + P&L tracker + internal platform/tooling + market/competitive analysis + cross-functional. STILL A STRETCH FOR TWO REASONS UNRELATED TO QUALS: (1) GOOGLE PM BAR IS ELITE & HYPER-COMPETITIVE — heavy preference for tier-1 pedigree and big-tech/enterprise-SCALE experience; his profile (5 yrs, EdTech, ~138K users, Chandigarh University) is below Google s typical screen. (2) His SaaS is B2C and his products are not Google-scale, while the PREFERRED quals lean enterprise-platform/horizontals and large, complex products. INTERVIEW FRAMING for SaaS: PlanetSpark is a cloud software platform (LMS, CRM, internal tools) delivered as a service; B2C, not B2B enterprise SaaS. NET: he qualifies on paper and the reporting adjacency is real — worth an aspirational application, ideally with a REFERRAL (the biggest lever at Google) — but do not prioritize over his right-sized 90-100% fits (Lowe s, upGrad, GoodScore, Noise, MiQ, Dario, Solifi).",
       "updatedDate": "2026-07-30T04:05:00"
+    },
+    {
+      "id": "EXT49",
+      "title": "Product Manager (AI Neobank)",
+      "co": "KIRA / BJAK",
+      "addedDate": "2026-07-30T04:40:00",
+      "resume": "resumes/KIRA-Product Manager.docx",
+      "matchScore": 95,
+      "why": "Pasted JD (KIRA / BJAK — Southeast Asia AI Neobank; PM role, REMOTE but INDIA-based required — he qualifies, Gurugram). FIRST resume tailored on the NEW 3-role base (build_resume.py was restructured to the real Senior Product Analyst -> Assistant PM -> Product Manager progression with richer verified content: 150K enrolled/30K DAU, RAG chatbot, CSAT 10->25%, squad 8+2, wallet/loyalty, Claude Code). Strong CRAFT fit: 100% keyword coverage (20/20). The role is deliberately craft-focused with LOOSE requirements, and it maps to his genuine strengths: owns product areas end-to-end; simplifies complex workflows into usable journeys (his funnel re-architecture); ships fast + iterates post-launch; metrics/experiments/user research; trade-offs across speed/UX/business/compliance/ops; cross-functional incl. compliance; payments; high ownership with limited guidance. NOTABLY, the JD's own values are his ethos: 'honest about what changed because of your work vs wider team effort' and 'do not exaggerate business impact without understanding attribution' — he has real attribution (UTM/CRM) and honest metrics. DOMAIN: the ask 'fintech, insurance, payments, consumer apps, OR high-growth products' is an OR he SATISFIES via consumer apps + high-growth (fintech is a 'strong advantage', NOT required); scored 95 not 100 only to honestly reflect that it IS a fintech neobank and his fintech-specific domain is thin (payments/wallet adjacency is real, but not neobank/insurance/investing domain) — a soft interview area, not a gate. NET: strong, applyable fit — remote-India + craft + values alignment; apply."
     }
   ]
 }
