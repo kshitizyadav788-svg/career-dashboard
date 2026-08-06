@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T18:04:21Z",
+  "updated": "2026-08-06T18:20:05Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -475,6 +475,15 @@
       "resume": "resumes/Swiggy TOING-Product Manager II Growth.docx",
       "matchScore": 90,
       "why": "Pasted JD (Swiggy — TOING, an affordability-first food-ordering app for students & young professionals; PM II Storefront & Growth, BENGALURU hybrid). ONE OF HIS TOP FITS — 90% (18/20) — a B2C consumer-growth bullseye on the new 3-role base. Nearly every requirement is a direct hit: 4-5 yrs PM with 3+ in B2C (he is 5+, B2C EdTech); PROVEN MEASURABLE GROWTH across activation, engagement, retention & revenue (his core: 20% revenue, renewals/retention, CSAT 10->25% = engagement/aha, acquisition loops); 0-to-1-to-SCALE (his 0->1 app MVP then scale); deep consumer empathy; data-driven fluency in FUNNELS, A/B TESTING & product analytics; experimentation DNA (ship fast/iterate); AI-POWERED PERSONALIZATION & growth (his GenAI/RAG/personalization); cross-functional with product/design/eng/marketing/AI; storytelling. BONUS EMPATHY ANGLE: TOING targets STUDENTS and his EdTech is student-focused, so genuine consumer understanding. LOCATION Bengaluru = his #2 priority. TWO HONEST MISSES: (1) COHORTS — the JD wants fluency in 'cohorts'; formal cohort analysis is his documented open question (he does funnels/A-B/behavioral analysis, not formal cohorting) — deliberately NOT claimed; (2) FOOD-DELIVERY / quick-commerce domain — he lacks it, but it is NOT a stated requirement (B2C growth is the ask). NET: strong, high-priority apply — his B2C-growth + 0-to-1 + AI-personalization profile is exactly what TOING wants. Prep a cohort-analysis talking point (or note he uses funnels/behavioral analysis) in case it comes up."
+    },
+    {
+      "id": "EXT53",
+      "title": "Product Manager I - Campaigns (Messaging)",
+      "co": "MoEngage",
+      "addedDate": "2026-08-06T18:05:00",
+      "resume": "resumes/MoEngage-Product Manager I Campaigns.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (MoEngage — insights-led customer-engagement / Martech B2B SaaS; PM-I on the Campaigns product = messaging across Push/Email/SMS/WhatsApp/RCS/In-App; BENGALURU hybrid). Built on the new 3-role base. 90% (18/20). STRONG on exactly what the JD emphasizes most: END-TO-END OWNERSHIP (discovery -> shipped -> ADOPTED) and 'ADOPTION IS THE METRIC' (his CSAT 10->25%, retention, enablement, in-app nudges); relentless CUSTOMER RESEARCH via support threads (he built an omnichannel support helpdesk with ticketing); opportunity mining; decision-anchored PRDs/one-pagers; edge cases/trade-offs; unblocking engineering; VoC; clear writing. GENUINE BONUS MATCH — MESSAGING CHANNELS: pulled his real omnichannel work from experience_bank (WhatsApp via Gupshup/Venera, email, in-app chat, and in-product nudge/renewal engine) — hands-on across WhatsApp/in-app/email/push-style nudges, directly relevant to a Campaigns/messaging product; plus API-driven/platform products. TWO HONEST GAPS (the 2 misses): (1) 'B2B SaaS' — the JD requires '3+ years in a B2B SaaS ENVIRONMENT' and his is B2C SaaS (PlanetSpark is a genuine SaaS/software platform, but B2C not B2B); claimed 'SaaS/platform' honestly, did NOT claim 'B2B SaaS' — this is the main mismatch; (2) MARTECH / marketing-automation domain — only 'bonus points', he lacks the specific martech-product background (CRM/campaigns-adjacent, not a martech SaaS). MILD: it is a PM-I role ('a few years in') and he is 5+ yrs, so slightly over-levelled (3+ is the floor, he clears it). NET: solid, applyable fit — his adoption-ownership + real messaging-channel experience are strong hooks; be upfront that his SaaS is B2C, and lean on the messaging/omnichannel + adoption story."
     }
   ]
 }
