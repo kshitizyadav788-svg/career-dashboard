@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T16:15:23Z",
+  "updated": "2026-08-06T16:18:03Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -448,6 +448,15 @@
       "resume": "resumes/KIRA-Product Manager.docx",
       "matchScore": 95,
       "why": "Pasted JD (KIRA / BJAK — Southeast Asia AI Neobank; PM role, REMOTE but INDIA-based required — he qualifies, Gurugram). FIRST resume tailored on the NEW 3-role base (build_resume.py was restructured to the real Senior Product Analyst -> Assistant PM -> Product Manager progression with richer verified content: 150K enrolled/30K DAU, RAG chatbot, CSAT 10->25%, squad 8+2, wallet/loyalty, Claude Code). Strong CRAFT fit: 100% keyword coverage (20/20). The role is deliberately craft-focused with LOOSE requirements, and it maps to his genuine strengths: owns product areas end-to-end; simplifies complex workflows into usable journeys (his funnel re-architecture); ships fast + iterates post-launch; metrics/experiments/user research; trade-offs across speed/UX/business/compliance/ops; cross-functional incl. compliance; payments; high ownership with limited guidance. NOTABLY, the JD's own values are his ethos: 'honest about what changed because of your work vs wider team effort' and 'do not exaggerate business impact without understanding attribution' — he has real attribution (UTM/CRM) and honest metrics. DOMAIN: the ask 'fintech, insurance, payments, consumer apps, OR high-growth products' is an OR he SATISFIES via consumer apps + high-growth (fintech is a 'strong advantage', NOT required); scored 95 not 100 only to honestly reflect that it IS a fintech neobank and his fintech-specific domain is thin (payments/wallet adjacency is real, but not neobank/insurance/investing domain) — a soft interview area, not a gate. NET: strong, applyable fit — remote-India + craft + values alignment; apply."
+    },
+    {
+      "id": "EXT50",
+      "title": "Growth Product Manager (noon Minutes)",
+      "co": "noon",
+      "addedDate": "2026-07-30T05:05:00",
+      "resume": "resumes/noon-Growth Product Manager.docx",
+      "matchScore": 75,
+      "why": "Pasted JD (noon Minutes — quick-commerce / 15-min e-grocery, UAE & KSA; Growth PM owning growth-intelligence & ML-powered customer optimisation). Built on the new 3-role base. 75% (15/20) — a MEDIUM fit: genuinely strong on GROWTH but with real DATA-SCIENCE/ML depth gaps. STRONG (his core): growth levers — acquisition, conversion, retention, and PROMOTIONAL MECHANICS (renewal engine/nudges/early-bird/loyalty); data-driven growth tooling & reporting (SQL, Power BI dashboards); customer SEGMENTATION; EXPERIMENTATION/A-B; personalised promotions/personalization; define metrics, run experiments, iterate; cross-functional with data science/engineering/commercial; marketplace (a 'plus'); ML-powered product FEATURES (his preference-capture ranking model, recommendations, RAG). REAL GAPS (the misses + caveats, honest): (1) formal ML DEPTH — 'propensity modelling' and 'budget optimisation' and owning 'ML-powered SYSTEMS' — he has ML at a PRODUCT level (ranking/recommendation/segmentation features) but NOT hands-on ML modelling/optimisation systems; (2) HANDS-ON PYTHON — the keyword matched on word-presence but his Python is BASIC; the JD explicitly wants 'hands-on with Python', so this is effectively a gap (SQL is strong); (3) QUICK-COMMERCE / E-GROCERY domain — 'a plus', which he lacks (marketplace partially covers). LOCATION: noon Minutes is UAE/KSA (Middle East) — role location not stated; if Dubai/Riyadh it needs relocation/work-auth; confirm before applying (noon does also have India teams). NET: honest medium fit — his growth-lever strength is a real draw, but the ML-modelling + hands-on-Python + quick-commerce gaps make it a stretch vs his 90-100% right-sized fits. Apply if targeting quick-commerce growth and okay being upfront that his ML is product-level and Python is basic."
     }
   ]
 }
