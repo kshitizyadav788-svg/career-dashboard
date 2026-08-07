@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T10:50:17Z",
+  "updated": "2026-08-07T10:58:33Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -547,6 +547,15 @@
       "resume": "resumes/NimbusPost-Product Manager.docx",
       "matchScore": 85,
       "why": "Pasted JD (NimbusPost — tech-enabled multi-channel shipping-automation platform for eCommerce merchants; B2B logistics SaaS; PM role). Built on the new 3-role base. 85% (17/20) on CRAFT — a medium-strong fit with one real experience hurdle. STRONG matches (his craft + AI edge): product roadmap & ruthless prioritization; end-to-end execution (ideation->launch); feature rollouts/delivery quality & speed; customer needs/feedback/usage -> requirements; AI/ML IN PRODUCT — PROTOTYPE & SHIP (his GenAI/RAG/Claude strength, a named responsibility); data-driven decisions (metrics/hypotheses/impact); stakeholder alignment (eng/design/GTM/leadership); build for scale & product processes; high ownership + analytical rigor; technically fluent (systems & AI); MENTORED/LED junior PMs & cross-functional members (his squad of 8 + team-of-8 as APM); marketplace & SaaS. THREE HONEST GAPS (the misses): (1) 7+ YEARS — the 'About you' asks for 7 or more years and he has 5+; this is the MAIN HURDLE (a real experience-bar shortfall, not fixable by tailoring); (2) LOGISTICS / SUPPLY-CHAIN / FREIGHT tech — 'a plus', but it is the product's whole domain and he has zero (his experience_bank explicitly flags logistics/supply-chain as a gap); (3) B2B — he's B2C, BUT their requirement is 'B2B SaaS OR marketplace' and his two-sided MARKETPLACE satisfies the OR, so B2B alone is not disqualifying. NET: honest medium-strong fit — his AI-in-product + roadmap/execution + mentoring craft is genuinely strong, but the 7+-yr bar (he's 5) plus zero logistics domain make it a stretch vs his right-sized 90-100% fits. Apply if okay being ~2 yrs under the stated experience and upfront about no logistics background; lead with the AI/ML-in-product + scale + mentoring story."
+    },
+    {
+      "id": "EXT61",
+      "title": "Lead, Product Management & Innovation (AIS)",
+      "co": "Bain & Company",
+      "addedDate": "2026-08-06T22:45:00",
+      "resume": "resumes/Bain-Lead Product Management Innovation.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Bain & Company — Lead, Product Management & Innovation within the AI, Insights & Solutions (AIS) team; New Delhi; a CONSULTING-firm client-facing product-innovation role). Built on the new 3-role base. 90% (18/20) on CRAFT — a strong product-innovation + GenAI match, with a consulting-context caveat. STRONG matches: product management & innovation; human-centered design & design thinking; user research/needs/pain-points; journey mapping & co-creation; prototyping/testing/validation; POCs & MVPs (his 0->1 MVP + LPP); product requirements/user stories/backlog prioritization; roadmap/product planning/tradeoffs; agile/Scrum ceremonies; Lean Startup/iterative; and notably GenAI-POWERED PRODUCT-DEVELOPMENT TOOLS (Claude Code, LLMs) + generative AI / emerging technologies — a named skill and his genuine edge; insights across user/technical-feasibility/business-value; translate technical->non-technical; cross-functional (eng/design/research); software product development; startup/entrepreneurial; ambiguity. Experience bar is LOW (3-5 yrs min) and he fits; Bachelor's satisfied (BBA). TWO HONEST GAPS (the misses): (1) FOUR-LENSES FRAMEWORK (feasibility/viability/desirability/strategy) — a specific Bain/design framework he doesn't know by name (he DOES balance user-needs/feasibility/business-value, the underlying concept, but not the named framework); (2) CONSULTING / CLIENT-FACING — this is the KEY CONTEXT GAP: it's Bain, embedded in a consulting delivery model working alongside general consultants and CLIENTS; he has NO consulting background and is an internal product PM, not client-facing. SOFT PREFERRED gaps: top-tier CONSULTING experience 'preferred' (he has none); specific GenAI tools V0/Lovable/Synthetic Users (he uses Claude Code, adjacent); ML pipelines (no). NET: strong on product-innovation + GenAI craft and the low experience bar helps, but it's a prestigious consulting-firm client-facing role and his lack of consulting/client-facing background is the real hurdle (design-thinking-workshop facilitation + four-lenses are learnable). Apply if drawn to Bain/consulting-adjacent product work; lead hard on the GenAI-product-innovation + HCD + rapid-prototyping story and be candid about no consulting background."
     }
   ]
 }
