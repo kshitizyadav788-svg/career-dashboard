@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T10:36:22Z",
+  "updated": "2026-08-07T10:50:17Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -538,6 +538,15 @@
       "resume": "resumes/Airblack Zudo-Product Manager.docx",
       "matchScore": 85,
       "why": "Pasted JD (Airblack — Zudo, India fastest-growing skilling/content app, 10M downloads/1M MAU/100% QoQ; PM role, GURUGRAM on-site, 4-10 yrs, market CTC + meaningful ESOPs). Built on the new 3-role base. STRONG FIT — 85% (17/20) and a near-domain-match. Why strong: Zudo is a CONSUMER EDTECH / LEARNING-CONTENT app (his exact domain — EdTech is explicitly in their preferred list) and it is GURUGRAM (his #1 location) + AI-FIRST + hyper-growth. His genuine matches map almost 1:1: AI-FIRST FEATURES they name — personalized learning, smart recommendations, CONVERSATIONAL TUTORS (his RAG chatbot!), automated assessments — via his GenAI layer, RAG assistant, ranking/recommendation model, personalization; NLP/LLM applications; 0->1 & scaling; hyper-growth metrics (user growth/engagement/RETENTION); FREE-TO-PAID CONVERSION (his funnel + LPP); CAC/LTV/PLG (acquisition loops + unit economics); experiments (A/B, hypothesis-driven); matching/ranking & discovery; CROSS-FUNCTIONAL POD LEADERSHIP (his squad of 8 eng + 2 QA); UNIT ECONOMICS / LTV:CAC (his advisor P&L tracker); mobile-first; extreme ownership. THREE HONEST GAPS (the misses): (1) CREATOR TOOLS / AI content workflows — Zudo is a creator/marketplace-economy play (creator incentives, quality scoring) and he lacks creator-tooling; (2) MIXPANEL / AMPLITUDE — the JD wants expertise in these; he uses GA4/Power BI/SQL (SQL he has); (3) SCALE TO MILLIONS OF MAU — they are 1M->5M MAU; his platform is ~150K enrolled / 30K DAU, so the SCALE MAGNITUDE is below their bar (real gap — he scaled a product but not to millions of MAU). SOFT PREFERENCES he misses: TIER-1 education (BBA Chandigarh Univ, not Tier-1) and ex-entrepreneur/ex-SWE (he's a career PM) — both 'strong preference', not hard requirements. NET: strong, high-priority apply — EdTech + Gurugram + AI-first + growth/unit-economics is a bullseye; be ready to address the scale-magnitude (30K DAU vs millions) and creator-tools/Mixpanel gaps honestly, and know Tier-1-pedigree is their stated preference."
+    },
+    {
+      "id": "EXT60",
+      "title": "Product Manager (logistics/shipping SaaS)",
+      "co": "NimbusPost",
+      "addedDate": "2026-08-06T22:10:00",
+      "resume": "resumes/NimbusPost-Product Manager.docx",
+      "matchScore": 85,
+      "why": "Pasted JD (NimbusPost — tech-enabled multi-channel shipping-automation platform for eCommerce merchants; B2B logistics SaaS; PM role). Built on the new 3-role base. 85% (17/20) on CRAFT — a medium-strong fit with one real experience hurdle. STRONG matches (his craft + AI edge): product roadmap & ruthless prioritization; end-to-end execution (ideation->launch); feature rollouts/delivery quality & speed; customer needs/feedback/usage -> requirements; AI/ML IN PRODUCT — PROTOTYPE & SHIP (his GenAI/RAG/Claude strength, a named responsibility); data-driven decisions (metrics/hypotheses/impact); stakeholder alignment (eng/design/GTM/leadership); build for scale & product processes; high ownership + analytical rigor; technically fluent (systems & AI); MENTORED/LED junior PMs & cross-functional members (his squad of 8 + team-of-8 as APM); marketplace & SaaS. THREE HONEST GAPS (the misses): (1) 7+ YEARS — the 'About you' asks for 7 or more years and he has 5+; this is the MAIN HURDLE (a real experience-bar shortfall, not fixable by tailoring); (2) LOGISTICS / SUPPLY-CHAIN / FREIGHT tech — 'a plus', but it is the product's whole domain and he has zero (his experience_bank explicitly flags logistics/supply-chain as a gap); (3) B2B — he's B2C, BUT their requirement is 'B2B SaaS OR marketplace' and his two-sided MARKETPLACE satisfies the OR, so B2B alone is not disqualifying. NET: honest medium-strong fit — his AI-in-product + roadmap/execution + mentoring craft is genuinely strong, but the 7+-yr bar (he's 5) plus zero logistics domain make it a stretch vs his right-sized 90-100% fits. Apply if okay being ~2 yrs under the stated experience and upfront about no logistics background; lead with the AI/ML-in-product + scale + mentoring story."
     }
   ]
 }
