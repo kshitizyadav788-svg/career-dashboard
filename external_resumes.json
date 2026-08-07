@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T09:45:03Z",
+  "updated": "2026-08-07T09:50:44Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -511,6 +511,15 @@
       "resume": "resumes/Hero Vired-Product Manager.docx",
       "matchScore": 90,
       "why": "Pasted JD (Hero Vired — Hero Group EdTech; APM/PM, EXPERIENCE 3-5 yrs, GURUGRAM SECTOR 42, work-from-office). Built on the new 3-role base. TOP-TIER FIT — arguably his single best of the whole process (89% computed; the only 2 misses are nice-to-have 'plus' items, so effectively ~95% on must-haves). Why it is near-perfect: (1) DOMAIN = EDTECH — his exact background (PlanetSpark is a learning platform with student & teacher LMS, courses, student experience) maps 1:1 to Hero Vired's learning platform/LMS/student-experience; (2) LOCATION = GURUGRAM Sector 42 = his #1 priority (WFO, fine); (3) they explicitly want BUILD PROTOTYPES WITH CLAUDE + hands-on CLAUDE CODE / CODEX — his new-base signature (ships features via Claude Code; Codex in skills); (4) SUCCESS METRICS they name — activation, engagement, conversion, retention, referrals, CSAT, NPS — are literally his numbers (CSAT 10->25%, teacher NPS -20->+40, retention/renewals, conversion, acquisition loops); (5) GROWTH/CONVERSION FUNNELS = his core. Also covers: product strategy & roadmap; PRDs/user stories/specs from user research; ship end-to-end with eng/design; backlog prioritization; user research (students/partners/stakeholders); data-driven prioritization; roadmap/trade-off comms; growth/marketing-led products. Clears all quals: 3+ yrs PM with direct ownership (he's 5+), Bachelor's (BBA; MBA not mandatory). TWO MISSES, BOTH 'PLUS' (not required): (1) B2B/enterprise SaaS + ERP — he lacks ERP/enterprise-SaaS specifically (his LMS is B2C; enterprise/university ERP is one of several areas, and enterprise is a 'plus'); (2) specific tools Freshdesk/Microsoft Clarity/Google Search Console (he has GA4; these SEO/support tools are a 'plus'). NET: HIGHEST-PRIORITY APPLY — EdTech + Gurugram + Claude Code + exact-metric match is as close to a bullseye as it gets for him. Same-domain company; his story needs almost no stretch."
+    },
+    {
+      "id": "EXT57",
+      "title": "Product Manager - Retail & Insights",
+      "co": "dunnhumby",
+      "addedDate": "2026-08-06T20:20:00",
+      "resume": "resumes/dunnhumby-Product Manager Retail Insights.docx",
+      "matchScore": 89,
+      "why": "Pasted JD (dunnhumby — Customer Data Science; PM for Retail & Insights: user-centric insight/analytics products for retailers + supplier/CPG clients, platform-first + API-first). NOTE: dunnhumby appeared earlier this cycle (a Retail Media role); this is a DIFFERENT role, and it is rebuilt on the NEW 3-role base per Kshitiz's redo-on-return rule. 89% (17/19) on transferable CRAFT — a medium-strong fit. GENUINELY TRANSFERABLE (matched): end-to-end user journey ownership (business question -> decision); DATA/ANALYTICS/INSIGHT/REPORTING products (his real SQL + Power BI reporting foundation, dashboards/KPIs, advisor P&L tracker = genuine insight/reporting analogues); API-first/APIs/integrations + data schemas/models (working knowledge — payment-gateway APIs, data/vendor integrations); PRDs/user stories/acceptance criteria & integration specs; problem framing/discovery; stakeholder management (business & technical); adoption/reliability/scalability; non-functional requirements (data quality/security/privacy — via verification/reporting); cross-functional with engineering/data-science/design; lifecycle discovery->implementation->monitoring; prioritization of large ambiguous initiatives; Agile/matrixed/distributed; communication. TWO HONEST GAPS (the misses): (1) DOMAIN — retail / customer data / CPG / market-measurement (DESIRABLE, not essential) — none; (2) EXTERNAL CLIENT-FACING enterprise work with retailer/supplier/CPG CLIENTS — his stakeholder experience is internal + B2C + vendor-partner, not external enterprise clients, and this role is heavily client-facing. ADDITIONAL: essential experience is 'min 5 yrs, 7+ PREFERRED' — he's at 5 (meets the floor, below the preferred). NET: honest medium-strong fit — his data/reporting/API/platform + end-to-end craft carries it, but it is an enterprise B2B client-facing data-science-platform role for retail/CPG, which is his softest area (external-client + retail domain + 7+ preferred). Apply if targeting enterprise data/insights product roles; be ready to speak to the client-facing and retail-domain gaps."
     }
   ]
 }
