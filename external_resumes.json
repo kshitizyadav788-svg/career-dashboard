@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T09:50:44Z",
+  "updated": "2026-08-07T10:25:22Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -520,6 +520,15 @@
       "resume": "resumes/dunnhumby-Product Manager Retail Insights.docx",
       "matchScore": 89,
       "why": "Pasted JD (dunnhumby — Customer Data Science; PM for Retail & Insights: user-centric insight/analytics products for retailers + supplier/CPG clients, platform-first + API-first). NOTE: dunnhumby appeared earlier this cycle (a Retail Media role); this is a DIFFERENT role, and it is rebuilt on the NEW 3-role base per Kshitiz's redo-on-return rule. 89% (17/19) on transferable CRAFT — a medium-strong fit. GENUINELY TRANSFERABLE (matched): end-to-end user journey ownership (business question -> decision); DATA/ANALYTICS/INSIGHT/REPORTING products (his real SQL + Power BI reporting foundation, dashboards/KPIs, advisor P&L tracker = genuine insight/reporting analogues); API-first/APIs/integrations + data schemas/models (working knowledge — payment-gateway APIs, data/vendor integrations); PRDs/user stories/acceptance criteria & integration specs; problem framing/discovery; stakeholder management (business & technical); adoption/reliability/scalability; non-functional requirements (data quality/security/privacy — via verification/reporting); cross-functional with engineering/data-science/design; lifecycle discovery->implementation->monitoring; prioritization of large ambiguous initiatives; Agile/matrixed/distributed; communication. TWO HONEST GAPS (the misses): (1) DOMAIN — retail / customer data / CPG / market-measurement (DESIRABLE, not essential) — none; (2) EXTERNAL CLIENT-FACING enterprise work with retailer/supplier/CPG CLIENTS — his stakeholder experience is internal + B2C + vendor-partner, not external enterprise clients, and this role is heavily client-facing. ADDITIONAL: essential experience is 'min 5 yrs, 7+ PREFERRED' — he's at 5 (meets the floor, below the preferred). NET: honest medium-strong fit — his data/reporting/API/platform + end-to-end craft carries it, but it is an enterprise B2B client-facing data-science-platform role for retail/CPG, which is his softest area (external-client + retail domain + 7+ preferred). Apply if targeting enterprise data/insights product roles; be ready to speak to the client-facing and retail-domain gaps."
+    },
+    {
+      "id": "EXT58",
+      "title": "Product Manager - Greenfind (B2B marketplace, 0->1)",
+      "co": "Fitsol",
+      "addedDate": "2026-08-06T21:00:00",
+      "resume": "resumes/Greenfind Fitsol-Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Fitsol — Greenfind, a B2B marketplace for verified sustainable sourcing; PM owning the full product BOTH sides buy & sell, 0->1; GURUGRAM WFO; immediate joiners preferred). Built on the new 3-role base. Tailored 90% (18/20) — a BIG jump from 10% on the untailored master, showing the tailoring value. Strong transferable fit: TWO-SIDED MARKETPLACE 0->1 ownership (his students<->teachers marketplace); SELL-SIDE product = his real teacher/SUPPLY-SIDE tooling (onboarding, payout automation, listing/CRM, teacher NPS -20->+40) — a genuine analogue to 'supplier onboarding, listing quality, data structure'; BUY-SIDE = his funnel re-architecture with a preference-capture RANKING/MATCHING model and SELF-SERVE plan-based purchase (maps to search/matching/discoverability + PLG self-serve funnels); ORGANIC/CONTENT-LED GROWTH LOOPS (his Sparkline/Word Wisdom acquisition loops, 2,000+ leads/mo); user research (talking to both sides); category-creation & ambiguity (decisions with incomplete information); ship-fast with engineering; metrics across both sides with a line to REVENUE; high agency/ownership. Clears quals: 2+ yrs PM in startup (he's 5+, startup), GURUGRAM (his #1). TWO HONEST GAPS (the misses): (1) B2B — the marketplace is B2B and he is B2C (his supply-side/teacher analogue helps but he's not a B2B PM); (2) SEO + SUSTAINABLE-SOURCING domain — he does organic/content-led acquisition but not SEO specifically, and has zero sustainability/sourcing domain. NET: strong, applyable fit — Gurugram + two-sided-marketplace + 0->1 + supply-side-analogue carry it; be upfront that his marketplace is B2C and lean on the supply-side/matching/self-serve story. Note: immediate-joiner strongly preferred (his notice-period status matters here)."
     }
   ]
 }
