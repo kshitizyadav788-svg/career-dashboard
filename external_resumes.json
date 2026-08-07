@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-06T18:20:05Z",
+  "updated": "2026-08-07T05:45:21Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -484,6 +484,15 @@
       "resume": "resumes/MoEngage-Product Manager I Campaigns.docx",
       "matchScore": 90,
       "why": "Pasted JD (MoEngage — insights-led customer-engagement / Martech B2B SaaS; PM-I on the Campaigns product = messaging across Push/Email/SMS/WhatsApp/RCS/In-App; BENGALURU hybrid). Built on the new 3-role base. 90% (18/20). STRONG on exactly what the JD emphasizes most: END-TO-END OWNERSHIP (discovery -> shipped -> ADOPTED) and 'ADOPTION IS THE METRIC' (his CSAT 10->25%, retention, enablement, in-app nudges); relentless CUSTOMER RESEARCH via support threads (he built an omnichannel support helpdesk with ticketing); opportunity mining; decision-anchored PRDs/one-pagers; edge cases/trade-offs; unblocking engineering; VoC; clear writing. GENUINE BONUS MATCH — MESSAGING CHANNELS: pulled his real omnichannel work from experience_bank (WhatsApp via Gupshup/Venera, email, in-app chat, and in-product nudge/renewal engine) — hands-on across WhatsApp/in-app/email/push-style nudges, directly relevant to a Campaigns/messaging product; plus API-driven/platform products. TWO HONEST GAPS (the 2 misses): (1) 'B2B SaaS' — the JD requires '3+ years in a B2B SaaS ENVIRONMENT' and his is B2C SaaS (PlanetSpark is a genuine SaaS/software platform, but B2C not B2B); claimed 'SaaS/platform' honestly, did NOT claim 'B2B SaaS' — this is the main mismatch; (2) MARTECH / marketing-automation domain — only 'bonus points', he lacks the specific martech-product background (CRM/campaigns-adjacent, not a martech SaaS). MILD: it is a PM-I role ('a few years in') and he is 5+ yrs, so slightly over-levelled (3+ is the floor, he clears it). NET: solid, applyable fit — his adoption-ownership + real messaging-channel experience are strong hooks; be upfront that his SaaS is B2C, and lean on the messaging/omnichannel + adoption story."
+    },
+    {
+      "id": "EXT54",
+      "title": "Product Manager (posted as Fresher role)",
+      "co": "Nians",
+      "addedDate": "2026-08-06T18:35:00",
+      "resume": "resumes/Nians-Product Manager.docx",
+      "matchScore": 100,
+      "why": "Pasted JD (Nians — Product Manager, posted as a FRESHER / entry-level role for recent graduates). Built on Kshitiz s explicit request despite my recommendation to skip. 100% (18/18) on the listed skills — every requirement (requirements gathering & documentation, market/competitor research, working with designers & developers, feature definition & backlog prioritization, customer-feedback analysis, product performance/analytics/reports, sprint planning/testing/launches, stakeholder coordination, PDLC, Agile/Scrum, Jira/Notion/Excel/Sheets, SQL, UI/UX, wireframing, ownership) is basic PM craft he far exceeds. IMPORTANT CAVEAT (level, not skills): this is an entry-level FRESHER role ( excellent opportunity for recent graduates ) and he has 5+ years — he is heavily OVER-QUALIFIED. The resume honestly shows his real 5+ years (no fresher pretence); it will read as strongly-qualified but likely trigger over-qualification rejection, and the pay would be a fresher salary (well below his Rs 10.75 LPA). Recommended he skip unless he has a specific reason; built at his request. Resume is honest and 100% skill-matched, but the fit issue is LEVEL/pay, which no resume can resolve. If he does pursue it, better to reach a hiring manager directly and be upfront that he s an experienced PM."
     }
   ]
 }
