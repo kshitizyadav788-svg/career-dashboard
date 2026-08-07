@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T09:39:41Z",
+  "updated": "2026-08-07T09:45:03Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -502,6 +502,15 @@
       "resume": "resumes/TravClan-Product Manager.docx",
       "matchScore": 80,
       "why": "Pasted JD (TravClan — B2B travel-tech startup, INR 1000cr+ GMV; PM owning a product like Flight/Hotel/Holiday; Delhi/Connaught Place; 6-DAY WEEK; CTC Rs 21-35 LPA — a big jump from his 10.75). Built on the new 3-role base. 80% (16/20). GENUINE STANDOUT MATCH — the JD is fixated on BUILD-WITH-AI YOURSELF: prototype flows/internal tools/automations using AI coding tools (Claude, Cursor, Lovable, Replit), 'let me build a quick prototype' as default over PRD, ship working software independently — and his NEW base literally showcases this ('ships features via CLAUDE CODE'). Strong matches: build-with-AI (Claude Code) idea->working-prototype-yourself; AI-automated workflows/automations; business ownership of KPIs (revenue/growth/retention); MVP/iterative; business-logic-first product rules (pricing/refunds); hands-on with engineering on integration debugging & vendor data quality; data-driven prioritization (funnels/retention/failure rates); vendor/supplier & stakeholder communication; direct customer/escalation interaction; product docs & user stories; UI/UX prototypes via AI mockups; hands-on execution; startup PM (3-6 yrs, he's 5+). FOUR HONEST GAPS (the misses): (1) TRAVEL DOMAIN (flights/hotels/holidays, supplier terms) — none; (2) building 'AI AGENTS' as products (auto-reconciling/auto-drafting agents) — he USES agentic tooling (Claude Code) and does multi-step automation, but hasn't built AI-agent products, so 'agents' left unclaimed; (3) B2B — he's B2C (advisor/teacher-facing tools are B2B-ish but he's not a B2B PM); (4) SALES / ACCOUNT MANAGEMENT customer interaction — he does sales-enablement/CRM + escalations, not account management. LIFESTYLE FLAGS for him: 6-day working week (Saturdays), Delhi CP location (he's Gurugram — NCR, commutable but not Gurgaon), long startup hours. Comp is a strong draw (21-35 LPA). NET: strong AI-build fit and a real comp upgrade — apply if okay with 6-day week + Delhi; his Claude-Code/build-with-AI story is exactly their non-negotiable, and travel domain is learnable."
+    },
+    {
+      "id": "EXT56",
+      "title": "Associate Product Manager / Product Manager (EdTech)",
+      "co": "Hero Vired",
+      "addedDate": "2026-08-06T19:45:00",
+      "resume": "resumes/Hero Vired-Product Manager.docx",
+      "matchScore": 90,
+      "why": "Pasted JD (Hero Vired — Hero Group EdTech; APM/PM, EXPERIENCE 3-5 yrs, GURUGRAM SECTOR 42, work-from-office). Built on the new 3-role base. TOP-TIER FIT — arguably his single best of the whole process (89% computed; the only 2 misses are nice-to-have 'plus' items, so effectively ~95% on must-haves). Why it is near-perfect: (1) DOMAIN = EDTECH — his exact background (PlanetSpark is a learning platform with student & teacher LMS, courses, student experience) maps 1:1 to Hero Vired's learning platform/LMS/student-experience; (2) LOCATION = GURUGRAM Sector 42 = his #1 priority (WFO, fine); (3) they explicitly want BUILD PROTOTYPES WITH CLAUDE + hands-on CLAUDE CODE / CODEX — his new-base signature (ships features via Claude Code; Codex in skills); (4) SUCCESS METRICS they name — activation, engagement, conversion, retention, referrals, CSAT, NPS — are literally his numbers (CSAT 10->25%, teacher NPS -20->+40, retention/renewals, conversion, acquisition loops); (5) GROWTH/CONVERSION FUNNELS = his core. Also covers: product strategy & roadmap; PRDs/user stories/specs from user research; ship end-to-end with eng/design; backlog prioritization; user research (students/partners/stakeholders); data-driven prioritization; roadmap/trade-off comms; growth/marketing-led products. Clears all quals: 3+ yrs PM with direct ownership (he's 5+), Bachelor's (BBA; MBA not mandatory). TWO MISSES, BOTH 'PLUS' (not required): (1) B2B/enterprise SaaS + ERP — he lacks ERP/enterprise-SaaS specifically (his LMS is B2C; enterprise/university ERP is one of several areas, and enterprise is a 'plus'); (2) specific tools Freshdesk/Microsoft Clarity/Google Search Console (he has GA4; these SEO/support tools are a 'plus'). NET: HIGHEST-PRIORITY APPLY — EdTech + Gurugram + Claude Code + exact-metric match is as close to a bullseye as it gets for him. Same-domain company; his story needs almost no stretch."
     }
   ]
 }
