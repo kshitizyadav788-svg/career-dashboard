@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T05:45:21Z",
+  "updated": "2026-08-07T09:39:41Z",
   "resumes": [
     {
       "id": "EXT1",
@@ -493,6 +493,15 @@
       "resume": "resumes/Nians-Product Manager.docx",
       "matchScore": 100,
       "why": "Pasted JD (Nians — Product Manager, posted as a FRESHER / entry-level role for recent graduates). Built on Kshitiz s explicit request despite my recommendation to skip. 100% (18/18) on the listed skills — every requirement (requirements gathering & documentation, market/competitor research, working with designers & developers, feature definition & backlog prioritization, customer-feedback analysis, product performance/analytics/reports, sprint planning/testing/launches, stakeholder coordination, PDLC, Agile/Scrum, Jira/Notion/Excel/Sheets, SQL, UI/UX, wireframing, ownership) is basic PM craft he far exceeds. IMPORTANT CAVEAT (level, not skills): this is an entry-level FRESHER role ( excellent opportunity for recent graduates ) and he has 5+ years — he is heavily OVER-QUALIFIED. The resume honestly shows his real 5+ years (no fresher pretence); it will read as strongly-qualified but likely trigger over-qualification rejection, and the pay would be a fresher salary (well below his Rs 10.75 LPA). Recommended he skip unless he has a specific reason; built at his request. Resume is honest and 100% skill-matched, but the fit issue is LEVEL/pay, which no resume can resolve. If he does pursue it, better to reach a hiring manager directly and be upfront that he s an experienced PM."
+    },
+    {
+      "id": "EXT55",
+      "title": "Product Manager (B2B Travel Tech, build-with-AI)",
+      "co": "TravClan",
+      "addedDate": "2026-08-06T19:15:00",
+      "resume": "resumes/TravClan-Product Manager.docx",
+      "matchScore": 80,
+      "why": "Pasted JD (TravClan — B2B travel-tech startup, INR 1000cr+ GMV; PM owning a product like Flight/Hotel/Holiday; Delhi/Connaught Place; 6-DAY WEEK; CTC Rs 21-35 LPA — a big jump from his 10.75). Built on the new 3-role base. 80% (16/20). GENUINE STANDOUT MATCH — the JD is fixated on BUILD-WITH-AI YOURSELF: prototype flows/internal tools/automations using AI coding tools (Claude, Cursor, Lovable, Replit), 'let me build a quick prototype' as default over PRD, ship working software independently — and his NEW base literally showcases this ('ships features via CLAUDE CODE'). Strong matches: build-with-AI (Claude Code) idea->working-prototype-yourself; AI-automated workflows/automations; business ownership of KPIs (revenue/growth/retention); MVP/iterative; business-logic-first product rules (pricing/refunds); hands-on with engineering on integration debugging & vendor data quality; data-driven prioritization (funnels/retention/failure rates); vendor/supplier & stakeholder communication; direct customer/escalation interaction; product docs & user stories; UI/UX prototypes via AI mockups; hands-on execution; startup PM (3-6 yrs, he's 5+). FOUR HONEST GAPS (the misses): (1) TRAVEL DOMAIN (flights/hotels/holidays, supplier terms) — none; (2) building 'AI AGENTS' as products (auto-reconciling/auto-drafting agents) — he USES agentic tooling (Claude Code) and does multi-step automation, but hasn't built AI-agent products, so 'agents' left unclaimed; (3) B2B — he's B2C (advisor/teacher-facing tools are B2B-ish but he's not a B2B PM); (4) SALES / ACCOUNT MANAGEMENT customer interaction — he does sales-enablement/CRM + escalations, not account management. LIFESTYLE FLAGS for him: 6-day working week (Saturdays), Delhi CP location (he's Gurugram — NCR, commutable but not Gurgaon), long startup hours. Comp is a strong draw (21-35 LPA). NET: strong AI-build fit and a real comp upgrade — apply if okay with 6-day week + Delhi; his Claude-Code/build-with-AI story is exactly their non-negotiable, and travel domain is learnable."
     }
   ]
 }
