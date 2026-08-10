@@ -564,7 +564,8 @@
       "addedDate": "2026-08-10T14:00:00",
       "resume": "resumes/AIFirst-AI-First-Product-Manager.docx",
       "matchScore": 100,
-      "why": "His strongest domain: ships production AI end-to-end with Claude Code, built a RAG-based support chatbot (FRT 4min to <10s, escalations ~300 to <50) and a production GenAI layer, and works with LLM APIs, prompt engineering and workflow automation daily. Tailored to lead AI-first (LLMs, AI agents, RAG, ML concepts, experimentation) while keeping business-outcome proof (20% revenue, 25% ARPU, Rs70L renewals, advisor P&L 50 to 125). 100% keyword-coverage vs 18 curated JD must-haves; one full page (95% fill)."
+      "why": "His strongest domain: ships production AI end-to-end with Claude Code, built a RAG-based support chatbot (FRT 4min to <10s, escalations ~300 to <50) and a production GenAI layer, and works with LLM APIs, prompt engineering and workflow automation daily. Tailored to lead AI-first (LLMs, AI agents, RAG, ML concepts, experimentation) while keeping business-outcome proof (20% revenue, 25% ARPU, Rs70L renewals, advisor P&L 50 to 125). 100% keyword-coverage vs 18 curated JD must-haves; one full page (95% fill).",
+      "coverLetter": "resumes/AIFirst-Cover-Letter.docx"
     }
   ]
 }
