@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T10:58:33Z",
+  "updated": "2026-08-10",
   "resumes": [
     {
       "id": "EXT1",
@@ -556,6 +556,15 @@
       "resume": "resumes/Bain-Lead Product Management Innovation.docx",
       "matchScore": 90,
       "why": "Pasted JD (Bain & Company — Lead, Product Management & Innovation within the AI, Insights & Solutions (AIS) team; New Delhi; a CONSULTING-firm client-facing product-innovation role). Built on the new 3-role base. 90% (18/20) on CRAFT — a strong product-innovation + GenAI match, with a consulting-context caveat. STRONG matches: product management & innovation; human-centered design & design thinking; user research/needs/pain-points; journey mapping & co-creation; prototyping/testing/validation; POCs & MVPs (his 0->1 MVP + LPP); product requirements/user stories/backlog prioritization; roadmap/product planning/tradeoffs; agile/Scrum ceremonies; Lean Startup/iterative; and notably GenAI-POWERED PRODUCT-DEVELOPMENT TOOLS (Claude Code, LLMs) + generative AI / emerging technologies — a named skill and his genuine edge; insights across user/technical-feasibility/business-value; translate technical->non-technical; cross-functional (eng/design/research); software product development; startup/entrepreneurial; ambiguity. Experience bar is LOW (3-5 yrs min) and he fits; Bachelor's satisfied (BBA). TWO HONEST GAPS (the misses): (1) FOUR-LENSES FRAMEWORK (feasibility/viability/desirability/strategy) — a specific Bain/design framework he doesn't know by name (he DOES balance user-needs/feasibility/business-value, the underlying concept, but not the named framework); (2) CONSULTING / CLIENT-FACING — this is the KEY CONTEXT GAP: it's Bain, embedded in a consulting delivery model working alongside general consultants and CLIENTS; he has NO consulting background and is an internal product PM, not client-facing. SOFT PREFERRED gaps: top-tier CONSULTING experience 'preferred' (he has none); specific GenAI tools V0/Lovable/Synthetic Users (he uses Claude Code, adjacent); ML pipelines (no). NET: strong on product-innovation + GenAI craft and the low experience bar helps, but it's a prestigious consulting-firm client-facing role and his lack of consulting/client-facing background is the real hurdle (design-thinking-workshop facilitation + four-lenses are learnable). Apply if drawn to Bain/consulting-adjacent product work; lead hard on the GenAI-product-innovation + HCD + rapid-prototyping story and be candid about no consulting background."
+    },
+    {
+      "id": "EXT62",
+      "title": "AI-First Product Manager",
+      "co": "AI-First Products (undisclosed)",
+      "addedDate": "2026-08-10T14:00:00",
+      "resume": "resumes/AIFirst-AI-First-Product-Manager.docx",
+      "matchScore": 100,
+      "why": "His strongest domain: ships production AI end-to-end with Claude Code, built a RAG-based support chatbot (FRT 4min to <10s, escalations ~300 to <50) and a production GenAI layer, and works with LLM APIs, prompt engineering and workflow automation daily. Tailored to lead AI-first (LLMs, AI agents, RAG, ML concepts, experimentation) while keeping business-outcome proof (20% revenue, 25% ARPU, Rs70L renewals, advisor P&L 50 to 125). 100% keyword-coverage vs 18 curated JD must-haves; one full page (95% fill)."
     }
   ]
 }
