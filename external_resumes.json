@@ -575,6 +575,15 @@
       "resume": "resumes/Flexiple-Senior-Product-Manager.docx",
       "matchScore": 94,
       "why": "Senior-PM tailoring: front-loads product strategy/vision, multi-quarter roadmap, discovery-and-delivery, measurable outcomes/success metrics, stakeholder alignment across product/design/eng/leadership, and shipping at scale (150K users/30K DAU). Business proof retained (20% revenue, 25% ARPU, Rs70L renewals, advisor P&L 50 to 125). 94% (17/18) keyword coverage; only genuine gap is MENTORING less-experienced PMs (he has led an 8-eng+2-QA squad, not PMs) - not fabricated. Note: role wants 5-10 yrs Senior PM; he is at the 5-yr floor."
+    },
+    {
+      "id": "EXT64",
+      "title": "Product Manager (Afford app)",
+      "co": "GoKwik",
+      "addedDate": "2026-08-10T16:30:00",
+      "resume": "resumes/GoKwik-Product-Manager.docx",
+      "matchScore": 100,
+      "why": "Consumer-app + payments + growth/retention PM for GoKwik Afford. 100%% on 20 curated requirements after collapsing the JD OR-lists (consumer apps/fintech/payments/lending; search/growth/retention; SQL/Trino/Metabase/GA4) to the alternatives he genuinely has. Front-loads funnel re-architecture (ranking model + 6 payment gateways + conversion), retention/loyalty/wallet, 0-to-1 builds, and surfaces the Analyst fraud/customer-verification bullet (10%% to 1%%) as the closest thing to KYC/compliance. HONEST DOMAIN GAPS to note (not in scored list, all future-owned per JD What-You-Will-Own not Who-You-Are): Personal Loans/lending, UPI specifically, Elasticsearch/search-relevance, MTU metric, RBI Digital Lending/KYC compliance. Strong on requirements; fintech-lending is the learn-on-the-job stretch."
     }
   ]
 }
