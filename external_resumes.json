@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-12",
   "resumes": [
     {
       "id": "EXT1",
@@ -604,6 +604,15 @@
       "matchScore": 75,
       "why": "DEFENSIBLE REWRITE (v2) after a detailed external critique flagged the first pass as over-tailored. Honest literal-JD keyword coverage is now 75%% (15/20); the 5 missing terms are DELIBERATELY not claimed because they are not defensible for a services-marketplace PM: Seller experience (uses partner/supply-side), Order management (his order-punching is internal ops, not marketplace order lifecycle), KYC (his work is CUSTOMER/transaction verification, not merchant KYC/regulatory), Dispute resolution (RAG helpdesk is customer support/escalation), Compliance (no owned controls). FIXED a real factual error: the P&L tracker is ADVISOR-level (internal sales counselors), reverted from the wrong \"partner-wise\" label. Removed the 8-eng+2-QA headcount per Kshitiz. Kept only defensible transferable strengths: teacher/partner platform + onboarding + payout automation (partner NPS -20 to +40), content catalog + AI catalog generation, verification/risk controls, advisor P&L, Power BI self-service dashboards, workflow automation, pricing/monetization (confirmed), renewals. Titles CONFIRMED employer-verifiable as Product roles (Codex claim of Operations titles rejected by Kshitiz). Added portfolio link, dropped JIRA Udemy cert. Position honestly as: services-marketplace supply-side PM now applying to merchant commerce.",
       "updatedDate": "2026-08-10T19:30:00"
+    },
+    {
+      "id": "EXT67",
+      "title": "Associate Product Manager - Connect (Hotels/Alt Accommodation)",
+      "co": "MakeMyTrip",
+      "addedDate": "2026-08-11T12:00:00",
+      "resume": "resumes/MakeMyTrip-Associate-Product-Manager-Connect.docx",
+      "matchScore": 95,
+      "why": "MMT Connect = partner (hotel/host) + consumer two-sided marketplace PM. Built DEFENSIBLY from the start (post-Snapmint lesson): frames his teacher/partner work honestly as supply-side experience, claims only real strengths - product vision/strategy/roadmap, pricing/packaging (confirmed: segment-wise min ARPU + phased increases, 25%% ARPU), conversion funnel + ranking, product KPIs/analytics, market research + competitive benchmarking (confirmed claimable), post-launch iteration/adoption. 95%% (19/20); only miss is INVENTORY MANAGEMENT - genuine gap, NOT faked. Other honest gaps to note (not claimed): travel/hospitality domain (none), listing visibility in a travel sense (has a ranking model, adjacent only). Location FIT: Gurgaon (his #1 priority). CAVEATS: (1) role is Associate PM - a TITLE STEP DOWN from his current PM title, though MMT is a far bigger brand; (2) JD prefers a management grad from a reputed/tier-1 institute - his BBA is Chandigarh University, non-tier-1, so lean on shipped outcomes."
     }
   ]
 }
