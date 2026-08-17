@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-17",
   "resumes": [
     {
       "id": "EXT1",
@@ -631,6 +631,15 @@
       "resume": "resumes/YesMadam-Growth-Product-Manager.docx",
       "matchScore": 96,
       "why": "Sweet-spot fit: 0-to-1 growth + full funnel (acquisition to monetization) + experimentation + pricing/monetization + revenue - his core. 96%% (23/24). Only miss is COHORT ANALYSIS - his known open gap (does funnel/behavioral analysis + segmentation, not formal cohorting); NOT faked, and it is a named must-have here so expect it in interview. Genuinely claimed and defensible: 0-1 launches, funnel re-architecture, pricing/packaging/upsell (ARPU 25%%), organic growth loops (2000 leads/mo at 7%%), renewal/monetization engine (Rs70L), segmentation, SQL/dashboards, A/B testing, team leadership (trained & led a team of 8 - covers the mentor-a-Sr-Product-Analyst ask, and he WAS a Sr Product Analyst himself). Good-to-haves he lacks (not blocking): Amplitude/Mixpanel/BigQuery (has GA4/Metabase/Power BI). CAVEAT: location is NOIDA - his priority is Gurugram; Noida is NCR but a longer commute, confirm he is open to it."
+    },
+    {
+      "id": "EXT70",
+      "title": "Product Manager",
+      "co": "Cube",
+      "addedDate": "2026-08-11T17:00:00",
+      "resume": "resumes/Cube-Product-Manager.docx",
+      "matchScore": 100,
+      "why": "Thin/generic JD; the one named Required Skill is Pricing and Promotion (genuinely his: pricing/packaging + segment-wise min ARPU + phased increases, plus customer-side promotions via renewal/early-bird/loyalty). 100%% on 20 curated must-haves. Strong all-rounder fit: full lifecycle (problem/PRD/execution/launch/iteration), conversion/revenue/retention, and a real differentiator here - COST EFFICIENCY & OPERATIONAL METRICS (80%% ops reduction, Rs1.6L/month savings via automation), plus experiments and sprint work with engineering. CAVEAT: company Cube not identified/verified (multiple companies named Cube); kept defensible + general. Sharpen once domain confirmed."
     }
   ]
 }
