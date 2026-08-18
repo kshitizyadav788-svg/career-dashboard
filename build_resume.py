@@ -84,7 +84,7 @@ DATA = {
     # Placed directly below the summary in render(). Transferable-first ordering for an industry switch.
     "competencies": "Product Strategy & Roadmapping · Product Discovery & User Research · PRDs & Prioritization · Growth & Monetization · Pricing & Packaging · Retention & Lifecycle · Funnel & Conversion Optimization · Payments & API Integrations · Workflow Automation · Product Analytics & Insights · GTM & Product Launch · Marketplace & Platform Products · Unit Economics · Cross-Functional Leadership",
     "company": "PlanetSpark — Gurugram",
-    "company_intro": "A B2C subscription marketplace (EdTech) connecting 150,000+ enrolled users with teachers via a shared LMS — spanning consumer app, two-sided platform, payments, CRM, renewals, and lifecycle products, with 30,000+ daily active users. Progressed across three roles while owning an expanding product surface.",
+    "company_intro": "A B2C consumer marketplace (EdTech) connecting 150,000+ enrolled users with teachers via a shared LMS — spanning consumer app, two-sided platform, payments, CRM, renewals, and lifecycle products, with 30,000+ daily active users. Progressed across three roles while owning an expanding product surface.",
     "roles": [
         {"title": "Product Manager", "dates": "Sep 2023 – Present", "bullets": [
             "Own the full product suite — consumer app, student & teacher LMS, advisor CRM, renewal engine, and in-house AI layer — for a platform with 150,000+ enrolled users and 30,000+ daily active users, leading a cross-functional squad of 8 engineers and 2 QA from discovery to launch.",
