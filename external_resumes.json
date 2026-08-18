@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "resumes": [
     {
       "id": "EXT1",
@@ -640,6 +640,15 @@
       "resume": "resumes/Cube-Product-Manager.docx",
       "matchScore": 100,
       "why": "Thin/generic JD; the one named Required Skill is Pricing and Promotion (genuinely his: pricing/packaging + segment-wise min ARPU + phased increases, plus customer-side promotions via renewal/early-bird/loyalty). 100%% on 20 curated must-haves. Strong all-rounder fit: full lifecycle (problem/PRD/execution/launch/iteration), conversion/revenue/retention, and a real differentiator here - COST EFFICIENCY & OPERATIONAL METRICS (80%% ops reduction, Rs1.6L/month savings via automation), plus experiments and sprint work with engineering. CAVEAT: company Cube not identified/verified (multiple companies named Cube); kept defensible + general. Sharpen once domain confirmed."
+    },
+    {
+      "id": "EXT71",
+      "title": "Senior Product Specialist / Consultant - Consulting Products",
+      "co": "Deloitte (USI)",
+      "addedDate": "2026-08-12T11:00:00",
+      "resume": "resumes/Deloitte-Senior-Product-Specialist.docx",
+      "matchScore": 92,
+      "why": "MODERATE STRETCH - honest 92% (22/24). Strong on hands-on product craft (backlog, user stories, acceptance criteria, agile/sprints), discovery & validation (research, hypotheses, prototypes, A/B), 0-to-1, data-driven outcomes, and a real standout: AI-NATIVE / AGENTIC WORKFLOWS (Claude Code + RAG) which this JD explicitly wants. Two honest misses, NOT faked: CLIENT-FACING (he has internal senior-stakeholder work, not external enterprise-client demos) and ENTERPRISE (B2C EdTech; can claim SaaS as B2C software platform per experience_bank, but NOT enterprise SaaS / on-prem / US-market data-privacy nuance). Mentoring claimed via trained-and-led-team-of-8 (team leadership, not specifically junior-PO mentoring - clarify in interview). SENIORITY GAP: JD requires 6+ yrs, he is at 5 - not resume-fixable, real screening risk. Location: role is India/USI (Hyderabad DU referenced) working virtually with US stakeholders - confirm he is open to USI/that city."
     }
   ]
 }
