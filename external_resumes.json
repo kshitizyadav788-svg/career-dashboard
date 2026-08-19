@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "resumes": [
     {
       "id": "EXT1",
@@ -649,6 +649,15 @@
       "resume": "resumes/Deloitte-Senior-Product-Specialist.docx",
       "matchScore": 92,
       "why": "MODERATE STRETCH - honest 92% (22/24). Strong on hands-on product craft (backlog, user stories, acceptance criteria, agile/sprints), discovery & validation (research, hypotheses, prototypes, A/B), 0-to-1, data-driven outcomes, and a real standout: AI-NATIVE / AGENTIC WORKFLOWS (Claude Code + RAG) which this JD explicitly wants. Two honest misses, NOT faked: CLIENT-FACING (he has internal senior-stakeholder work, not external enterprise-client demos) and ENTERPRISE (B2C EdTech; can claim SaaS as B2C software platform per experience_bank, but NOT enterprise SaaS / on-prem / US-market data-privacy nuance). Mentoring claimed via trained-and-led-team-of-8 (team leadership, not specifically junior-PO mentoring - clarify in interview). SENIORITY GAP: JD requires 6+ yrs, he is at 5 - not resume-fixable, real screening risk. Location: role is India/USI (Hyderabad DU referenced) working virtually with US stakeholders - confirm he is open to USI/that city."
+    },
+    {
+      "id": "EXT72",
+      "title": "Product Manager - Growth (Customer Engagement)",
+      "co": "Airtel Payments Bank",
+      "addedDate": "2026-08-13T11:00:00",
+      "resume": "resumes/AirtelPaymentsBank-Product-Manager-Growth.docx",
+      "matchScore": 100,
+      "why": "Strong genuine fit: growth + customer-engagement + multi-channel communication + CRM + lifecycle role, all of which he really has. 100%% on 21 curated must-haves. Real backing: omnichannel communication he built across email/WhatsApp(Gupshup)/in-app/push/SMS-OTP consolidated into one system (RAG assistant, FRT 4min to <10s, escalations ~300 to <50); lifecycle/retention engine with nudges+loyalty+wallet (Rs70L renewals); CSAT 10%% to 25%% via onboarding/lifecycle messaging; acquisition loops (2000 leads/mo, 7%% conv); CRM revamp; A/B testing; SQL customer insights. Location FIT: Gurgaon (his #1). 2-5 yrs range - he is at 5 (top of range). Payments-bank domain a mild plus via his 6-gateway payments work, not a blocker. Contact: DM or Kanika.Pal@airtelbank.com; referrals appreciated."
     }
   ]
 }
