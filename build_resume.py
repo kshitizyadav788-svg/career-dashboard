@@ -74,12 +74,11 @@ DATA = {
     # or two headline numbers. Do NOT restate the metrics that already appear in the bullets below;
     # that duplication was the reason this was rewritten (see CLAUDE.md "Master-resume conventions").
     "summary": (
-        "Product Manager with 5+ years of product experience building growth, monetization, payments, and "
-        "workflow-automation products across consumer apps, a two-sided marketplace, CRM, and internal platforms "
-        "serving 150,000+ enrolled users. Progressed from Senior Product Analyst to Assistant Product Manager to "
-        "Product Manager — owning discovery, PRDs, prioritization, launch, and iteration with engineering, design, "
-        "and business teams. Delivered 20% revenue growth, 25% ARPU expansion, ₹70L in product-led renewals in a "
-        "single month, and 80% lower operational workload, using SQL, Power BI, and AI as force-multipliers."
+        "Product Manager with 5+ years building growth, monetization, payments, and workflow-automation "
+        "products across consumer apps, a two-sided marketplace, CRM, and internal platforms serving 150,000+ "
+        "users. Progressed from Senior Product Analyst to Assistant Product Manager to Product Manager, owning "
+        "discovery, PRDs, prioritization, launch, and iteration with engineering, design, and business teams. "
+        "Combines SQL-led product analysis with hands-on execution across APIs, automation, and AI-assisted workflows."
     ),
     # Placed directly below the summary in render(). Transferable-first ordering for an industry switch.
     "competencies": "Product Strategy & Roadmapping · Product Discovery & User Research · PRDs & Prioritization · Growth & Monetization · Pricing & Packaging · Retention & Lifecycle · Funnel & Conversion Optimization · Payments & API Integrations · Workflow Automation · Product Analytics & Insights · GTM & Product Launch · Marketplace & Platform Products · Unit Economics · Cross-Functional Leadership",
@@ -87,13 +86,13 @@ DATA = {
     "company_intro": "A B2C consumer marketplace (EdTech) connecting 150,000+ enrolled users with teachers via a shared LMS — spanning consumer app, two-sided platform, payments, CRM, renewals, and lifecycle products, with 30,000+ daily active users. Progressed across three roles while owning an expanding product surface.",
     "roles": [
         {"title": "Product Manager", "dates": "Sep 2023 – Present", "bullets": [
-            "Own the full product suite — consumer app, student & teacher LMS, advisor CRM, renewal engine, and in-house AI layer — for a platform with 150,000+ enrolled users and 30,000+ daily active users, leading a cross-functional squad of 8 engineers and 2 QA from discovery to launch.",
-            "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that reduced assisted-renewal cost and generated ₹70L in product-led renewals in a single month (Jan 2025).",
-            "Increased the share of enrolled users rating the product 5 out of 5 from 10% to 25% via onboarding and retention work: seamless onboarding, teacher PTMs and feedback, a one-page student-detail UI, a loyalty program, and the PSpark in-app wallet.",
-            "Re-architected the sign-up → demo → enrolment funnel — single-step OTP, a preference-capture ranking model, and 6 API-integrated payment gateways with pre-filled links and auto-cleared approvals — enabling self-serve, plan-based purchase with no manual intervention.",
-            "Built an advisor-wise P&L tracker (weekly Net Revenue − Fixed, Refund, Marketing & Sales cost) whose visibility drove profitability interventions — profitable advisors rose from 50 to 100 in one month and to 125 over the next two.",
-            "Shipped a production GenAI learning layer (age-appropriate speech/text responses) and a RAG-based support chatbot — cutting first-response time from 4 minutes to under 10 seconds and monthly escalations from ~300 to under 50 within three months.",
-            "Ship minor and mid-level product features using AI-assisted development (Claude Code) — scoping, implementing, and testing changes, and raising merge requests for engineering review.",
+            "Lead product planning and delivery across the full product suite — consumer app, student & teacher LMS, advisor CRM, renewal engine, and in-house AI layer — for a platform with 150,000+ users and 30,000+ daily active users, working with a cross-functional squad of engineering, design, and QA from discovery to launch.",
+            "Designed an in-product renewal engine (nudges, early-bird access, LMS free-trial classes, teacher-initiated renewals) that reduced assisted-renewal cost and enabled ₹70L in product-led renewals in a single month (Jan 2025).",
+            "Increased the share of surveyed users reporting 5/5 satisfaction from 10% to 25% by redesigning onboarding, consolidating student progress into a single-page view, and adding structured teacher feedback.",
+            "Built a self-serve, product-led enrolment flow — post-demo course selection with best-fit ranking, single-step OTP, discounts, and 6 API-integrated payment gateways with auto-cleared approvals — letting customers purchase on their own; doubled the share of leads enrolling self-serve from 6% to 12% (at 95% payment success) over 12 months of iteration, reducing reliance on counselor- and teacher-assisted sales.",
+            "Built an advisor-wise weekly P&L tracker (net revenue minus fixed, refund, marketing, and sales cost) whose visibility enabled targeted profitability interventions — profitable advisors rose from 50 to 100 in one month and to 125 over the next two.",
+            "Shipped a production GenAI learning layer (age-appropriate speech/text responses) and launched a RAG-based support chatbot that cut first-response time from 4 minutes to under 10 seconds and monthly escalations from ~300 to under 50 within three months.",
+            "Prototype and ship scoped product improvements with Claude Code (AI-assisted development), implementing and testing changes before raising merge requests for engineering review.",
         ]},
         {"title": "Assistant Product Manager", "dates": "Sep 2022 – Aug 2023", "bullets": [
             "Built the LPP (Learn, Practice, Perform) module — customized 1:1 sessions, group activities, and performance tasks — driving 20% revenue growth, 25% ARPU expansion (₹35K → ₹45K), and 50% higher revenue per class (₹600 → ₹900).",
@@ -102,19 +101,20 @@ DATA = {
             "Launched organic acquisition loops surfacing student progress (Sparkline, Word Wisdom, practice classes, workshops) across social channels, bringing 2,000+ organic leads/month at a 7% conversion rate.",
         ]},
         {"title": "Senior Product Analyst", "dates": "Mar 2021 – Aug 2022", "bullets": [
-            "Developed SQL and Power BI reporting across growth, revenue, and operations; improved weekly revenue accuracy and created a data foundation for product and commercial decisions.",
+            "Built SQL and Power BI dashboards across acquisition, revenue, and operations, replacing fragmented weekly reporting with a consistent performance view used by product and commercial teams.",
             "Implemented customer-verification controls that reduced invalid or fraudulent transactions from 10% to 1% while minimizing manual intervention.",
         ]},
     ],
     "skills": [
         ("Data & Analytics", "SQL, GA4, Power BI, MS Excel (Advanced), Python (basic)"),
         ("Product & Delivery", "JIRA, Confluence, Agile/Scrum, RICE prioritization, Figma"),
-        ("AI & Integration", "OpenAI / Gemini / Claude APIs, Claude Code, Prompt Engineering, RAG, REST APIs, Payment Integrations"),
+        ("AI & Integration", "OpenAI / Gemini / Claude APIs, Claude Code, RAG, REST APIs, Payment Integrations"),
     ],
     "education": [
         ("BBA — Chandigarh University, Chandigarh", "2018 – 2021"),
     ],
-    "certifications": "Product Management Certification — Udemy (2024)    •    JIRA Certification — Udemy (2024)",
+    "certifications": "",
+    "portfolio": "kshitizyadav788-svg.github.io/career-dashboard/portfolio.html",
 }
 
 
@@ -245,12 +245,18 @@ def render(data, out_path, style=None):
         bullet([(label + ": ", {"bold": True}), (text, {})])
 
     # -------- EDUCATION & CERTIFICATIONS --------
-    header_line("Education & Certifications")
+    header_line("Education & Portfolio")
     for school, dates in data["education"]:
         p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap); right_tab(p)
         add_run(p, school, bold=True); add_run(p, "\t" + dates, color=GREY)
-    p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
-    add_run(p, data["certifications"], color=GREY)
+    cert = data.get("certifications"); port = data.get("portfolio")
+    if cert or port:
+        p = doc.add_paragraph(); p.paragraph_format.space_after = Pt(gap)
+        if cert:
+            add_run(p, cert, color=GREY)
+        if port:
+            add_run(p, ("    •    Portfolio: " if cert else "Portfolio: "), color=GREY)
+            add_hyperlink(p, "https://" + port, port, contact_sz, GREY)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     doc.save(out_path)
