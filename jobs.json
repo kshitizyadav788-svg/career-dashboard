@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T17:51:22+00:00",
+ "updated": "2026-10-06T22:15:29+00:00",
  "source": "live",
  "count": 102,
  "jobs": [
@@ -60,7 +60,7 @@
    "why": "Healthtech consumer product with funnel analytics + agentic AI — strong overlap with your growth/AI skill set; relocate to Bangalore."
   },
   {
-   "id": "JS_77874981",
+   "id": "JS_74246868",
    "src": "Expedia Group | Careers",
    "title": "Product Manager III",
    "co": "Expedia Group",
@@ -74,7 +74,7 @@
    "why": "Expedia Group | Careers via JSearch"
   },
   {
-   "id": "JS_18601838",
+   "id": "JS_61707122",
    "src": "LinkedIn",
    "title": "Data Product Manager - Periscope",
    "co": "McKinsey & Company",
@@ -88,13 +88,13 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_92035537",
+   "id": "JS_93257117",
    "src": "BCG Careers - Boston Consulting Group",
    "title": "Global Product Manager",
    "co": "Boston Consulting Group",
    "loc": "Gurugram, Haryana",
    "url": "https://careers.bcg.com/ca/fr/job/59685/Global-Product-Manager",
-   "posted": "2026-10-01",
+   "posted": "2026-10-06",
    "fit": 84,
    "comp": 68,
    "growth": 72,
@@ -102,7 +102,7 @@
    "why": "BCG Careers - Boston Consulting Group via JSearch"
   },
   {
-   "id": "JS_38326836",
+   "id": "JS_30413696",
    "src": "JobLeads",
    "title": "Product Manager (Mobile App)",
    "co": "Meritto",
@@ -116,13 +116,13 @@
    "why": "JobLeads via JSearch"
   },
   {
-   "id": "JS_99941813",
+   "id": "JS_12143203",
    "src": "LinkedIn",
-   "title": "Product Manager – Supply Chain & Operations",
-   "co": "Nutrabay",
+   "title": "Cloud Network Architect/ Cloud Network product Manager",
+   "co": "airtel",
    "loc": "Gurugram, Haryana",
-   "url": "https://in.linkedin.com/jobs/view/product-manager-%E2%80%93-supply-chain-operations-at-nutrabay-4471279108",
-   "posted": "2026-09-29",
+   "url": "https://in.linkedin.com/jobs/view/cloud-network-architect-cloud-network-product-manager-at-airtel-4471273867",
+   "posted": "2026-09-28",
    "fit": 84,
    "comp": 68,
    "growth": 72,
@@ -130,7 +130,7 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_68192986",
+   "id": "JS_74085145",
    "src": "Booking.com's",
    "title": "Product Manager (Consumer App Experience)",
    "co": "Booking Holdings",
@@ -172,21 +172,7 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "JS_89211140",
-   "src": "Careers At Mastercard",
-   "title": "Manager, Product Management",
-   "co": "Mastercard",
-   "loc": "Gurugram, Haryana",
-   "url": "https://careers.mastercard.com/us/en/job/R-291979/Manager-Product-Management",
-   "posted": "2026-10-04",
-   "fit": 80,
-   "comp": 68,
-   "growth": 72,
-   "prob": 70,
-   "why": "Careers At Mastercard via JSearch"
-  },
-  {
-   "id": "JS_38820811",
+   "id": "JS_98291624",
    "src": "EFinancialCareers",
    "title": "Senior Product Manager | Gurgaon, IN",
    "co": "Expedia Group",
@@ -200,27 +186,13 @@
    "why": "EFinancialCareers via JSearch"
   },
   {
-   "id": "JS_89188529",
-   "src": "UnitedHealth Group Jobs",
-   "title": "Senior Technical Product Manager",
-   "co": "UnitedHealth Group",
-   "loc": "Gurugram, Haryana",
-   "url": "https://careers.unitedhealthgroup.com/job/gurgaon/senior-technical-product-manager/34088/99954319536",
-   "posted": "2026-10-05",
-   "fit": 80,
-   "comp": 68,
-   "growth": 72,
-   "prob": 70,
-   "why": "UnitedHealth Group Jobs via JSearch"
-  },
-  {
-   "id": "JS_86002429",
+   "id": "JS_19800833",
    "src": "LinkedIn",
    "title": "Senior Product Manager — Trading & Derivative Products",
    "co": "INDmoney",
    "loc": "Gurugram, Haryana",
    "url": "https://in.linkedin.com/jobs/view/senior-product-manager-%E2%80%94-trading-derivative-products-at-indmoney-4472716066",
-   "posted": "2026-09-28",
+   "posted": "2026-09-27",
    "fit": 80,
    "comp": 68,
    "growth": 72,
@@ -228,7 +200,7 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_28085229",
+   "id": "JS_97642659",
    "src": "LinkedIn",
    "title": "Product Strategy Manager",
    "co": "IndusInd Bank",
@@ -242,7 +214,21 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_59521864",
+   "id": "JS_6982340",
+   "src": "JobLeads",
+   "title": "Principal Product Manager - Web & Mobile",
+   "co": "IndiGo",
+   "loc": "Gurugram, Haryana",
+   "url": "https://www.jobleads.com/in/job/principal-product-manager-web-mobile--gurgaon--eae77c9f4c8354f7cc46732432b32fde2",
+   "posted": "2026-09-28",
+   "fit": 80,
+   "comp": 68,
+   "growth": 72,
+   "prob": 70,
+   "why": "JobLeads via JSearch"
+  },
+  {
+   "id": "JS_35500522",
    "src": "Jobs.uber.com",
    "title": "Sr Product Manager - Compliance & Regulatory",
    "co": "Uber",
@@ -256,13 +242,13 @@
    "why": "Jobs.uber.com via JSearch"
   },
   {
-   "id": "JS_15907834",
+   "id": "JS_97761447",
    "src": "McAfee Careers",
    "title": "Product Manager",
    "co": "McAfee",
    "loc": "Bengaluru, Karnataka",
    "url": "https://careers.mcafee.com/jobs/1754?lang=en-us",
-   "posted": "2026-09-24",
+   "posted": "2026-09-23",
    "fit": 81,
    "comp": 68,
    "growth": 72,
@@ -270,7 +256,7 @@
    "why": "McAfee Careers via JSearch"
   },
   {
-   "id": "JS_30871472",
+   "id": "JS_92716440",
    "src": "LinkedIn",
    "title": "Product Manager - Time & Attendance and Scheduling",
    "co": "A.P. Moller - Maersk",
@@ -284,7 +270,7 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_6049267",
+   "id": "JS_17843886",
    "src": "Thermo Fisher Scientific Jobs",
    "title": "Global Product Manager, Antibody Solutions",
    "co": "Thermo Fisher Scientific",
@@ -298,7 +284,7 @@
    "why": "Thermo Fisher Scientific Jobs via JSearch"
   },
   {
-   "id": "JS_71957304",
+   "id": "JS_91145578",
    "src": "Veralto Global Jobs",
    "title": "Product Manager - AI Services",
    "co": "Veralto Global",
@@ -312,7 +298,7 @@
    "why": "Veralto Global Jobs via JSearch"
   },
   {
-   "id": "JS_67068287",
+   "id": "JS_84119463",
    "src": "Apna Jobs",
    "title": "Senior Principal Product Manager - Digital Servicing & AI Platforms",
    "co": "Target Corporation India Pvt Ltd",
@@ -438,7 +424,7 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "JS_22355243",
+   "id": "JS_77044771",
    "src": "Workday",
    "title": "Product Manager - India",
    "co": "DOW CHEMICAL INTERNATIONAL PVT. LTD.",
@@ -452,21 +438,7 @@
    "why": "Workday via JSearch · remote"
   },
   {
-   "id": "JS_86113916",
-   "src": "HireVault",
-   "title": "[Remote] Product Manager, Central Products",
-   "co": "HireVault",
-   "loc": "Remote",
-   "url": "https://hirevault.k8p.is-great.org/remote-jobs/remote-product-manager-central-products",
-   "posted": "2026-09-30",
-   "fit": 78,
-   "comp": 68,
-   "growth": 72,
-   "prob": 70,
-   "why": "HireVault via JSearch · remote"
-  },
-  {
-   "id": "JS_22128920",
+   "id": "JS_39505625",
    "src": "Jobgether",
    "title": "Product Manager - Payroll",
    "co": "Remote People",
@@ -480,13 +452,13 @@
    "why": "Jobgether via JSearch · remote"
   },
   {
-   "id": "JS_51921569",
+   "id": "JS_79264418",
    "src": "HireVault",
-   "title": "[Remote] Product Manager (Payments)",
+   "title": "[Remote] Product Manager, Central Products",
    "co": "HireVault",
    "loc": "Remote",
-   "url": "https://hirevault.k8p.is-great.org/remote-jobs/remote-product-manager-payments-1",
-   "posted": "2026-10-04",
+   "url": "https://hirevault.k8p.is-great.org/remote-jobs/remote-product-manager-central-products",
+   "posted": "2026-09-30",
    "fit": 78,
    "comp": 68,
    "growth": 72,
@@ -494,7 +466,21 @@
    "why": "HireVault via JSearch · remote"
   },
   {
-   "id": "JS_14075143",
+   "id": "JS_83427715",
+   "src": "HireVault",
+   "title": "[Remote] Product Manager",
+   "co": "HireVault",
+   "loc": "Remote",
+   "url": "https://hirevault.k8p.is-great.org/remote-jobs/remote-product-manager-75",
+   "posted": "2026-09-29",
+   "fit": 78,
+   "comp": 68,
+   "growth": 72,
+   "prob": 70,
+   "why": "HireVault via JSearch · remote"
+  },
+  {
+   "id": "JS_2100251",
    "src": "Remote Quest Jobs",
    "title": "[Remote] Software Product Manager",
    "co": "remote quest jobs",
@@ -508,13 +494,13 @@
    "why": "Remote Quest Jobs via JSearch · remote"
   },
   {
-   "id": "JS_54769696",
+   "id": "JS_40797645",
    "src": "HireGrid",
    "title": "Digital Product Manager, Digital Products & Design",
    "co": "HireGrid",
    "loc": "Remote",
    "url": "https://hiregrid.4w.10001mb.com/job/digital-product-manager-digital-products-design-072ab76e",
-   "posted": "2026-10-05",
+   "posted": "2026-10-06",
    "fit": 78,
    "comp": 68,
    "growth": 72,
@@ -1042,13 +1028,27 @@
    "matchScore": 74
   },
   {
-   "id": "JS_7199537",
+   "id": "JS_88689446",
+   "src": "LinkedIn",
+   "title": "Director of Product Management",
+   "co": "Questhiring",
+   "loc": "Gurugram, Haryana",
+   "url": "https://in.linkedin.com/jobs/view/director-of-product-management-at-questhiring-4471486242",
+   "posted": "2026-09-24",
+   "fit": 76,
+   "comp": 68,
+   "growth": 72,
+   "prob": 58,
+   "why": "LinkedIn via JSearch"
+  },
+  {
+   "id": "JS_11874068",
    "src": "Apna Jobs",
    "title": "Digital Experience Product Management Manager",
    "co": "Hewlett Packard Enterprise India Private Limited",
    "loc": "Bengaluru, Karnataka",
    "url": "https://apna.co/job/bengaluru/manager-digital-experience-product-management-1583823817",
-   "posted": "2026-10-05",
+   "posted": "2026-10-06",
    "fit": 77,
    "comp": 68,
    "growth": 72,
@@ -1056,21 +1056,7 @@
    "why": "Apna Jobs via JSearch"
   },
   {
-   "id": "JS_24849274",
-   "src": "Careers - EBay Inc.",
-   "title": "Senior Product Manager II",
-   "co": "eBay",
-   "loc": "Bengaluru, Karnataka",
-   "url": "https://jobs.ebayinc.com/us/en/job/R0076068/Senior-Product-Manager-II",
-   "posted": "2026-10-01",
-   "fit": 77,
-   "comp": 68,
-   "growth": 72,
-   "prob": 58,
-   "why": "Careers - EBay Inc. via JSearch"
-  },
-  {
-   "id": "JS_54058078",
+   "id": "JS_74498806",
    "src": "LinkedIn",
    "title": "Senior Manager-Digital Product Management",
    "co": "American Express",
@@ -1084,7 +1070,21 @@
    "why": "LinkedIn via JSearch"
   },
   {
-   "id": "JS_25515142",
+   "id": "JS_21834807",
+   "src": "Capital One Careers",
+   "title": "Sr. Director Product Management",
+   "co": "Capital One",
+   "loc": "Bengaluru, Karnataka",
+   "url": "https://www.capitalonecareers.com/job/bengaluru/sr-director-product-management/1732/100802977520",
+   "posted": "2026-10-06",
+   "fit": 73,
+   "comp": 68,
+   "growth": 72,
+   "prob": 58,
+   "why": "Capital One Careers via JSearch"
+  },
+  {
+   "id": "JS_68426769",
    "src": "ServiceNow Careers",
    "title": "Staff Inbound Product Manager",
    "co": "ServiceNow",
@@ -1098,21 +1098,21 @@
    "why": "ServiceNow Careers via JSearch · remote"
   },
   {
-   "id": "JS_30247747",
-   "src": "Jobgether",
-   "title": "Senior Product Manager, Fleet Management",
-   "co": "Motive",
+   "id": "JS_52137303",
+   "src": "No Fluff Jobs.",
+   "title": "Senior IT Project / Product Manager (Client Ownership & Delivery)",
+   "co": "Polcode",
    "loc": "Remote",
-   "url": "https://jobgether.com/offer/6ab68681865119c687f1a677-senior-product-manager-fleet-management",
-   "posted": "2026-09-25",
+   "url": "https://nofluffjobs.com/job/senior-it-project-product-manager-client-ownership-delivery-polcode-remote",
+   "posted": "2026-09-22",
    "fit": 74,
    "comp": 68,
    "growth": 72,
    "prob": 58,
-   "why": "Jobgether via JSearch · remote"
+   "why": "No Fluff Jobs. via JSearch · remote"
   },
   {
-   "id": "JS_29762250",
+   "id": "JS_70623040",
    "src": "Remote Quest Jobs",
    "title": "Senior Product Manager I (Applied AI)",
    "co": "remote quest jobs",
@@ -1126,7 +1126,7 @@
    "why": "Remote Quest Jobs via JSearch · remote"
   },
   {
-   "id": "JS_39413801",
+   "id": "JS_56083289",
    "src": "Wfhzync",
    "title": "[Remote] Product Manager (Leadership)",
    "co": "Zapier",
