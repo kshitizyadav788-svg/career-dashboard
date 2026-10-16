@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T15:09:16+00:00",
+ "updated": "2026-10-16T19:14:54+00:00",
  "source": "live",
  "count": 73,
  "jobs": [
@@ -256,6 +256,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5930863636",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Syndigo",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5930863636?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-16",
+   "fit": 81,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5925610293",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -410,20 +424,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5927717842",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Fam",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5927717842?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-14",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5929286142",
    "src": "Adzuna",
    "title": "Senior Product Manager",
@@ -445,20 +445,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5929182283?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-15",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5904051755",
-   "src": "Adzuna",
-   "title": "Senior Product Manager",
-   "co": "Expedia",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5904051755?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-30",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -627,6 +613,20 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5926671760?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-14",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5928578335",
+   "src": "Adzuna",
+   "title": "Sr Specialist Technology Vendor Management - OEM/Telecom Products/Global Procurement/Strategic Sourcing/Supplier Performance/Contract & Commercial Govern",
+   "co": "AT&T",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5928578335?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-15",
    "fit": 80,
    "comp": 62,
    "growth": 70,
