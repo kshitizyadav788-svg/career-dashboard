@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T01:00:00+00:00",
+ "updated": "2026-10-17T05:29:09+00:00",
  "source": "live",
  "count": 73,
  "jobs": [
@@ -734,20 +734,6 @@
    "matchScore": 74
   },
   {
-   "id": "AZ_5925675986",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Kaleidofin",
-   "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/details/5925675986?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
-   "fit": 76,
-   "comp": 68,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5896657776",
    "src": "Adzuna",
    "title": "Product Management",
@@ -997,6 +983,20 @@
    "posted": "2026-09-18",
    "fit": 76,
    "comp": 56,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5931027155",
+   "src": "Adzuna",
+   "title": "Senior Specialist, Technical Product Management",
+   "co": "MSD",
+   "loc": "Hyderabad, Telangana",
+   "url": "https://www.adzuna.in/land/ad/5931027155?se=8CBcrevJ8RGgtZ9SIcCqmg&utm_medium=api&utm_source=3193978c&v=58E7D54542F7BF1D72E2CF4218DF0F25A2CD6DFE",
+   "posted": "2026-10-16",
+   "fit": 68,
+   "comp": 62,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
