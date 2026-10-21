@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-21T17:52:17+00:00",
+ "updated": "2026-10-21T21:11:27+00:00",
  "source": "live",
- "count": 75,
+ "count": 74,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -72,6 +72,20 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
+  },
+  {
+   "id": "AZ_5913703520",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Cloudkeeper",
+   "loc": "Noida, Ghaziabad",
+   "url": "https://www.adzuna.in/details/5913703520?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-06",
+   "fit": 78,
+   "comp": 80,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5919259252",
@@ -848,20 +862,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5935420314",
-   "src": "Adzuna",
-   "title": "Product Manager - Sustainability & Climate AI Solutions",
-   "co": "MSCI",
-   "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5935420314?se=lEnfJ3jN8RGI54QPRiQJtQ&utm_medium=api&utm_source=3193978c&v=95022FE68D58A360369E6DDAED7704D040EAF80E",
-   "posted": "2026-10-20",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5895875167",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -869,20 +869,6 @@
    "loc": "Kyasaram, Hyderabad",
    "url": "https://www.adzuna.in/details/5895875167?utm_medium=api&utm_source=3193978c",
    "posted": "2026-09-24",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5929333992",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Weekday AI",
-   "loc": "India",
-   "url": "https://www.adzuna.in/details/5929333992?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-15",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -974,13 +960,13 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5917125844",
+   "id": "AZ_5936953782",
    "src": "Adzuna",
-   "title": "Product Management Specialist",
-   "co": "S&P Global",
-   "loc": "India",
-   "url": "https://www.adzuna.in/land/ad/5917125844?se=lEnfJ3jN8RGI54QPRiQJtQ&utm_medium=api&utm_source=3193978c&v=6A8FDEC6D512BC1480509DD00FB22E4F4997A767",
-   "posted": "2026-10-07",
+   "title": "Manager, RCFCR Product Engg",
+   "co": "Standard Chartered Bank",
+   "loc": "Chennai, Tamil Nadu",
+   "url": "https://www.adzuna.in/land/ad/5936953782?se=oL66-pPN8RGI54QPRiQJtQ&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
+   "posted": "2026-10-21",
    "fit": 72,
    "comp": 62,
    "growth": 70,
