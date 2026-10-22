@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T05:43:06+00:00",
+ "updated": "2026-10-22T11:04:54+00:00",
  "source": "live",
  "count": 73,
  "jobs": [
@@ -452,6 +452,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5937513924",
+   "src": "Adzuna",
+   "title": "Product Management Specialist",
+   "co": "S&P Global",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5937513924?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-22",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5936319104",
    "src": "Adzuna",
    "title": "Senior Tech Product Manager",
@@ -676,6 +690,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5923155405",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "PinnacleU HR",
+   "loc": "Delhi, India",
+   "url": "https://www.adzuna.in/details/5923155405?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-11",
+   "fit": 78,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5895247749",
    "src": "Adzuna",
    "title": "CUSTOMER SUPPORT – BANKING PROCESS",
@@ -739,7 +767,7 @@
    "title": "Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953789?se=fuOcc9vN8RG8f8HyuNM3ow&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
+   "url": "https://www.adzuna.in/land/ad/5936953789?se=lAhCZgjO8RG63PjGJbSVLw&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
    "posted": "2026-10-21",
    "fit": 77,
    "comp": 62,
@@ -827,20 +855,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5903603435?utm_medium=api&utm_source=3193978c",
    "posted": "2026-09-30",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5895392227",
-   "src": "Adzuna",
-   "title": "Senior",
-   "co": "BSR & Co",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5895392227?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-23",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -951,7 +965,7 @@
    "title": "Manager, RCFCR Product Engg",
    "co": "Standard Chartered Bank",
    "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5936953782?se=zHEpdNvN8RGfcMfxhRrx1A&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
+   "url": "https://www.adzuna.in/land/ad/5936953782?se=Iq3qZwjO8RG63PjGJbSVLw&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
    "posted": "2026-10-21",
    "fit": 72,
    "comp": 62,
@@ -997,20 +1011,6 @@
    "posted": "2026-10-11",
    "fit": 72,
    "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5903064035",
-   "src": "Adzuna",
-   "title": "PRODUCT MANAGEMENT",
-   "co": "Vrinda International",
-   "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/details/5903064035?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-30",
-   "fit": 72,
-   "comp": 55,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
