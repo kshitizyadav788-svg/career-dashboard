@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T16:33:14+00:00",
+ "updated": "2026-10-22T20:23:48+00:00",
  "source": "live",
  "count": 73,
  "jobs": [
@@ -72,20 +72,6 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
-  },
-  {
-   "id": "AZ_5913703520",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Cloudkeeper",
-   "loc": "Noida, Ghaziabad",
-   "url": "https://www.adzuna.in/details/5913703520?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-06",
-   "fit": 78,
-   "comp": 80,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5919259252",
@@ -195,20 +181,6 @@
    "posted": "2026-10-13",
    "fit": 81,
    "comp": 64,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5895358422",
-   "src": "Adzuna",
-   "title": "[IN] Product Manager",
-   "co": "Benchmark Gensuite",
-   "loc": "Seshadripuram, Bangalore",
-   "url": "https://www.adzuna.in/details/5895358422?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-23",
-   "fit": 81,
-   "comp": 62,
    "growth": 70,
    "prob": 70,
    "why": "Adzuna (India)"
@@ -536,20 +508,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5920927256",
-   "src": "Adzuna",
-   "title": "Customer/Product Insights Manager III",
-   "co": "Expedia",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5920927256?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-09",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5897955055",
    "src": "Adzuna",
    "title": "Manager - Product Marketing",
@@ -662,6 +620,34 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5936082248",
+   "src": "Adzuna",
+   "title": "Project Manager - Medical Devices",
+   "co": "Infosys Limited",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5936082248?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-21",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5923489882",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "MM Staffing & Career Consultants",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5923489882?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-11",
+   "fit": 81,
+   "comp": 56,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5920487667",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -739,7 +725,7 @@
    "title": "Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953789?se=EsWARjbO8RGI4JqSWCEq_A&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
+   "url": "https://www.adzuna.in/land/ad/5936953789?se=4hFPfFbO8RGiY7N8xe78DA&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
    "posted": "2026-10-21",
    "fit": 77,
    "comp": 62,
@@ -827,6 +813,20 @@
    "loc": "Kyasaram, Hyderabad",
    "url": "https://www.adzuna.in/details/5895875167?utm_medium=api&utm_source=3193978c",
    "posted": "2026-09-24",
+   "fit": 76,
+   "comp": 62,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5938281194",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Weekday AI",
+   "loc": "India",
+   "url": "https://www.adzuna.in/details/5938281194?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-22",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -937,7 +937,7 @@
    "title": "Manager, RCFCR Product Engg",
    "co": "Standard Chartered Bank",
    "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5936953782?se=4BAHRzbO8RGBmZXVTlFBRg&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
+   "url": "https://www.adzuna.in/land/ad/5936953782?se=PF29fFbO8RGiY7N8xe78DA&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
    "posted": "2026-10-21",
    "fit": 72,
    "comp": 62,
@@ -1007,7 +1007,7 @@
    "title": "Associate Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953674?se=EsWARjbO8RGI4JqSWCEq_A&utm_medium=api&utm_source=3193978c&v=A07A8D7A866F51DC63993AC3095055E832EF19DE",
+   "url": "https://www.adzuna.in/land/ad/5936953674?se=4hFPfFbO8RGiY7N8xe78DA&utm_medium=api&utm_source=3193978c&v=A07A8D7A866F51DC63993AC3095055E832EF19DE",
    "posted": "2026-10-21",
    "fit": 69,
    "comp": 62,
