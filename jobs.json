@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-23T14:37:44+00:00",
+ "updated": "2026-10-23T18:51:53+00:00",
  "source": "live",
- "count": 73,
+ "count": 72,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -72,6 +72,20 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
+  },
+  {
+   "id": "AZ_5913703520",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Cloudkeeper",
+   "loc": "Noida, Ghaziabad",
+   "url": "https://www.adzuna.in/details/5913703520?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-06",
+   "fit": 78,
+   "comp": 80,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5919259252",
@@ -410,20 +424,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5899844318",
-   "src": "Adzuna",
-   "title": "Principal Product Manager",
-   "co": "Expedia",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5899844318?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-26",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5936319104",
    "src": "Adzuna",
    "title": "Senior Tech Product Manager",
@@ -564,12 +564,54 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5939377794",
+   "src": "Adzuna",
+   "title": "Analyst, Survey Programming",
+   "co": "NPS Prism",
+   "loc": "Dlf Qe, Gurgaon",
+   "url": "https://www.adzuna.in/details/5939377794?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5939377791",
+   "src": "Adzuna",
+   "title": "Analyst, Product Operations, Banking (Tableau, Databricks, Python or Pyspark and SQL)",
+   "co": "NPS Prism",
+   "loc": "Dlf Qe, Gurgaon",
+   "url": "https://www.adzuna.in/details/5939377791?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5939150104",
    "src": "Adzuna",
    "title": "Product Analyst - Field Sales Execution, AMEA",
    "co": "Mars",
    "loc": "Sector 45, Gurgaon",
    "url": "https://www.adzuna.in/details/5939150104?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5939272005",
+   "src": "Adzuna",
+   "title": "Analyst, Product Operations, Central (Databricks, Tableau, SQL, Python/Pyspark)",
+   "co": "NPS Prism",
+   "loc": "Dlf Qe, Gurgaon",
+   "url": "https://www.adzuna.in/details/5939272005?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-23",
    "fit": 80,
    "comp": 62,
@@ -592,15 +634,15 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5928578335",
+   "id": "AZ_5939466616",
    "src": "Adzuna",
-   "title": "Sr Specialist Technology Vendor Management - OEM/Telecom Products/Global Procurement/Strategic Sourcing/Supplier Performance/Contract & Commercial Govern",
-   "co": "AT&T",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5928578335?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-15",
-   "fit": 80,
-   "comp": 62,
+   "title": "Product Manager",
+   "co": "Kulfi",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5939466616?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
+   "fit": 81,
+   "comp": 56,
    "growth": 70,
    "prob": 70,
    "why": "Adzuna (India)"
@@ -620,20 +662,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5925245836",
-   "src": "Adzuna",
-   "title": "Principal Product Manager",
-   "co": "BU Consultants",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5925245836?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
-   "fit": 77,
-   "comp": 78,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5920487667",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -645,20 +673,6 @@
    "comp": 80,
    "growth": 70,
    "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5895247749",
-   "src": "Adzuna",
-   "title": "CUSTOMER SUPPORT – BANKING PROCESS",
-   "co": "Vrinda International",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5895247749?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-23",
-   "fit": 80,
-   "comp": 53,
-   "growth": 70,
-   "prob": 70,
    "why": "Adzuna (India)"
   },
   {
@@ -711,7 +725,7 @@
    "title": "Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953789?se=bqWHTu_O8RGZusTiLQIZSw&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
+   "url": "https://www.adzuna.in/land/ad/5936953789?se=qIGVzxLP8RG17O__M5KguQ&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
    "posted": "2026-10-21",
    "fit": 77,
    "comp": 62,
@@ -792,20 +806,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5895875167",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "ThoughtGreen Technologies",
-   "loc": "Kyasaram, Hyderabad",
-   "url": "https://www.adzuna.in/details/5895875167?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-24",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5938281194",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -813,20 +813,6 @@
    "loc": "India",
    "url": "https://www.adzuna.in/details/5938281194?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-22",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5898718212",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "MicroStrategy India",
-   "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/details/5898718212?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-26",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -918,15 +904,15 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5925245879",
+   "id": "AZ_5939556534",
    "src": "Adzuna",
-   "title": "Associate Product Manager",
-   "co": "Masai",
+   "title": "Director - Product Management",
+   "co": "SWIGGY",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5925245879?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
+   "url": "https://www.adzuna.in/details/5939556534?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
    "fit": 73,
-   "comp": 60,
+   "comp": 62,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
@@ -937,7 +923,7 @@
    "title": "Manager, RCFCR Product Engg",
    "co": "Standard Chartered Bank",
    "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5936953782?se=FivwTu_O8RGKHsc_afnXVw&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
+   "url": "https://www.adzuna.in/land/ad/5936953782?se=2CoC0BLP8RGEteuEH2CtIw&utm_medium=api&utm_source=3193978c&v=21650A60424FBCF66841CDE57248D32089FBC721",
    "posted": "2026-10-21",
    "fit": 72,
    "comp": 62,
@@ -1007,7 +993,7 @@
    "title": "Associate Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953674?se=bqWHTu_O8RGZusTiLQIZSw&utm_medium=api&utm_source=3193978c&v=A07A8D7A866F51DC63993AC3095055E832EF19DE",
+   "url": "https://www.adzuna.in/land/ad/5936953674?se=qIGVzxLP8RG17O__M5KguQ&utm_medium=api&utm_source=3193978c&v=A07A8D7A866F51DC63993AC3095055E832EF19DE",
    "posted": "2026-10-21",
    "fit": 69,
    "comp": 62,
