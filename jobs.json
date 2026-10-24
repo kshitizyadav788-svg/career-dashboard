@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T05:20:39+00:00",
+ "updated": "2026-10-24T10:12:35+00:00",
  "source": "live",
  "count": 72,
  "jobs": [
@@ -662,6 +662,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5925245836",
+   "src": "Adzuna",
+   "title": "Principal Product Manager",
+   "co": "BU Consultants",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5925245836?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-13",
+   "fit": 77,
+   "comp": 78,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5920487667",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -739,7 +753,7 @@
    "title": "Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953789?se=WqQZpmrP8RGV1I84VDeOag&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
+   "url": "https://www.adzuna.in/land/ad/5936953789?se=fKGkbpPP8RG23o5gEh_GPw&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
    "posted": "2026-10-21",
    "fit": 77,
    "comp": 62,
@@ -918,15 +932,15 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5939556534",
+   "id": "AZ_5925245879",
    "src": "Adzuna",
-   "title": "Director - Product Management",
-   "co": "SWIGGY",
+   "title": "Associate Product Manager",
+   "co": "Masai",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5939556534?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-23",
+   "url": "https://www.adzuna.in/details/5925245879?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-13",
    "fit": 73,
-   "comp": 62,
+   "comp": 60,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
@@ -937,7 +951,7 @@
    "title": "Specialist, Technical Product Management",
    "co": "MSD",
    "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/land/ad/5939640011?se=RihopmrP8RG17O__M5KguQ&utm_medium=api&utm_source=3193978c&v=416E7E6D0C6C7CCCEEEED891687DD151D3436841",
+   "url": "https://www.adzuna.in/land/ad/5939640011?se=VC3_bpPP8RGmqJkOKrdScg&utm_medium=api&utm_source=3193978c&v=416E7E6D0C6C7CCCEEEED891687DD151D3436841",
    "posted": "2026-10-24",
    "fit": 72,
    "comp": 62,
@@ -983,20 +997,6 @@
    "posted": "2026-10-22",
    "fit": 76,
    "comp": 50,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5936953674",
-   "src": "Adzuna",
-   "title": "Associate Manager, Product Control",
-   "co": "Standard Chartered Bank",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953674?se=WqQZpmrP8RGV1I84VDeOag&utm_medium=api&utm_source=3193978c&v=A07A8D7A866F51DC63993AC3095055E832EF19DE",
-   "posted": "2026-10-21",
-   "fit": 69,
-   "comp": 62,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
