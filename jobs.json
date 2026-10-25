@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-25T00:46:15+00:00",
+ "updated": "2026-10-25T05:37:08+00:00",
  "source": "live",
- "count": 72,
+ "count": 73,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -153,20 +153,6 @@
    "posted": "2026-10-08",
    "fit": 78,
    "comp": 75,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5906872007",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Versatile.club",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5906872007?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-02",
-   "fit": 81,
-   "comp": 65,
    "growth": 70,
    "prob": 70,
    "why": "Adzuna (India)"
@@ -403,6 +389,20 @@
    "loc": "Bangalore, Karnataka",
    "url": "https://www.adzuna.in/details/5931522875?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-17",
+   "fit": 81,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5903437050",
+   "src": "Adzuna",
+   "title": "Product Manager, HR",
+   "co": "PHONEPE LIMITED",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5903437050?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-09-30",
    "fit": 81,
    "comp": 62,
    "growth": 70,
@@ -648,20 +648,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5938927167",
-   "src": "Adzuna",
-   "title": "Deputy Marketing Manager",
-   "co": "BD ",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5938927167?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-23",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5939466616",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -690,6 +676,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5923155405",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "PinnacleU HR",
+   "loc": "Delhi, India",
+   "url": "https://www.adzuna.in/details/5923155405?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-11",
+   "fit": 78,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5916909382",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -701,6 +701,20 @@
    "comp": 75,
    "growth": 70,
    "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5903796637",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "EaseMyTrip.com",
+   "loc": "Noida, Ghaziabad",
+   "url": "https://www.adzuna.in/details/5903796637?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-09-30",
+   "fit": 78,
+   "comp": 58,
+   "growth": 70,
+   "prob": 70,
    "why": "Adzuna (India)"
   },
   {
@@ -739,8 +753,22 @@
    "title": "Manager, Product Control",
    "co": "Standard Chartered Bank",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5936953789?se=tgc3ew3Q8RG0GownEE_3tg&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
+   "url": "https://www.adzuna.in/land/ad/5936953789?se=bEL4HTbQ8RG0GownEE_3tg&utm_medium=api&utm_source=3193978c&v=0AE061763DD7A4C6BBDA57F7B34B1A84BAF27187",
    "posted": "2026-10-21",
+   "fit": 77,
+   "comp": 62,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5940074290",
+   "src": "Adzuna",
+   "title": "Senior Product Manager",
+   "co": "BlueOptima",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5940074290?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-24",
    "fit": 77,
    "comp": 62,
    "growth": 70,
@@ -776,6 +804,20 @@
    "why": "Broad product-strategy generalist role, in-band (4-9 yrs) and local; small/lower-rated firm — verify scope.",
    "resume": "resumes/Velocitai Digital-Product Manager.docx",
    "matchScore": 94
+  },
+  {
+   "id": "AZ_5940684099",
+   "src": "Adzuna",
+   "title": "Senior Software Engineer",
+   "co": "Criteo",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/land/ad/5940684099?se=vBZhHTbQ8RGiN-U7AKrseA&utm_medium=api&utm_source=3193978c&v=C7EDAA9CA8CE2A31E915259B08627466692887B0",
+   "posted": "2026-10-24",
+   "fit": 76,
+   "comp": 62,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5924667475",
@@ -839,7 +881,7 @@
    "title": "Product Manager - SME Liabilities",
    "co": "Standard Chartered Bank",
    "loc": "Mumbai, Maharashtra",
-   "url": "https://www.adzuna.in/land/ad/5940684058?se=SI6Wew3Q8RGRKI1RSTRJPA&utm_medium=api&utm_source=3193978c&v=E0A48AF542CB38F2E64339F757ABD5CD2D337633",
+   "url": "https://www.adzuna.in/land/ad/5940684058?se=Zu5lHjbQ8RGiN-U7AKrseA&utm_medium=api&utm_source=3193978c&v=E0A48AF542CB38F2E64339F757ABD5CD2D337633",
    "posted": "2026-10-24",
    "fit": 76,
    "comp": 62,
@@ -932,43 +974,15 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5925245879",
+   "id": "AZ_5941016688",
    "src": "Adzuna",
-   "title": "Associate Product Manager",
-   "co": "Masai",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5925245879?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
-   "fit": 73,
-   "comp": 60,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5939640011",
-   "src": "Adzuna",
-   "title": "Specialist, Technical Product Management",
-   "co": "MSD",
-   "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/land/ad/5939640011?se=SI6Wew3Q8RGRKI1RSTRJPA&utm_medium=api&utm_source=3193978c&v=416E7E6D0C6C7CCCEEEED891687DD151D3436841",
-   "posted": "2026-10-24",
+   "title": "Quality Manager - Indoor Products",
+   "co": "ABB",
+   "loc": "Nashik, Maharashtra",
+   "url": "https://www.adzuna.in/land/ad/5941016688?se=Zu5lHjbQ8RGiN-U7AKrseA&utm_medium=api&utm_source=3193978c&v=DD4F158017DC8D63AD0748AF311D630C0F5DD543",
+   "posted": "2026-10-25",
    "fit": 72,
    "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5900180910",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "BERRYFMS",
-   "loc": "India",
-   "url": "https://www.adzuna.in/details/5900180910?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-27",
-   "fit": 76,
-   "comp": 53,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
