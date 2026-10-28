@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-28T19:18:37+00:00",
+ "updated": "2026-10-28T23:51:38+00:00",
  "source": "live",
- "count": 71,
+ "count": 72,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -86,6 +86,20 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
+  },
+  {
+   "id": "AZ_5913703520",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Cloudkeeper",
+   "loc": "Noida, Ghaziabad",
+   "url": "https://www.adzuna.in/details/5913703520?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-06",
+   "fit": 78,
+   "comp": 80,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5919259252",
@@ -200,20 +214,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5924608546",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Toolyt",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5924608546?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5907833906",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -262,20 +262,6 @@
    "co": "WorkIndia",
    "loc": "Bangalore, Karnataka",
    "url": "https://www.adzuna.in/details/5925610293?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5925307869",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "MakeMyTrip",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5925307869?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-13",
    "fit": 81,
    "comp": 62,
@@ -333,20 +319,6 @@
    "loc": "Bangalore, Karnataka",
    "url": "https://www.adzuna.in/details/5929226866?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-15",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5943357107",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "A.P. Moller - Maersk",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5943357107?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-27",
    "fit": 81,
    "comp": 62,
    "growth": 70,
@@ -438,20 +410,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5931522875",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Trail",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5931522875?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-17",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5929286142",
    "src": "Adzuna",
    "title": "Senior Product Manager",
@@ -515,20 +473,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5928584536?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-15",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5943647574",
-   "src": "Adzuna",
-   "title": "Project Manager (Agile Coach)",
-   "co": "Miratech",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5943647574?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-27",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -648,6 +592,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5928578335",
+   "src": "Adzuna",
+   "title": "Sr Specialist Technology Vendor Management - OEM/Telecom Products/Global Procurement/Strategic Sourcing/Supplier Performance/Contract & Commercial Govern",
+   "co": "AT&T",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5928578335?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-15",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5939272005",
    "src": "Adzuna",
    "title": "Analyst, Product Operations, Central",
@@ -657,6 +615,34 @@
    "posted": "2026-10-23",
    "fit": 80,
    "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5939466616",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Kulfi",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5939466616?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
+   "fit": 81,
+   "comp": 56,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5923489882",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "MM Staffing & Career Consultants",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5923489882?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-11",
+   "fit": 81,
+   "comp": 56,
    "growth": 70,
    "prob": 70,
    "why": "Adzuna (India)"
@@ -687,6 +673,20 @@
    "comp": 80,
    "growth": 70,
    "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5928473322",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Toolyt",
+   "loc": "Richmond Town, Bangalore",
+   "url": "https://www.adzuna.in/details/5928473322?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-15",
+   "fit": 81,
+   "comp": 55,
+   "growth": 70,
+   "prob": 70,
    "why": "Adzuna (India)"
   },
   {
@@ -743,6 +743,20 @@
    "posted": "2026-10-13",
    "fit": 76,
    "comp": 68,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5926003800",
+   "src": "Adzuna",
+   "title": "Product Manager / Sr. Product Manager - Mulesoft",
+   "co": "Salesforce",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5926003800?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-13",
+   "fit": 77,
+   "comp": 62,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
@@ -932,14 +946,14 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5943481266",
+   "id": "AZ_5944785617",
    "src": "Adzuna",
-   "title": "Senior Manager, Digital Product Owner",
-   "co": "Pfizer",
-   "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5943481266?se=0D0NYATT8RG4bv9_C5D7Lg&utm_medium=api&utm_source=3193978c&v=FA3685D469D7E245979F10BEDA0CB717AAFFDE20",
-   "posted": "2026-10-27",
-   "fit": 72,
+   "title": "Director - Product Management",
+   "co": "SWIGGY",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5944785617?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-28",
+   "fit": 73,
    "comp": 62,
    "growth": 70,
    "prob": 58,
