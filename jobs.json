@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-28T06:39:10+00:00",
+ "updated": "2026-10-28T13:47:36+00:00",
  "source": "live",
- "count": 72,
+ "count": 71,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -86,20 +86,6 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
-  },
-  {
-   "id": "AZ_5913703520",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Cloudkeeper",
-   "loc": "Noida, Ghaziabad",
-   "url": "https://www.adzuna.in/details/5913703520?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-06",
-   "fit": 78,
-   "comp": 80,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5919259252",
@@ -620,20 +606,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5939377791",
-   "src": "Adzuna",
-   "title": "Analyst, Product Operations, Banking",
-   "co": "NPS Prism",
-   "loc": "Dlf Qe, Gurgaon",
-   "url": "https://www.adzuna.in/details/5939377791?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-23",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5936082248",
    "src": "Adzuna",
    "title": "Project Manager - Medical Devices",
@@ -641,6 +613,20 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5936082248?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-21",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5939377791",
+   "src": "Adzuna",
+   "title": "Analyst, Product Operations, Banking",
+   "co": "NPS Prism",
+   "loc": "Dlf Qe, Gurgaon",
+   "url": "https://www.adzuna.in/details/5939377791?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-23",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -951,7 +937,7 @@
    "title": "Senior Manager, Digital Product Owner",
    "co": "Pfizer",
    "loc": "Chennai, Tamil Nadu",
-   "url": "https://www.adzuna.in/land/ad/5943481266?se=hq_gR5rS8RGxBok8K-YDJQ&utm_medium=api&utm_source=3193978c&v=FA3685D469D7E245979F10BEDA0CB717AAFFDE20",
+   "url": "https://www.adzuna.in/land/ad/5943481266?se=6szpIdbS8RG6zOi37PL_Zg&utm_medium=api&utm_source=3193978c&v=FA3685D469D7E245979F10BEDA0CB717AAFFDE20",
    "posted": "2026-10-27",
    "fit": 72,
    "comp": 62,
