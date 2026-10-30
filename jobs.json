@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-30T02:23:01+00:00",
+ "updated": "2026-10-30T09:32:55+00:00",
  "source": "live",
- "count": 70,
+ "count": 69,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -86,6 +86,20 @@
    "growth": 70,
    "prob": 70,
    "why": "3-5 Yrs, ₹12-18 LPA · Gurugram · EdTech — in-band and your domain; freshest listing."
+  },
+  {
+   "id": "AZ_5946326443",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "Schneider Electric",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5946326443?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-30",
+   "fit": 84,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
   },
   {
    "id": "AZ_5944931461",
@@ -452,20 +466,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5936319104",
-   "src": "Adzuna",
-   "title": "Senior Tech Product Manager",
-   "co": "UnitedHealth Group",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5936319104?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-21",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5922946603",
    "src": "Adzuna",
    "title": "Senior Digital Product Manager",
@@ -606,6 +606,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5936082248",
+   "src": "Adzuna",
+   "title": "Project Manager - Medical Devices",
+   "co": "Infosys Limited",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5936082248?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-21",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5939466616",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -725,22 +739,8 @@
    "title": "SR MGR PRODUCT MANAGEMENT",
    "co": "TE Connectivity",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5921409048?se=VoKm0wjU8RG_r4bmUg0vXw&utm_medium=api&utm_source=3193978c&v=4093CCA0071469994A05C38B9970F88EB5410D14",
+   "url": "https://www.adzuna.in/land/ad/5921409048?se=MnEi4kTU8RGaYZOywuySTw&utm_medium=api&utm_source=3193978c&v=4093CCA0071469994A05C38B9970F88EB5410D14",
    "posted": "2026-10-10",
-   "fit": 77,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5926003800",
-   "src": "Adzuna",
-   "title": "Product Manager / Sr. Product Manager - Mulesoft",
-   "co": "Salesforce",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5926003800?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-13",
    "fit": 77,
    "comp": 62,
    "growth": 70,
@@ -799,20 +799,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5943566121?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-27",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5903603435",
-   "src": "Adzuna",
-   "title": "Senior Graphic Designer",
-   "co": "Trusted Media Brands",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5903603435?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-30",
    "fit": 76,
    "comp": 62,
    "growth": 70,
