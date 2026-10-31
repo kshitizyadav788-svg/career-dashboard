@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-30T21:21:51+00:00",
+ "updated": "2026-10-31T01:24:08+00:00",
  "source": "live",
- "count": 69,
+ "count": 70,
  "jobs": [
   {
    "id": "AZ_5920569351",
@@ -452,13 +452,13 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5904051755",
+   "id": "AZ_5945936073",
    "src": "Adzuna",
    "title": "Senior Product Manager",
    "co": "Expedia",
    "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5904051755?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-30",
+   "url": "https://www.adzuna.in/details/5945936073?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-29",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -592,6 +592,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5936082248",
+   "src": "Adzuna",
+   "title": "Project Manager - Medical Devices",
+   "co": "Infosys Limited",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5936082248?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-21",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5939377791",
    "src": "Adzuna",
    "title": "Analyst, Product Operations, Banking",
@@ -599,6 +613,20 @@
    "loc": "Dlf Qe, Gurgaon",
    "url": "https://www.adzuna.in/details/5939377791?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-23",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5928578335",
+   "src": "Adzuna",
+   "title": "Sr Specialist Technology Vendor Management - OEM/Telecom Products/Global Procurement/Strategic Sourcing/Supplier Performance/Contract & Commercial Govern",
+   "co": "AT&T",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5928578335?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-15",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -725,7 +753,7 @@
    "title": "SR MGR PRODUCT MANAGEMENT",
    "co": "TE Connectivity",
    "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/land/ad/5921409048?se=XrR466fU8RGzkfY_QG7FnA&utm_medium=api&utm_source=3193978c&v=4093CCA0071469994A05C38B9970F88EB5410D14",
+   "url": "https://www.adzuna.in/land/ad/5921409048?se=rognxMnU8RGzkfY_QG7FnA&utm_medium=api&utm_source=3193978c&v=4093CCA0071469994A05C38B9970F88EB5410D14",
    "posted": "2026-10-10",
    "fit": 77,
    "comp": 62,
@@ -785,20 +813,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5943566121?utm_medium=api&utm_source=3193978c",
    "posted": "2026-10-27",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5903603435",
-   "src": "Adzuna",
-   "title": "Senior Graphic Designer",
-   "co": "Trusted Media Brands",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5903603435?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-09-30",
    "fit": 76,
    "comp": 62,
    "growth": 70,
