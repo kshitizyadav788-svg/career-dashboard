@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T07:43:36+00:00",
+ "updated": "2026-11-22T15:53:12+00:00",
  "source": "live",
  "count": 69,
  "jobs": [
@@ -228,20 +228,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5940343183",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Origin",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5940343183?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-24",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5974343642",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -403,6 +389,20 @@
    "loc": "Bangalore, Karnataka",
    "url": "https://www.adzuna.in/details/5950496057?utm_medium=api&utm_source=3193978c",
    "posted": "2026-11-02",
+   "fit": 81,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5945565449",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "SpotDraft",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5945565449?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-29",
    "fit": 81,
    "comp": 62,
    "growth": 70,
@@ -783,7 +783,7 @@
    "title": "IT BRIM SOM Lead",
    "co": "Criteo",
    "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/land/ad/5974424479?se=gGqba0jm8RGxz9-eUdfqSQ&utm_medium=api&utm_source=3193978c&v=3F476ACFEEE491E6053E8E74D0FB3EA76C8BDDA7",
+   "url": "https://www.adzuna.in/land/ad/5974424479?se=hplD0Yzm8RGuPayoyp3FzQ&utm_medium=api&utm_source=3193978c&v=3F476ACFEEE491E6053E8E74D0FB3EA76C8BDDA7",
    "posted": "2026-11-22",
    "fit": 76,
    "comp": 62,
