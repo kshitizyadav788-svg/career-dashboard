@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:10:26+00:00",
+ "updated": "2026-11-23T11:43:49+00:00",
  "source": "live",
  "count": 67,
  "jobs": [
@@ -410,20 +410,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5964173605",
-   "src": "Adzuna",
-   "title": "Senior Product Manager",
-   "co": "Pocketpills",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5964173605?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-11-13",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5963434925",
    "src": "Adzuna",
    "title": "Senior Product Manager",
@@ -606,6 +592,34 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5972577152",
+   "src": "Adzuna",
+   "title": "Data Project Manager",
+   "co": "Orange Business",
+   "loc": "Dlf Qe, Gurgaon",
+   "url": "https://www.adzuna.in/details/5972577152?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-20",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5970523510",
+   "src": "Adzuna",
+   "title": "Product Support Analyst",
+   "co": "Amex",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5970523510?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-18",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5969245183",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -729,20 +743,6 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5973691750?utm_medium=api&utm_source=3193978c",
    "posted": "2026-11-21",
-   "fit": 76,
-   "comp": 62,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5974424479",
-   "src": "Adzuna",
-   "title": "IT BRIM SOM Lead",
-   "co": "Criteo",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/land/ad/5974424479?se=HKCTC-Pm8RGK1Jozpv_WtA&utm_medium=api&utm_source=3193978c&v=3F476ACFEEE491E6053E8E74D0FB3EA76C8BDDA7",
-   "posted": "2026-11-22",
    "fit": 76,
    "comp": 62,
    "growth": 70,
