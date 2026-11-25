@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T13:50:55+00:00",
+ "updated": "2026-11-25T22:55:15+00:00",
  "source": "live",
  "count": 69,
  "jobs": [
@@ -396,20 +396,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5963434925",
-   "src": "Adzuna",
-   "title": "Senior Product Manager",
-   "co": "3SC",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5963434925?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-11-12",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5971880643",
    "src": "Adzuna",
    "title": "Senior Product Manager",
@@ -452,6 +438,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5978649226",
+   "src": "Adzuna",
+   "title": "Technical Product Marketing Manager",
+   "co": "Sauce Labs",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5978649226?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-25",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5973436141",
    "src": "Adzuna",
    "title": "Revenue Cloud Developer ID102545",
@@ -468,7 +468,7 @@
   {
    "id": "AZ_5963467703",
    "src": "Adzuna",
-   "title": "UI Architect",
+   "title": "Frontend Architect",
    "co": "Best Omnichannel and Multichannel Retail Software Solution",
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5963467703?utm_medium=api&utm_source=3193978c",
@@ -480,13 +480,13 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5948164553",
+   "id": "AZ_5958337974",
    "src": "Adzuna",
-   "title": "Cloud Engineer, Data and AI",
+   "title": "Partner Solutions Engineer",
    "co": "Google",
    "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5948164553?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-31",
+   "url": "https://www.adzuna.in/details/5958337974?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-08",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -522,20 +522,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5956583536",
-   "src": "Adzuna",
-   "title": "Partner Solutions Engineer",
-   "co": "Google",
-   "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/details/5956583536?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-11-07",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5977317823",
    "src": "Adzuna",
    "title": "Regulatory Affairs Specialist",
@@ -543,6 +529,20 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5977317823?utm_medium=api&utm_source=3193978c",
    "posted": "2026-11-24",
+   "fit": 80,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5947749297",
+   "src": "Adzuna",
+   "title": "Cloud Engineer, Data and AI",
+   "co": "Google",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5947749297?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-10-31",
    "fit": 80,
    "comp": 62,
    "growth": 70,
@@ -715,6 +715,20 @@
    "loc": "Gurgaon, Haryana",
    "url": "https://www.adzuna.in/details/5973691750?utm_medium=api&utm_source=3193978c",
    "posted": "2026-11-21",
+   "fit": 76,
+   "comp": 62,
+   "growth": 70,
+   "prob": 58,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5978635882",
+   "src": "Adzuna",
+   "title": "Senior Analyst",
+   "co": "BSR & Co",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5978635882?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-25",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -955,20 +969,6 @@
    "posted": "2026-11-21",
    "fit": 76,
    "comp": 53,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5942785574",
-   "src": "Adzuna",
-   "title": "Technical Associate - Implementation",
-   "co": "Spectra Technovision  Pvt. Ltd.",
-   "loc": "Sector 45, Gurgaon",
-   "url": "https://www.adzuna.in/details/5942785574?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-27",
-   "fit": 72,
-   "comp": 50,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
