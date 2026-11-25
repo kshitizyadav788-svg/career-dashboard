@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-25T03:19:53+00:00",
+ "updated": "2026-11-25T13:50:55+00:00",
  "source": "live",
- "count": 70,
+ "count": 69,
  "jobs": [
   {
    "id": "NP18",
@@ -270,20 +270,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5943348415",
-   "src": "Adzuna",
-   "title": "Product Manager",
-   "co": "Weekday AI",
-   "loc": "Bangalore, Karnataka",
-   "url": "https://www.adzuna.in/details/5943348415?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-27",
-   "fit": 81,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5960294215",
    "src": "Adzuna",
    "title": "Product Manager",
@@ -396,6 +382,20 @@
    "why": "Adzuna (India)"
   },
   {
+   "id": "AZ_5971871643",
+   "src": "Adzuna",
+   "title": "Product Manager",
+   "co": "InMobi",
+   "loc": "Bangalore, Karnataka",
+   "url": "https://www.adzuna.in/details/5971871643?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-19",
+   "fit": 81,
+   "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
    "id": "AZ_5963434925",
    "src": "Adzuna",
    "title": "Senior Product Manager",
@@ -480,20 +480,6 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5942671588",
-   "src": "Adzuna",
-   "title": "Resident Services Engineer (on-site)",
-   "co": "Verimatrix",
-   "loc": "Nsg Camp Manesar, Gurgaon",
-   "url": "https://www.adzuna.in/details/5942671588?utm_medium=api&utm_source=3193978c",
-   "posted": "2026-10-26",
-   "fit": 80,
-   "comp": 62,
-   "growth": 70,
-   "prob": 70,
-   "why": "Adzuna (India)"
-  },
-  {
    "id": "AZ_5948164553",
    "src": "Adzuna",
    "title": "Cloud Engineer, Data and AI",
@@ -517,6 +503,20 @@
    "posted": "2026-11-14",
    "fit": 80,
    "comp": 62,
+   "growth": 70,
+   "prob": 70,
+   "why": "Adzuna (India)"
+  },
+  {
+   "id": "AZ_5977808118",
+   "src": "Adzuna",
+   "title": "Manager - Sourcing & Merchandising",
+   "co": "thimblerr",
+   "loc": "Gurgaon, Haryana",
+   "url": "https://www.adzuna.in/details/5977808118?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-25",
+   "fit": 80,
+   "comp": 59,
    "growth": 70,
    "prob": 70,
    "why": "Adzuna (India)"
@@ -722,13 +722,13 @@
    "why": "Adzuna (India)"
   },
   {
-   "id": "AZ_5976873846",
+   "id": "AZ_5978014667",
    "src": "Adzuna",
-   "title": "Software Engineer Team Lead",
-   "co": "Criteo",
+   "title": "Senior AI/ML Engineer - Python, Agentic AI, RAG, LLM",
+   "co": "UnitedHealth Group",
    "loc": "Gurgaon, Haryana",
-   "url": "https://www.adzuna.in/land/ad/5976873846?se=OgYoFH_o8RGJ3IkP01vxSg&utm_medium=api&utm_source=3193978c&v=6F8404AB88BF660196DC9BF18645E2BB6DADD5C1",
-   "posted": "2026-11-24",
+   "url": "https://www.adzuna.in/details/5978014667?utm_medium=api&utm_source=3193978c",
+   "posted": "2026-11-25",
    "fit": 76,
    "comp": 62,
    "growth": 70,
@@ -955,20 +955,6 @@
    "posted": "2026-11-21",
    "fit": 76,
    "comp": 53,
-   "growth": 70,
-   "prob": 58,
-   "why": "Adzuna (India)"
-  },
-  {
-   "id": "AZ_5976873824",
-   "src": "Adzuna",
-   "title": "Senior Specialist, Technical Product Management",
-   "co": "MSD",
-   "loc": "Hyderabad, Telangana",
-   "url": "https://www.adzuna.in/land/ad/5976873824?se=8GfdFH_o8RG41oe1TbPhFw&utm_medium=api&utm_source=3193978c&v=71735389D25EA6D30EF5E96713BF5406517B300F",
-   "posted": "2026-11-24",
-   "fit": 68,
-   "comp": 62,
    "growth": 70,
    "prob": 58,
    "why": "Adzuna (India)"
